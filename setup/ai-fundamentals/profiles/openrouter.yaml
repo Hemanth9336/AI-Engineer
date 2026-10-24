@@ -1,0 +1,23 @@
+# OpenRouter profile (recommended): one key reaches OpenAI, Anthropic, Google, Meta and more.
+# Create a key at https://openrouter.ai/keys and add a few dollars of credit; the whole course costs well under $5.
+# Model IDs change over time - see https://openrouter.ai/models, edit the right-hand side, then run: ailab restart
+
+model_list:
+  - model_name: lab-mini
+    litellm_params: {model: openrouter/openai/gpt-4.1-nano, api_key: os.environ/OPENROUTER_API_KEY}
+  - model_name: lab-fast
+    litellm_params: {model: openrouter/openai/gpt-4.1-mini, api_key: os.environ/OPENROUTER_API_KEY}
+  - model_name: lab-smart
+    litellm_params: {model: openrouter/anthropic/claude-sonnet-4.5, api_key: os.environ/OPENROUTER_API_KEY}
+  - model_name: lab-reasoning
+    litellm_params: {model: openrouter/openai/o4-mini, api_key: os.environ/OPENROUTER_API_KEY}
+  - model_name: lab-open
+    litellm_params: {model: openrouter/meta-llama/llama-3.3-70b-instruct, api_key: os.environ/OPENROUTER_API_KEY}
+
+litellm_settings:
+  callbacks: ailab_logger.proxy_handler_instance
+  drop_params: true
+  request_timeout: 300
+
+general_settings:
+  master_key: os.environ/LAB_AI_KEY

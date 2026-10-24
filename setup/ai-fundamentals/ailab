@@ -1,0 +1,140 @@
+#!/usr/bin/env bash
+# ailab - runs the AI gateway the AI Fundamentals skill talks to.
+#
+#   ailab setup [PROFILE]   pick a provider (openrouter, openai, anthropic, ollama), store its key, start the gateway
+#   ailab up                start the gateway on http://localhost:4000
+#   ailab down              stop it
+#   ailab restart           stop, then start (after editing /etc/ailab/config.yaml)
+#   ailab status            is the gateway answering, which profile is active, are the key files private
+#   ailab models            the five lab models and the real model behind each
+#   ailab log [N]           the last N requests the gateway served (default 10) - shape only, never prompt text
+#   ailab test              send a one-word request to every lab model
+#
+# Your scripts only ever see the lab key (LAB_AI_KEY). The provider key stays in /etc/ailab/provider.env,
+# readable by root only, and is used by the gateway alone.
+set -euo pipefail
+
+ETC=${AILAB_ETC:-/etc/ailab}
+LIB=${AILAB_LIB:-/usr/local/lib/ailab}
+VENV=${AILAB_VENV:-/opt/ailab/venv}
+LOGDIR=${AILAB_LOGDIR:-/var/log/ailab}
+ENVFILE=${AILAB_ENVFILE:-/root/.config/ailab/env}
+PORT=4000
+URL=http://localhost:$PORT
+
+die() { echo "ailab: $*" >&2; exit 1; }
+answers() { curl -fsS -o /dev/null --max-time 2 "$URL/health/liveliness" 2>/dev/null; }
+lab_key() { [ -f "$ENVFILE" ] || die "$ENVFILE is missing - run setup/ai-fundamentals/install-tools.sh"; sed -n 's/^export LAB_AI_KEY=//p' "$ENVFILE"; }
+
+start() {
+  answers && return 0
+  [ -f "$ETC/config.yaml" ] || die "no provider configured yet - run: ailab setup"
+  [ -x "$VENV/bin/litellm" ] || die "$VENV/bin/litellm is missing - run setup/ai-fundamentals/install-tools.sh"
+  mkdir -p "$LOGDIR"
+  (
+    set -a
+    [ -f "$ETC/provider.env" ] && . "$ETC/provider.env"
+    set +a
+    export LAB_AI_KEY
+    LAB_AI_KEY=$(lab_key)
+    export AILAB_LOG="$LOGDIR/requests.jsonl" PYTHONPATH="$LIB"
+    export LITELLM_USE_CHAT_COMPLETIONS_URL_FOR_ANTHROPIC_MESSAGES=true
+    cd "$LIB"
+    nohup "$VENV/bin/litellm" --config "$ETC/config.yaml" --host 127.0.0.1 --port $PORT >>"$LOGDIR/gateway.log" 2>&1 &
+  )
+  for _ in $(seq 1 90); do
+    answers && return 0
+    sleep 1
+  done
+  die "the gateway did not answer on $URL - see $LOGDIR/gateway.log"
+}
+
+stop() {
+  pkill -f "litellm --config $ETC/config.yaml" 2>/dev/null || true
+  for _ in $(seq 1 10); do answers || return 0; sleep 1; done
+}
+
+setup() {
+  local profile=${1:-}
+  if [ -z "$profile" ]; then
+    echo "Which model provider will the lab gateway use?"
+    echo "  1) openrouter  one key reaches OpenAI, Anthropic, Google and open models (recommended)"
+    echo "  2) openai      your OpenAI API key"
+    echo "  3) anthropic   your Anthropic API key"
+    echo "  4) ollama      free local open models, no key (needs about 8 GB of memory)"
+    read -r -p "Choose 1-4: " pick
+    case "$pick" in 1) profile=openrouter ;; 2) profile=openai ;; 3) profile=anthropic ;; 4) profile=ollama ;; *) die "pick 1-4" ;; esac
+  fi
+  [ -f "$ETC/profiles/$profile.yaml" ] || die "unknown profile $profile (openrouter, openai, anthropic, ollama)"
+  local var=""
+  case "$profile" in
+    openrouter) var=OPENROUTER_API_KEY ;;
+    openai) var=OPENAI_API_KEY ;;
+    anthropic) var=ANTHROPIC_API_KEY ;;
+  esac
+  umask 077
+  if [ -n "$var" ]; then
+    local key=${!var:-}
+    if [ -z "$key" ]; then
+      read -r -s -p "Paste your $var (input is hidden): " key
+      echo
+    fi
+    [ -n "$key" ] || die "no key given"
+    printf '%s=%s\n' "$var" "$key" > "$ETC/provider.env"
+  else
+    command -v ollama >/dev/null || die "install Ollama first: curl -fsSL https://ollama.com/install.sh | sh"
+    : > "$ETC/provider.env"
+    for m in $(sed -n 's/.*model: ollama_chat\/\([^,}]*\).*/\1/p' "$ETC/profiles/ollama.yaml" | sort -u); do
+      echo "pulling $m ..."
+      ollama pull "$m"
+    done
+  fi
+  chmod 600 "$ETC/provider.env"
+  cp "$ETC/profiles/$profile.yaml" "$ETC/config.yaml"
+  echo "$profile" > "$ETC/profile"
+  stop
+  start
+  echo "gateway is up on $URL with the $profile profile"
+  models
+}
+
+models() {
+  [ -f "$ETC/config.yaml" ] || die "no provider configured yet - run: ailab setup"
+  printf '%-15s %s\n' "LAB MODEL" "BACKED BY"
+  awk '/model_name:/ {name=$3} /model:/ && name {sub(/.*model: */, ""); sub(/[,}].*/, ""); printf "%-15s %s\n", name, $0; name=""}' "$ETC/config.yaml"
+}
+
+log() {
+  local n=${1:-10} f="$LOGDIR/requests.jsonl"
+  [ -s "$f" ] || { echo "no requests yet"; return 0; }
+  tail -n "$n" "$f" | jq -r '[.ts, .api, .model, (.client | split(" ")[0]), (.finish_reason // "error"),
+    "in=\(.prompt_tokens // 0)", "out=\(.completion_tokens // 0)"] | @tsv' | column -t
+}
+
+case "${1:-}" in
+  setup) shift; setup "$@" ;;
+  up) start; echo "gateway is up on $URL" ;;
+  down) stop; echo "gateway stopped" ;;
+  restart) stop; start; echo "gateway restarted on $URL" ;;
+  status)
+    ok=0
+    if answers; then echo "gateway: up on $URL ($(cat "$ETC/profile" 2>/dev/null || echo custom) profile)"; else echo "gateway: not answering - run: ailab up"; ok=1; fi
+    for f in "$ETC/provider.env" "$ENVFILE"; do
+      [ -f "$f" ] || continue
+      perm=$(stat -c %a "$f")
+      [ "$perm" = 600 ] && echo "key file $f: private (600)" || { echo "key file $f: mode $perm - fix with chmod 600 $f"; ok=1; }
+    done
+    exit $ok
+    ;;
+  models) models ;;
+  log) shift; log "${1:-10}" ;;
+  test)
+    key=$(lab_key)
+    for m in lab-mini lab-fast lab-smart lab-reasoning lab-open; do
+      out=$(curl -sS --max-time 120 "$URL/v1/chat/completions" -H "Authorization: Bearer $key" -H 'Content-Type: application/json' \
+        -d "{\"model\":\"$m\",\"max_tokens\":200,\"messages\":[{\"role\":\"user\",\"content\":\"Reply with the single word: ready\"}]}")
+      printf '%-15s %s\n' "$m" "$(echo "$out" | jq -r '.choices[0].message.content // .error.message' | head -c 80 | tr '\n' ' ')"
+    done
+    ;;
+  *) sed -n '2,15p' "$0" | sed 's/^# \{0,1\}//'; exit 1 ;;
+esac

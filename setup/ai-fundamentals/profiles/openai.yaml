@@ -1,0 +1,23 @@
+# OpenAI profile: uses your OpenAI API key (https://platform.openai.com/api-keys).
+# OpenAI's API has no open-weights model, so lab-open falls back to gpt-4.1-mini here.
+# Model IDs change over time - see https://platform.openai.com/docs/models, edit, then run: ailab restart
+
+model_list:
+  - model_name: lab-mini
+    litellm_params: {model: openai/gpt-4.1-nano, api_key: os.environ/OPENAI_API_KEY}
+  - model_name: lab-fast
+    litellm_params: {model: openai/gpt-4.1-mini, api_key: os.environ/OPENAI_API_KEY}
+  - model_name: lab-smart
+    litellm_params: {model: openai/gpt-4.1, api_key: os.environ/OPENAI_API_KEY}
+  - model_name: lab-reasoning
+    litellm_params: {model: openai/o4-mini, api_key: os.environ/OPENAI_API_KEY}
+  - model_name: lab-open
+    litellm_params: {model: openai/gpt-4.1-mini, api_key: os.environ/OPENAI_API_KEY}
+
+litellm_settings:
+  callbacks: ailab_logger.proxy_handler_instance
+  drop_params: true
+  request_timeout: 300
+
+general_settings:
+  master_key: os.environ/LAB_AI_KEY

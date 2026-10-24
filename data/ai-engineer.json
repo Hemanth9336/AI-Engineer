@@ -1,0 +1,1144 @@
+{
+ "title": "AI Engineer",
+ "skills": [
+  {
+   "id": "ai-fundamentals",
+   "name": "AI Fundamentals",
+   "icon": "🧠",
+   "color": "#8b5cf6",
+   "tagline": "Learn how to actually use Gen AI to get work done in 2026 - prompting that works, choosing models, tools and agents, coding assistants, MCP, and working with your own data - all hands-on against real models through the lab's AI gateway.",
+   "stats": {
+    "topics": 26,
+    "tasks": 27,
+    "quizzes": 25,
+    "challenges": 0,
+    "lessons": 55,
+    "questions": 96,
+    "minutes": 955
+   },
+   "phases": [
+    {
+     "id": "foundations",
+     "name": "Generative AI Foundations",
+     "blurb": "What generative AI is, the tools you will meet, what they are good for, and how models behave."
+    },
+    {
+     "id": "api",
+     "name": "Calling Models over an API",
+     "blurb": "Send your own requests to real models with curl and read every part of the reply."
+    },
+    {
+     "id": "prompting",
+     "name": "Prompt Engineering",
+     "blurb": "Clear prompts, examples, step-by-step reasoning, roles, output control, and the refine loop."
+    },
+    {
+     "id": "working-with-models",
+     "name": "Working with Models",
+     "blurb": "Conversations and the context window, choosing a model, tokens and cost, and JSON output."
+    },
+    {
+     "id": "tools-and-agents",
+     "name": "Tools, Assistants and Agents",
+     "blurb": "Tool calling, coding assistants, MCP, the official SDKs, LangChain, and agents."
+    },
+    {
+     "id": "safety-and-data",
+     "name": "Safety and Your Own Data",
+     "blurb": "Hallucinations, prompt injection, privacy, and grounding answers in your own documents."
+    },
+    {
+     "id": "projects",
+     "name": "AI Fundamentals Projects",
+     "blurb": "Three small, real tools that put the whole skill to work."
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "dir": "ai-fundamentals/01-what-is-generative-ai",
+     "phase": "foundations",
+     "title": "What is Generative AI",
+     "summary": "How generative AI differs from the rule-following software you already know, the kinds of content it can create, and where large language models fit in.",
+     "minutes": 20,
+     "counts": {
+      "lessons": 3,
+      "tasks": 0,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Generative AI versus traditional software",
+       "minutes": 5,
+       "path": "ai-fundamentals/01-what-is-generative-ai/01-generative-ai-versus-traditional-software.md"
+      },
+      {
+       "type": "lesson",
+       "title": "The kinds of generative AI",
+       "minutes": 6,
+       "path": "ai-fundamentals/01-what-is-generative-ai/02-the-kinds-of-generative-ai.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Where LLMs fit in",
+       "minutes": 6,
+       "path": "ai-fundamentals/01-what-is-generative-ai/03-where-llms-fit-in.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: what is generative AI",
+       "minutes": 3,
+       "path": "ai-fundamentals/01-what-is-generative-ai/04-quick-check-what-is-generative-ai.md",
+       "questions": 3
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "dir": "ai-fundamentals/02-the-ai-tool-landscape",
+     "phase": "foundations",
+     "title": "The AI tool landscape",
+     "summary": "A tour of the AI tools you will actually run into - chat assistants like ChatGPT, Claude, and Gemini, coding assistants, AI search, AI built into everyday apps, and how free versus paid tiers work.",
+     "minutes": 20,
+     "counts": {
+      "lessons": 3,
+      "tasks": 0,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Chat assistants",
+       "minutes": 5,
+       "path": "ai-fundamentals/02-the-ai-tool-landscape/01-chat-assistants.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Coding assistants and AI inside your apps",
+       "minutes": 6,
+       "path": "ai-fundamentals/02-the-ai-tool-landscape/02-coding-assistants-and-ai-inside-your-apps.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Free, paid, and choosing a tool",
+       "minutes": 6,
+       "path": "ai-fundamentals/02-the-ai-tool-landscape/03-free-paid-and-choosing-a-tool.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: the tool landscape",
+       "minutes": 3,
+       "path": "ai-fundamentals/02-the-ai-tool-landscape/04-quick-check-the-tool-landscape.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "dir": "ai-fundamentals/03-what-you-can-do-with-ai",
+     "phase": "foundations",
+     "title": "What you can do with AI",
+     "summary": "The practical payoff - the everyday jobs people hand to AI, the same help aimed at real engineering work, and an honest look at where AI falls short so you use it with your eyes open.",
+     "minutes": 20,
+     "counts": {
+      "lessons": 3,
+      "tasks": 0,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Everyday uses",
+       "minutes": 5,
+       "path": "ai-fundamentals/03-what-you-can-do-with-ai/01-everyday-uses.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Uses at work",
+       "minutes": 6,
+       "path": "ai-fundamentals/03-what-you-can-do-with-ai/02-uses-at-work.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Where AI falls short",
+       "minutes": 6,
+       "path": "ai-fundamentals/03-what-you-can-do-with-ai/03-where-ai-falls-short.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: using AI well",
+       "minutes": 3,
+       "path": "ai-fundamentals/03-what-you-can-do-with-ai/04-quick-check-using-ai-well.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "dir": "ai-fundamentals/04-ai-absolute-basics",
+     "phase": "foundations",
+     "title": "AI absolute basics",
+     "summary": "What a large language model actually is, what tokens are, why tokens drive LLM pricing, open versus frontier models, and why models hallucinate - with hands-on work using the claude command.",
+     "minutes": 45,
+     "counts": {
+      "lessons": 5,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "What is an LLM",
+       "minutes": 6,
+       "path": "ai-fundamentals/04-ai-absolute-basics/01-what-is-an-llm.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Tokens",
+       "minutes": 6,
+       "path": "ai-fundamentals/04-ai-absolute-basics/02-tokens.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Why tokens matter",
+       "minutes": 6,
+       "path": "ai-fundamentals/04-ai-absolute-basics/03-why-tokens-matter.md"
+      },
+      {
+       "type": "task",
+       "title": "Talk to the AI",
+       "minutes": 10,
+       "path": "ai-fundamentals/04-ai-absolute-basics/04-talk-to-the-ai.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Open models vs frontier models",
+       "minutes": 6,
+       "path": "ai-fundamentals/04-ai-absolute-basics/05-open-models-vs-frontier-models.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Hallucinations and limits",
+       "minutes": 6,
+       "path": "ai-fundamentals/04-ai-absolute-basics/06-hallucinations-and-limits.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: how models behave",
+       "minutes": 5,
+       "path": "ai-fundamentals/04-ai-absolute-basics/07-quick-check-how-models-behave.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "dir": "ai-fundamentals/05-calling-llms-over-an-api",
+     "phase": "api",
+     "title": "Calling LLMs over an API",
+     "summary": "Why real AI work happens in code, and how to send your own requests to real models with curl - the request, the response JSON, and the reply path you'll use constantly.",
+     "minutes": 40,
+     "counts": {
+      "lessons": 1,
+      "tasks": 4,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Why call an LLM over an API",
+       "minutes": 5,
+       "path": "ai-fundamentals/05-calling-llms-over-an-api/01-why-call-an-llm-over-an-api.md"
+      },
+      {
+       "type": "task",
+       "title": "Your first request with curl",
+       "minutes": 8,
+       "path": "ai-fundamentals/05-calling-llms-over-an-api/02-your-first-request-with-curl.md"
+      },
+      {
+       "type": "task",
+       "title": "Send your own request",
+       "minutes": 8,
+       "path": "ai-fundamentals/05-calling-llms-over-an-api/03-send-your-own-request.md"
+      },
+      {
+       "type": "task",
+       "title": "Try a different model",
+       "minutes": 8,
+       "path": "ai-fundamentals/05-calling-llms-over-an-api/04-try-a-different-model.md"
+      },
+      {
+       "type": "task",
+       "title": "Understand max_tokens limits",
+       "minutes": 8,
+       "path": "ai-fundamentals/05-calling-llms-over-an-api/05-understand-max-tokens-limits.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: the API call",
+       "minutes": 3,
+       "path": "ai-fundamentals/05-calling-llms-over-an-api/06-quick-check-the-api-call.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "dir": "ai-fundamentals/06-writing-prompts-that-work",
+     "phase": "prompting",
+     "title": "Writing prompts that work",
+     "summary": "What separates a clear prompt from a vague one, how the system and user roles differ, and how being specific gets you better answers.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 3,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "What makes a good prompt",
+       "minutes": 7,
+       "path": "ai-fundamentals/06-writing-prompts-that-work/01-what-makes-a-good-prompt.md"
+      },
+      {
+       "type": "lesson",
+       "title": "System and user messages",
+       "minutes": 7,
+       "path": "ai-fundamentals/06-writing-prompts-that-work/02-system-and-user-messages.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Being specific",
+       "minutes": 7,
+       "path": "ai-fundamentals/06-writing-prompts-that-work/03-being-specific.md"
+      },
+      {
+       "type": "task",
+       "title": "Write a clear prompt",
+       "minutes": 10,
+       "path": "ai-fundamentals/06-writing-prompts-that-work/04-write-a-clear-prompt.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: prompting basics",
+       "minutes": 4,
+       "path": "ai-fundamentals/06-writing-prompts-that-work/05-quick-check-prompting-basics.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 7,
+     "dir": "ai-fundamentals/07-prompting-with-examples",
+     "phase": "prompting",
+     "title": "Prompting with examples",
+     "summary": "The difference between asking with no examples and giving a few, why a couple of examples steer the model, and how to write examples it will copy faithfully.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Zero-shot vs few-shot",
+       "minutes": 8,
+       "path": "ai-fundamentals/07-prompting-with-examples/01-zero-shot-vs-few-shot.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Giving good examples",
+       "minutes": 8,
+       "path": "ai-fundamentals/07-prompting-with-examples/02-giving-good-examples.md"
+      },
+      {
+       "type": "task",
+       "title": "Write a few-shot prompt",
+       "minutes": 13,
+       "path": "ai-fundamentals/07-prompting-with-examples/03-write-a-few-shot-prompt.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: few-shot prompting",
+       "minutes": 6,
+       "path": "ai-fundamentals/07-prompting-with-examples/04-quick-check-few-shot-prompting.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 8,
+     "dir": "ai-fundamentals/08-step-by-step-prompting",
+     "phase": "prompting",
+     "title": "Step-by-step prompting",
+     "summary": "Ask a model to work through multi-step problems one step at a time so its reasoning stays on track and its answers get more accurate.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Why step-by-step helps",
+       "minutes": 8,
+       "path": "ai-fundamentals/08-step-by-step-prompting/01-why-step-by-step-helps.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Asking for reasoning",
+       "minutes": 8,
+       "path": "ai-fundamentals/08-step-by-step-prompting/02-asking-for-reasoning.md"
+      },
+      {
+       "type": "task",
+       "title": "Solve a problem step by step",
+       "minutes": 13,
+       "path": "ai-fundamentals/08-step-by-step-prompting/03-solve-a-problem-step-by-step.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: step-by-step prompting",
+       "minutes": 6,
+       "path": "ai-fundamentals/08-step-by-step-prompting/04-quick-check-step-by-step-prompting.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 9,
+     "dir": "ai-fundamentals/09-ai-roles-and-personas",
+     "phase": "prompting",
+     "title": "AI roles and personas",
+     "summary": "How giving a model a role focuses its expertise and tone, and how framing for a tone or audience changes the way it explains without changing the facts.",
+     "minutes": 30,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Giving the AI a role",
+       "minutes": 7,
+       "path": "ai-fundamentals/09-ai-roles-and-personas/01-giving-the-ai-a-role.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Shaping tone and audience",
+       "minutes": 7,
+       "path": "ai-fundamentals/09-ai-roles-and-personas/02-shaping-tone-and-audience.md"
+      },
+      {
+       "type": "task",
+       "title": "Write a role prompt for a real task",
+       "minutes": 11,
+       "path": "ai-fundamentals/09-ai-roles-and-personas/03-write-a-role-prompt-for-a-real-task.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: roles and framing",
+       "minutes": 5,
+       "path": "ai-fundamentals/09-ai-roles-and-personas/04-quick-check-roles-and-framing.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 10,
+     "dir": "ai-fundamentals/10-controlling-the-output",
+     "phase": "prompting",
+     "title": "Controlling the output",
+     "summary": "How to constrain the shape and length of a model's answer, and how delimiters keep your instructions separate from the text you want processed.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Asking for a format",
+       "minutes": 8,
+       "path": "ai-fundamentals/10-controlling-the-output/01-asking-for-a-format.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Using delimiters",
+       "minutes": 8,
+       "path": "ai-fundamentals/10-controlling-the-output/02-using-delimiters.md"
+      },
+      {
+       "type": "task",
+       "title": "Generate a formatted checklist",
+       "minutes": 13,
+       "path": "ai-fundamentals/10-controlling-the-output/03-generate-a-formatted-checklist.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: format and delimiters",
+       "minutes": 6,
+       "path": "ai-fundamentals/10-controlling-the-output/04-quick-check-format-and-delimiters.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 11,
+     "dir": "ai-fundamentals/11-improving-your-prompts",
+     "phase": "prompting",
+     "title": "Improving your prompts",
+     "summary": "Why a first prompt often disappoints, how to read a weak answer and spot the cause, and the refine loop that turns a rough attempt into the answer you wanted.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 3,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Why first prompts fail",
+       "minutes": 7,
+       "path": "ai-fundamentals/11-improving-your-prompts/01-why-first-prompts-fail.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Diagnosing a weak answer",
+       "minutes": 7,
+       "path": "ai-fundamentals/11-improving-your-prompts/02-diagnosing-a-weak-answer.md"
+      },
+      {
+       "type": "lesson",
+       "title": "The refine loop",
+       "minutes": 7,
+       "path": "ai-fundamentals/11-improving-your-prompts/03-the-refine-loop.md"
+      },
+      {
+       "type": "task",
+       "title": "Fix a failing prompt",
+       "minutes": 10,
+       "path": "ai-fundamentals/11-improving-your-prompts/04-fix-a-failing-prompt.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: picking the next fix",
+       "minutes": 4,
+       "path": "ai-fundamentals/11-improving-your-prompts/05-scenario-picking-the-next-fix.md",
+       "questions": 3
+      }
+     ]
+    },
+    {
+     "n": 12,
+     "dir": "ai-fundamentals/12-multi-turn-conversations",
+     "phase": "working-with-models",
+     "title": "Multi-turn conversations",
+     "summary": "How a chat is just a growing messages array, what the context window is and why it fills up, and how to keep long conversations working.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 3,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Multi-turn conversations",
+       "minutes": 7,
+       "path": "ai-fundamentals/12-multi-turn-conversations/01-multi-turn-conversations.md"
+      },
+      {
+       "type": "lesson",
+       "title": "The context window",
+       "minutes": 7,
+       "path": "ai-fundamentals/12-multi-turn-conversations/02-the-context-window.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Managing long conversations",
+       "minutes": 7,
+       "path": "ai-fundamentals/12-multi-turn-conversations/03-managing-long-conversations.md"
+      },
+      {
+       "type": "task",
+       "title": "Hold a conversation",
+       "minutes": 10,
+       "path": "ai-fundamentals/12-multi-turn-conversations/04-hold-a-conversation.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: conversations and the window",
+       "minutes": 4,
+       "path": "ai-fundamentals/12-multi-turn-conversations/05-quick-check-conversations-and-the-window.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 13,
+     "dir": "ai-fundamentals/13-choosing-a-model",
+     "phase": "working-with-models",
+     "title": "Choosing a model",
+     "summary": "Why models trade speed against quality, what each of the five lab models is good for, and how to match a model to the task in front of you.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 3,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Not all models are equal",
+       "minutes": 7,
+       "path": "ai-fundamentals/13-choosing-a-model/01-not-all-models-are-equal.md"
+      },
+      {
+       "type": "lesson",
+       "title": "The five lab models",
+       "minutes": 7,
+       "path": "ai-fundamentals/13-choosing-a-model/02-the-five-lab-models.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Matching a model to the task",
+       "minutes": 7,
+       "path": "ai-fundamentals/13-choosing-a-model/03-matching-a-model-to-the-task.md"
+      },
+      {
+       "type": "task",
+       "title": "Compare two models on one prompt",
+       "minutes": 10,
+       "path": "ai-fundamentals/13-choosing-a-model/04-compare-two-models-on-one-prompt.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: choosing a model for a batch job",
+       "minutes": 4,
+       "path": "ai-fundamentals/13-choosing-a-model/05-scenario-choosing-a-model-for-a-batch-job.md",
+       "questions": 3
+      }
+     ]
+    },
+    {
+     "n": 14,
+     "dir": "ai-fundamentals/14-tokens-and-cost",
+     "phase": "working-with-models",
+     "title": "Tokens and cost",
+     "summary": "How per-token pricing actually adds up, how to read every field in the usage block, and the concrete levers that keep a request lean.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 3,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "How LLM pricing works",
+       "minutes": 7,
+       "path": "ai-fundamentals/14-tokens-and-cost/01-how-llm-pricing-works.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Reading the usage block in detail",
+       "minutes": 7,
+       "path": "ai-fundamentals/14-tokens-and-cost/02-reading-the-usage-block-in-detail.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Keeping requests lean",
+       "minutes": 7,
+       "path": "ai-fundamentals/14-tokens-and-cost/03-keeping-requests-lean.md"
+      },
+      {
+       "type": "task",
+       "title": "Measure a request's token usage",
+       "minutes": 10,
+       "path": "ai-fundamentals/14-tokens-and-cost/04-measure-a-requests-token-usage.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: tokens and cost",
+       "minutes": 4,
+       "path": "ai-fundamentals/14-tokens-and-cost/05-quick-check-tokens-and-cost.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 15,
+     "dir": "ai-fundamentals/15-structured-output-with-json",
+     "phase": "working-with-models",
+     "title": "Structured output with JSON",
+     "summary": "How to make a model return machine-readable JSON instead of prose, prompt it for a fixed shape, and validate the result with jq.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Why structured output",
+       "minutes": 8,
+       "path": "ai-fundamentals/15-structured-output-with-json/01-why-structured-output.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Asking a model for JSON",
+       "minutes": 8,
+       "path": "ai-fundamentals/15-structured-output-with-json/02-asking-a-model-for-json.md"
+      },
+      {
+       "type": "task",
+       "title": "Get parseable JSON from a model",
+       "minutes": 13,
+       "path": "ai-fundamentals/15-structured-output-with-json/03-get-parseable-json-from-a-model.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: structured output",
+       "minutes": 6,
+       "path": "ai-fundamentals/15-structured-output-with-json/04-quick-check-structured-output.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 16,
+     "dir": "ai-fundamentals/16-tool-calling",
+     "phase": "tools-and-agents",
+     "title": "Tool Calling",
+     "summary": "How the model asks your program to run functions you define, so AI can fetch live data and act on the world instead of just guessing.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "What tool calling is",
+       "minutes": 8,
+       "path": "ai-fundamentals/16-tool-calling/01-what-tool-calling-is.md"
+      },
+      {
+       "type": "lesson",
+       "title": "How the tool loop works",
+       "minutes": 8,
+       "path": "ai-fundamentals/16-tool-calling/02-how-the-tool-loop-works.md"
+      },
+      {
+       "type": "task",
+       "title": "Let the model call a tool",
+       "minutes": 13,
+       "path": "ai-fundamentals/16-tool-calling/03-let-the-model-call-a-tool.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: tool calling",
+       "minutes": 6,
+       "path": "ai-fundamentals/16-tool-calling/04-quick-check-tool-calling.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 17,
+     "dir": "ai-fundamentals/17-ai-coding-assistants",
+     "phase": "tools-and-agents",
+     "title": "AI Coding Assistants",
+     "summary": "What AI coding assistants do and how to use claude from the terminal to write, explain, and fix code.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "AI as a coding assistant",
+       "minutes": 8,
+       "path": "ai-fundamentals/17-ai-coding-assistants/01-ai-as-a-coding-assistant.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Using claude in the terminal",
+       "minutes": 8,
+       "path": "ai-fundamentals/17-ai-coding-assistants/02-using-claude-in-the-terminal.md"
+      },
+      {
+       "type": "task",
+       "title": "Write a script with claude",
+       "minutes": 13,
+       "path": "ai-fundamentals/17-ai-coding-assistants/03-write-a-script-with-claude.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: coding assistants",
+       "minutes": 6,
+       "path": "ai-fundamentals/17-ai-coding-assistants/04-quick-check-coding-assistants.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 18,
+     "dir": "ai-fundamentals/18-model-context-protocol",
+     "phase": "tools-and-agents",
+     "title": "Model Context Protocol",
+     "summary": "What MCP is, how it builds on tool calling, and how to register a real MCP server with claude so the assistant can act on external tools and data.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "What is MCP",
+       "minutes": 8,
+       "path": "ai-fundamentals/18-model-context-protocol/01-what-is-mcp.md"
+      },
+      {
+       "type": "lesson",
+       "title": "claude mcp add and claude mcp list",
+       "minutes": 8,
+       "path": "ai-fundamentals/18-model-context-protocol/02-claude-mcp-add-and-claude-mcp-list.md"
+      },
+      {
+       "type": "task",
+       "title": "Register the GitHub MCP server",
+       "minutes": 13,
+       "path": "ai-fundamentals/18-model-context-protocol/03-register-the-github-mcp-server.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: MCP",
+       "minutes": 6,
+       "path": "ai-fundamentals/18-model-context-protocol/04-quick-check-mcp.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 19,
+     "dir": "ai-fundamentals/19-using-the-api-in-real-code",
+     "phase": "tools-and-agents",
+     "title": "Using the API in real code",
+     "summary": "Move from curl to real code - call the API with the OpenAI and Anthropic Python SDKs, keep your key safe, and automate a task across a whole folder of inputs in one run.",
+     "minutes": 45,
+     "counts": {
+      "lessons": 0,
+      "tasks": 3,
+      "quizzes": 2,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "task",
+       "title": "The OpenAI SDK in Python",
+       "minutes": 12,
+       "path": "ai-fundamentals/19-using-the-api-in-real-code/01-the-openai-sdk-in-python.md"
+      },
+      {
+       "type": "task",
+       "title": "The Anthropic SDK and the Messages API",
+       "minutes": 12,
+       "path": "ai-fundamentals/19-using-the-api-in-real-code/02-the-anthropic-sdk-and-the-messages-api.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: the key in the script",
+       "minutes": 4,
+       "path": "ai-fundamentals/19-using-the-api-in-real-code/03-scenario-the-key-in-the-script.md",
+       "questions": 3
+      },
+      {
+       "type": "task",
+       "title": "Automate a batch of files",
+       "minutes": 12,
+       "path": "ai-fundamentals/19-using-the-api-in-real-code/04-automate-a-batch-of-files.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: keys and the SDK",
+       "minutes": 5,
+       "path": "ai-fundamentals/19-using-the-api-in-real-code/05-quick-check-keys-and-the-sdk.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 20,
+     "dir": "ai-fundamentals/20-langchain-basics",
+     "phase": "tools-and-agents",
+     "title": "LangChain basics",
+     "summary": "What LangChain is, the pieces of a simple chain (a chat model, a prompt template, and piping them together), and building one that runs against the API.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "What is LangChain",
+       "minutes": 8,
+       "path": "ai-fundamentals/20-langchain-basics/01-what-is-langchain.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Your first chain",
+       "minutes": 8,
+       "path": "ai-fundamentals/20-langchain-basics/02-your-first-chain.md"
+      },
+      {
+       "type": "task",
+       "title": "Build a simple chain",
+       "minutes": 13,
+       "path": "ai-fundamentals/20-langchain-basics/03-build-a-simple-chain.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: LangChain",
+       "minutes": 6,
+       "path": "ai-fundamentals/20-langchain-basics/04-quick-check-langchain.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 21,
+     "dir": "ai-fundamentals/21-building-agents",
+     "phase": "tools-and-agents",
+     "title": "Building Agents",
+     "summary": "What an AI agent is, how a model runs in a loop and calls tools to reach a goal, and how to build a small LangChain agent with one tool.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "What is an agent",
+       "minutes": 8,
+       "path": "ai-fundamentals/21-building-agents/01-what-is-an-agent.md"
+      },
+      {
+       "type": "lesson",
+       "title": "A simple LangChain agent",
+       "minutes": 8,
+       "path": "ai-fundamentals/21-building-agents/02-a-simple-langchain-agent.md"
+      },
+      {
+       "type": "task",
+       "title": "Build a simple agent",
+       "minutes": 13,
+       "path": "ai-fundamentals/21-building-agents/03-build-a-simple-agent.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: how much freedom to give an agent",
+       "minutes": 6,
+       "path": "ai-fundamentals/21-building-agents/04-scenario-how-much-freedom-to-give-an-agent.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 22,
+     "dir": "ai-fundamentals/22-limitations-and-safety",
+     "phase": "safety-and-data",
+     "title": "Limitations and safety",
+     "summary": "How to reduce hallucinations, why prompt injection makes model output untrustworthy, what leaves your machine when you send a prompt, and when the safe move is to verify or refuse.",
+     "minutes": 30,
+     "counts": {
+      "lessons": 3,
+      "tasks": 0,
+      "quizzes": 2,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Reducing hallucinations",
+       "minutes": 7,
+       "path": "ai-fundamentals/22-limitations-and-safety/01-reducing-hallucinations.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Prompt injection",
+       "minutes": 7,
+       "path": "ai-fundamentals/22-limitations-and-safety/02-prompt-injection.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Privacy and your data",
+       "minutes": 7,
+       "path": "ai-fundamentals/22-limitations-and-safety/03-privacy-and-your-data.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: an instruction hidden in the data",
+       "minutes": 4,
+       "path": "ai-fundamentals/22-limitations-and-safety/04-scenario-an-instruction-hidden-in-the-data.md",
+       "questions": 3
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: limitations and safety",
+       "minutes": 5,
+       "path": "ai-fundamentals/22-limitations-and-safety/05-quick-check-limitations-and-safety.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 23,
+     "dir": "ai-fundamentals/23-using-your-own-data",
+     "phase": "safety-and-data",
+     "title": "Using your own data",
+     "summary": "How to ground a model in your own facts so it answers about your systems instead of guessing, what RAG means from a user's point of view, and answering a real question from a local document.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Grounding answers in your data",
+       "minutes": 8,
+       "path": "ai-fundamentals/23-using-your-own-data/01-grounding-answers-in-your-data.md"
+      },
+      {
+       "type": "lesson",
+       "title": "What RAG is",
+       "minutes": 8,
+       "path": "ai-fundamentals/23-using-your-own-data/02-what-rag-is.md"
+      },
+      {
+       "type": "task",
+       "title": "Answer a question from a document",
+       "minutes": 13,
+       "path": "ai-fundamentals/23-using-your-own-data/03-answer-a-question-from-a-document.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: using your own data",
+       "minutes": 6,
+       "path": "ai-fundamentals/23-using-your-own-data/04-quick-check-using-your-own-data.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 24,
+     "dir": "ai-fundamentals/24-project-support-ticket-triage-tool",
+     "phase": "projects",
+     "title": "Project: support ticket triage tool",
+     "summary": "Capstone. Build a small tool that reads raw support tickets and sorts each one into a category and priority as clean JSON, using prompting and structured output against a real model.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 0,
+      "tasks": 1,
+      "quizzes": 0,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "task",
+       "title": "Build a support ticket triage tool",
+       "minutes": 60,
+       "path": "ai-fundamentals/24-project-support-ticket-triage-tool/01-build-a-support-ticket-triage-tool.md"
+      }
+     ]
+    },
+    {
+     "n": 25,
+     "dir": "ai-fundamentals/25-project-log-explainer-cli",
+     "phase": "projects",
+     "title": "Project: log explainer CLI",
+     "summary": "Capstone. Build a command-line tool that reads a log file and returns a short plain-English summary and likely cause, using a role prompt against a real model.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 0,
+      "tasks": 1,
+      "quizzes": 0,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "task",
+       "title": "Build a log explainer CLI",
+       "minutes": 60,
+       "path": "ai-fundamentals/25-project-log-explainer-cli/01-build-a-log-explainer-cli.md"
+      }
+     ]
+    },
+    {
+     "n": 26,
+     "dir": "ai-fundamentals/26-project-grounded-runbook-assistant",
+     "phase": "projects",
+     "title": "Project: grounded runbook assistant",
+     "summary": "Capstone. Build a question-answering tool that answers only from a runbook you give it and admits when the answer is not there, putting grounding and honest limits into practice.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 0,
+      "tasks": 1,
+      "quizzes": 0,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "task",
+       "title": "Build a grounded runbook assistant",
+       "minutes": 60,
+       "path": "ai-fundamentals/26-project-grounded-runbook-assistant/01-build-a-grounded-runbook-assistant.md"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "coming_soon": []
+}

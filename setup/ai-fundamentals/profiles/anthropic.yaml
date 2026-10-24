@@ -1,0 +1,23 @@
+# Anthropic profile: uses your Anthropic API key (https://console.anthropic.com/settings/keys).
+# Anthropic offers no open-weights model and fewer sizes, so lab-mini and lab-open share Haiku here.
+# Model IDs change over time - see https://docs.anthropic.com/en/docs/about-claude/models, edit, then run: ailab restart
+
+model_list:
+  - model_name: lab-mini
+    litellm_params: {model: anthropic/claude-haiku-4-5, api_key: os.environ/ANTHROPIC_API_KEY}
+  - model_name: lab-fast
+    litellm_params: {model: anthropic/claude-haiku-4-5, api_key: os.environ/ANTHROPIC_API_KEY}
+  - model_name: lab-smart
+    litellm_params: {model: anthropic/claude-sonnet-4-5, api_key: os.environ/ANTHROPIC_API_KEY}
+  - model_name: lab-reasoning
+    litellm_params: {model: anthropic/claude-opus-4-1, api_key: os.environ/ANTHROPIC_API_KEY}
+  - model_name: lab-open
+    litellm_params: {model: anthropic/claude-haiku-4-5, api_key: os.environ/ANTHROPIC_API_KEY}
+
+litellm_settings:
+  callbacks: ailab_logger.proxy_handler_instance
+  drop_params: true
+  request_timeout: 300
+
+general_settings:
+  master_key: os.environ/LAB_AI_KEY
