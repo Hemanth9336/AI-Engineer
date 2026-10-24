@@ -31,6 +31,12 @@ if "lab-tiny" not in s:
         entry = f"  - model_name: lab-tiny\n    litellm_params: {m.group(1)}\n    model_info: {{max_input_tokens: 2048}}\n"
         s = s.replace("\nlitellm_settings:", "\n" + entry + "\nlitellm_settings:", 1).replace("\n\n  - model_name: lab-tiny", "\n  - model_name: lab-tiny")
         changed = True
+# lab-tiny shares lab-mini's backend model, and LiteLLM records a window per backend model,
+# so lab-mini needs its own window or it inherits lab-tiny's 2,048 tokens.
+m = re.search(r"(  - model_name: lab-mini\n    litellm_params: \{.*\}\n)(?!    model_info:)", s)
+if m:
+    s = s.replace(m.group(1), m.group(1) + "    model_info: {max_input_tokens: 128000}\n", 1)
+    changed = True
 if "enable_pre_call_checks" not in s:
     s = s.replace("\ngeneral_settings:", "\nrouter_settings:\n  enable_pre_call_checks: true\n\ngeneral_settings:", 1)
     changed = True

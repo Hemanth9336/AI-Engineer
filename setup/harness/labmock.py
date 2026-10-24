@@ -19,7 +19,8 @@ Steps:
 
 Several conversations at once (subagents, parallel agents): pass rules instead of a script. Each rule's regex is
 searched in the request's first user message (or "on": "system" / "all" / "tools" - the tool definitions as
-JSON); the first match's steps are used.
+JSON); the first match's steps are used. Add "by": "calls" to a rule to step through its script by how many
+requests that rule has answered, instead of by assistant messages (useful when your harness rewrites history).
 
     from labmock import MockModel
     with MockModel(["Hello!"]) as m:
@@ -66,13 +67,17 @@ class MockModel:
         for r in self.rules:
             hay = {"system": system, "all": everything, "tools": json.dumps(tools or [])}.get(r.get("on"), first_user)
             if re.search(r["match"], hay, re.S | re.I):
-                return r["steps"]
-        return ["(labmock) no scripted reply for this conversation"]
+                return r
+        return {"steps": ["(labmock) no scripted reply for this conversation"]}
 
     def reply(self, body):
         msgs = body.get("messages") or []
-        steps = self._steps(msgs, body.get("tools"))
+        rule = self._steps(msgs, body.get("tools"))
+        steps = rule["steps"]
         turn = sum(1 for m in msgs if m.get("role") == "assistant")
+        if rule.get("by") == "calls":
+            with self._lock:
+                turn = rule["_n"] = rule.get("_n", -1) + 1
         step = steps[min(turn, len(steps) - 1)]
         if isinstance(step, str):
             step = {"text": step}
