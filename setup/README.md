@@ -102,6 +102,32 @@ ailab test      # includes one lab-embed request
 
 Embedding calls appear in the request log with `"api": "embeddings"` and an `inputs` count.
 
+## 5. Add the FDE tools (AI Forward Deployed Engineer skill)
+
+The **AI Forward Deployed Engineer** skill uses everything from steps 2-4, plus a few extras. On the same machine, run:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Hemanth9336/AI-Engineer/main/setup/fde/install-tools.sh | bash
+source ~/.bashrc
+```
+
+The script installs or refreshes the RAG lab first, then adds:
+
+| What | Where |
+|---|---|
+| `lab-tiny`: the same model as `lab-mini`, but with a 2,048-token input window - so you can hit a context limit on purpose without spending much (topic 04) | An extra entry in `/etc/ailab/config.yaml` |
+| `mcp` 1.30.0 (the Model Context Protocol SDK, for the MCP server in topic 22) and `jsonschema` 4.26.0 (schema validation in topic 10) | `/root/ai-lab/.venv` |
+| Work folder - each topic uses `/root/fde-lab/NN-<short>` | `/root/fde-lab` |
+
+Check it:
+
+```bash
+ailab models    # now lists lab-tiny too
+ailab test
+```
+
+A few tasks start a small local service in **Set up** - a mock customer API, or a deliberately slow model endpoint - on `127.0.0.1` ports `4555`, `4560` and `4570`. They run until the machine restarts; Set up starts them again if they aren't answering.
+
 ## Everyday commands
 
 | Command | Does |

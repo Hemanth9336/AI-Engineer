@@ -8,10 +8,11 @@ import re
 
 from ai_fundamentals_skill import AI_FUNDAMENTALS
 from rag_skill import RAG
+from fde_skill import FDE
 
 L, T, Q, S = "lesson", "task", "quiz", "scenario"
 
-SKILLS = [AI_FUNDAMENTALS, RAG]
+SKILLS = [AI_FUNDAMENTALS, RAG, FDE]
 
 # Shown on the home page as upcoming skills until their content is added to SKILLS.
 COMING_SOON = []

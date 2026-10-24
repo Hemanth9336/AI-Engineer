@@ -1890,6 +1890,2394 @@
      ]
     }
    ]
+  },
+  {
+   "id": "fde",
+   "name": "AI Forward Deployed Engineer",
+   "icon": "🚀",
+   "color": "#f59e0b",
+   "tagline": "Become the engineer who ships AI inside real companies - from zero. Learn how LLMs work, build RAG and tool-calling assistants over messy customer data, prove quality with evals, harden for cost and safety, and run a full customer engagement from discovery to handoff.",
+   "stats": {
+    "topics": 44,
+    "tasks": 86,
+    "quizzes": 67,
+    "challenges": 0,
+    "lessons": 104,
+    "questions": 241,
+    "minutes": 1735
+   },
+   "phases": [
+    {
+     "id": "role",
+     "name": "The FDE Role",
+     "blurb": "What a forward deployed engineer does, and the shape of a customer engagement."
+    },
+    {
+     "id": "llms",
+     "name": "How LLMs Work",
+     "blurb": "Next-token prediction, hallucinations, tokens, context windows, and cost."
+    },
+    {
+     "id": "foundations",
+     "name": "Building Blocks",
+     "blurb": "Just enough Python, calling models over an API, and choosing the right model."
+    },
+    {
+     "id": "prompting",
+     "name": "Prompting",
+     "blurb": "Clear prompts, prompts as a product surface, and output a program can trust."
+    },
+    {
+     "id": "tools",
+     "name": "Tools and Conversation State",
+     "blurb": "Letting the model call your code, and keeping track of a conversation."
+    },
+    {
+     "id": "retrieval",
+     "name": "Retrieval over Customer Data",
+     "blurb": "Embeddings, vector search, RAG, messy documents, citations, and permissions."
+    },
+    {
+     "id": "integrations",
+     "name": "Agents and Integrations",
+     "blurb": "Agents, MCP, customer APIs, and getting data out of customer systems."
+    },
+    {
+     "id": "evals",
+     "name": "Proving It Works",
+     "blurb": "Evals, golden datasets, LLM judges, regression gates, RAG metrics, and the fine-tuning question."
+    },
+    {
+     "id": "hardening",
+     "name": "Hardening for Production",
+     "blurb": "Guardrails, abstaining, cost, latency, observability, security, and PII."
+    },
+    {
+     "id": "engagement",
+     "name": "Running the Engagement",
+     "blurb": "Discovery, prototypes, demos, pilots, and a handoff that survives without you."
+    },
+    {
+     "id": "capstones",
+     "name": "Capstone Projects",
+     "blurb": "Three end-to-end builds that put the whole role to work."
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "dir": "fde/01-what-an-fde-does",
+     "phase": "role",
+     "title": "What an FDE does",
+     "summary": "What an AI Forward Deployed Engineer is, how the role differs from architects and ML engineers, and what a real engagement day looks like.",
+     "minutes": 30,
+     "counts": {
+      "lessons": 3,
+      "tasks": 0,
+      "quizzes": 3,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "What an FDE does",
+       "minutes": 6,
+       "path": "fde/01-what-an-fde-does/01-what-an-fde-does.md"
+      },
+      {
+       "type": "quiz",
+       "title": "A customer asks you to add AI everywhere",
+       "minutes": 4,
+       "path": "fde/01-what-an-fde-does/02-a-customer-asks-you-to-add-ai-everywhere.md",
+       "questions": 1
+      },
+      {
+       "type": "lesson",
+       "title": "FDE vs solutions architect vs ML engineer",
+       "minutes": 6,
+       "path": "fde/01-what-an-fde-does/03-fde-vs-solutions-architect-vs-ml-engineer.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Who owns the model quality problem",
+       "minutes": 4,
+       "path": "fde/01-what-an-fde-does/04-who-owns-the-model-quality-problem.md",
+       "questions": 3
+      },
+      {
+       "type": "lesson",
+       "title": "A day in the life of an engagement",
+       "minutes": 6,
+       "path": "fde/01-what-an-fde-does/05-a-day-in-the-life-of-an-engagement.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: the FDE role",
+       "minutes": 4,
+       "path": "fde/01-what-an-fde-does/06-quick-check-the-fde-role.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "dir": "fde/02-the-engagement-lifecycle",
+     "phase": "role",
+     "title": "The engagement lifecycle",
+     "summary": "The four stages of an FDE engagement - discovery, pilot, production, handoff - and what done means at each stage.",
+     "minutes": 30,
+     "counts": {
+      "lessons": 2,
+      "tasks": 0,
+      "quizzes": 3,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "The four stages of an engagement",
+       "minutes": 7,
+       "path": "fde/02-the-engagement-lifecycle/01-the-four-stages-of-an-engagement.md"
+      },
+      {
+       "type": "lesson",
+       "title": "What done means at each stage",
+       "minutes": 8,
+       "path": "fde/02-the-engagement-lifecycle/02-what-done-means-at-each-stage.md"
+      },
+      {
+       "type": "scenario",
+       "title": "The pilot worked, the customer wants to skip hardening",
+       "minutes": 5,
+       "path": "fde/02-the-engagement-lifecycle/03-the-pilot-worked-the-customer-wants-to-skip-hardening.md",
+       "questions": 3
+      },
+      {
+       "type": "scenario",
+       "title": "Discovery reveals the use case is bad",
+       "minutes": 5,
+       "path": "fde/02-the-engagement-lifecycle/04-discovery-reveals-the-use-case-is-bad.md",
+       "questions": 3
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: the engagement lifecycle",
+       "minutes": 5,
+       "path": "fde/02-the-engagement-lifecycle/05-quick-check-the-engagement-lifecycle.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "dir": "fde/03-how-llms-work",
+     "phase": "llms",
+     "title": "How LLMs work",
+     "summary": "Next-token prediction, training versus inference, and why models hallucinate.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 3,
+      "tasks": 2,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Next-token prediction",
+       "minutes": 5,
+       "path": "fde/03-how-llms-work/01-next-token-prediction.md"
+      },
+      {
+       "type": "task",
+       "title": "Watch a model complete text step by step",
+       "minutes": 8,
+       "path": "fde/03-how-llms-work/02-watch-a-model-complete-text-step-by-step.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Training vs inference",
+       "minutes": 5,
+       "path": "fde/03-how-llms-work/03-training-vs-inference.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Why models hallucinate",
+       "minutes": 5,
+       "path": "fde/03-how-llms-work/04-why-models-hallucinate.md"
+      },
+      {
+       "type": "task",
+       "title": "Trigger and observe a hallucination",
+       "minutes": 8,
+       "path": "fde/03-how-llms-work/05-trigger-and-observe-a-hallucination.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: how LLMs work",
+       "minutes": 4,
+       "path": "fde/03-how-llms-work/06-quick-check-how-llms-work.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "dir": "fde/04-tokens-context-and-cost",
+     "phase": "llms",
+     "title": "Tokens, context, and cost",
+     "summary": "What tokens are, how context windows limit a request, and how to turn usage numbers into money.",
+     "minutes": 40,
+     "counts": {
+      "lessons": 3,
+      "tasks": 3,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "What a token is",
+       "minutes": 5,
+       "path": "fde/04-tokens-context-and-cost/01-what-a-token-is.md"
+      },
+      {
+       "type": "task",
+       "title": "Count the tokens in real prompts",
+       "minutes": 7,
+       "path": "fde/04-tokens-context-and-cost/02-count-the-tokens-in-real-prompts.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Context window limits",
+       "minutes": 5,
+       "path": "fde/04-tokens-context-and-cost/03-context-window-limits.md"
+      },
+      {
+       "type": "task",
+       "title": "Hit the context limit on purpose",
+       "minutes": 7,
+       "path": "fde/04-tokens-context-and-cost/04-hit-the-context-limit-on-purpose.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Cost math per request",
+       "minutes": 5,
+       "path": "fde/04-tokens-context-and-cost/05-cost-math-per-request.md"
+      },
+      {
+       "type": "task",
+       "title": "Estimate a monthly cost for a customer workload",
+       "minutes": 8,
+       "path": "fde/04-tokens-context-and-cost/06-estimate-a-monthly-cost-for-a-customer-workload.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: tokens, context, and cost",
+       "minutes": 3,
+       "path": "fde/04-tokens-context-and-cost/07-quick-check-tokens-context-and-cost.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "dir": "fde/05-just-enough-python",
+     "phase": "foundations",
+     "title": "Just enough Python",
+     "summary": "The small set of Python you need for AI work: strings, dicts, loops, functions, and files.",
+     "minutes": 40,
+     "counts": {
+      "lessons": 3,
+      "tasks": 3,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Variables, strings, and f-strings",
+       "minutes": 5,
+       "path": "fde/05-just-enough-python/01-variables-strings-and-f-strings.md"
+      },
+      {
+       "type": "task",
+       "title": "Build a prompt string from pieces",
+       "minutes": 7,
+       "path": "fde/05-just-enough-python/02-build-a-prompt-string-from-pieces.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Lists, dicts, and loops",
+       "minutes": 5,
+       "path": "fde/05-just-enough-python/03-lists-dicts-and-loops.md"
+      },
+      {
+       "type": "task",
+       "title": "Walk a dict shaped like an API reply",
+       "minutes": 7,
+       "path": "fde/05-just-enough-python/04-walk-a-dict-shaped-like-an-api-reply.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Functions, files, and running scripts",
+       "minutes": 5,
+       "path": "fde/05-just-enough-python/05-functions-files-and-running-scripts.md"
+      },
+      {
+       "type": "task",
+       "title": "Read a file and print a summary line",
+       "minutes": 8,
+       "path": "fde/05-just-enough-python/06-read-a-file-and-print-a-summary-line.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: just enough Python",
+       "minutes": 3,
+       "path": "fde/05-just-enough-python/07-quick-check-just-enough-python.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "dir": "fde/06-calling-llms-over-an-api",
+     "phase": "foundations",
+     "title": "Calling LLMs over an API",
+     "summary": "The chat API shape, your first calls with curl and Python, and how system messages steer behavior.",
+     "minutes": 40,
+     "counts": {
+      "lessons": 3,
+      "tasks": 3,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "The chat API shape: messages and roles",
+       "minutes": 5,
+       "path": "fde/06-calling-llms-over-an-api/01-the-chat-api-shape-messages-and-roles.md"
+      },
+      {
+       "type": "task",
+       "title": "Your first API call with curl",
+       "minutes": 7,
+       "path": "fde/06-calling-llms-over-an-api/02-your-first-api-call-with-curl.md"
+      },
+      {
+       "type": "lesson",
+       "title": "The same call from Python",
+       "minutes": 5,
+       "path": "fde/06-calling-llms-over-an-api/03-the-same-call-from-python.md"
+      },
+      {
+       "type": "task",
+       "title": "A Python script that answers a question",
+       "minutes": 7,
+       "path": "fde/06-calling-llms-over-an-api/04-a-python-script-that-answers-a-question.md"
+      },
+      {
+       "type": "lesson",
+       "title": "System vs user messages",
+       "minutes": 5,
+       "path": "fde/06-calling-llms-over-an-api/05-system-vs-user-messages.md"
+      },
+      {
+       "type": "task",
+       "title": "Change behavior with a system message",
+       "minutes": 8,
+       "path": "fde/06-calling-llms-over-an-api/06-change-behavior-with-a-system-message.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: calling LLMs",
+       "minutes": 3,
+       "path": "fde/06-calling-llms-over-an-api/07-quick-check-calling-llms.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 7,
+     "dir": "fde/07-choosing-a-model",
+     "phase": "foundations",
+     "title": "Choosing a model",
+     "summary": "The quality, latency, and cost triangle, and how to match a model to a customer use case.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 2,
+      "tasks": 2,
+      "quizzes": 2,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "The quality, latency, and cost triangle",
+       "minutes": 5,
+       "path": "fde/07-choosing-a-model/01-the-quality-latency-and-cost-triangle.md"
+      },
+      {
+       "type": "task",
+       "title": "Race two models on the same prompt",
+       "minutes": 9,
+       "path": "fde/07-choosing-a-model/02-race-two-models-on-the-same-prompt.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Matching a model to a use case",
+       "minutes": 5,
+       "path": "fde/07-choosing-a-model/03-matching-a-model-to-a-use-case.md"
+      },
+      {
+       "type": "task",
+       "title": "Pick models for three customer workloads",
+       "minutes": 9,
+       "path": "fde/07-choosing-a-model/04-pick-models-for-three-customer-workloads.md"
+      },
+      {
+       "type": "scenario",
+       "title": "The customer insists on the biggest model for everything",
+       "minutes": 3,
+       "path": "fde/07-choosing-a-model/05-the-customer-insists-on-the-biggest-model-for-everything.md",
+       "questions": 3
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: choosing a model",
+       "minutes": 4,
+       "path": "fde/07-choosing-a-model/06-quick-check-choosing-a-model.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 8,
+     "dir": "fde/08-prompt-engineering-basics",
+     "phase": "prompting",
+     "title": "Prompt engineering basics",
+     "summary": "Clear instructions, few-shot examples, and controlling the output format.",
+     "minutes": 40,
+     "counts": {
+      "lessons": 3,
+      "tasks": 3,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Clear instructions beat clever tricks",
+       "minutes": 5,
+       "path": "fde/08-prompt-engineering-basics/01-clear-instructions-beat-clever-tricks.md"
+      },
+      {
+       "type": "task",
+       "title": "Fix a vague prompt",
+       "minutes": 7,
+       "path": "fde/08-prompt-engineering-basics/02-fix-a-vague-prompt.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Few-shot examples",
+       "minutes": 5,
+       "path": "fde/08-prompt-engineering-basics/03-few-shot-examples.md"
+      },
+      {
+       "type": "task",
+       "title": "Teach a format with examples",
+       "minutes": 7,
+       "path": "fde/08-prompt-engineering-basics/04-teach-a-format-with-examples.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Controlling the output format",
+       "minutes": 5,
+       "path": "fde/08-prompt-engineering-basics/05-controlling-the-output-format.md"
+      },
+      {
+       "type": "task",
+       "title": "Force a strict format",
+       "minutes": 8,
+       "path": "fde/08-prompt-engineering-basics/06-force-a-strict-format.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: prompting basics",
+       "minutes": 3,
+       "path": "fde/08-prompt-engineering-basics/07-quick-check-prompting-basics.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 9,
+     "dir": "fde/09-prompts-in-production",
+     "phase": "prompting",
+     "title": "Prompts in production",
+     "summary": "System prompts as a product surface, versioning prompts, and surviving model updates.",
+     "minutes": 40,
+     "counts": {
+      "lessons": 3,
+      "tasks": 2,
+      "quizzes": 2,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "The system prompt is a product surface",
+       "minutes": 5,
+       "path": "fde/09-prompts-in-production/01-the-system-prompt-is-a-product-surface.md"
+      },
+      {
+       "type": "task",
+       "title": "Write a support bot system prompt",
+       "minutes": 9,
+       "path": "fde/09-prompts-in-production/02-write-a-support-bot-system-prompt.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Prompt versioning",
+       "minutes": 5,
+       "path": "fde/09-prompts-in-production/03-prompt-versioning.md"
+      },
+      {
+       "type": "task",
+       "title": "Version prompts in files",
+       "minutes": 9,
+       "path": "fde/09-prompts-in-production/04-version-prompts-in-files.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Surviving model updates",
+       "minutes": 5,
+       "path": "fde/09-prompts-in-production/05-surviving-model-updates.md"
+      },
+      {
+       "type": "scenario",
+       "title": "The provider deprecates your pilot's model",
+       "minutes": 3,
+       "path": "fde/09-prompts-in-production/06-the-provider-deprecates-your-pilots-model.md",
+       "questions": 3
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: prompts in production",
+       "minutes": 4,
+       "path": "fde/09-prompts-in-production/07-quick-check-prompts-in-production.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 10,
+     "dir": "fde/10-structured-output",
+     "phase": "prompting",
+     "title": "Structured output",
+     "summary": "Why free text breaks pipelines, how to get reliable JSON, and how to validate and retry.",
+     "minutes": 40,
+     "counts": {
+      "lessons": 3,
+      "tasks": 3,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Why free text breaks pipelines",
+       "minutes": 5,
+       "path": "fde/10-structured-output/01-why-free-text-breaks-pipelines.md"
+      },
+      {
+       "type": "task",
+       "title": "Parse a model reply and watch it fail",
+       "minutes": 7,
+       "path": "fde/10-structured-output/02-parse-a-model-reply-and-watch-it-fail.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Asking for JSON reliably",
+       "minutes": 5,
+       "path": "fde/10-structured-output/03-asking-for-json-reliably.md"
+      },
+      {
+       "type": "task",
+       "title": "Extract ticket fields into valid JSON",
+       "minutes": 7,
+       "path": "fde/10-structured-output/04-extract-ticket-fields-into-valid-json.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Validating and retrying",
+       "minutes": 5,
+       "path": "fde/10-structured-output/05-validating-and-retrying.md"
+      },
+      {
+       "type": "task",
+       "title": "Add schema validation and a retry loop",
+       "minutes": 8,
+       "path": "fde/10-structured-output/06-add-schema-validation-and-a-retry-loop.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: structured output",
+       "minutes": 3,
+       "path": "fde/10-structured-output/07-quick-check-structured-output.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 11,
+     "dir": "fde/11-tool-calling",
+     "phase": "tools",
+     "title": "Tool calling",
+     "summary": "What tool calling is, how to define a tool, and how to run the full tool loop.",
+     "minutes": 40,
+     "counts": {
+      "lessons": 3,
+      "tasks": 3,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "What tool calling is",
+       "minutes": 5,
+       "path": "fde/11-tool-calling/01-what-tool-calling-is.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Defining a tool: name, parameters, description",
+       "minutes": 5,
+       "path": "fde/11-tool-calling/02-defining-a-tool-name-parameters-description.md"
+      },
+      {
+       "type": "task",
+       "title": "Define a weather lookup tool",
+       "minutes": 7,
+       "path": "fde/11-tool-calling/03-define-a-weather-lookup-tool.md"
+      },
+      {
+       "type": "lesson",
+       "title": "The tool loop: call, execute, return",
+       "minutes": 5,
+       "path": "fde/11-tool-calling/04-the-tool-loop-call-execute-return.md"
+      },
+      {
+       "type": "task",
+       "title": "Run the full tool loop in Python",
+       "minutes": 7,
+       "path": "fde/11-tool-calling/05-run-the-full-tool-loop-in-python.md"
+      },
+      {
+       "type": "task",
+       "title": "Two tools, the model picks the right one",
+       "minutes": 8,
+       "path": "fde/11-tool-calling/06-two-tools-the-model-picks-the-right-one.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: tool calling",
+       "minutes": 3,
+       "path": "fde/11-tool-calling/07-quick-check-tool-calling.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 12,
+     "dir": "fde/12-conversation-state",
+     "phase": "tools",
+     "title": "Conversation state",
+     "summary": "Models remember nothing between calls - keeping, trimming, and summarizing chat history is your job.",
+     "minutes": 40,
+     "counts": {
+      "lessons": 3,
+      "tasks": 3,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Models remember nothing",
+       "minutes": 5,
+       "path": "fde/12-conversation-state/01-models-remember-nothing.md"
+      },
+      {
+       "type": "task",
+       "title": "Prove it: two calls, the model forgets",
+       "minutes": 7,
+       "path": "fde/12-conversation-state/02-prove-it-two-calls-the-model-forgets.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Keeping history in the messages list",
+       "minutes": 5,
+       "path": "fde/12-conversation-state/03-keeping-history-in-the-messages-list.md"
+      },
+      {
+       "type": "task",
+       "title": "Build a multi-turn chat loop",
+       "minutes": 7,
+       "path": "fde/12-conversation-state/04-build-a-multi-turn-chat-loop.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Trimming and summarizing old turns",
+       "minutes": 5,
+       "path": "fde/12-conversation-state/05-trimming-and-summarizing-old-turns.md"
+      },
+      {
+       "type": "task",
+       "title": "Cap the history and summarize what gets dropped",
+       "minutes": 8,
+       "path": "fde/12-conversation-state/06-cap-the-history-and-summarize-what-gets-dropped.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: conversation state",
+       "minutes": 3,
+       "path": "fde/12-conversation-state/07-quick-check-conversation-state.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 13,
+     "dir": "fde/13-embeddings",
+     "phase": "retrieval",
+     "title": "Embeddings",
+     "summary": "Meaning turned into numbers, and how similarity search works.",
+     "minutes": 30,
+     "counts": {
+      "lessons": 2,
+      "tasks": 2,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Meaning as numbers",
+       "minutes": 5,
+       "path": "fde/13-embeddings/01-meaning-as-numbers.md"
+      },
+      {
+       "type": "task",
+       "title": "Embed two sentences and compare them",
+       "minutes": 8,
+       "path": "fde/13-embeddings/02-embed-two-sentences-and-compare-them.md"
+      },
+      {
+       "type": "lesson",
+       "title": "The similarity search idea",
+       "minutes": 5,
+       "path": "fde/13-embeddings/03-the-similarity-search-idea.md"
+      },
+      {
+       "type": "task",
+       "title": "Find the nearest sentence among ten",
+       "minutes": 8,
+       "path": "fde/13-embeddings/04-find-the-nearest-sentence-among-ten.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: embeddings",
+       "minutes": 4,
+       "path": "fde/13-embeddings/05-quick-check-embeddings.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 14,
+     "dir": "fde/14-vector-search",
+     "phase": "retrieval",
+     "title": "Vector search",
+     "summary": "Storing vectors, querying top-k, and why similar is not always relevant.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 3,
+      "tasks": 2,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Vector store basics",
+       "minutes": 5,
+       "path": "fde/14-vector-search/01-vector-store-basics.md"
+      },
+      {
+       "type": "task",
+       "title": "Build a tiny vector store in a JSON file",
+       "minutes": 8,
+       "path": "fde/14-vector-search/02-build-a-tiny-vector-store-in-a-json-file.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Top-k queries",
+       "minutes": 5,
+       "path": "fde/14-vector-search/03-top-k-queries.md"
+      },
+      {
+       "type": "task",
+       "title": "Query the store and inspect the top-k",
+       "minutes": 8,
+       "path": "fde/14-vector-search/04-query-the-store-and-inspect-the-top-k.md"
+      },
+      {
+       "type": "lesson",
+       "title": "When similar is not relevant",
+       "minutes": 5,
+       "path": "fde/14-vector-search/05-when-similar-is-not-relevant.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: vector search",
+       "minutes": 4,
+       "path": "fde/14-vector-search/06-quick-check-vector-search.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 15,
+     "dir": "fde/15-the-rag-pipeline",
+     "phase": "retrieval",
+     "title": "The RAG pipeline",
+     "summary": "Retrieve then generate: the full pipeline in one script, and where each stage fails.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 2,
+      "tasks": 2,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Retrieve, then generate",
+       "minutes": 6,
+       "path": "fde/15-the-rag-pipeline/01-retrieve-then-generate.md"
+      },
+      {
+       "type": "task",
+       "title": "Hand-build a minimal RAG script",
+       "minutes": 9,
+       "path": "fde/15-the-rag-pipeline/02-hand-build-a-minimal-rag-script.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Where each stage fails",
+       "minutes": 6,
+       "path": "fde/15-the-rag-pipeline/03-where-each-stage-fails.md"
+      },
+      {
+       "type": "task",
+       "title": "Break retrieval and watch the answer degrade",
+       "minutes": 10,
+       "path": "fde/15-the-rag-pipeline/04-break-retrieval-and-watch-the-answer-degrade.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: the RAG pipeline",
+       "minutes": 4,
+       "path": "fde/15-the-rag-pipeline/05-quick-check-the-rag-pipeline.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 16,
+     "dir": "fde/16-chunking-enterprise-documents",
+     "phase": "retrieval",
+     "title": "Chunking enterprise documents",
+     "summary": "Why documents get cut, chunk size trade-offs, and handling messy real-world formats.",
+     "minutes": 45,
+     "counts": {
+      "lessons": 3,
+      "tasks": 3,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Why documents get cut",
+       "minutes": 5,
+       "path": "fde/16-chunking-enterprise-documents/01-why-documents-get-cut.md"
+      },
+      {
+       "type": "task",
+       "title": "Chunk a policy document by sections",
+       "minutes": 9,
+       "path": "fde/16-chunking-enterprise-documents/02-chunk-a-policy-document-by-sections.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Chunk size trade-offs",
+       "minutes": 5,
+       "path": "fde/16-chunking-enterprise-documents/03-chunk-size-trade-offs.md"
+      },
+      {
+       "type": "task",
+       "title": "Compare small vs large chunks on one question",
+       "minutes": 9,
+       "path": "fde/16-chunking-enterprise-documents/04-compare-small-vs-large-chunks-on-one-question.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Messy formats: PDF exports, wiki dumps, tables",
+       "minutes": 5,
+       "path": "fde/16-chunking-enterprise-documents/05-messy-formats-pdf-exports-wiki-dumps-tables.md"
+      },
+      {
+       "type": "task",
+       "title": "Clean and chunk an ugly export",
+       "minutes": 9,
+       "path": "fde/16-chunking-enterprise-documents/06-clean-and-chunk-an-ugly-export.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: chunking enterprise documents",
+       "minutes": 3,
+       "path": "fde/16-chunking-enterprise-documents/07-quick-check-chunking-enterprise-documents.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 17,
+     "dir": "fde/17-retrieval-quality",
+     "phase": "retrieval",
+     "title": "Retrieval quality",
+     "summary": "When top-k misses, hybrid search, and reranking with the model.",
+     "minutes": 45,
+     "counts": {
+      "lessons": 3,
+      "tasks": 3,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "When top-k misses: vocabulary mismatch",
+       "minutes": 5,
+       "path": "fde/17-retrieval-quality/01-when-top-k-misses-vocabulary-mismatch.md"
+      },
+      {
+       "type": "task",
+       "title": "Reproduce a keyword miss",
+       "minutes": 9,
+       "path": "fde/17-retrieval-quality/02-reproduce-a-keyword-miss.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Hybrid search: keyword plus vector",
+       "minutes": 5,
+       "path": "fde/17-retrieval-quality/03-hybrid-search-keyword-plus-vector.md"
+      },
+      {
+       "type": "task",
+       "title": "Add a keyword fallback and fix the miss",
+       "minutes": 9,
+       "path": "fde/17-retrieval-quality/04-add-a-keyword-fallback-and-fix-the-miss.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Reranking",
+       "minutes": 5,
+       "path": "fde/17-retrieval-quality/05-reranking.md"
+      },
+      {
+       "type": "task",
+       "title": "Rerank candidates with the model",
+       "minutes": 9,
+       "path": "fde/17-retrieval-quality/06-rerank-candidates-with-the-model.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: retrieval quality",
+       "minutes": 3,
+       "path": "fde/17-retrieval-quality/07-quick-check-retrieval-quality.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 18,
+     "dir": "fde/18-citations-and-grounding",
+     "phase": "retrieval",
+     "title": "Citations and grounding",
+     "summary": "Answering only from sources and showing which source each answer came from.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 2,
+      "tasks": 2,
+      "quizzes": 2,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Answer only from the sources",
+       "minutes": 5,
+       "path": "fde/18-citations-and-grounding/01-answer-only-from-the-sources.md"
+      },
+      {
+       "type": "task",
+       "title": "A prompt that refuses off-source answers",
+       "minutes": 9,
+       "path": "fde/18-citations-and-grounding/02-a-prompt-that-refuses-off-source-answers.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Showing citations",
+       "minutes": 5,
+       "path": "fde/18-citations-and-grounding/03-showing-citations.md"
+      },
+      {
+       "type": "task",
+       "title": "Return the answer with source chunk ids",
+       "minutes": 9,
+       "path": "fde/18-citations-and-grounding/04-return-the-answer-with-source-chunk-ids.md"
+      },
+      {
+       "type": "scenario",
+       "title": "The legal team asks how to trust the answers",
+       "minutes": 3,
+       "path": "fde/18-citations-and-grounding/05-the-legal-team-asks-how-to-trust-the-answers.md",
+       "questions": 3
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: citations and grounding",
+       "minutes": 4,
+       "path": "fde/18-citations-and-grounding/06-quick-check-citations-and-grounding.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 19,
+     "dir": "fde/19-permissions-aware-retrieval",
+     "phase": "retrieval",
+     "title": "Permissions-aware retrieval",
+     "summary": "Search ignores permissions unless you make it care - reproduce the leak, then close it.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 2,
+      "tasks": 2,
+      "quizzes": 2,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "The leak: search ignores permissions",
+       "minutes": 5,
+       "path": "fde/19-permissions-aware-retrieval/01-the-leak-search-ignores-permissions.md"
+      },
+      {
+       "type": "task",
+       "title": "Reproduce a cross-user leak in a toy index",
+       "minutes": 9,
+       "path": "fde/19-permissions-aware-retrieval/02-reproduce-a-cross-user-leak-in-a-toy-index.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Filtering by access at query time",
+       "minutes": 5,
+       "path": "fde/19-permissions-aware-retrieval/03-filtering-by-access-at-query-time.md"
+      },
+      {
+       "type": "task",
+       "title": "Add user filtering and prove the leak is closed",
+       "minutes": 9,
+       "path": "fde/19-permissions-aware-retrieval/04-add-user-filtering-and-prove-the-leak-is-closed.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Just index everything, we will sort permissions later",
+       "minutes": 3,
+       "path": "fde/19-permissions-aware-retrieval/05-just-index-everything-we-will-sort-permissions-later.md",
+       "questions": 3
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: permissions-aware retrieval",
+       "minutes": 4,
+       "path": "fde/19-permissions-aware-retrieval/06-quick-check-permissions-aware-retrieval.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 20,
+     "dir": "fde/20-agents",
+     "phase": "integrations",
+     "title": "Agents",
+     "summary": "An agent is an LLM in a loop with tools - and when a simple chain is the better choice.",
+     "minutes": 30,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 2,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "An agent is an LLM in a loop with tools",
+       "minutes": 6,
+       "path": "fde/20-agents/01-an-agent-is-an-llm-in-a-loop-with-tools.md"
+      },
+      {
+       "type": "task",
+       "title": "Turn the tool loop into a multi-turn agent",
+       "minutes": 10,
+       "path": "fde/20-agents/02-turn-the-tool-loop-into-a-multi-turn-agent.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Agent vs simple chain",
+       "minutes": 6,
+       "path": "fde/20-agents/03-agent-vs-simple-chain.md"
+      },
+      {
+       "type": "scenario",
+       "title": "The customer wants an agent for a lookup task",
+       "minutes": 4,
+       "path": "fde/20-agents/04-the-customer-wants-an-agent-for-a-lookup-task.md",
+       "questions": 3
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: agents",
+       "minutes": 4,
+       "path": "fde/20-agents/05-quick-check-agents.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 21,
+     "dir": "fde/21-multi-step-agents",
+     "phase": "integrations",
+     "title": "Multi-step agents",
+     "summary": "Planning across steps, recovering from tool failures, and stopping runaway loops.",
+     "minutes": 40,
+     "counts": {
+      "lessons": 3,
+      "tasks": 3,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Planning multi-step work",
+       "minutes": 5,
+       "path": "fde/21-multi-step-agents/01-planning-multi-step-work.md"
+      },
+      {
+       "type": "task",
+       "title": "An agent that must chain two tool calls",
+       "minutes": 7,
+       "path": "fde/21-multi-step-agents/02-an-agent-that-must-chain-two-tool-calls.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Failure handling and retries",
+       "minutes": 5,
+       "path": "fde/21-multi-step-agents/03-failure-handling-and-retries.md"
+      },
+      {
+       "type": "task",
+       "title": "Make a tool fail and let the agent recover",
+       "minutes": 7,
+       "path": "fde/21-multi-step-agents/04-make-a-tool-fail-and-let-the-agent-recover.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Stopping conditions and runaway loops",
+       "minutes": 5,
+       "path": "fde/21-multi-step-agents/05-stopping-conditions-and-runaway-loops.md"
+      },
+      {
+       "type": "task",
+       "title": "Add a max-steps guard",
+       "minutes": 8,
+       "path": "fde/21-multi-step-agents/06-add-a-max-steps-guard.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: multi-step agents",
+       "minutes": 3,
+       "path": "fde/21-multi-step-agents/07-quick-check-multi-step-agents.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 22,
+     "dir": "fde/22-mcp",
+     "phase": "integrations",
+     "title": "MCP",
+     "summary": "The Model Context Protocol: build a small server, register it with a client, and watch the model call your tool.",
+     "minutes": 40,
+     "counts": {
+      "lessons": 3,
+      "tasks": 2,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "What MCP is and why a standard matters",
+       "minutes": 6,
+       "path": "fde/22-mcp/01-what-mcp-is-and-why-a-standard-matters.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Servers, tools, and the client",
+       "minutes": 6,
+       "path": "fde/22-mcp/02-servers-tools-and-the-client.md"
+      },
+      {
+       "type": "task",
+       "title": "Build a small MCP server with one tool",
+       "minutes": 9,
+       "path": "fde/22-mcp/03-build-a-small-mcp-server-with-one-tool.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Registering a server with a client",
+       "minutes": 6,
+       "path": "fde/22-mcp/04-registering-a-server-with-a-client.md"
+      },
+      {
+       "type": "task",
+       "title": "Register your server and call the tool through claude",
+       "minutes": 9,
+       "path": "fde/22-mcp/05-register-your-server-and-call-the-tool-through-claude.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: MCP",
+       "minutes": 4,
+       "path": "fde/22-mcp/06-quick-check-mcp.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 23,
+     "dir": "fde/23-connecting-to-customer-apis",
+     "phase": "integrations",
+     "title": "Connecting to customer APIs",
+     "summary": "Wrapping REST endpoints as tools and handling authentication the right way.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 2,
+      "tasks": 2,
+      "quizzes": 2,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Wrapping a REST endpoint as a tool",
+       "minutes": 5,
+       "path": "fde/23-connecting-to-customer-apis/01-wrapping-a-rest-endpoint-as-a-tool.md"
+      },
+      {
+       "type": "task",
+       "title": "Wrap a local mock API as a tool",
+       "minutes": 9,
+       "path": "fde/23-connecting-to-customer-apis/02-wrap-a-local-mock-api-as-a-tool.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Auth: keys, tokens, and whose credentials",
+       "minutes": 5,
+       "path": "fde/23-connecting-to-customer-apis/03-auth-keys-tokens-and-whose-credentials.md"
+      },
+      {
+       "type": "task",
+       "title": "Add token auth to the tool wrapper",
+       "minutes": 9,
+       "path": "fde/23-connecting-to-customer-apis/04-add-token-auth-to-the-tool-wrapper.md"
+      },
+      {
+       "type": "scenario",
+       "title": "The customer offers their admin API key",
+       "minutes": 3,
+       "path": "fde/23-connecting-to-customer-apis/05-the-customer-offers-their-admin-api-key.md",
+       "questions": 3
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: customer APIs",
+       "minutes": 4,
+       "path": "fde/23-connecting-to-customer-apis/06-quick-check-customer-apis.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 24,
+     "dir": "fde/24-getting-data-out-of-customer-systems",
+     "phase": "integrations",
+     "title": "Getting data out of customer systems",
+     "summary": "Where enterprise data lives, exports versus sync, and keeping an index fresh.",
+     "minutes": 40,
+     "counts": {
+      "lessons": 3,
+      "tasks": 3,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Where enterprise data actually lives",
+       "minutes": 5,
+       "path": "fde/24-getting-data-out-of-customer-systems/01-where-enterprise-data-actually-lives.md"
+      },
+      {
+       "type": "lesson",
+       "title": "One-time export vs continuous sync",
+       "minutes": 5,
+       "path": "fde/24-getting-data-out-of-customer-systems/02-one-time-export-vs-continuous-sync.md"
+      },
+      {
+       "type": "task",
+       "title": "Ingest a CSV export into the index",
+       "minutes": 7,
+       "path": "fde/24-getting-data-out-of-customer-systems/03-ingest-a-csv-export-into-the-index.md"
+      },
+      {
+       "type": "task",
+       "title": "Ingest from a SQLite database",
+       "minutes": 7,
+       "path": "fde/24-getting-data-out-of-customer-systems/04-ingest-from-a-sqlite-database.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Data freshness and re-indexing",
+       "minutes": 5,
+       "path": "fde/24-getting-data-out-of-customer-systems/05-data-freshness-and-re-indexing.md"
+      },
+      {
+       "type": "task",
+       "title": "Update the index after the source changes",
+       "minutes": 8,
+       "path": "fde/24-getting-data-out-of-customer-systems/06-update-the-index-after-the-source-changes.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: data connectors",
+       "minutes": 3,
+       "path": "fde/24-getting-data-out-of-customer-systems/07-quick-check-data-connectors.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 25,
+     "dir": "fde/25-why-evals",
+     "phase": "evals",
+     "title": "Why evals",
+     "summary": "It feels good is not evidence - evals are your contract with the customer.",
+     "minutes": 25,
+     "counts": {
+      "lessons": 2,
+      "tasks": 0,
+      "quizzes": 3,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "It feels good is not evidence",
+       "minutes": 6,
+       "path": "fde/25-why-evals/01-it-feels-good-is-not-evidence.md"
+      },
+      {
+       "type": "scenario",
+       "title": "An exec tries three prompts and declares success",
+       "minutes": 4,
+       "path": "fde/25-why-evals/02-an-exec-tries-three-prompts-and-declares-success.md",
+       "questions": 3
+      },
+      {
+       "type": "lesson",
+       "title": "Evals as the contract with the customer",
+       "minutes": 7,
+       "path": "fde/25-why-evals/03-evals-as-the-contract-with-the-customer.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Whose job is grading",
+       "minutes": 4,
+       "path": "fde/25-why-evals/04-whose-job-is-grading.md",
+       "questions": 3
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: why evals",
+       "minutes": 4,
+       "path": "fde/25-why-evals/05-quick-check-why-evals.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 26,
+     "dir": "fde/26-golden-datasets",
+     "phase": "evals",
+     "title": "Golden datasets",
+     "summary": "Building a golden dataset from real customer questions, with the right coverage.",
+     "minutes": 40,
+     "counts": {
+      "lessons": 3,
+      "tasks": 3,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "What a golden dataset is",
+       "minutes": 5,
+       "path": "fde/26-golden-datasets/01-what-a-golden-dataset-is.md"
+      },
+      {
+       "type": "task",
+       "title": "Write ten question-answer pairs from the docs",
+       "minutes": 7,
+       "path": "fde/26-golden-datasets/02-write-ten-question-answer-pairs-from-the-docs.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Sourcing real questions",
+       "minutes": 5,
+       "path": "fde/26-golden-datasets/03-sourcing-real-questions.md"
+      },
+      {
+       "type": "task",
+       "title": "Mine questions from a ticket dump",
+       "minutes": 7,
+       "path": "fde/26-golden-datasets/04-mine-questions-from-a-ticket-dump.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Coverage: easy, hard, and out of scope",
+       "minutes": 5,
+       "path": "fde/26-golden-datasets/05-coverage-easy-hard-and-out-of-scope.md"
+      },
+      {
+       "type": "task",
+       "title": "Add trap questions the bot must refuse",
+       "minutes": 8,
+       "path": "fde/26-golden-datasets/06-add-trap-questions-the-bot-must-refuse.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: golden datasets",
+       "minutes": 3,
+       "path": "fde/26-golden-datasets/07-quick-check-golden-datasets.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 27,
+     "dir": "fde/27-llm-as-judge",
+     "phase": "evals",
+     "title": "LLM as judge",
+     "summary": "Grading answers with a model, and the pitfalls that make judges grade wrong.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 2,
+      "tasks": 2,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Grading answers with a model",
+       "minutes": 6,
+       "path": "fde/27-llm-as-judge/01-grading-answers-with-a-model.md"
+      },
+      {
+       "type": "task",
+       "title": "Judge one answer pass or fail with a rubric",
+       "minutes": 9,
+       "path": "fde/27-llm-as-judge/02-judge-one-answer-pass-or-fail-with-a-rubric.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Judge pitfalls",
+       "minutes": 6,
+       "path": "fde/27-llm-as-judge/03-judge-pitfalls.md"
+      },
+      {
+       "type": "task",
+       "title": "Catch the judge grading wrong and fix the rubric",
+       "minutes": 10,
+       "path": "fde/27-llm-as-judge/04-catch-the-judge-grading-wrong-and-fix-the-rubric.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: LLM as judge",
+       "minutes": 4,
+       "path": "fde/27-llm-as-judge/05-quick-check-llm-as-judge.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 28,
+     "dir": "fde/28-prompt-regression-testing",
+     "phase": "evals",
+     "title": "Prompt regression testing",
+     "summary": "Change a prompt, prove nothing broke - eval runs, thresholds, and gating.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 2,
+      "tasks": 2,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Change a prompt, prove nothing broke",
+       "minutes": 6,
+       "path": "fde/28-prompt-regression-testing/01-change-a-prompt-prove-nothing-broke.md"
+      },
+      {
+       "type": "task",
+       "title": "Run the eval suite before and after a change",
+       "minutes": 9,
+       "path": "fde/28-prompt-regression-testing/02-run-the-eval-suite-before-and-after-a-change.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Thresholds and gating",
+       "minutes": 6,
+       "path": "fde/28-prompt-regression-testing/03-thresholds-and-gating.md"
+      },
+      {
+       "type": "task",
+       "title": "A script that fails when the score drops",
+       "minutes": 10,
+       "path": "fde/28-prompt-regression-testing/04-a-script-that-fails-when-the-score-drops.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: prompt regression testing",
+       "minutes": 4,
+       "path": "fde/28-prompt-regression-testing/05-quick-check-prompt-regression-testing.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 29,
+     "dir": "fde/29-measuring-rag-quality",
+     "phase": "evals",
+     "title": "Measuring RAG quality",
+     "summary": "Hit rate, faithfulness, and reading eval results with the customer.",
+     "minutes": 40,
+     "counts": {
+      "lessons": 3,
+      "tasks": 2,
+      "quizzes": 2,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Retrieval hit rate",
+       "minutes": 5,
+       "path": "fde/29-measuring-rag-quality/01-retrieval-hit-rate.md"
+      },
+      {
+       "type": "task",
+       "title": "Measure hit rate on the golden set",
+       "minutes": 9,
+       "path": "fde/29-measuring-rag-quality/02-measure-hit-rate-on-the-golden-set.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Faithfulness: the answer sticks to the sources",
+       "minutes": 5,
+       "path": "fde/29-measuring-rag-quality/03-faithfulness-the-answer-sticks-to-the-sources.md"
+      },
+      {
+       "type": "task",
+       "title": "Judge faithfulness with a rubric",
+       "minutes": 9,
+       "path": "fde/29-measuring-rag-quality/04-judge-faithfulness-with-a-rubric.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Reading eval results with a customer",
+       "minutes": 5,
+       "path": "fde/29-measuring-rag-quality/05-reading-eval-results-with-a-customer.md"
+      },
+      {
+       "type": "scenario",
+       "title": "The score is 78 percent - is that good?",
+       "minutes": 3,
+       "path": "fde/29-measuring-rag-quality/06-the-score-is-78-percent-is-that-good.md",
+       "questions": 3
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: measuring RAG quality",
+       "minutes": 4,
+       "path": "fde/29-measuring-rag-quality/07-quick-check-measuring-rag-quality.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 30,
+     "dir": "fde/30-the-fine-tuning-decision",
+     "phase": "evals",
+     "title": "The fine-tuning decision",
+     "summary": "What fine-tuning actually does, and when prompting or RAG is the better answer.",
+     "minutes": 30,
+     "counts": {
+      "lessons": 2,
+      "tasks": 0,
+      "quizzes": 3,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "What fine-tuning does and does not do",
+       "minutes": 7,
+       "path": "fde/30-the-fine-tuning-decision/01-what-fine-tuning-does-and-does-not-do.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Prompting vs RAG vs fine-tuning",
+       "minutes": 8,
+       "path": "fde/30-the-fine-tuning-decision/02-prompting-vs-rag-vs-fine-tuning.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Fine-tune on our data so it knows our company",
+       "minutes": 5,
+       "path": "fde/30-the-fine-tuning-decision/03-fine-tune-on-our-data-so-it-knows-our-company.md",
+       "questions": 3
+      },
+      {
+       "type": "scenario",
+       "title": "When fine-tuning is the right call",
+       "minutes": 5,
+       "path": "fde/30-the-fine-tuning-decision/04-when-fine-tuning-is-the-right-call.md",
+       "questions": 3
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: the fine-tuning decision",
+       "minutes": 5,
+       "path": "fde/30-the-fine-tuning-decision/05-quick-check-the-fine-tuning-decision.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 31,
+     "dir": "fde/31-guardrails",
+     "phase": "hardening",
+     "title": "Guardrails",
+     "summary": "Input filters, output filters, and prompt injection.",
+     "minutes": 45,
+     "counts": {
+      "lessons": 3,
+      "tasks": 3,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Input filters",
+       "minutes": 5,
+       "path": "fde/31-guardrails/01-input-filters.md"
+      },
+      {
+       "type": "task",
+       "title": "Block off-topic questions",
+       "minutes": 9,
+       "path": "fde/31-guardrails/02-block-off-topic-questions.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Output filters",
+       "minutes": 5,
+       "path": "fde/31-guardrails/03-output-filters.md"
+      },
+      {
+       "type": "task",
+       "title": "Catch policy-violating outputs",
+       "minutes": 9,
+       "path": "fde/31-guardrails/04-catch-policy-violating-outputs.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Prompt injection basics",
+       "minutes": 5,
+       "path": "fde/31-guardrails/05-prompt-injection-basics.md"
+      },
+      {
+       "type": "task",
+       "title": "Demonstrate and mitigate injection through a retrieved document",
+       "minutes": 9,
+       "path": "fde/31-guardrails/06-demonstrate-and-mitigate-injection-through-a-retrieved-docum.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: guardrails",
+       "minutes": 3,
+       "path": "fde/31-guardrails/07-quick-check-guardrails.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 32,
+     "dir": "fde/32-reducing-hallucinations",
+     "phase": "hardening",
+     "title": "Reducing hallucinations",
+     "summary": "Making I do not know a feature, and measuring how often the bot abstains correctly.",
+     "minutes": 30,
+     "counts": {
+      "lessons": 2,
+      "tasks": 2,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "I do not know is a feature",
+       "minutes": 5,
+       "path": "fde/32-reducing-hallucinations/01-i-do-not-know-is-a-feature.md"
+      },
+      {
+       "type": "task",
+       "title": "A prompt that abstains without sources",
+       "minutes": 8,
+       "path": "fde/32-reducing-hallucinations/02-a-prompt-that-abstains-without-sources.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Grounding and confidence signals",
+       "minutes": 5,
+       "path": "fde/32-reducing-hallucinations/03-grounding-and-confidence-signals.md"
+      },
+      {
+       "type": "task",
+       "title": "Measure the abstain rate on trap questions",
+       "minutes": 8,
+       "path": "fde/32-reducing-hallucinations/04-measure-the-abstain-rate-on-trap-questions.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: reducing hallucinations",
+       "minutes": 4,
+       "path": "fde/32-reducing-hallucinations/05-quick-check-reducing-hallucinations.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 33,
+     "dir": "fde/33-cost-control",
+     "phase": "hardening",
+     "title": "Cost control",
+     "summary": "Caching, routing easy questions to cheap models, and enforcing token budgets.",
+     "minutes": 40,
+     "counts": {
+      "lessons": 3,
+      "tasks": 3,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Caching repeated work",
+       "minutes": 5,
+       "path": "fde/33-cost-control/01-caching-repeated-work.md"
+      },
+      {
+       "type": "task",
+       "title": "Add a response cache and measure the savings",
+       "minutes": 7,
+       "path": "fde/33-cost-control/02-add-a-response-cache-and-measure-the-savings.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Model routing: cheap model first",
+       "minutes": 5,
+       "path": "fde/33-cost-control/03-model-routing-cheap-model-first.md"
+      },
+      {
+       "type": "task",
+       "title": "Route easy questions to the small model",
+       "minutes": 7,
+       "path": "fde/33-cost-control/04-route-easy-questions-to-the-small-model.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Token budgets",
+       "minutes": 5,
+       "path": "fde/33-cost-control/05-token-budgets.md"
+      },
+      {
+       "type": "task",
+       "title": "Enforce a daily budget in code",
+       "minutes": 8,
+       "path": "fde/33-cost-control/06-enforce-a-daily-budget-in-code.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: cost control",
+       "minutes": 3,
+       "path": "fde/33-cost-control/07-quick-check-cost-control.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 34,
+     "dir": "fde/34-latency-and-streaming",
+     "phase": "hardening",
+     "title": "Latency and streaming",
+     "summary": "Perceived versus real latency, streaming tokens, and timeouts with fallbacks.",
+     "minutes": 30,
+     "counts": {
+      "lessons": 2,
+      "tasks": 2,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Perceived vs real latency",
+       "minutes": 5,
+       "path": "fde/34-latency-and-streaming/01-perceived-vs-real-latency.md"
+      },
+      {
+       "type": "task",
+       "title": "Stream a response token by token",
+       "minutes": 8,
+       "path": "fde/34-latency-and-streaming/02-stream-a-response-token-by-token.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Timeouts and fallbacks",
+       "minutes": 5,
+       "path": "fde/34-latency-and-streaming/03-timeouts-and-fallbacks.md"
+      },
+      {
+       "type": "task",
+       "title": "Add a timeout and a fallback model",
+       "minutes": 8,
+       "path": "fde/34-latency-and-streaming/04-add-a-timeout-and-a-fallback-model.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: latency and streaming",
+       "minutes": 4,
+       "path": "fde/34-latency-and-streaming/05-quick-check-latency-and-streaming.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 35,
+     "dir": "fde/35-observability",
+     "phase": "hardening",
+     "title": "Observability",
+     "summary": "Logging every call, answering cost and usage questions from logs, and tracing bad answers.",
+     "minutes": 40,
+     "counts": {
+      "lessons": 3,
+      "tasks": 3,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Log every call",
+       "minutes": 5,
+       "path": "fde/35-observability/01-log-every-call.md"
+      },
+      {
+       "type": "task",
+       "title": "Add JSONL call logging",
+       "minutes": 7,
+       "path": "fde/35-observability/02-add-jsonl-call-logging.md"
+      },
+      {
+       "type": "lesson",
+       "title": "From logs to answers: usage, cost, failures",
+       "minutes": 5,
+       "path": "fde/35-observability/03-from-logs-to-answers-usage-cost-failures.md"
+      },
+      {
+       "type": "task",
+       "title": "Answer what yesterday cost from the logs",
+       "minutes": 7,
+       "path": "fde/35-observability/04-answer-what-yesterday-cost-from-the-logs.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Tracing a bad answer end to end",
+       "minutes": 5,
+       "path": "fde/35-observability/05-tracing-a-bad-answer-end-to-end.md"
+      },
+      {
+       "type": "task",
+       "title": "Find the root cause of one bad answer",
+       "minutes": 8,
+       "path": "fde/35-observability/06-find-the-root-cause-of-one-bad-answer.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: observability",
+       "minutes": 3,
+       "path": "fde/35-observability/07-quick-check-observability.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 36,
+     "dir": "fde/36-security-pii-and-deployment",
+     "phase": "hardening",
+     "title": "Security, PII, and deployment",
+     "summary": "What never leaves the customer, deployment models, and redacting PII before the model sees it.",
+     "minutes": 45,
+     "counts": {
+      "lessons": 3,
+      "tasks": 2,
+      "quizzes": 3,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "What must never leave the customer",
+       "minutes": 6,
+       "path": "fde/36-security-pii-and-deployment/01-what-must-never-leave-the-customer.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Deployment models: SaaS API, VPC, on-prem",
+       "minutes": 6,
+       "path": "fde/36-security-pii-and-deployment/02-deployment-models-saas-api-vpc-on-prem.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Does our data train the model?",
+       "minutes": 3,
+       "path": "fde/36-security-pii-and-deployment/03-does-our-data-train-the-model.md",
+       "questions": 3
+      },
+      {
+       "type": "lesson",
+       "title": "PII redaction before the model",
+       "minutes": 6,
+       "path": "fde/36-security-pii-and-deployment/04-pii-redaction-before-the-model.md"
+      },
+      {
+       "type": "task",
+       "title": "Redact PII from tickets before sending",
+       "minutes": 9,
+       "path": "fde/36-security-pii-and-deployment/05-redact-pii-from-tickets-before-sending.md"
+      },
+      {
+       "type": "task",
+       "title": "Prove the redaction with a check script",
+       "minutes": 9,
+       "path": "fde/36-security-pii-and-deployment/06-prove-the-redaction-with-a-check-script.md"
+      },
+      {
+       "type": "scenario",
+       "title": "The customer asks to log full prompts for debugging",
+       "minutes": 3,
+       "path": "fde/36-security-pii-and-deployment/07-the-customer-asks-to-log-full-prompts-for-debugging.md",
+       "questions": 3
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: security and PII",
+       "minutes": 3,
+       "path": "fde/36-security-pii-and-deployment/08-quick-check-security-and-pii.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 37,
+     "dir": "fde/37-discovery-and-scoping",
+     "phase": "engagement",
+     "title": "Discovery and scoping",
+     "summary": "Finding the high-value use case and saying no to the wrong ones.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 3,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Finding the high-value use case",
+       "minutes": 6,
+       "path": "fde/37-discovery-and-scoping/01-finding-the-high-value-use-case.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Pick from four proposed use cases",
+       "minutes": 4,
+       "path": "fde/37-discovery-and-scoping/02-pick-from-four-proposed-use-cases.md",
+       "questions": 3
+      },
+      {
+       "type": "lesson",
+       "title": "Saying no to bad fits",
+       "minutes": 6,
+       "path": "fde/37-discovery-and-scoping/03-saying-no-to-bad-fits.md"
+      },
+      {
+       "type": "scenario",
+       "title": "The CEO's pet use case is a bad fit",
+       "minutes": 4,
+       "path": "fde/37-discovery-and-scoping/04-the-ceos-pet-use-case-is-a-bad-fit.md",
+       "questions": 3
+      },
+      {
+       "type": "task",
+       "title": "Write a scoping document for a brief",
+       "minutes": 10,
+       "path": "fde/37-discovery-and-scoping/05-write-a-scoping-document-for-a-brief.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: discovery and scoping",
+       "minutes": 5,
+       "path": "fde/37-discovery-and-scoping/06-quick-check-discovery-and-scoping.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 38,
+     "dir": "fde/38-rapid-prototyping",
+     "phase": "engagement",
+     "title": "Rapid prototyping",
+     "summary": "A proof of concept in days: what to cut, what to keep, and what never to promise.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 1,
+      "tasks": 1,
+      "quizzes": 3,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "A proof of concept in days",
+       "minutes": 8,
+       "path": "fde/38-rapid-prototyping/01-a-proof-of-concept-in-days.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Which corners are safe to cut",
+       "minutes": 5,
+       "path": "fde/38-rapid-prototyping/02-which-corners-are-safe-to-cut.md",
+       "questions": 3
+      },
+      {
+       "type": "task",
+       "title": "Build a minimal proof of concept from a brief",
+       "minutes": 12,
+       "path": "fde/38-rapid-prototyping/03-build-a-minimal-proof-of-concept-from-a-brief.md"
+      },
+      {
+       "type": "scenario",
+       "title": "The customer wants to ship the prototype as is",
+       "minutes": 5,
+       "path": "fde/38-rapid-prototyping/04-the-customer-wants-to-ship-the-prototype-as-is.md",
+       "questions": 3
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: rapid prototyping",
+       "minutes": 5,
+       "path": "fde/38-rapid-prototyping/05-quick-check-rapid-prototyping.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 39,
+     "dir": "fde/39-demos-and-expectations",
+     "phase": "engagement",
+     "title": "Demos and expectations",
+     "summary": "Demoing without overpromising and setting accuracy expectations customers can sign.",
+     "minutes": 30,
+     "counts": {
+      "lessons": 2,
+      "tasks": 0,
+      "quizzes": 3,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Demoing without overpromising",
+       "minutes": 7,
+       "path": "fde/39-demos-and-expectations/01-demoing-without-overpromising.md"
+      },
+      {
+       "type": "scenario",
+       "title": "The demo hallucinates in front of the exec",
+       "minutes": 5,
+       "path": "fde/39-demos-and-expectations/02-the-demo-hallucinates-in-front-of-the-exec.md",
+       "questions": 3
+      },
+      {
+       "type": "lesson",
+       "title": "Setting accuracy expectations",
+       "minutes": 8,
+       "path": "fde/39-demos-and-expectations/03-setting-accuracy-expectations.md"
+      },
+      {
+       "type": "scenario",
+       "title": "The customer demands 100 percent accuracy in the contract",
+       "minutes": 5,
+       "path": "fde/39-demos-and-expectations/04-the-customer-demands-100-percent-accuracy-in-the-contract.md",
+       "questions": 3
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: demos and expectations",
+       "minutes": 5,
+       "path": "fde/39-demos-and-expectations/05-quick-check-demos-and-expectations.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 40,
+     "dir": "fde/40-running-a-pilot",
+     "phase": "engagement",
+     "title": "Running a pilot",
+     "summary": "Defining success upfront, feedback loops, human-in-the-loop, and knowing when to call it.",
+     "minutes": 45,
+     "counts": {
+      "lessons": 3,
+      "tasks": 2,
+      "quizzes": 3,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Defining pilot success upfront",
+       "minutes": 6,
+       "path": "fde/40-running-a-pilot/01-defining-pilot-success-upfront.md"
+      },
+      {
+       "type": "task",
+       "title": "Write a pilot success criteria file",
+       "minutes": 9,
+       "path": "fde/40-running-a-pilot/02-write-a-pilot-success-criteria-file.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Feedback loops during the pilot",
+       "minutes": 6,
+       "path": "fde/40-running-a-pilot/03-feedback-loops-during-the-pilot.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Human-in-the-loop and feedback signals",
+       "minutes": 6,
+       "path": "fde/40-running-a-pilot/04-human-in-the-loop-and-feedback-signals.md"
+      },
+      {
+       "type": "task",
+       "title": "Capture thumbs-down and add an escalation rule",
+       "minutes": 9,
+       "path": "fde/40-running-a-pilot/05-capture-thumbs-down-and-add-an-escalation-rule.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Usage is high, satisfaction is low",
+       "minutes": 3,
+       "path": "fde/40-running-a-pilot/06-usage-is-high-satisfaction-is-low.md",
+       "questions": 3
+      },
+      {
+       "type": "scenario",
+       "title": "When to call a pilot failed",
+       "minutes": 3,
+       "path": "fde/40-running-a-pilot/07-when-to-call-a-pilot-failed.md",
+       "questions": 3
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: running a pilot",
+       "minutes": 3,
+       "path": "fde/40-running-a-pilot/08-quick-check-running-a-pilot.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 41,
+     "dir": "fde/41-production-rollout-and-handoff",
+     "phase": "engagement",
+     "title": "Production rollout and handoff",
+     "summary": "Exit criteria, training the customer team, and leaving a system that survives without you.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 2,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Exit criteria: what handoff requires",
+       "minutes": 7,
+       "path": "fde/41-production-rollout-and-handoff/01-exit-criteria-what-handoff-requires.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Training the customer team",
+       "minutes": 7,
+       "path": "fde/41-production-rollout-and-handoff/02-training-the-customer-team.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Nobody owns it after you leave",
+       "minutes": 4,
+       "path": "fde/41-production-rollout-and-handoff/03-nobody-owns-it-after-you-leave.md",
+       "questions": 3
+      },
+      {
+       "type": "task",
+       "title": "Write a handoff runbook",
+       "minutes": 12,
+       "path": "fde/41-production-rollout-and-handoff/04-write-a-handoff-runbook.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: production handoff",
+       "minutes": 5,
+       "path": "fde/41-production-rollout-and-handoff/05-quick-check-production-handoff.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 42,
+     "dir": "fde/42-project-internal-docs-qa-bot",
+     "phase": "capstones",
+     "title": "Project: Internal docs Q&A bot",
+     "summary": "Capstone. Chunk and index a fictional company's messy handbook, then build a RAG bot that answers with citations and refuses off-source questions.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 0,
+      "tasks": 1,
+      "quizzes": 0,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "task",
+       "title": "Build the internal docs Q&A bot",
+       "minutes": 60,
+       "path": "fde/42-project-internal-docs-qa-bot/01-build-the-internal-docs-q-a-bot.md"
+      }
+     ]
+    },
+    {
+     "n": 43,
+     "dir": "fde/43-project-support-assistant-with-evals",
+     "phase": "capstones",
+     "title": "Project: Support assistant with evals",
+     "summary": "Capstone. Build a tool-calling support assistant over a mock customer API and ticket data, then prove it works with a golden dataset and an eval run.",
+     "minutes": 75,
+     "counts": {
+      "lessons": 0,
+      "tasks": 1,
+      "quizzes": 0,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "task",
+       "title": "Build the support assistant and prove it with evals",
+       "minutes": 75,
+       "path": "fde/43-project-support-assistant-with-evals/01-build-the-support-assistant-and-prove-it-with-evals.md"
+      }
+     ]
+    },
+    {
+     "n": 44,
+     "dir": "fde/44-project-full-engagement-simulation",
+     "phase": "capstones",
+     "title": "Project: Full engagement simulation",
+     "summary": "Capstone. A complete engagement: scope the use case, build the assistant, run the evals, estimate the cost, and write the handoff runbook.",
+     "minutes": 90,
+     "counts": {
+      "lessons": 0,
+      "tasks": 1,
+      "quizzes": 0,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "task",
+       "title": "Run a full engagement end to end",
+       "minutes": 90,
+       "path": "fde/44-project-full-engagement-simulation/01-run-a-full-engagement-end-to-end.md"
+      }
+     ]
+    }
+   ]
   }
  ],
  "coming_soon": []

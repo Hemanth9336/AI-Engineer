@@ -13,6 +13,10 @@ model_list:
     litellm_params: {model: anthropic/claude-opus-4-1, api_key: os.environ/ANTHROPIC_API_KEY}
   - model_name: lab-open
     litellm_params: {model: anthropic/claude-haiku-4-5, api_key: os.environ/ANTHROPIC_API_KEY}
+  # lab-tiny: lab-mini with a deliberately small 2,048-token input window (FDE skill, context-limit task)
+  - model_name: lab-tiny
+    litellm_params: {model: anthropic/claude-haiku-4-5, api_key: os.environ/ANTHROPIC_API_KEY}
+    model_info: {max_input_tokens: 2048}
   # lab-embed: the local embedding service installed by the RAG skill (free, same for every profile)
   - model_name: lab-embed
     litellm_params: {model: openai/all-minilm-l6-v2, api_base: "http://127.0.0.1:4001/v1", api_key: local}
@@ -21,6 +25,9 @@ litellm_settings:
   callbacks: ailab_logger.proxy_handler_instance
   drop_params: true
   request_timeout: 300
+
+router_settings:
+  enable_pre_call_checks: true
 
 general_settings:
   master_key: os.environ/LAB_AI_KEY

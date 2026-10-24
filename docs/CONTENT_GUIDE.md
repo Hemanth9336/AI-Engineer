@@ -46,6 +46,19 @@ Everything above applies, plus the tools from `setup/rag/install-tools.sh` (`scr
 - **Checkers** embed with `lab-embed` themselves, import the learner's module or run the script on unseen questions, compare rankings and scores (tolerance 0.001-0.01), count embedding and chat calls in the log (`api`, `inputs`), and check that re-indexing is idempotent. They never depend on reply wording beyond a distinctive fact (`35 days`, `7070`).
 - Topics 14-16 are projects; topic 01 uses `claude -p`.
 
+## Practice machine conventions (AI Forward Deployed Engineer skill)
+
+Everything above applies, plus the tools from `setup/fde/install-tools.sh` (`scripts/fde_skill.py` holds titles and minutes). Topic 01 is the reference example for this skill.
+
+- **Story**: tasks are set at fictional customers - Meridian Logistics (help articles `a1`-`a12`, orders like `MER-55120`), Kestrel Bank and Foods, Harbor Foods, Dockside Retail. Reuse their facts; don't invent conflicting ones.
+- **Models**: the five aliases, `lab-embed`, and `lab-tiny` (`lab-mini` with a 2,048-token input window) for context-limit tasks. Judges use `lab-smart` at `temperature=0` in JSON mode; cheap paths use `lab-mini`.
+- **Folders**: `/root/fde-lab/NN-<short>`. Set up writes every fixture with heredocs and, where a task continues the previous one, writes the earlier file only if it's missing (`[ -f x.py ] || cat > x.py ...`).
+- **Local services**: mock customer APIs and a slow model endpoint are started by Set up with `nohup` on `127.0.0.1` (4555 slow `lab-smart`, 4560 orders API with a bearer token, 4570 capstone orders API), after a `/health` probe so re-running Set up is safe.
+- **Refusals**: one exact sentence, `I don't know based on the provided sources.`, shared by every grounded task, judge rubric and golden set.
+- **Checkers** import the learner's module and drive it with fakes (a scripted `ask`, a stub client, a flaky tool), run scripts on unseen fixtures (hidden ticket dumps, logs, golden sets), count chat and embedding calls in the gateway log, and recompute numbers themselves (hit rates, costs, p95). Evals and judges are graded on their verdicts on known cases, never on reply wording.
+- **Document deliverables** (scoping documents, pilot criteria, runbooks) are checked for required `##` sections, bullet counts, numbers in metrics and names from the brief - not for prose quality.
+- Topics 42-44 are single-task capstones with a Scenario; topic 22 registers an MCP server with `claude mcp add --scope user`.
+
 ## Lesson (250-600 words)
 
 Open with one or two sentences on why it matters. Then `##` sections, each with a short explanation and an example: a ```bash block for commands, ```json for requests and responses, ```python for SDK code, ```text for prompts and output. Tables for comparisons. Optional mermaid diagram (quote labels containing parentheses or slashes; no semicolons). End with a one-line teaser of what comes next.

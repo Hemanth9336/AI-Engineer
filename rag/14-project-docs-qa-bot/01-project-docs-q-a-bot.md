@@ -215,6 +215,10 @@ def count(out):
 a, s = parts(Path("/root/answers/14-slack.txt").read_text() if Path("/root/answers/14-slack.txt").exists() else "")
 ok("slack_webhook" in a and s[:1] == ["guides/alerts.md"], "14-slack.txt answers from guides/alerts.md", "/root/answers/14-slack.txt should explain slack_webhook and list guides/alerts.md first in Sources")
 ok(Path("/root/answers/14-cost.txt").exists() and Path("/root/answers/14-cost.txt").read_text().strip() == REFUSAL, "14-cost.txt is exactly the refusal", f"/root/answers/14-cost.txt should be exactly: {REFUSAL}")
+import shutil
+for db in Path("/root/rag-lab/14-docs-bot").rglob("chroma.sqlite3"):
+    if db.parent != Path("/root/rag-lab/14-docs-bot"):
+        shutil.rmtree(db.parent, ignore_errors=True)
 rc1, o1, e1 = run(B, "index")
 rc2, o2, e2 = run(B, "index")
 n1, n2 = count(o1), count(o2)
