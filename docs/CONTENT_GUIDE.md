@@ -34,6 +34,18 @@ Ubuntu 24.04 root machine with the tools from `setup/ai-fundamentals/install-too
 - Tasks with Python or Claude Code use `python` (the venv) and `claude -p "..." --tools ""` when code must be printed rather than written by the agent.
 - Topics 24-26 are `type: task` projects with a Scenario, a requirements list, Hints and a full Solution.
 
+## Practice machine conventions (RAG skill)
+
+Everything above applies, plus the tools from `setup/rag/install-tools.sh` (`scripts/rag_skill.py` holds titles and minutes).
+
+- **Models**: `lab-embed` for every embedding (all-MiniLM-L6-v2, 384 dimensions, normalised, local and free); `lab-fast` at `temperature=0` for grounded answers. Lessons quote real `lab-embed` scores, so recompute them if a fixture changes.
+- **Python only**: tasks use the `openai` SDK, `chromadb` (`OpenAIEmbeddingFunction(api_key_env_var="OPENAI_API_KEY", api_base=os.environ["OPENAI_BASE_URL"], model_name="lab-embed")`), and LangChain (`OpenAIEmbeddings(model="lab-embed", check_embedding_ctx_length=False)`, `ChatOpenAI(model="lab-fast", temperature=0)`). Chroma collections use `configuration={"hnsw": {"space": "cosine"}}` (`collection_configuration=` in `langchain-chroma`); names need at least 3 characters; similarity = 1 - distance.
+- **Folders**: topic 01 works in `/root/rag-start`; other topics in `/root/rag-lab/NN-<short>`; graded answers in `/root/answers/NN-*`. Set up re-creates every fixture a task needs (documents, chunks, vectors) so tasks don't depend on earlier ones, except where a task continues the previous task in the same topic.
+- **Fixtures**: the Northwind handbook, ops docs, support KB and inventory runbook. Questions must retrieve the right chunk with MiniLM; verify the ranking before using a new question.
+- **Refusals**: each tool has one exact sentence (`I don't know based on the document.`, `...the documents.`, `...the handbook.`, `...the docs.`, `...the runbook.`). Code compares loosely and prints the exact sentence; refusals carry no sources.
+- **Checkers** embed with `lab-embed` themselves, import the learner's module or run the script on unseen questions, compare rankings and scores (tolerance 0.001-0.01), count embedding and chat calls in the log (`api`, `inputs`), and check that re-indexing is idempotent. They never depend on reply wording beyond a distinctive fact (`35 days`, `7070`).
+- Topics 14-16 are projects; topic 01 uses `claude -p`.
+
 ## Lesson (250-600 words)
 
 Open with one or two sentences on why it matters. Then `##` sections, each with a short explanation and an example: a ```bash block for commands, ```json for requests and responses, ```python for SDK code, ```text for prompts and output. Tables for comparisons. Optional mermaid diagram (quote labels containing parentheses or slashes; no semicolons). End with a one-line teaser of what comes next.

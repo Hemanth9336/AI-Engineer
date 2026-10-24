@@ -6,9 +6,11 @@
 #   ailab down              stop it
 #   ailab restart           stop, then start (after editing /etc/ailab/config.yaml)
 #   ailab status            is the gateway answering, which profile is active, are the key files private
-#   ailab models            the five lab models and the real model behind each
+#   ailab models            the lab models and the real model behind each
 #   ailab log [N]           the last N requests the gateway served (default 10) - shape only, never prompt text
 #   ailab test              send a one-word request to every lab model
+#
+# With the RAG skill installed, the gateway also serves lab-embed from a local embedding service on port 4001.
 #
 # Your scripts only ever see the lab key (LAB_AI_KEY). The provider key stays in /etc/ailab/provider.env,
 # readable by root only, and is used by the gateway alone.
@@ -17,6 +19,7 @@ set -euo pipefail
 ETC=${AILAB_ETC:-/etc/ailab}
 LIB=${AILAB_LIB:-/usr/local/lib/ailab}
 VENV=${AILAB_VENV:-/opt/ailab/venv}
+EMBED_VENV=${AILAB_EMBED_VENV:-/opt/ailab/embed}
 LOGDIR=${AILAB_LOGDIR:-/var/log/ailab}
 ENVFILE=${AILAB_ENVFILE:-/root/.config/ailab/env}
 PORT=4000
@@ -24,9 +27,25 @@ URL=http://localhost:$PORT
 
 die() { echo "ailab: $*" >&2; exit 1; }
 answers() { curl -fsS -o /dev/null --max-time 2 "$URL/health/liveliness" 2>/dev/null; }
+EMBED_URL=http://127.0.0.1:4001
+has_embed() { [ -x "$EMBED_VENV/bin/python" ] && [ -f "$LIB/embed_server.py" ]; }
+embed_answers() { curl -fsS -o /dev/null --max-time 2 "$EMBED_URL/" 2>/dev/null; }
+
+start_embed() {
+  has_embed || return 0
+  embed_answers && return 0
+  mkdir -p "$LOGDIR"
+  nohup "$EMBED_VENV/bin/python" "$LIB/embed_server.py" --port 4001 >>"$LOGDIR/embed.log" 2>&1 &
+  for _ in $(seq 1 120); do
+    embed_answers && return 0
+    sleep 1
+  done
+  die "the embedding service did not answer on $EMBED_URL - see $LOGDIR/embed.log"
+}
 lab_key() { [ -f "$ENVFILE" ] || die "$ENVFILE is missing - run setup/ai-fundamentals/install-tools.sh"; sed -n 's/^export LAB_AI_KEY=//p' "$ENVFILE"; }
 
 start() {
+  start_embed
   answers && return 0
   [ -f "$ETC/config.yaml" ] || die "no provider configured yet - run: ailab setup"
   [ -x "$VENV/bin/litellm" ] || die "$VENV/bin/litellm is missing - run setup/ai-fundamentals/install-tools.sh"
@@ -51,6 +70,7 @@ start() {
 
 stop() {
   pkill -f "litellm --config $ETC/config.yaml" 2>/dev/null || true
+  pkill -f "$LIB/embed_server.py" 2>/dev/null || true
   for _ in $(seq 1 10); do answers || return 0; sleep 1; done
 }
 
@@ -119,6 +139,9 @@ case "${1:-}" in
   status)
     ok=0
     if answers; then echo "gateway: up on $URL ($(cat "$ETC/profile" 2>/dev/null || echo custom) profile)"; else echo "gateway: not answering - run: ailab up"; ok=1; fi
+    if has_embed; then
+      if embed_answers; then echo "embeddings: lab-embed served locally on $EMBED_URL"; else echo "embeddings: not answering - run: ailab restart"; ok=1; fi
+    fi
     for f in "$ETC/provider.env" "$ENVFILE"; do
       [ -f "$f" ] || continue
       perm=$(stat -c %a "$f")
@@ -135,6 +158,11 @@ case "${1:-}" in
         -d "{\"model\":\"$m\",\"max_tokens\":200,\"messages\":[{\"role\":\"user\",\"content\":\"Reply with the single word: ready\"}]}")
       printf '%-15s %s\n' "$m" "$(echo "$out" | jq -r '.choices[0].message.content // .error.message' | head -c 80 | tr '\n' ' ')"
     done
+    if grep -q 'lab-embed' "$ETC/config.yaml" 2>/dev/null; then
+      out=$(curl -sS --max-time 120 "$URL/v1/embeddings" -H "Authorization: Bearer $key" -H 'Content-Type: application/json' \
+        -d '{"model":"lab-embed","input":"ready"}')
+      printf '%-15s %s\n' "lab-embed" "$(echo "$out" | jq -r 'if .data then "\(.data[0].embedding | length) dimensions" else .error.message end' | head -c 80)"
+    fi
     ;;
-  *) sed -n '2,15p' "$0" | sed 's/^# \{0,1\}//'; exit 1 ;;
+  *) sed -n '2,17p' "$0" | sed 's/^# \{0,1\}//'; exit 1 ;;
 esac

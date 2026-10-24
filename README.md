@@ -2,13 +2,13 @@
 
 # 🤖 AI Engineer
 
-### Work with real LLM APIs from a live machine — raw HTTP, official SDKs, model comparison, and key hygiene, graded when you press Submit.
+### Work with real LLM APIs from a live machine — raw HTTP, official SDKs, embeddings, vector databases and RAG pipelines, graded when you press Submit.
 
-**1 skill live · 26 topics · 27 hands-on tasks · 25 quizzes · ~16 hours**
+**2 skills live · 42 topics · 49 hands-on tasks · 39 quizzes · ~29 hours**
 
 [![Open the interactive roadmap](https://img.shields.io/badge/Open-Interactive%20Roadmap-7c5cff?style=for-the-badge&logo=openai&logoColor=white)](https://hemanth9336.github.io/AI-Engineer/)
-![Tasks](https://img.shields.io/badge/hands--on%20tasks-27-1f8f4e?style=for-the-badge)
-![Quizzes](https://img.shields.io/badge/quizzes-25-6f42c1?style=for-the-badge)
+![Tasks](https://img.shields.io/badge/hands--on%20tasks-49-1f8f4e?style=for-the-badge)
+![Quizzes](https://img.shields.io/badge/quizzes-39-6f42c1?style=for-the-badge)
 
 </div>
 
@@ -32,6 +32,7 @@
 | Skill | Topics | Tasks | Quizzes | Time | Status |
 |---|---|---|---|---|---|
 | 🧠 [AI Fundamentals](ai-fundamentals/README.md) | 26 | 27 | 25 | ~955 min | ✅ Live |
+| 🔎 [RAG](rag/README.md) | 16 | 22 | 14 | ~765 min | ✅ Live |
 
 ## 🧠 AI Fundamentals
 
@@ -123,6 +124,79 @@ _Three small, real tools that put the whole skill to work._
 | 24 | [Project: support ticket triage tool](ai-fundamentals/24-project-support-ticket-triage-tool/) | ~60m | 1 | 0 |
 | 25 | [Project: log explainer CLI](ai-fundamentals/25-project-log-explainer-cli/) | ~60m | 1 | 0 |
 | 26 | [Project: grounded runbook assistant](ai-fundamentals/26-project-grounded-runbook-assistant/) | ~60m | 1 | 0 |
+
+## 🔎 RAG
+
+Build Retrieval-Augmented Generation from nothing - ground a model in your own documents, create embeddings, search by meaning, chunk real files, run a vector database, and ship a working RAG pipeline by hand, on Chroma, and with LangChain.
+
+```mermaid
+flowchart LR
+  P0["1. The Problem and Your Tools<br/>Steps 01-03"]
+  P1["2. Search by Meaning<br/>Steps 04-06"]
+  P2["3. Indexing Real Documents<br/>Steps 07-09"]
+  P3["4. The RAG Pipeline<br/>Steps 10-12"]
+  P4["5. RAG with LangChain<br/>Steps 13-13"]
+  P5["6. RAG Projects<br/>Steps 14-16"]
+  P0 --> P1 --> P2 --> P3 --> P4 --> P5
+```
+
+### Phase 1 · The Problem and Your Tools
+
+_Why models can't answer about your data, the Python you need, and grounding a prompt._
+
+| Step | Topic | Time | 🛠️ Tasks | ❓ Quizzes |
+|---|---|---|---|---|
+| 01 | [The Problem RAG Solves](rag/01-the-problem-rag-solves/) | ~40m | 1 | 1 |
+| 02 | [Tools You Will Use](rag/02-tools-you-will-use/) | ~35m | 1 | 1 |
+| 03 | [Grounding a Prompt](rag/03-grounding-a-prompt/) | ~40m | 1 | 1 |
+
+### Phase 2 · Search by Meaning
+
+_Embeddings, cosine similarity, and semantic search - the retrieval half of RAG._
+
+| Step | Topic | Time | 🛠️ Tasks | ❓ Quizzes |
+|---|---|---|---|---|
+| 04 | [Embeddings](rag/04-embeddings/) | ~40m | 1 | 1 |
+| 05 | [Measuring Similarity](rag/05-measuring-similarity/) | ~40m | 1 | 1 |
+| 06 | [Semantic Search](rag/06-semantic-search/) | ~35m | 1 | 1 |
+
+### Phase 3 · Indexing Real Documents
+
+_Chunking files, a vector store built by hand, and Chroma._
+
+| Step | Topic | Time | 🛠️ Tasks | ❓ Quizzes |
+|---|---|---|---|---|
+| 07 | [Chunking](rag/07-chunking/) | ~50m | 2 | 1 |
+| 08 | [Build Your Own Vector Store](rag/08-build-your-own-vector-store/) | ~50m | 2 | 1 |
+| 09 | [Chroma, a Real Vector Database](rag/09-chroma-a-real-vector-database/) | ~50m | 2 | 1 |
+
+### Phase 4 · The RAG Pipeline
+
+_Every piece connected, moved onto Chroma, and measured._
+
+| Step | Topic | Time | 🛠️ Tasks | ❓ Quizzes |
+|---|---|---|---|---|
+| 10 | [The Full RAG Pipeline](rag/10-the-full-rag-pipeline/) | ~50m | 1 | 2 |
+| 11 | [RAG on Chroma](rag/11-rag-on-chroma/) | ~45m | 1 | 1 |
+| 12 | [Evaluating RAG](rag/12-evaluating-rag/) | ~50m | 2 | 1 |
+
+### Phase 5 · RAG with LangChain
+
+_The same pipeline with the library teams use at work._
+
+| Step | Topic | Time | 🛠️ Tasks | ❓ Quizzes |
+|---|---|---|---|---|
+| 13 | [RAG with LangChain](rag/13-rag-with-langchain/) | ~60m | 3 | 1 |
+
+### Phase 6 · RAG Projects
+
+_Three complete assistants that answer from documents - and refuse when they can't._
+
+| Step | Topic | Time | 🛠️ Tasks | ❓ Quizzes |
+|---|---|---|---|---|
+| 14 | [Project: Docs Q&A Bot](rag/14-project-docs-qa-bot/) | ~60m | 1 | 0 |
+| 15 | [Project: Support Knowledge Assistant](rag/15-project-support-knowledge-assistant/) | ~60m | 1 | 0 |
+| 16 | [Project: Runbook Assistant That Knows Its Limits](rag/16-project-runbook-assistant-that-knows-its-limits/) | ~60m | 1 | 0 |
 
 ## 📁 Repository layout
 

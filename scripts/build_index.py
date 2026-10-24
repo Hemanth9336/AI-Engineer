@@ -122,7 +122,7 @@ def write_root_readme(data):
         for k in ("topics", "tasks", "quizzes", "minutes"):
             total[k] += sk["stats"][k]
     out = ['<div align="center">', "", "# 🤖 AI Engineer", "",
-           "### Work with real LLM APIs from a live machine — raw HTTP, official SDKs, model comparison, and key hygiene, graded when you press Submit.", "",
+           "### Work with real LLM APIs from a live machine — raw HTTP, official SDKs, embeddings, vector databases and RAG pipelines, graded when you press Submit.", "",
            f"**{len(data['skills'])} skill{'s' if len(data['skills']) > 1 else ''} live · {total['topics']} topics · {total['tasks']} hands-on tasks · {total['quizzes']} quizzes · ~{round(total['minutes']/60)} hours**", "",
            f"[![Open the interactive roadmap](https://img.shields.io/badge/Open-Interactive%20Roadmap-7c5cff?style=for-the-badge&logo=openai&logoColor=white)]({SITE})",
            f"![Tasks](https://img.shields.io/badge/hands--on%20tasks-{total['tasks']}-1f8f4e?style=for-the-badge)",

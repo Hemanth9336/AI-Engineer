@@ -76,6 +76,32 @@ ailab test      # one tiny request to every lab model
 
 The profile files map each alias to a provider model ID. Providers rename and retire models, so if `ailab test` reports an unknown model, edit `/etc/ailab/config.yaml` to a current ID and run `ailab restart`.
 
+## 4. Add the RAG tools (RAG skill)
+
+The **RAG** skill needs an embedding model and a vector database on top of the lab above. On the same machine, run:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Hemanth9336/AI-Engineer/main/setup/rag/install-tools.sh | bash
+source ~/.bashrc
+```
+
+If the lab isn't installed yet, the script installs it first (then run `ailab setup` as in step 3). It adds:
+
+| What | Where |
+|---|---|
+| `lab-embed`: a local embedding model (all-MiniLM-L6-v2, 384 dimensions) served on `127.0.0.1:4001` and routed through the gateway | `/opt/ailab/embed`, `/usr/local/lib/ailab/embed_server.py` |
+| `chromadb`, `langchain-chroma` and `langchain-text-splitters` | `/root/ai-lab/.venv` |
+| Work folders | `/root/rag-start`, `/root/rag-lab`, `/root/answers` |
+
+`lab-embed` runs on your machine, so embeddings are **free** and identical whichever provider profile you chose. Chat answers still come from your provider through `lab-fast`. Check both:
+
+```bash
+ailab status    # gateway and embeddings both answering?
+ailab test      # includes one lab-embed request
+```
+
+Embedding calls appear in the request log with `"api": "embeddings"` and an `inputs` count.
+
 ## Everyday commands
 
 | Command | Does |

@@ -1138,6 +1138,758 @@
      ]
     }
    ]
+  },
+  {
+   "id": "rag",
+   "name": "RAG",
+   "icon": "🔎",
+   "color": "#10b981",
+   "tagline": "Build Retrieval-Augmented Generation from nothing - ground a model in your own documents, create embeddings, search by meaning, chunk real files, run a vector database, and ship a working RAG pipeline by hand, on Chroma, and with LangChain.",
+   "stats": {
+    "topics": 16,
+    "tasks": 22,
+    "quizzes": 14,
+    "challenges": 0,
+    "lessons": 36,
+    "questions": 56,
+    "minutes": 765
+   },
+   "phases": [
+    {
+     "id": "start",
+     "name": "The Problem and Your Tools",
+     "blurb": "Why models can't answer about your data, the Python you need, and grounding a prompt."
+    },
+    {
+     "id": "search",
+     "name": "Search by Meaning",
+     "blurb": "Embeddings, cosine similarity, and semantic search - the retrieval half of RAG."
+    },
+    {
+     "id": "indexing",
+     "name": "Indexing Real Documents",
+     "blurb": "Chunking files, a vector store built by hand, and Chroma."
+    },
+    {
+     "id": "pipeline",
+     "name": "The RAG Pipeline",
+     "blurb": "Every piece connected, moved onto Chroma, and measured."
+    },
+    {
+     "id": "langchain",
+     "name": "RAG with LangChain",
+     "blurb": "The same pipeline with the library teams use at work."
+    },
+    {
+     "id": "projects",
+     "name": "RAG Projects",
+     "blurb": "Three complete assistants that answer from documents - and refuse when they can't."
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "dir": "rag/01-the-problem-rag-solves",
+     "phase": "start",
+     "title": "The Problem RAG Solves",
+     "summary": "Why a model can't answer questions about your team's own documents, the one move that fixes it - putting the document in the prompt - and the three words behind RAG.",
+     "minutes": 40,
+     "counts": {
+      "lessons": 3,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "The AI does not know your data",
+       "minutes": 8,
+       "path": "rag/01-the-problem-rag-solves/01-the-ai-does-not-know-your-data.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Ask without the document, then with it",
+       "minutes": 8,
+       "path": "rag/01-the-problem-rag-solves/02-ask-without-the-document-then-with-it.md"
+      },
+      {
+       "type": "task",
+       "title": "Make the model answer from your document",
+       "minutes": 11,
+       "path": "rag/01-the-problem-rag-solves/03-make-the-model-answer-from-your-document.md"
+      },
+      {
+       "type": "lesson",
+       "title": "What RAG is, in one picture",
+       "minutes": 8,
+       "path": "rag/01-the-problem-rag-solves/04-what-rag-is-in-one-picture.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: the problem RAG solves",
+       "minutes": 5,
+       "path": "rag/01-the-problem-rag-solves/05-quick-check-the-problem-rag-solves.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "dir": "rag/02-tools-you-will-use",
+     "phase": "start",
+     "title": "Tools You Will Use",
+     "summary": "How this course works, and a short Python refresher - calling a model from a script, the one skill every later topic builds on.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "How this course works",
+       "minutes": 8,
+       "path": "rag/02-tools-you-will-use/01-how-this-course-works.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Calling a model from Python",
+       "minutes": 8,
+       "path": "rag/02-tools-you-will-use/02-calling-a-model-from-python.md"
+      },
+      {
+       "type": "task",
+       "title": "Write your ask script",
+       "minutes": 13,
+       "path": "rag/02-tools-you-will-use/03-write-your-ask-script.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: tools",
+       "minutes": 6,
+       "path": "rag/02-tools-you-will-use/04-quick-check-tools.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "dir": "rag/03-grounding-a-prompt",
+     "phase": "start",
+     "title": "Grounding a Prompt",
+     "summary": "How to write a prompt so the model answers from your document and nothing else - and admits it when the answer is not there.",
+     "minutes": 40,
+     "counts": {
+      "lessons": 3,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Putting facts in the prompt",
+       "minutes": 8,
+       "path": "rag/03-grounding-a-prompt/01-putting-facts-in-the-prompt.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Two rules that make grounding safe",
+       "minutes": 8,
+       "path": "rag/03-grounding-a-prompt/02-two-rules-that-make-grounding-safe.md"
+      },
+      {
+       "type": "lesson",
+       "title": "A grounded prompt, worked through",
+       "minutes": 8,
+       "path": "rag/03-grounding-a-prompt/03-a-grounded-prompt-worked-through.md"
+      },
+      {
+       "type": "task",
+       "title": "Ground a prompt yourself",
+       "minutes": 11,
+       "path": "rag/03-grounding-a-prompt/04-ground-a-prompt-yourself.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: grounding",
+       "minutes": 5,
+       "path": "rag/03-grounding-a-prompt/05-quick-check-grounding.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "dir": "rag/04-embeddings",
+     "phase": "search",
+     "title": "Embeddings",
+     "summary": "How text becomes a list of numbers that captures meaning - the piece of math that lets a computer find the right document.",
+     "minutes": 40,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "What is an embedding",
+       "minutes": 10,
+       "path": "rag/04-embeddings/01-what-is-an-embedding.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Get your first embedding",
+       "minutes": 10,
+       "path": "rag/04-embeddings/02-get-your-first-embedding.md"
+      },
+      {
+       "type": "task",
+       "title": "Embed a sentence",
+       "minutes": 14,
+       "path": "rag/04-embeddings/03-embed-a-sentence.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: embeddings",
+       "minutes": 6,
+       "path": "rag/04-embeddings/04-quick-check-embeddings.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "dir": "rag/05-measuring-similarity",
+     "phase": "search",
+     "title": "Measuring Similarity",
+     "summary": "Cosine similarity - the small piece of math that turns two vectors into one score, with a ready-to-use Python function.",
+     "minutes": 40,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Cosine similarity",
+       "minutes": 10,
+       "path": "rag/05-measuring-similarity/01-cosine-similarity.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Comparing two sentences, worked through",
+       "minutes": 10,
+       "path": "rag/05-measuring-similarity/02-comparing-two-sentences-worked-through.md"
+      },
+      {
+       "type": "task",
+       "title": "Score two pairs",
+       "minutes": 14,
+       "path": "rag/05-measuring-similarity/03-score-two-pairs.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: similarity",
+       "minutes": 6,
+       "path": "rag/05-measuring-similarity/04-quick-check-similarity.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "dir": "rag/06-semantic-search",
+     "phase": "search",
+     "title": "Semantic Search",
+     "summary": "One query against many candidates - embed everything, score everything, sort. Search by meaning in forty lines of Python.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Search by meaning, not words",
+       "minutes": 8,
+       "path": "rag/06-semantic-search/01-search-by-meaning-not-words.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Ranking many candidates, worked through",
+       "minutes": 8,
+       "path": "rag/06-semantic-search/02-ranking-many-candidates-worked-through.md"
+      },
+      {
+       "type": "task",
+       "title": "Rank support messages",
+       "minutes": 13,
+       "path": "rag/06-semantic-search/03-rank-support-messages.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: semantic search",
+       "minutes": 6,
+       "path": "rag/06-semantic-search/04-quick-check-semantic-search.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 7,
+     "dir": "rag/07-chunking",
+     "phase": "indexing",
+     "title": "Chunking",
+     "summary": "Why long documents get cut into pieces before embedding, how to choose the cuts, and how to chunk and embed a real document.",
+     "minutes": 50,
+     "counts": {
+      "lessons": 4,
+      "tasks": 2,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Why not embed the whole document",
+       "minutes": 6,
+       "path": "rag/07-chunking/01-why-not-embed-the-whole-document.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Chunk size and overlap",
+       "minutes": 6,
+       "path": "rag/07-chunking/02-chunk-size-and-overlap.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Chunking a document, worked through",
+       "minutes": 6,
+       "path": "rag/07-chunking/03-chunking-a-document-worked-through.md"
+      },
+      {
+       "type": "task",
+       "title": "Chunk a handbook",
+       "minutes": 10,
+       "path": "rag/07-chunking/04-chunk-a-handbook.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Embedding the chunks",
+       "minutes": 6,
+       "path": "rag/07-chunking/05-embedding-the-chunks.md"
+      },
+      {
+       "type": "task",
+       "title": "Embed your chunks",
+       "minutes": 10,
+       "path": "rag/07-chunking/06-embed-your-chunks.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: chunking",
+       "minutes": 6,
+       "path": "rag/07-chunking/07-quick-check-chunking.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 8,
+     "dir": "rag/08-build-your-own-vector-store",
+     "phase": "indexing",
+     "title": "Build Your Own Vector Store",
+     "summary": "Give the text-plus-vector index a proper home in sqlite, and query it - the store and query phases of every vector database, built by hand.",
+     "minutes": 50,
+     "counts": {
+      "lessons": 3,
+      "tasks": 2,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "What a vector store does",
+       "minutes": 7,
+       "path": "rag/08-build-your-own-vector-store/01-what-a-vector-store-does.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Storing vectors in sqlite, worked through",
+       "minutes": 7,
+       "path": "rag/08-build-your-own-vector-store/02-storing-vectors-in-sqlite-worked-through.md"
+      },
+      {
+       "type": "task",
+       "title": "Build the store",
+       "minutes": 12,
+       "path": "rag/08-build-your-own-vector-store/03-build-the-store.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Querying the store, worked through",
+       "minutes": 7,
+       "path": "rag/08-build-your-own-vector-store/04-querying-the-store-worked-through.md"
+      },
+      {
+       "type": "task",
+       "title": "Query the store",
+       "minutes": 12,
+       "path": "rag/08-build-your-own-vector-store/05-query-the-store.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: your vector store",
+       "minutes": 5,
+       "path": "rag/08-build-your-own-vector-store/06-quick-check-your-vector-store.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 9,
+     "dir": "rag/09-chroma-a-real-vector-database",
+     "phase": "indexing",
+     "title": "Chroma, a Real Vector Database",
+     "summary": "Install Chroma, put your chunks in a collection, and query it - the same store and query phases you built by hand, now as two function calls.",
+     "minutes": 50,
+     "counts": {
+      "lessons": 3,
+      "tasks": 2,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Why a real vector database",
+       "minutes": 7,
+       "path": "rag/09-chroma-a-real-vector-database/01-why-a-real-vector-database.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Creating a collection, worked through",
+       "minutes": 7,
+       "path": "rag/09-chroma-a-real-vector-database/02-creating-a-collection-worked-through.md"
+      },
+      {
+       "type": "task",
+       "title": "Add your chunks to Chroma",
+       "minutes": 12,
+       "path": "rag/09-chroma-a-real-vector-database/03-add-your-chunks-to-chroma.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Querying Chroma, worked through",
+       "minutes": 7,
+       "path": "rag/09-chroma-a-real-vector-database/04-querying-chroma-worked-through.md"
+      },
+      {
+       "type": "task",
+       "title": "Query your collection",
+       "minutes": 12,
+       "path": "rag/09-chroma-a-real-vector-database/05-query-your-collection.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: Chroma",
+       "minutes": 5,
+       "path": "rag/09-chroma-a-real-vector-database/06-quick-check-chroma.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 10,
+     "dir": "rag/10-the-full-rag-pipeline",
+     "phase": "pipeline",
+     "title": "The Full RAG Pipeline",
+     "summary": "Connect every piece you built - chunk, embed, store, retrieve, ground - into one working pipeline that answers questions and admits what it cannot answer.",
+     "minutes": 50,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 2,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "The three phases together",
+       "minutes": 10,
+       "path": "rag/10-the-full-rag-pipeline/01-the-three-phases-together.md"
+      },
+      {
+       "type": "lesson",
+       "title": "A tiny pipeline, worked through",
+       "minutes": 10,
+       "path": "rag/10-the-full-rag-pipeline/02-a-tiny-pipeline-worked-through.md"
+      },
+      {
+       "type": "task",
+       "title": "Build your own pipeline",
+       "minutes": 17,
+       "path": "rag/10-the-full-rag-pipeline/03-build-your-own-pipeline.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: retrieval returned the wrong chunk",
+       "minutes": 6,
+       "path": "rag/10-the-full-rag-pipeline/04-scenario-retrieval-returned-the-wrong-chunk.md",
+       "questions": 4
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: the pipeline",
+       "minutes": 7,
+       "path": "rag/10-the-full-rag-pipeline/05-quick-check-the-pipeline.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 11,
+     "dir": "rag/11-rag-on-chroma",
+     "phase": "pipeline",
+     "title": "RAG on Chroma",
+     "summary": "Swap the hand-built store for Chroma inside your pipeline, use top-k retrieval, and run a bigger document set - the same machine, production parts.",
+     "minutes": 45,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Swapping the store",
+       "minutes": 11,
+       "path": "rag/11-rag-on-chroma/01-swapping-the-store.md"
+      },
+      {
+       "type": "lesson",
+       "title": "The pipeline on Chroma, worked through",
+       "minutes": 11,
+       "path": "rag/11-rag-on-chroma/02-the-pipeline-on-chroma-worked-through.md"
+      },
+      {
+       "type": "task",
+       "title": "Rebuild your pipeline on Chroma",
+       "minutes": 17,
+       "path": "rag/11-rag-on-chroma/03-rebuild-your-pipeline-on-chroma.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: RAG on Chroma",
+       "minutes": 6,
+       "path": "rag/11-rag-on-chroma/04-quick-check-rag-on-chroma.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 12,
+     "dir": "rag/12-evaluating-rag",
+     "phase": "pipeline",
+     "title": "Evaluating RAG",
+     "summary": "How to know your RAG system actually works - measure whether retrieval finds the right chunk, and whether the answers use it.",
+     "minutes": 50,
+     "counts": {
+      "lessons": 4,
+      "tasks": 2,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "How you know your RAG works",
+       "minutes": 6,
+       "path": "rag/12-evaluating-rag/01-how-you-know-your-rag-works.md"
+      },
+      {
+       "type": "lesson",
+       "title": "A small eval set",
+       "minutes": 6,
+       "path": "rag/12-evaluating-rag/02-a-small-eval-set.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Scoring retrieval, worked through",
+       "minutes": 6,
+       "path": "rag/12-evaluating-rag/03-scoring-retrieval-worked-through.md"
+      },
+      {
+       "type": "task",
+       "title": "Measure your retrieval hit rate",
+       "minutes": 10,
+       "path": "rag/12-evaluating-rag/04-measure-your-retrieval-hit-rate.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Scoring answers, worked through",
+       "minutes": 6,
+       "path": "rag/12-evaluating-rag/05-scoring-answers-worked-through.md"
+      },
+      {
+       "type": "task",
+       "title": "Score your answers",
+       "minutes": 10,
+       "path": "rag/12-evaluating-rag/06-score-your-answers.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: evaluating RAG",
+       "minutes": 6,
+       "path": "rag/12-evaluating-rag/07-quick-check-evaluating-rag.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 13,
+     "dir": "rag/13-rag-with-langchain",
+     "phase": "langchain",
+     "title": "RAG with LangChain",
+     "summary": "The pipeline one more time, with the library teams use - a text splitter, a Chroma vector store wrapper, a retriever, and one chain that does it all.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 4,
+      "tasks": 3,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "What LangChain gives you",
+       "minutes": 6,
+       "path": "rag/13-rag-with-langchain/01-what-langchain-gives-you.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Installing LangChain and splitting, worked through",
+       "minutes": 6,
+       "path": "rag/13-rag-with-langchain/02-installing-langchain-and-splitting-worked-through.md"
+      },
+      {
+       "type": "task",
+       "title": "Split a document with the text splitter",
+       "minutes": 10,
+       "path": "rag/13-rag-with-langchain/03-split-a-document-with-the-text-splitter.md"
+      },
+      {
+       "type": "lesson",
+       "title": "The vector store and retriever, worked through",
+       "minutes": 6,
+       "path": "rag/13-rag-with-langchain/04-the-vector-store-and-retriever-worked-through.md"
+      },
+      {
+       "type": "task",
+       "title": "Build a retriever",
+       "minutes": 10,
+       "path": "rag/13-rag-with-langchain/05-build-a-retriever.md"
+      },
+      {
+       "type": "lesson",
+       "title": "The full chain, worked through",
+       "minutes": 6,
+       "path": "rag/13-rag-with-langchain/06-the-full-chain-worked-through.md"
+      },
+      {
+       "type": "task",
+       "title": "Build the RAG chain",
+       "minutes": 10,
+       "path": "rag/13-rag-with-langchain/07-build-the-rag-chain.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: RAG with LangChain",
+       "minutes": 6,
+       "path": "rag/13-rag-with-langchain/08-quick-check-rag-with-langchain.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 14,
+     "dir": "rag/14-project-docs-qa-bot",
+     "phase": "projects",
+     "title": "Project: Docs Q&A Bot",
+     "summary": "Build a complete question-answering bot over a folder of markdown documents - index, retrieve, ground, refuse. Everything from the course, one working tool.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 0,
+      "tasks": 1,
+      "quizzes": 0,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "task",
+       "title": "Project: Docs Q&A Bot",
+       "minutes": 60,
+       "path": "rag/14-project-docs-qa-bot/01-project-docs-q-a-bot.md"
+      }
+     ]
+    },
+    {
+     "n": 15,
+     "dir": "rag/15-project-support-knowledge-assistant",
+     "phase": "projects",
+     "title": "Project: Support Knowledge Assistant",
+     "summary": "Point RAG at a support inbox - retrieve the right knowledge-base article for each incoming ticket and write a grounded reply.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 0,
+      "tasks": 1,
+      "quizzes": 0,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "task",
+       "title": "Project: Support Knowledge Assistant",
+       "minutes": 60,
+       "path": "rag/15-project-support-knowledge-assistant/01-project-support-knowledge-assistant.md"
+      }
+     ]
+    },
+    {
+     "n": 16,
+     "dir": "rag/16-project-runbook-assistant-that-knows-its-limits",
+     "phase": "projects",
+     "title": "Project: Runbook Assistant That Knows Its Limits",
+     "summary": "The final build - a LangChain RAG assistant over an ops runbook, graded as hard on its refusals as on its answers.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 0,
+      "tasks": 1,
+      "quizzes": 0,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "task",
+       "title": "Project: Runbook Assistant That Knows Its Limits",
+       "minutes": 60,
+       "path": "rag/16-project-runbook-assistant-that-knows-its-limits/01-project-runbook-assistant-that-knows-its-limits.md"
+      }
+     ]
+    }
+   ]
   }
  ],
  "coming_soon": []

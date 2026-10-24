@@ -14,6 +14,8 @@ LOG = os.environ.get("AILAB_LOG", "/var/log/ailab/requests.jsonl")
 
 
 def _api(call_type, route):
+    if "embedding" in (call_type or "") or route.endswith("/embeddings"):
+        return "embeddings"
     if "anthropic" in (call_type or "") or route.endswith("/messages"):
         return "messages"
     if "responses" in (call_type or ""):
@@ -74,6 +76,9 @@ class AILabLogger(CustomLogger):
             "completion_tokens": p.get("completion_tokens"),
             "total_tokens": p.get("total_tokens"),
         }
+        if row["api"] == "embeddings":
+            inp = kwargs.get("input")
+            row["inputs"] = len(inp) if isinstance(inp, list) else 1
         if not ok:
             row["error"] = (p.get("error_str") or "")[:200]
         os.makedirs(os.path.dirname(LOG), exist_ok=True)

@@ -181,8 +181,8 @@
     let html = `<section class="hero">
       <span class="eyebrow">🤖 AI engineering · zero to hero</span>
       <h1>AI <span class="grad">Engineer</span></h1>
-      <p class="lead">Work with real LLM APIs from a live machine — raw HTTP, official SDKs, model comparison,
-      and key hygiene, graded when you press Submit.</p>
+      <p class="lead">Work with real LLM APIs from a live machine — raw HTTP, official SDKs, embeddings, vector databases
+      and RAG pipelines, graded when you press Submit.</p>
       <div class="stats">
         <div class="stat"><div class="num">${tot.topics}</div><div class="lbl">topics</div></div>
         <div class="stat"><div class="num">${tot.tasks}</div><div class="lbl">hands-on tasks</div></div>
