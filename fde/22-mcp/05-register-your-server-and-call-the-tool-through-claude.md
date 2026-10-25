@@ -115,7 +115,7 @@ def run(*args, cwd=None):
     r = subprocess.run([sys.executable, *args], capture_output=True, text=True, cwd=cwd)
     return r.returncode, r.stdout.strip(), r.stderr.strip()
 before = Path("calls.log").read_text().count("MER-60311") if Path("calls.log").exists() else 0
-r = subprocess.run(["claude", "-p", "What's the status of order MER-60311? Use the meridian tool.", "--allowedTools", "mcp__meridian__track_parcel"], capture_output=True, text=True, timeout=240)
+r = subprocess.run(["claude", "-p", "What's the status of order MER-60311? Use the meridian tool.", "--allowedTools", "mcp__meridian__track_parcel"], capture_output=True, text=True, timeout=240, stdin=subprocess.DEVNULL)
 after = Path("calls.log").read_text().count("MER-60311") if Path("calls.log").exists() else 0
 ok(r.returncode == 0 and after > before and "leeds" in r.stdout.lower(), "a new question about MER-60311 went through your server and the answer uses its data", f"claude should call your server for MER-60311 and answer from it - calls {before}->{after}, answer {r.stdout[-200:]!r} {r.stderr[-200:]}")
 rows = [json.loads(l) for l in open("/var/log/ailab/requests.jsonl")]
