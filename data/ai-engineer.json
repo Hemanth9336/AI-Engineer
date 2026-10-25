@@ -4278,6 +4278,1898 @@
      ]
     }
    ]
+  },
+  {
+   "id": "harness",
+   "name": "Harness Engineering",
+   "icon": "🛠️",
+   "color": "#22c55e",
+   "tagline": "Build the machinery around AI models - from zero. Learn how LLMs and tool calling work, build agent loops by hand, design tools and context, add permissions and injection defenses, orchestrate subagents, prove behavior with evals, and dissect a production harness.",
+   "stats": {
+    "topics": 41,
+    "tasks": 65,
+    "quizzes": 49,
+    "challenges": 0,
+    "lessons": 73,
+    "questions": 234,
+    "minutes": 1505
+   },
+   "phases": [
+    {
+     "id": "foundations",
+     "name": "Foundations",
+     "blurb": "What a harness is, how LLMs behave, just enough Python, API calls, tokens, and tool calling."
+    },
+    {
+     "id": "loop",
+     "name": "The Agent Loop",
+     "blurb": "Build the loop by hand: stop conditions, errors, history, and asking the human."
+    },
+    {
+     "id": "tools",
+     "name": "Tool Design",
+     "blurb": "Tools are prompts: descriptions, result shapes, tool sets, and dangerous actions."
+    },
+    {
+     "id": "context",
+     "name": "Context Engineering",
+     "blurb": "System prompts, budgets, compaction, file memory, and retrieval into context."
+    },
+    {
+     "id": "safety",
+     "name": "Permissions and Safety",
+     "blurb": "Permission models, sandboxes, prompt injection through tools, and secrets hygiene."
+    },
+    {
+     "id": "orchestration",
+     "name": "Orchestration",
+     "blurb": "Subagents, parallel agents, verifiers, and the ways multi-agent systems fail."
+    },
+    {
+     "id": "evals",
+     "name": "Evals and Observability",
+     "blurb": "Grading trajectories, eval suites, transcripts, cost caps, and regression gates."
+    },
+    {
+     "id": "production",
+     "name": "Production Harnesses",
+     "blurb": "Dissect and extend Claude Code: MCP, hooks, instruction files, skills, and choosing your layer."
+    },
+    {
+     "id": "capstones",
+     "name": "Capstone Projects",
+     "blurb": "Three end-to-end builds: a coding agent, a hardened harness, and a production triage harness."
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "dir": "harness/01-what-a-harness-is",
+     "phase": "foundations",
+     "title": "What a harness is",
+     "summary": "Why the model is only one part of an AI product, how harness engineering differs from prompt engineering, and the parts of a real harness.",
+     "minutes": 30,
+     "counts": {
+      "lessons": 3,
+      "tasks": 0,
+      "quizzes": 2,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "The model is not the product",
+       "minutes": 7,
+       "path": "harness/01-what-a-harness-is/01-the-model-is-not-the-product.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Harness engineering vs prompt engineering",
+       "minutes": 7,
+       "path": "harness/01-what-a-harness-is/02-harness-engineering-vs-prompt-engineering.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Our prompt is great, why does the agent still fail?",
+       "minutes": 4,
+       "path": "harness/01-what-a-harness-is/03-our-prompt-is-great-why-does-the-agent-still-fail.md",
+       "questions": 1
+      },
+      {
+       "type": "lesson",
+       "title": "Anatomy of a real harness",
+       "minutes": 7,
+       "path": "harness/01-what-a-harness-is/04-anatomy-of-a-real-harness.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: what a harness is",
+       "minutes": 5,
+       "path": "harness/01-what-a-harness-is/05-quick-check-what-a-harness-is.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "dir": "harness/02-how-llms-work-for-harness-builders",
+     "phase": "foundations",
+     "title": "How LLMs work for harness builders",
+     "summary": "Next-token prediction, and the failure modes a harness exists to contain.",
+     "minutes": 30,
+     "counts": {
+      "lessons": 2,
+      "tasks": 2,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Next-token prediction",
+       "minutes": 5,
+       "path": "harness/02-how-llms-work-for-harness-builders/01-next-token-prediction.md"
+      },
+      {
+       "type": "task",
+       "title": "Watch a model complete text step by step",
+       "minutes": 8,
+       "path": "harness/02-how-llms-work-for-harness-builders/02-watch-a-model-complete-text-step-by-step.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Why the model forgets, drifts, and hallucinates",
+       "minutes": 5,
+       "path": "harness/02-how-llms-work-for-harness-builders/03-why-the-model-forgets-drifts-and-hallucinates.md"
+      },
+      {
+       "type": "task",
+       "title": "Trigger a failure you will later harness against",
+       "minutes": 8,
+       "path": "harness/02-how-llms-work-for-harness-builders/04-trigger-a-failure-you-will-later-harness-against.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: how LLMs work",
+       "minutes": 4,
+       "path": "harness/02-how-llms-work-for-harness-builders/05-quick-check-how-llms-work.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "dir": "harness/03-just-enough-python",
+     "phase": "foundations",
+     "title": "Just enough Python",
+     "summary": "The small set of Python needed to build a harness: strings, dicts, loops, functions, files.",
+     "minutes": 40,
+     "counts": {
+      "lessons": 3,
+      "tasks": 3,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Variables, strings, and f-strings",
+       "minutes": 5,
+       "path": "harness/03-just-enough-python/01-variables-strings-and-f-strings.md"
+      },
+      {
+       "type": "task",
+       "title": "Build a prompt string from pieces",
+       "minutes": 7,
+       "path": "harness/03-just-enough-python/02-build-a-prompt-string-from-pieces.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Lists, dicts, and loops",
+       "minutes": 5,
+       "path": "harness/03-just-enough-python/03-lists-dicts-and-loops.md"
+      },
+      {
+       "type": "task",
+       "title": "Walk a dict shaped like an API reply",
+       "minutes": 7,
+       "path": "harness/03-just-enough-python/04-walk-a-dict-shaped-like-an-api-reply.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Functions, files, and running scripts",
+       "minutes": 5,
+       "path": "harness/03-just-enough-python/05-functions-files-and-running-scripts.md"
+      },
+      {
+       "type": "task",
+       "title": "Read a file and print a summary line",
+       "minutes": 8,
+       "path": "harness/03-just-enough-python/06-read-a-file-and-print-a-summary-line.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: just enough Python",
+       "minutes": 3,
+       "path": "harness/03-just-enough-python/07-quick-check-just-enough-python.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "dir": "harness/04-calling-llms-over-an-api",
+     "phase": "foundations",
+     "title": "Calling LLMs over an API",
+     "summary": "The chat API shape, first calls with curl and Python, and steering with system messages.",
+     "minutes": 40,
+     "counts": {
+      "lessons": 3,
+      "tasks": 3,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "The chat API shape: messages and roles",
+       "minutes": 5,
+       "path": "harness/04-calling-llms-over-an-api/01-the-chat-api-shape-messages-and-roles.md"
+      },
+      {
+       "type": "task",
+       "title": "Your first API call with curl",
+       "minutes": 7,
+       "path": "harness/04-calling-llms-over-an-api/02-your-first-api-call-with-curl.md"
+      },
+      {
+       "type": "lesson",
+       "title": "The same call from Python",
+       "minutes": 5,
+       "path": "harness/04-calling-llms-over-an-api/03-the-same-call-from-python.md"
+      },
+      {
+       "type": "task",
+       "title": "A Python script that answers a question",
+       "minutes": 7,
+       "path": "harness/04-calling-llms-over-an-api/04-a-python-script-that-answers-a-question.md"
+      },
+      {
+       "type": "lesson",
+       "title": "System vs user messages",
+       "minutes": 5,
+       "path": "harness/04-calling-llms-over-an-api/05-system-vs-user-messages.md"
+      },
+      {
+       "type": "task",
+       "title": "Change behavior with a system message",
+       "minutes": 8,
+       "path": "harness/04-calling-llms-over-an-api/06-change-behavior-with-a-system-message.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: calling LLMs",
+       "minutes": 3,
+       "path": "harness/04-calling-llms-over-an-api/07-quick-check-calling-llms.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "dir": "harness/05-tokens-context-and-cost",
+     "phase": "foundations",
+     "title": "Tokens, context, and cost",
+     "summary": "Tokens and the usage field, the context window as the agent's whole world, and cost math.",
+     "minutes": 40,
+     "counts": {
+      "lessons": 3,
+      "tasks": 3,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Tokens and the usage field",
+       "minutes": 5,
+       "path": "harness/05-tokens-context-and-cost/01-tokens-and-the-usage-field.md"
+      },
+      {
+       "type": "task",
+       "title": "Measure usage on real prompts",
+       "minutes": 7,
+       "path": "harness/05-tokens-context-and-cost/02-measure-usage-on-real-prompts.md"
+      },
+      {
+       "type": "lesson",
+       "title": "The context window is the whole world",
+       "minutes": 5,
+       "path": "harness/05-tokens-context-and-cost/03-the-context-window-is-the-whole-world.md"
+      },
+      {
+       "type": "task",
+       "title": "Hit the context limit on purpose",
+       "minutes": 7,
+       "path": "harness/05-tokens-context-and-cost/04-hit-the-context-limit-on-purpose.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Cost math per request",
+       "minutes": 5,
+       "path": "harness/05-tokens-context-and-cost/05-cost-math-per-request.md"
+      },
+      {
+       "type": "task",
+       "title": "Estimate an agent's monthly cost",
+       "minutes": 8,
+       "path": "harness/05-tokens-context-and-cost/06-estimate-an-agents-monthly-cost.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: tokens, context, and cost",
+       "minutes": 3,
+       "path": "harness/05-tokens-context-and-cost/07-quick-check-tokens-context-and-cost.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "dir": "harness/06-tool-calling",
+     "phase": "foundations",
+     "title": "Tool calling",
+     "summary": "The primitive every harness is built on: schemas, and the call-execute-return cycle.",
+     "minutes": 40,
+     "counts": {
+      "lessons": 3,
+      "tasks": 2,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "What tool calling is",
+       "minutes": 6,
+       "path": "harness/06-tool-calling/01-what-tool-calling-is.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Defining a tool schema",
+       "minutes": 6,
+       "path": "harness/06-tool-calling/02-defining-a-tool-schema.md"
+      },
+      {
+       "type": "task",
+       "title": "Define a file-read tool",
+       "minutes": 9,
+       "path": "harness/06-tool-calling/03-define-a-file-read-tool.md"
+      },
+      {
+       "type": "lesson",
+       "title": "The call, execute, return cycle",
+       "minutes": 6,
+       "path": "harness/06-tool-calling/04-the-call-execute-return-cycle.md"
+      },
+      {
+       "type": "task",
+       "title": "Run one full cycle in Python",
+       "minutes": 9,
+       "path": "harness/06-tool-calling/05-run-one-full-cycle-in-python.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: tool calling",
+       "minutes": 4,
+       "path": "harness/06-tool-calling/06-quick-check-tool-calling.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 7,
+     "dir": "harness/07-your-first-agent-loop",
+     "phase": "loop",
+     "title": "Your first agent loop",
+     "summary": "Think, act, observe: build a minimal agent loop and read its trace.",
+     "minutes": 40,
+     "counts": {
+      "lessons": 2,
+      "tasks": 2,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Think, act, observe: the loop",
+       "minutes": 7,
+       "path": "harness/07-your-first-agent-loop/01-think-act-observe-the-loop.md"
+      },
+      {
+       "type": "task",
+       "title": "Build a minimal while-loop agent",
+       "minutes": 11,
+       "path": "harness/07-your-first-agent-loop/02-build-a-minimal-while-loop-agent.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Reading a loop transcript",
+       "minutes": 7,
+       "path": "harness/07-your-first-agent-loop/03-reading-a-loop-transcript.md"
+      },
+      {
+       "type": "task",
+       "title": "Log every step and read the trace",
+       "minutes": 11,
+       "path": "harness/07-your-first-agent-loop/04-log-every-step-and-read-the-trace.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: your first agent loop",
+       "minutes": 4,
+       "path": "harness/07-your-first-agent-loop/05-quick-check-your-first-agent-loop.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 8,
+     "dir": "harness/08-stop-conditions",
+     "phase": "loop",
+     "title": "Stop conditions",
+     "summary": "How an agent knows it is done, and how to stop the ones that never are.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 2,
+      "tasks": 2,
+      "quizzes": 2,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "How an agent knows it is done",
+       "minutes": 5,
+       "path": "harness/08-stop-conditions/01-how-an-agent-knows-it-is-done.md"
+      },
+      {
+       "type": "task",
+       "title": "Add a done signal",
+       "minutes": 9,
+       "path": "harness/08-stop-conditions/02-add-a-done-signal.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Runaway loops and max steps",
+       "minutes": 5,
+       "path": "harness/08-stop-conditions/03-runaway-loops-and-max-steps.md"
+      },
+      {
+       "type": "task",
+       "title": "Build a runaway loop, then cap it",
+       "minutes": 9,
+       "path": "harness/08-stop-conditions/04-build-a-runaway-loop-then-cap-it.md"
+      },
+      {
+       "type": "scenario",
+       "title": "The agent loops forever in production",
+       "minutes": 3,
+       "path": "harness/08-stop-conditions/05-the-agent-loops-forever-in-production.md",
+       "questions": 5
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: stop conditions",
+       "minutes": 4,
+       "path": "harness/08-stop-conditions/06-quick-check-stop-conditions.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 9,
+     "dir": "harness/09-error-handling-in-the-loop",
+     "phase": "loop",
+     "title": "Error handling in the loop",
+     "summary": "Tool errors are messages, not crashes - recovery, retries, and backoff.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 2,
+      "tasks": 2,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Tool errors are messages, not crashes",
+       "minutes": 6,
+       "path": "harness/09-error-handling-in-the-loop/01-tool-errors-are-messages-not-crashes.md"
+      },
+      {
+       "type": "task",
+       "title": "Return errors as text, watch the model recover",
+       "minutes": 9,
+       "path": "harness/09-error-handling-in-the-loop/02-return-errors-as-text-watch-the-model-recover.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Retries and backoff",
+       "minutes": 6,
+       "path": "harness/09-error-handling-in-the-loop/03-retries-and-backoff.md"
+      },
+      {
+       "type": "task",
+       "title": "A flaky tool, an agent that retries",
+       "minutes": 10,
+       "path": "harness/09-error-handling-in-the-loop/04-a-flaky-tool-an-agent-that-retries.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: error handling",
+       "minutes": 4,
+       "path": "harness/09-error-handling-in-the-loop/05-quick-check-error-handling.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 10,
+     "dir": "harness/10-loop-state-and-history",
+     "phase": "loop",
+     "title": "Loop state and history",
+     "summary": "The messages list is the agent's memory - what each turn appends and how it breaks.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 2,
+      "tasks": 2,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "The messages list is the agent's memory",
+       "minutes": 6,
+       "path": "harness/10-loop-state-and-history/01-the-messages-list-is-the-agents-memory.md"
+      },
+      {
+       "type": "task",
+       "title": "Inspect the growing history",
+       "minutes": 9,
+       "path": "harness/10-loop-state-and-history/02-inspect-the-growing-history.md"
+      },
+      {
+       "type": "lesson",
+       "title": "What each turn appends",
+       "minutes": 6,
+       "path": "harness/10-loop-state-and-history/03-what-each-turn-appends.md"
+      },
+      {
+       "type": "task",
+       "title": "Rebuild a broken history by hand",
+       "minutes": 10,
+       "path": "harness/10-loop-state-and-history/04-rebuild-a-broken-history-by-hand.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: loop state and history",
+       "minutes": 4,
+       "path": "harness/10-loop-state-and-history/05-quick-check-loop-state-and-history.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 11,
+     "dir": "harness/11-making-the-agent-ask-for-help",
+     "phase": "loop",
+     "title": "Making the agent ask for help",
+     "summary": "When the agent should stop and ask the human instead of guessing.",
+     "minutes": 25,
+     "counts": {
+      "lessons": 1,
+      "tasks": 1,
+      "quizzes": 2,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "When to stop and ask the human",
+       "minutes": 7,
+       "path": "harness/11-making-the-agent-ask-for-help/01-when-to-stop-and-ask-the-human.md"
+      },
+      {
+       "type": "task",
+       "title": "Add an ask_user tool",
+       "minutes": 10,
+       "path": "harness/11-making-the-agent-ask-for-help/02-add-an-ask-user-tool.md"
+      },
+      {
+       "type": "scenario",
+       "title": "The agent guesses instead of asking",
+       "minutes": 4,
+       "path": "harness/11-making-the-agent-ask-for-help/03-the-agent-guesses-instead-of-asking.md",
+       "questions": 5
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: asking for help",
+       "minutes": 4,
+       "path": "harness/11-making-the-agent-ask-for-help/04-quick-check-asking-for-help.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 12,
+     "dir": "harness/12-tools-are-prompts",
+     "phase": "tools",
+     "title": "Tools are prompts",
+     "summary": "The tool description decides everything - naming, parameters, and fixing misused tools.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 2,
+      "tasks": 2,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "The description decides everything",
+       "minutes": 6,
+       "path": "harness/12-tools-are-prompts/01-the-description-decides-everything.md"
+      },
+      {
+       "type": "task",
+       "title": "Same tool, two descriptions, different behavior",
+       "minutes": 9,
+       "path": "harness/12-tools-are-prompts/02-same-tool-two-descriptions-different-behavior.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Naming and parameter design",
+       "minutes": 6,
+       "path": "harness/12-tools-are-prompts/03-naming-and-parameter-design.md"
+      },
+      {
+       "type": "task",
+       "title": "Fix a tool the model keeps misusing",
+       "minutes": 10,
+       "path": "harness/12-tools-are-prompts/04-fix-a-tool-the-model-keeps-misusing.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: tools are prompts",
+       "minutes": 4,
+       "path": "harness/12-tools-are-prompts/05-quick-check-tools-are-prompts.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 13,
+     "dir": "harness/13-designing-tool-results",
+     "phase": "tools",
+     "title": "Designing tool results",
+     "summary": "The result goes straight into context - trim it, paginate it, point to files.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 2,
+      "tasks": 2,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "The result goes into context, shape it",
+       "minutes": 6,
+       "path": "harness/13-designing-tool-results/01-the-result-goes-into-context-shape-it.md"
+      },
+      {
+       "type": "task",
+       "title": "Trim a huge tool result to what matters",
+       "minutes": 9,
+       "path": "harness/13-designing-tool-results/02-trim-a-huge-tool-result-to-what-matters.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Truncation, pagination, and pointers to files",
+       "minutes": 6,
+       "path": "harness/13-designing-tool-results/03-truncation-pagination-and-pointers-to-files.md"
+      },
+      {
+       "type": "task",
+       "title": "Paginate a long listing",
+       "minutes": 10,
+       "path": "harness/13-designing-tool-results/04-paginate-a-long-listing.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: designing tool results",
+       "minutes": 4,
+       "path": "harness/13-designing-tool-results/05-quick-check-designing-tool-results.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 14,
+     "dir": "harness/14-tool-sets-and-selection",
+     "phase": "tools",
+     "title": "Tool sets and selection",
+     "summary": "Few good tools beat many vague ones - merging, splitting, and removing tools.",
+     "minutes": 30,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 2,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Few good tools beat many vague ones",
+       "minutes": 6,
+       "path": "harness/14-tool-sets-and-selection/01-few-good-tools-beat-many-vague-ones.md"
+      },
+      {
+       "type": "task",
+       "title": "Overlapping tools: the model picks wrong, fix the set",
+       "minutes": 10,
+       "path": "harness/14-tool-sets-and-selection/02-overlapping-tools-the-model-picks-wrong-fix-the-set.md"
+      },
+      {
+       "type": "lesson",
+       "title": "When to merge, split, or remove tools",
+       "minutes": 6,
+       "path": "harness/14-tool-sets-and-selection/03-when-to-merge-split-or-remove-tools.md"
+      },
+      {
+       "type": "scenario",
+       "title": "The customer wants 40 tools exposed at once",
+       "minutes": 4,
+       "path": "harness/14-tool-sets-and-selection/04-the-customer-wants-40-tools-exposed-at-once.md",
+       "questions": 5
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: tool sets",
+       "minutes": 4,
+       "path": "harness/14-tool-sets-and-selection/05-quick-check-tool-sets.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 15,
+     "dir": "harness/15-dangerous-tools",
+     "phase": "tools",
+     "title": "Dangerous tools",
+     "summary": "Read vs write vs irreversible, and confirmation gates before destructive actions.",
+     "minutes": 30,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 2,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Read vs write vs irreversible",
+       "minutes": 6,
+       "path": "harness/15-dangerous-tools/01-read-vs-write-vs-irreversible.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Confirmation gates in the loop",
+       "minutes": 6,
+       "path": "harness/15-dangerous-tools/02-confirmation-gates-in-the-loop.md"
+      },
+      {
+       "type": "task",
+       "title": "Add an approval step before a delete tool runs",
+       "minutes": 10,
+       "path": "harness/15-dangerous-tools/03-add-an-approval-step-before-a-delete-tool-runs.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Just let it run rm, we trust it",
+       "minutes": 4,
+       "path": "harness/15-dangerous-tools/04-just-let-it-run-rm-we-trust-it.md",
+       "questions": 5
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: dangerous tools",
+       "minutes": 4,
+       "path": "harness/15-dangerous-tools/05-quick-check-dangerous-tools.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 16,
+     "dir": "harness/16-the-system-prompt",
+     "phase": "context",
+     "title": "The system prompt",
+     "summary": "What belongs in a harness system prompt, and writing instructions the model follows.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 2,
+      "tasks": 2,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "What belongs in the system prompt",
+       "minutes": 6,
+       "path": "harness/16-the-system-prompt/01-what-belongs-in-the-system-prompt.md"
+      },
+      {
+       "type": "task",
+       "title": "Write a system prompt for a support agent harness",
+       "minutes": 9,
+       "path": "harness/16-the-system-prompt/02-write-a-system-prompt-for-a-support-agent-harness.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Instructions the model actually follows",
+       "minutes": 6,
+       "path": "harness/16-the-system-prompt/03-instructions-the-model-actually-follows.md"
+      },
+      {
+       "type": "task",
+       "title": "Fix a prompt the model ignores",
+       "minutes": 10,
+       "path": "harness/16-the-system-prompt/04-fix-a-prompt-the-model-ignores.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: the system prompt",
+       "minutes": 4,
+       "path": "harness/16-the-system-prompt/05-quick-check-the-system-prompt.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 17,
+     "dir": "harness/17-context-budgeting",
+     "phase": "context",
+     "title": "Context budgeting",
+     "summary": "Everything competes for the window - measure and budget prompt, history, and tool results.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 2,
+      "tasks": 2,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Everything competes for the window",
+       "minutes": 6,
+       "path": "harness/17-context-budgeting/01-everything-competes-for-the-window.md"
+      },
+      {
+       "type": "task",
+       "title": "Measure what each part of your agent costs in tokens",
+       "minutes": 9,
+       "path": "harness/17-context-budgeting/02-measure-what-each-part-of-your-agent-costs-in-tokens.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Budgeting prompt, history, and tool results",
+       "minutes": 6,
+       "path": "harness/17-context-budgeting/03-budgeting-prompt-history-and-tool-results.md"
+      },
+      {
+       "type": "task",
+       "title": "Set and enforce a per-part budget",
+       "minutes": 10,
+       "path": "harness/17-context-budgeting/04-set-and-enforce-a-per-part-budget.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: context budgeting",
+       "minutes": 4,
+       "path": "harness/17-context-budgeting/05-quick-check-context-budgeting.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 18,
+     "dir": "harness/18-compaction-and-summarization",
+     "phase": "context",
+     "title": "Compaction and summarization",
+     "summary": "When history must shrink, and what must never be compacted away.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 2,
+      "tasks": 2,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "When history must shrink",
+       "minutes": 6,
+       "path": "harness/18-compaction-and-summarization/01-when-history-must-shrink.md"
+      },
+      {
+       "type": "task",
+       "title": "Summarize old turns, keep the summary in context",
+       "minutes": 9,
+       "path": "harness/18-compaction-and-summarization/02-summarize-old-turns-keep-the-summary-in-context.md"
+      },
+      {
+       "type": "lesson",
+       "title": "What must never be compacted away",
+       "minutes": 6,
+       "path": "harness/18-compaction-and-summarization/03-what-must-never-be-compacted-away.md"
+      },
+      {
+       "type": "task",
+       "title": "Prove a fact survives compaction",
+       "minutes": 10,
+       "path": "harness/18-compaction-and-summarization/04-prove-a-fact-survives-compaction.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: compaction",
+       "minutes": 4,
+       "path": "harness/18-compaction-and-summarization/05-quick-check-compaction.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 19,
+     "dir": "harness/19-file-based-memory",
+     "phase": "context",
+     "title": "File-based memory",
+     "summary": "Memory outside the window: notes files the agent reads and writes.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 2,
+      "tasks": 2,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Memory outside the window: files",
+       "minutes": 6,
+       "path": "harness/19-file-based-memory/01-memory-outside-the-window-files.md"
+      },
+      {
+       "type": "task",
+       "title": "Give the agent a notes file it reads and writes",
+       "minutes": 9,
+       "path": "harness/19-file-based-memory/02-give-the-agent-a-notes-file-it-reads-and-writes.md"
+      },
+      {
+       "type": "lesson",
+       "title": "What to persist vs recompute",
+       "minutes": 6,
+       "path": "harness/19-file-based-memory/03-what-to-persist-vs-recompute.md"
+      },
+      {
+       "type": "task",
+       "title": "The agent resumes after restart using its notes",
+       "minutes": 10,
+       "path": "harness/19-file-based-memory/04-the-agent-resumes-after-restart-using-its-notes.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: file-based memory",
+       "minutes": 4,
+       "path": "harness/19-file-based-memory/05-quick-check-file-based-memory.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 20,
+     "dir": "harness/20-retrieval-into-context",
+     "phase": "context",
+     "title": "Retrieval into context",
+     "summary": "Pull only what the task needs - dynamic context beats a static prompt.",
+     "minutes": 30,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Pull only what the task needs",
+       "minutes": 7,
+       "path": "harness/20-retrieval-into-context/01-pull-only-what-the-task-needs.md"
+      },
+      {
+       "type": "task",
+       "title": "Embed docs and retrieve into the system prompt per task",
+       "minutes": 11,
+       "path": "harness/20-retrieval-into-context/02-embed-docs-and-retrieve-into-the-system-prompt-per-task.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Static prompt vs dynamic context",
+       "minutes": 7,
+       "path": "harness/20-retrieval-into-context/03-static-prompt-vs-dynamic-context.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: retrieval into context",
+       "minutes": 5,
+       "path": "harness/20-retrieval-into-context/04-quick-check-retrieval-into-context.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 21,
+     "dir": "harness/21-permission-models",
+     "phase": "safety",
+     "title": "Permission models",
+     "summary": "Autonomous vs approval-gated actions, allowlists, and blast radius thinking.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 2,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Autonomous vs approval-gated actions",
+       "minutes": 7,
+       "path": "harness/21-permission-models/01-autonomous-vs-approval-gated-actions.md"
+      },
+      {
+       "type": "task",
+       "title": "Build an allowlist for your agent's shell tool",
+       "minutes": 12,
+       "path": "harness/21-permission-models/02-build-an-allowlist-for-your-agents-shell-tool.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Blast radius thinking",
+       "minutes": 7,
+       "path": "harness/21-permission-models/03-blast-radius-thinking.md"
+      },
+      {
+       "type": "scenario",
+       "title": "The agent needs prod DB access to be useful",
+       "minutes": 4,
+       "path": "harness/21-permission-models/04-the-agent-needs-prod-db-access-to-be-useful.md",
+       "questions": 5
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: permission models",
+       "minutes": 5,
+       "path": "harness/21-permission-models/05-quick-check-permission-models.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 22,
+     "dir": "harness/22-sandboxing",
+     "phase": "safety",
+     "title": "Sandboxing",
+     "summary": "Containing the agent: workdir restriction in tool code, limits, and what sandboxes cannot save you from.",
+     "minutes": 30,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Contain the agent: directories and limits",
+       "minutes": 7,
+       "path": "harness/22-sandboxing/01-contain-the-agent-directories-and-limits.md"
+      },
+      {
+       "type": "task",
+       "title": "Restrict the agent to one working directory",
+       "minutes": 11,
+       "path": "harness/22-sandboxing/02-restrict-the-agent-to-one-working-directory.md"
+      },
+      {
+       "type": "lesson",
+       "title": "What sandboxes cannot save you from",
+       "minutes": 7,
+       "path": "harness/22-sandboxing/03-what-sandboxes-cannot-save-you-from.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: sandboxing",
+       "minutes": 5,
+       "path": "harness/22-sandboxing/04-quick-check-sandboxing.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 23,
+     "dir": "harness/23-prompt-injection-through-tools",
+     "phase": "safety",
+     "title": "Prompt injection through tools",
+     "summary": "Tool results are untrusted input - run the attack, then defend against it.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 2,
+      "tasks": 2,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Tool results are untrusted input",
+       "minutes": 6,
+       "path": "harness/23-prompt-injection-through-tools/01-tool-results-are-untrusted-input.md"
+      },
+      {
+       "type": "task",
+       "title": "Poison a file the agent reads, watch it obey",
+       "minutes": 9,
+       "path": "harness/23-prompt-injection-through-tools/02-poison-a-file-the-agent-reads-watch-it-obey.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Defenses: marking, filtering, least privilege",
+       "minutes": 6,
+       "path": "harness/23-prompt-injection-through-tools/03-defenses-marking-filtering-least-privilege.md"
+      },
+      {
+       "type": "task",
+       "title": "Add a defense and prove the attack fails",
+       "minutes": 10,
+       "path": "harness/23-prompt-injection-through-tools/04-add-a-defense-and-prove-the-attack-fails.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: prompt injection through tools",
+       "minutes": 4,
+       "path": "harness/23-prompt-injection-through-tools/05-quick-check-prompt-injection-through-tools.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 24,
+     "dir": "harness/24-secrets-hygiene",
+     "phase": "safety",
+     "title": "Secrets hygiene",
+     "summary": "Keys never go into context - find the leak, fix the logs.",
+     "minutes": 30,
+     "counts": {
+      "lessons": 1,
+      "tasks": 2,
+      "quizzes": 2,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Keys never go into context",
+       "minutes": 6,
+       "path": "harness/24-secrets-hygiene/01-keys-never-go-into-context.md"
+      },
+      {
+       "type": "task",
+       "title": "Find the leak: a harness that logs its own API key",
+       "minutes": 9,
+       "path": "harness/24-secrets-hygiene/02-find-the-leak-a-harness-that-logs-its-own-api-key.md"
+      },
+      {
+       "type": "task",
+       "title": "Fix it: env vars and redacted logs",
+       "minutes": 9,
+       "path": "harness/24-secrets-hygiene/03-fix-it-env-vars-and-redacted-logs.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Log full prompts for debugging",
+       "minutes": 3,
+       "path": "harness/24-secrets-hygiene/04-log-full-prompts-for-debugging.md",
+       "questions": 5
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: secrets hygiene",
+       "minutes": 3,
+       "path": "harness/24-secrets-hygiene/05-quick-check-secrets-hygiene.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 25,
+     "dir": "harness/25-subagents",
+     "phase": "orchestration",
+     "title": "Subagents",
+     "summary": "Why one context cannot do everything - spawn a subagent, return only the result.",
+     "minutes": 30,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Why one context cannot do everything",
+       "minutes": 7,
+       "path": "harness/25-subagents/01-why-one-context-cannot-do-everything.md"
+      },
+      {
+       "type": "task",
+       "title": "Spawn a subagent for a subtask",
+       "minutes": 11,
+       "path": "harness/25-subagents/02-spawn-a-subagent-for-a-subtask.md"
+      },
+      {
+       "type": "lesson",
+       "title": "What to pass down, what to get back",
+       "minutes": 7,
+       "path": "harness/25-subagents/03-what-to-pass-down-what-to-get-back.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: subagents",
+       "minutes": 5,
+       "path": "harness/25-subagents/04-quick-check-subagents.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 26,
+     "dir": "harness/26-parallel-agents",
+     "phase": "orchestration",
+     "title": "Parallel agents",
+     "summary": "Independent work fans out - run subagents concurrently, and know when parallelism hurts.",
+     "minutes": 30,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Independent work fans out",
+       "minutes": 7,
+       "path": "harness/26-parallel-agents/01-independent-work-fans-out.md"
+      },
+      {
+       "type": "task",
+       "title": "Run three subagents concurrently and merge results",
+       "minutes": 11,
+       "path": "harness/26-parallel-agents/02-run-three-subagents-concurrently-and-merge-results.md"
+      },
+      {
+       "type": "lesson",
+       "title": "When parallelism hurts",
+       "minutes": 7,
+       "path": "harness/26-parallel-agents/03-when-parallelism-hurts.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: parallel agents",
+       "minutes": 5,
+       "path": "harness/26-parallel-agents/04-quick-check-parallel-agents.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 27,
+     "dir": "harness/27-verification-patterns",
+     "phase": "orchestration",
+     "title": "Verification patterns",
+     "summary": "Generator and checker - never trust one pass.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 2,
+      "tasks": 2,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Generator and checker: never trust one pass",
+       "minutes": 6,
+       "path": "harness/27-verification-patterns/01-generator-and-checker-never-trust-one-pass.md"
+      },
+      {
+       "type": "task",
+       "title": "Add a verifier agent that rejects bad output",
+       "minutes": 9,
+       "path": "harness/27-verification-patterns/02-add-a-verifier-agent-that-rejects-bad-output.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Adversarial checks",
+       "minutes": 6,
+       "path": "harness/27-verification-patterns/03-adversarial-checks.md"
+      },
+      {
+       "type": "task",
+       "title": "The verifier catches a planted error",
+       "minutes": 10,
+       "path": "harness/27-verification-patterns/04-the-verifier-catches-a-planted-error.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: verification patterns",
+       "minutes": 4,
+       "path": "harness/27-verification-patterns/05-quick-check-verification-patterns.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 28,
+     "dir": "harness/28-orchestration-failure-modes",
+     "phase": "orchestration",
+     "title": "Orchestration failure modes",
+     "summary": "Lost context, duplicated work, and why more agents rarely fix it.",
+     "minutes": 30,
+     "counts": {
+      "lessons": 1,
+      "tasks": 1,
+      "quizzes": 2,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Lost context, duplicated work, deadlocks",
+       "minutes": 8,
+       "path": "harness/28-orchestration-failure-modes/01-lost-context-duplicated-work-deadlocks.md"
+      },
+      {
+       "type": "task",
+       "title": "Reproduce a lost-context bug, fix the handoff",
+       "minutes": 12,
+       "path": "harness/28-orchestration-failure-modes/02-reproduce-a-lost-context-bug-fix-the-handoff.md"
+      },
+      {
+       "type": "scenario",
+       "title": "More agents will fix it",
+       "minutes": 5,
+       "path": "harness/28-orchestration-failure-modes/03-more-agents-will-fix-it.md",
+       "questions": 5
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: orchestration failures",
+       "minutes": 5,
+       "path": "harness/28-orchestration-failure-modes/04-quick-check-orchestration-failures.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 29,
+     "dir": "harness/29-evals-for-agents",
+     "phase": "evals",
+     "title": "Evals for agents",
+     "summary": "Grading trajectories, not just answers - outcome checks vs step checks.",
+     "minutes": 25,
+     "counts": {
+      "lessons": 2,
+      "tasks": 0,
+      "quizzes": 2,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Grading trajectories, not just answers",
+       "minutes": 7,
+       "path": "harness/29-evals-for-agents/01-grading-trajectories-not-just-answers.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Outcome checks vs step checks",
+       "minutes": 8,
+       "path": "harness/29-evals-for-agents/02-outcome-checks-vs-step-checks.md"
+      },
+      {
+       "type": "scenario",
+       "title": "It passed my three tests",
+       "minutes": 5,
+       "path": "harness/29-evals-for-agents/03-it-passed-my-three-tests.md",
+       "questions": 5
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: evals for agents",
+       "minutes": 5,
+       "path": "harness/29-evals-for-agents/04-quick-check-evals-for-agents.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 30,
+     "dir": "harness/30-building-an-agent-eval-suite",
+     "phase": "evals",
+     "title": "Building an agent eval suite",
+     "summary": "Golden tasks with checkable outcomes, and a runner that grades resulting state.",
+     "minutes": 40,
+     "counts": {
+      "lessons": 1,
+      "tasks": 2,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Golden tasks with checkable outcomes",
+       "minutes": 8,
+       "path": "harness/30-building-an-agent-eval-suite/01-golden-tasks-with-checkable-outcomes.md"
+      },
+      {
+       "type": "task",
+       "title": "Write golden tasks for your agent",
+       "minutes": 13,
+       "path": "harness/30-building-an-agent-eval-suite/02-write-golden-tasks-for-your-agent.md"
+      },
+      {
+       "type": "task",
+       "title": "An eval runner that grades resulting state",
+       "minutes": 13,
+       "path": "harness/30-building-an-agent-eval-suite/03-an-eval-runner-that-grades-resulting-state.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: the eval suite",
+       "minutes": 6,
+       "path": "harness/30-building-an-agent-eval-suite/04-quick-check-the-eval-suite.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 31,
+     "dir": "harness/31-transcripts-and-replay",
+     "phase": "evals",
+     "title": "Transcripts and replay",
+     "summary": "Log the full trajectory, then debug from the transcript.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 2,
+      "tasks": 2,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Log the full trajectory",
+       "minutes": 6,
+       "path": "harness/31-transcripts-and-replay/01-log-the-full-trajectory.md"
+      },
+      {
+       "type": "task",
+       "title": "Add trajectory logging to your loop",
+       "minutes": 9,
+       "path": "harness/31-transcripts-and-replay/02-add-trajectory-logging-to-your-loop.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Debugging from a transcript",
+       "minutes": 6,
+       "path": "harness/31-transcripts-and-replay/03-debugging-from-a-transcript.md"
+      },
+      {
+       "type": "task",
+       "title": "Find the wrong turn in a bad transcript",
+       "minutes": 10,
+       "path": "harness/31-transcripts-and-replay/04-find-the-wrong-turn-in-a-bad-transcript.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: transcripts and replay",
+       "minutes": 4,
+       "path": "harness/31-transcripts-and-replay/05-quick-check-transcripts-and-replay.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 32,
+     "dir": "harness/32-cost-and-latency-of-agents",
+     "phase": "evals",
+     "title": "Cost and latency of agents",
+     "summary": "Loops multiply cost - measure a trajectory's cost and cap it.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 2,
+      "tasks": 2,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Loops multiply cost",
+       "minutes": 6,
+       "path": "harness/32-cost-and-latency-of-agents/01-loops-multiply-cost.md"
+      },
+      {
+       "type": "task",
+       "title": "Compute a full trajectory's cost from the log",
+       "minutes": 9,
+       "path": "harness/32-cost-and-latency-of-agents/02-compute-a-full-trajectorys-cost-from-the-log.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Caps: budget per task, steps per run",
+       "minutes": 6,
+       "path": "harness/32-cost-and-latency-of-agents/03-caps-budget-per-task-steps-per-run.md"
+      },
+      {
+       "type": "task",
+       "title": "Enforce a per-task token budget",
+       "minutes": 10,
+       "path": "harness/32-cost-and-latency-of-agents/04-enforce-a-per-task-token-budget.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: cost and latency",
+       "minutes": 4,
+       "path": "harness/32-cost-and-latency-of-agents/05-quick-check-cost-and-latency.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 33,
+     "dir": "harness/33-regression-testing-a-harness",
+     "phase": "evals",
+     "title": "Regression testing a harness",
+     "summary": "Every harness change can break behavior - run evals before and after, gate on the score.",
+     "minutes": 30,
+     "counts": {
+      "lessons": 1,
+      "tasks": 2,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Every harness change can break behavior",
+       "minutes": 6,
+       "path": "harness/33-regression-testing-a-harness/01-every-harness-change-can-break-behavior.md"
+      },
+      {
+       "type": "task",
+       "title": "Change the system prompt, run evals before and after",
+       "minutes": 10,
+       "path": "harness/33-regression-testing-a-harness/02-change-the-system-prompt-run-evals-before-and-after.md"
+      },
+      {
+       "type": "task",
+       "title": "A gate that fails on score drop",
+       "minutes": 10,
+       "path": "harness/33-regression-testing-a-harness/03-a-gate-that-fails-on-score-drop.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: regression testing",
+       "minutes": 4,
+       "path": "harness/33-regression-testing-a-harness/04-quick-check-regression-testing.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 34,
+     "dir": "harness/34-claude-code-as-a-harness",
+     "phase": "production",
+     "title": "Claude Code as a harness",
+     "summary": "Dissect a production harness: its loop, tools, permissions, and context handling.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Dissecting Claude Code: loop, tools, permissions, context",
+       "minutes": 8,
+       "path": "harness/34-claude-code-as-a-harness/01-dissecting-claude-code-loop-tools-permissions-context.md"
+      },
+      {
+       "type": "task",
+       "title": "Run claude -p and read what the harness did",
+       "minutes": 13,
+       "path": "harness/34-claude-code-as-a-harness/02-run-claude-p-and-read-what-the-harness-did.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Comparing your loop to a production loop",
+       "minutes": 8,
+       "path": "harness/34-claude-code-as-a-harness/03-comparing-your-loop-to-a-production-loop.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: Claude Code as a harness",
+       "minutes": 6,
+       "path": "harness/34-claude-code-as-a-harness/04-quick-check-claude-code-as-a-harness.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 35,
+     "dir": "harness/35-extending-a-harness-with-mcp",
+     "phase": "production",
+     "title": "Extending a harness with MCP",
+     "summary": "Plug tools into a production harness through the standard protocol.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 1,
+      "tasks": 2,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Plugging tools in via a standard",
+       "minutes": 7,
+       "path": "harness/35-extending-a-harness-with-mcp/01-plugging-tools-in-via-a-standard.md"
+      },
+      {
+       "type": "task",
+       "title": "Build an MCP server and register it",
+       "minutes": 12,
+       "path": "harness/35-extending-a-harness-with-mcp/02-build-an-mcp-server-and-register-it.md"
+      },
+      {
+       "type": "task",
+       "title": "Call your tool through claude -p",
+       "minutes": 12,
+       "path": "harness/35-extending-a-harness-with-mcp/03-call-your-tool-through-claude-p.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: extending with MCP",
+       "minutes": 4,
+       "path": "harness/35-extending-a-harness-with-mcp/04-quick-check-extending-with-mcp.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 36,
+     "dir": "harness/36-hooks-and-instruction-files",
+     "phase": "production",
+     "title": "Hooks and instruction files",
+     "summary": "Code that runs around the model, and rules files that shape every run.",
+     "minutes": 35,
+     "counts": {
+      "lessons": 2,
+      "tasks": 2,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Hooks: code that runs around the model",
+       "minutes": 6,
+       "path": "harness/36-hooks-and-instruction-files/01-hooks-code-that-runs-around-the-model.md"
+      },
+      {
+       "type": "task",
+       "title": "Add a hook that blocks a command pattern",
+       "minutes": 9,
+       "path": "harness/36-hooks-and-instruction-files/02-add-a-hook-that-blocks-a-command-pattern.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Instruction files: the CLAUDE.md pattern",
+       "minutes": 6,
+       "path": "harness/36-hooks-and-instruction-files/03-instruction-files-the-claude-md-pattern.md"
+      },
+      {
+       "type": "task",
+       "title": "Write rules and prove the agent follows them",
+       "minutes": 10,
+       "path": "harness/36-hooks-and-instruction-files/04-write-rules-and-prove-the-agent-follows-them.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: hooks and rules",
+       "minutes": 4,
+       "path": "harness/36-hooks-and-instruction-files/05-quick-check-hooks-and-rules.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 37,
+     "dir": "harness/37-packaging-behavior-as-skills",
+     "phase": "production",
+     "title": "Packaging behavior as skills",
+     "summary": "Reusable instruction packages for repeated workflows.",
+     "minutes": 25,
+     "counts": {
+      "lessons": 1,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Reusable instruction packages",
+       "minutes": 8,
+       "path": "harness/37-packaging-behavior-as-skills/01-reusable-instruction-packages.md"
+      },
+      {
+       "type": "task",
+       "title": "Write a skill for a repeated workflow",
+       "minutes": 12,
+       "path": "harness/37-packaging-behavior-as-skills/02-write-a-skill-for-a-repeated-workflow.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: packaging skills",
+       "minutes": 5,
+       "path": "harness/37-packaging-behavior-as-skills/03-quick-check-packaging-skills.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 38,
+     "dir": "harness/38-choosing-your-layer",
+     "phase": "production",
+     "title": "Choosing your layer",
+     "summary": "Build from scratch, use an SDK, or extend an existing harness.",
+     "minutes": 25,
+     "counts": {
+      "lessons": 1,
+      "tasks": 0,
+      "quizzes": 3,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Build from scratch vs SDK vs extend existing",
+       "minutes": 9,
+       "path": "harness/38-choosing-your-layer/01-build-from-scratch-vs-sdk-vs-extend-existing.md"
+      },
+      {
+       "type": "scenario",
+       "title": "A from-scratch harness for a solved problem",
+       "minutes": 5,
+       "path": "harness/38-choosing-your-layer/02-a-from-scratch-harness-for-a-solved-problem.md",
+       "questions": 4
+      },
+      {
+       "type": "scenario",
+       "title": "When from scratch is the right call",
+       "minutes": 5,
+       "path": "harness/38-choosing-your-layer/03-when-from-scratch-is-the-right-call.md",
+       "questions": 4
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: choosing your layer",
+       "minutes": 6,
+       "path": "harness/38-choosing-your-layer/04-quick-check-choosing-your-layer.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 39,
+     "dir": "harness/39-project-build-a-coding-agent",
+     "phase": "capstones",
+     "title": "Project: Build a coding agent",
+     "summary": "Capstone. Build a minimal coding agent harness from scratch: loop, file and shell tools, stop conditions, trajectory log - then let it complete seeded coding tasks.",
+     "minutes": 75,
+     "counts": {
+      "lessons": 0,
+      "tasks": 1,
+      "quizzes": 0,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "task",
+       "title": "Build a coding agent from scratch",
+       "minutes": 75,
+       "path": "harness/39-project-build-a-coding-agent/01-build-a-coding-agent-from-scratch.md"
+      }
+     ]
+    },
+    {
+     "n": 40,
+     "dir": "harness/40-project-harden-the-harness",
+     "phase": "capstones",
+     "title": "Project: Harden the harness",
+     "summary": "Capstone. Take an unsafe harness and add permissions, a workdir sandbox, injection defense, secrets redaction, and cost caps.",
+     "minutes": 75,
+     "counts": {
+      "lessons": 0,
+      "tasks": 1,
+      "quizzes": 0,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "task",
+       "title": "Harden an unsafe harness",
+       "minutes": 75,
+       "path": "harness/40-project-harden-the-harness/01-harden-an-unsafe-harness.md"
+      }
+     ]
+    },
+    {
+     "n": 41,
+     "dir": "harness/41-project-production-harness",
+     "phase": "capstones",
+     "title": "Project: Production harness",
+     "summary": "Capstone. A full harness for a ticket-triage agent: tools over a mock API, context budget, a verifier subagent, an eval suite with a gate, and complete transcripts.",
+     "minutes": 90,
+     "counts": {
+      "lessons": 0,
+      "tasks": 1,
+      "quizzes": 0,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "task",
+       "title": "Build the production ticket-triage harness",
+       "minutes": 90,
+       "path": "harness/41-project-production-harness/01-build-the-production-ticket-triage-harness.md"
+      }
+     ]
+    }
+   ]
   }
  ],
  "coming_soon": []

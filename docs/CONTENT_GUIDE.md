@@ -59,6 +59,18 @@ Everything above applies, plus the tools from `setup/fde/install-tools.sh` (`scr
 - **Document deliverables** (scoping documents, pilot criteria, runbooks) are checked for required `##` sections, bullet counts, numbers in metrics and names from the brief - not for prose quality.
 - Topics 42-44 are single-task capstones with a Scenario; topic 22 registers an MCP server with `claude mcp add --scope user`.
 
+## Practice machine conventions (Harness Engineering skill)
+
+Everything above applies, plus the tools from `setup/harness/install-tools.sh` (`scripts/harness_skill.py` holds titles and minutes). Topic 01 is the reference example for this skill.
+
+- **Story**: Stackline's project workspace (`services/billing.yaml` on port 8081, `services/search.yaml` on 9200), its helpdesk tickets, the ledger-api project (topics 34-37) and the support triage queue (topic 41). Reuse their facts.
+- **Harness code** is plain Python on the `openai` SDK (`OpenAI()` reads the gateway from the environment), on `lab-fast`; cheap side calls (summaries, verifiers) use `lab-mini`. Topics 07-11 build one loop (`harness_loop` in the build scripts) that later topics extend; Set up writes the starting `agent.py` only if it's missing.
+- **Folders**: `/root/harness-lab/NN-<short>`, with the agent's files in a `workspace/` subfolder.
+- **labmock** (`/opt/harness/labmock.py`) is the test model. Checkers drive the learner's harness with scripted steps - tool calls, bad JSON, endless loops, usage numbers, outages, rules per conversation for subagents and verifiers - and assert on exit codes, the exact requests the harness sent, tool results, logs and transcripts. A solution's run against the real gateway is checked in the request log only (`tool_calls`, `model`), never by reply wording.
+- **Attacks are tested, not described**: injection, path escapes, symlinks, shell operators and secret leaks are each run against the learner's code, with fake keys like `sk-fake-leakcheck-0000` only.
+- **Claude Code topics (34-37)** run `claude -p ... --max-turns N --output-format stream-json --verbose` and grade the event stream (`init`, `tool_use`, `tool_result`, `result` with `permission_denials`). Checkers start `claude` with stdin closed. MCP servers use the project scope (`.mcp.json`) or `--mcp-config --strict-mcp-config`; hooks live in `.claude/settings.json`; skills in `.claude/skills/<name>/SKILL.md`. Template fences inside files written by a solution use `~~~`, never triple backticks.
+- Topics 39-41 are single-task capstones with a Scenario.
+
 ## Lesson (250-600 words)
 
 Open with one or two sentences on why it matters. Then `##` sections, each with a short explanation and an example: a ```bash block for commands, ```json for requests and responses, ```python for SDK code, ```text for prompts and output. Tables for comparisons. Optional mermaid diagram (quote labels containing parentheses or slashes; no semicolons). End with a one-line teaser of what comes next.

@@ -128,6 +128,26 @@ ailab test
 
 A few tasks start a small local service in **Set up** - a mock customer API, or a deliberately slow model endpoint - on `127.0.0.1` ports `4555`, `4560` and `4570`. They run until the machine restarts; Set up starts them again if they aren't answering.
 
+## 6. Add the harness tools (Harness Engineering skill)
+
+The **Harness Engineering** skill uses everything from step 5 (Claude Code, `mcp`, `lab-embed` and `lab-tiny`), plus a scripted test model. On the same machine, run:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Hemanth9336/AI-Engineer/main/setup/harness/install-tools.sh | bash
+source ~/.bashrc
+```
+
+The script installs or refreshes the FDE lab first, then adds:
+
+| What | Where |
+|---|---|
+| `labmock`: a stand-in for a chat model that replays a script you write (a tool call, a model that never stops, a slow or failing reply), so you - and the checkers - can test harness code without depending on what a real model happens to say | `/opt/harness/labmock.py` |
+| Work folder - each topic uses `/root/harness-lab/NN-<short>` | `/root/harness-lab` |
+
+Your harness code always uses `OpenAI()`, so it runs against the real gateway or against `labmock` unchanged: `labmock` sets `OPENAI_BASE_URL` for the process it starts. A few tasks also run `labmock` from the shell on `127.0.0.1` ports `4596`-`4599`, and the final capstone starts a mock ticket API on port `4581`.
+
+Topics 34-37 drive **Claude Code** (`claude -p`) against the gateway. Every scripted run passes `--max-turns`, so a confused run can't loop forever.
+
 ## Everyday commands
 
 | Command | Does |

@@ -2,13 +2,13 @@
 
 # 🤖 AI Engineer
 
-### Work with real LLM APIs from a live machine — raw HTTP, official SDKs, embeddings, vector databases and RAG pipelines, graded when you press Submit.
+### Work with real LLM APIs from a live machine — raw HTTP, official SDKs, embeddings, RAG pipelines, customer deployments and agent harnesses, graded when you press Submit.
 
-**3 skills live · 86 topics · 135 hands-on tasks · 106 quizzes · ~58 hours**
+**4 skills live · 127 topics · 200 hands-on tasks · 155 quizzes · ~83 hours**
 
 [![Open the interactive roadmap](https://img.shields.io/badge/Open-Interactive%20Roadmap-7c5cff?style=for-the-badge&logo=openai&logoColor=white)](https://hemanth9336.github.io/AI-Engineer/)
-![Tasks](https://img.shields.io/badge/hands--on%20tasks-135-1f8f4e?style=for-the-badge)
-![Quizzes](https://img.shields.io/badge/quizzes-106-6f42c1?style=for-the-badge)
+![Tasks](https://img.shields.io/badge/hands--on%20tasks-200-1f8f4e?style=for-the-badge)
+![Quizzes](https://img.shields.io/badge/quizzes-155-6f42c1?style=for-the-badge)
 
 </div>
 
@@ -34,6 +34,7 @@
 | 🧠 [AI Fundamentals](ai-fundamentals/README.md) | 26 | 27 | 25 | ~955 min | ✅ Live |
 | 🔎 [RAG](rag/README.md) | 16 | 22 | 14 | ~765 min | ✅ Live |
 | 🚀 [AI Forward Deployed Engineer](fde/README.md) | 44 | 86 | 67 | ~1735 min | ✅ Live |
+| 🛠️ [Harness Engineering](harness/README.md) | 41 | 65 | 49 | ~1505 min | ✅ Live |
 
 ## 🧠 AI Fundamentals
 
@@ -339,6 +340,128 @@ _Three end-to-end builds that put the whole role to work._
 | 42 | [Project: Internal docs Q&A bot](fde/42-project-internal-docs-qa-bot/) | ~60m | 1 | 0 |
 | 43 | [Project: Support assistant with evals](fde/43-project-support-assistant-with-evals/) | ~75m | 1 | 0 |
 | 44 | [Project: Full engagement simulation](fde/44-project-full-engagement-simulation/) | ~90m | 1 | 0 |
+
+## 🛠️ Harness Engineering
+
+Build the machinery around AI models - from zero. Learn how LLMs and tool calling work, build agent loops by hand, design tools and context, add permissions and injection defenses, orchestrate subagents, prove behavior with evals, and dissect a production harness.
+
+```mermaid
+flowchart LR
+  P0["1. Foundations<br/>Steps 01-06"]
+  P1["2. The Agent Loop<br/>Steps 07-11"]
+  P2["3. Tool Design<br/>Steps 12-15"]
+  P3["4. Context Engineering<br/>Steps 16-20"]
+  P4["5. Permissions and Safety<br/>Steps 21-24"]
+  P5["6. Orchestration<br/>Steps 25-28"]
+  P6["7. Evals and Observability<br/>Steps 29-33"]
+  P7["8. Production Harnesses<br/>Steps 34-38"]
+  P8["9. Capstone Projects<br/>Steps 39-41"]
+  P0 --> P1 --> P2 --> P3 --> P4 --> P5 --> P6 --> P7 --> P8
+```
+
+### Phase 1 · Foundations
+
+_What a harness is, how LLMs behave, just enough Python, API calls, tokens, and tool calling._
+
+| Step | Topic | Time | 🛠️ Tasks | ❓ Quizzes |
+|---|---|---|---|---|
+| 01 | [What a harness is](harness/01-what-a-harness-is/) | ~30m | 0 | 2 |
+| 02 | [How LLMs work for harness builders](harness/02-how-llms-work-for-harness-builders/) | ~30m | 2 | 1 |
+| 03 | [Just enough Python](harness/03-just-enough-python/) | ~40m | 3 | 1 |
+| 04 | [Calling LLMs over an API](harness/04-calling-llms-over-an-api/) | ~40m | 3 | 1 |
+| 05 | [Tokens, context, and cost](harness/05-tokens-context-and-cost/) | ~40m | 3 | 1 |
+| 06 | [Tool calling](harness/06-tool-calling/) | ~40m | 2 | 1 |
+
+### Phase 2 · The Agent Loop
+
+_Build the loop by hand: stop conditions, errors, history, and asking the human._
+
+| Step | Topic | Time | 🛠️ Tasks | ❓ Quizzes |
+|---|---|---|---|---|
+| 07 | [Your first agent loop](harness/07-your-first-agent-loop/) | ~40m | 2 | 1 |
+| 08 | [Stop conditions](harness/08-stop-conditions/) | ~35m | 2 | 2 |
+| 09 | [Error handling in the loop](harness/09-error-handling-in-the-loop/) | ~35m | 2 | 1 |
+| 10 | [Loop state and history](harness/10-loop-state-and-history/) | ~35m | 2 | 1 |
+| 11 | [Making the agent ask for help](harness/11-making-the-agent-ask-for-help/) | ~25m | 1 | 2 |
+
+### Phase 3 · Tool Design
+
+_Tools are prompts: descriptions, result shapes, tool sets, and dangerous actions._
+
+| Step | Topic | Time | 🛠️ Tasks | ❓ Quizzes |
+|---|---|---|---|---|
+| 12 | [Tools are prompts](harness/12-tools-are-prompts/) | ~35m | 2 | 1 |
+| 13 | [Designing tool results](harness/13-designing-tool-results/) | ~35m | 2 | 1 |
+| 14 | [Tool sets and selection](harness/14-tool-sets-and-selection/) | ~30m | 1 | 2 |
+| 15 | [Dangerous tools](harness/15-dangerous-tools/) | ~30m | 1 | 2 |
+
+### Phase 4 · Context Engineering
+
+_System prompts, budgets, compaction, file memory, and retrieval into context._
+
+| Step | Topic | Time | 🛠️ Tasks | ❓ Quizzes |
+|---|---|---|---|---|
+| 16 | [The system prompt](harness/16-the-system-prompt/) | ~35m | 2 | 1 |
+| 17 | [Context budgeting](harness/17-context-budgeting/) | ~35m | 2 | 1 |
+| 18 | [Compaction and summarization](harness/18-compaction-and-summarization/) | ~35m | 2 | 1 |
+| 19 | [File-based memory](harness/19-file-based-memory/) | ~35m | 2 | 1 |
+| 20 | [Retrieval into context](harness/20-retrieval-into-context/) | ~30m | 1 | 1 |
+
+### Phase 5 · Permissions and Safety
+
+_Permission models, sandboxes, prompt injection through tools, and secrets hygiene._
+
+| Step | Topic | Time | 🛠️ Tasks | ❓ Quizzes |
+|---|---|---|---|---|
+| 21 | [Permission models](harness/21-permission-models/) | ~35m | 1 | 2 |
+| 22 | [Sandboxing](harness/22-sandboxing/) | ~30m | 1 | 1 |
+| 23 | [Prompt injection through tools](harness/23-prompt-injection-through-tools/) | ~35m | 2 | 1 |
+| 24 | [Secrets hygiene](harness/24-secrets-hygiene/) | ~30m | 2 | 2 |
+
+### Phase 6 · Orchestration
+
+_Subagents, parallel agents, verifiers, and the ways multi-agent systems fail._
+
+| Step | Topic | Time | 🛠️ Tasks | ❓ Quizzes |
+|---|---|---|---|---|
+| 25 | [Subagents](harness/25-subagents/) | ~30m | 1 | 1 |
+| 26 | [Parallel agents](harness/26-parallel-agents/) | ~30m | 1 | 1 |
+| 27 | [Verification patterns](harness/27-verification-patterns/) | ~35m | 2 | 1 |
+| 28 | [Orchestration failure modes](harness/28-orchestration-failure-modes/) | ~30m | 1 | 2 |
+
+### Phase 7 · Evals and Observability
+
+_Grading trajectories, eval suites, transcripts, cost caps, and regression gates._
+
+| Step | Topic | Time | 🛠️ Tasks | ❓ Quizzes |
+|---|---|---|---|---|
+| 29 | [Evals for agents](harness/29-evals-for-agents/) | ~25m | 0 | 2 |
+| 30 | [Building an agent eval suite](harness/30-building-an-agent-eval-suite/) | ~40m | 2 | 1 |
+| 31 | [Transcripts and replay](harness/31-transcripts-and-replay/) | ~35m | 2 | 1 |
+| 32 | [Cost and latency of agents](harness/32-cost-and-latency-of-agents/) | ~35m | 2 | 1 |
+| 33 | [Regression testing a harness](harness/33-regression-testing-a-harness/) | ~30m | 2 | 1 |
+
+### Phase 8 · Production Harnesses
+
+_Dissect and extend Claude Code: MCP, hooks, instruction files, skills, and choosing your layer._
+
+| Step | Topic | Time | 🛠️ Tasks | ❓ Quizzes |
+|---|---|---|---|---|
+| 34 | [Claude Code as a harness](harness/34-claude-code-as-a-harness/) | ~35m | 1 | 1 |
+| 35 | [Extending a harness with MCP](harness/35-extending-a-harness-with-mcp/) | ~35m | 2 | 1 |
+| 36 | [Hooks and instruction files](harness/36-hooks-and-instruction-files/) | ~35m | 2 | 1 |
+| 37 | [Packaging behavior as skills](harness/37-packaging-behavior-as-skills/) | ~25m | 1 | 1 |
+| 38 | [Choosing your layer](harness/38-choosing-your-layer/) | ~25m | 0 | 3 |
+
+### Phase 9 · Capstone Projects
+
+_Three end-to-end builds: a coding agent, a hardened harness, and a production triage harness._
+
+| Step | Topic | Time | 🛠️ Tasks | ❓ Quizzes |
+|---|---|---|---|---|
+| 39 | [Project: Build a coding agent](harness/39-project-build-a-coding-agent/) | ~75m | 1 | 0 |
+| 40 | [Project: Harden the harness](harness/40-project-harden-the-harness/) | ~75m | 1 | 0 |
+| 41 | [Project: Production harness](harness/41-project-production-harness/) | ~90m | 1 | 0 |
 
 ## 📁 Repository layout
 
