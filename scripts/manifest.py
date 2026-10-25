@@ -11,10 +11,11 @@ from rag_skill import RAG
 from fde_skill import FDE
 from harness_skill import HARNESS
 from claude_code_skill import CLAUDE_CODE
+from claude_code_mastery_skill import CLAUDE_CODE_MASTERY
 
 L, T, Q, S = "lesson", "task", "quiz", "scenario"
 
-SKILLS = [AI_FUNDAMENTALS, RAG, FDE, HARNESS, CLAUDE_CODE]
+SKILLS = [AI_FUNDAMENTALS, RAG, FDE, HARNESS, CLAUDE_CODE, CLAUDE_CODE_MASTERY]
 
 # Shown on the home page as upcoming skills until their content is added to SKILLS.
 COMING_SOON = []
@@ -29,7 +30,7 @@ def slugify(text):
 
 
 def step_dir(step):
-    return f"{step['n']:02d}-{step['slug']}"
+    return f"{step['n']:0{step.get('pad', 2)}d}-{step['slug']}"
 
 
 def item_file(index, title):

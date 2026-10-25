@@ -17,7 +17,8 @@
   function load() { try { return JSON.parse(localStorage.getItem(STORE)) || {}; } catch { return {}; } }
   function save() { localStorage.setItem(STORE, JSON.stringify(done)); renderTopProgress(); }
   const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-  const pad = (n) => String(n).padStart(2, "0");
+  const pad = (n, w = 2) => String(n).padStart(w, "0");
+  const num = (st) => pad(st.n, st.pad || 2);
   const skillById = (id) => data.skills.find((s) => s.id === id);
   const itemsOf = (sk) => sk.steps.flatMap((st) => st.items.map((it, i) => ({ ...it, step: st, idx: i + 1, skill: sk })));
   const allItems = () => data.skills.flatMap(itemsOf);
@@ -226,7 +227,7 @@
         ${s.challenges ? `<div class="stat"><div class="num">${s.challenges}</div><div class="lbl">challenges</div></div>` : ""}
         <div class="stat"><div class="num">~${s.minutes}</div><div class="lbl">minutes</div></div>
       </div>
-      <div class="hero-cta"><a class="btn primary" href="${resumeLink(sk)}">${n ? `▶ Continue: ${pad(cur.n)} ${esc(cur.title)}` : `🚀 Start ${pad(sk.steps[0].n)} ${esc(sk.steps[0].title)}`}</a>
+      <div class="hero-cta"><a class="btn primary" href="${resumeLink(sk)}">${n ? `▶ Continue: ${num(cur)} ${esc(cur.title)}` : `🚀 Start ${num(sk.steps[0])} ${esc(sk.steps[0].title)}`}</a>
       <a class="btn" href="#/">← All skills</a></div>
       <div class="overall"><div class="bar"><span style="width:${(n / items.length) * 100}%"></span></div>
         <div class="meta"><span>${n} of ${items.length} items complete</span><span>${s.questions} quiz questions</span></div></div>
@@ -244,7 +245,7 @@
         const c = st.counts;
         html += `<a class="card ${pct === 1 ? "done" : ""} ${here ? "current" : ""} ${locked ? "locked" : ""}" href="#/${sk.id}/${st.n}">
           ${here ? '<span class="badge-now">▶ YOU ARE HERE</span>' : locked ? '<span class="lock">🔒</span>' : ""}
-          ${ring(pct)}<div class="body"><div class="step-no">${pad(st.n)} · ~${st.minutes} min</div>
+          ${ring(pct)}<div class="body"><div class="step-no">${num(st)} · ~${st.minutes} min</div>
           <h4>${esc(st.title)}</h4><p>${esc(st.summary)}</p>
           <div class="chips">${c.lessons ? `<span class="chip">📘 ${c.lessons}</span>` : `<span class="chip">🎓 project</span>`}
           ${c.tasks ? `<span class="chip">🛠️ ${c.tasks}</span>` : ""}${c.quizzes ? `<span class="chip">❓ ${c.quizzes}</span>` : ""}${c.challenges ? `<span class="chip">🏆 ${c.challenges}</span>` : ""}</div></div></a>`;
@@ -258,7 +259,7 @@
   function sidebar(sk, st, activeIdx) {
     const d = stepDone(st);
     return `<aside class="sidebar"><a class="back" href="#/${sk.id}">← ${esc(sk.name)} path</a>
-      <h3><a href="#/${sk.id}/${st.n}" style="color:inherit">${pad(st.n)} · ${esc(st.title)}</a></h3>
+      <h3><a href="#/${sk.id}/${st.n}" style="color:inherit">${num(st)} · ${esc(st.title)}</a></h3>
       <div class="meta">~${st.minutes} min · ${d}/${st.items.length} complete</div>
       <div class="bar"><span style="width:${(d / st.items.length) * 100}%"></span></div>
       <ul class="items">${st.items.map((it, i) => `<li><a href="#/${sk.id}/${st.n}/${i + 1}" class="${i + 1 === activeIdx ? "active" : ""} ${done[it.path] ? "done" : ""}">
@@ -272,11 +273,11 @@
     const first = st.items.findIndex((it) => !done[it.path]) + 1 || 1;
     const c = st.counts;
     app.innerHTML = `<div class="layout">${sidebar(sk, st, 0)}<div>
-      <div class="step-hero"><div class="step-no">${sk.icon} ${esc(sk.name)} · ${pad(st.n)} of ${sk.steps.length} · ${esc(phase.name)}</div>
+      <div class="step-hero"><div class="step-no">${sk.icon} ${esc(sk.name)} · ${num(st)} of ${sk.steps.length} · ${esc(phase.name)}</div>
         <h1>${esc(st.title)}</h1><p>${esc(st.summary)}</p>
         <div class="chips" style="margin-bottom:18px"><span class="chip">⏱ ~${st.minutes} min</span>${c.lessons ? `<span class="chip">📘 ${c.lessons} lessons</span>` : ""}
         ${c.tasks ? `<span class="chip">🛠️ ${c.tasks} tasks</span>` : ""}${c.quizzes ? `<span class="chip">❓ ${c.quizzes} quizzes</span>` : ""}${c.challenges ? `<span class="chip">🏆 ${c.challenges} challenge${c.challenges > 1 ? "s" : ""}</span>` : ""}</div>
-        ${isLocked(sk, st) ? `<p style="font-size:14px">🔒 Recommended: finish <a href="#/${sk.id}/${st.n - 1}">step ${pad(st.n - 1)}</a> first. You can still open this step.</p>` : ""}
+        ${isLocked(sk, st) ? `<p style="font-size:14px">🔒 Recommended: finish <a href="#/${sk.id}/${st.n - 1}">step ${pad(st.n - 1, st.pad || 2)}</a> first. You can still open this step.</p>` : ""}
         <a class="btn primary" href="#/${sk.id}/${st.n}/${first}">${stepDone(st) ? "▶ Continue" : "🚀 Start this step"}</a>
         <a class="btn" href="${REPO}/tree/main/${st.dir}" target="_blank" rel="noopener">📁 Folder on GitHub</a></div>
       <div class="item-list">${st.items.map((it, i) => `<a class="item-row ${done[it.path] ? "done" : ""}" href="#/${sk.id}/${st.n}/${i + 1}">
@@ -310,21 +311,21 @@
     const prev = flat[pos - 1], next = flat[pos + 1];
     const link = (f, label) => (f ? `<a class="btn" href="#/${sk.id}/${f.step.n}/${f.idx}">${label}</a>` : "");
     app.innerHTML = `<div class="layout">${sidebar(sk, st, idx)}<article class="article">
-      <div class="article-head"><div class="crumb"><a href="#/">AI Engineer</a> / <a href="#/${sk.id}">${esc(sk.name)}</a> / <a href="#/${sk.id}/${st.n}">${pad(st.n)} · ${esc(st.title)}</a></div>
+      <div class="article-head"><div class="crumb"><a href="#/">AI Engineer</a> / <a href="#/${sk.id}">${esc(sk.name)}</a> / <a href="#/${sk.id}/${st.n}">${num(st)} · ${esc(st.title)}</a></div>
         <h1>${esc(it.title)}</h1><span class="type ${it.type}">${TYPE[it.type].icon} ${TYPE[it.type].label}</span>
         <span class="chip" style="margin-left:6px">⏱ ${it.minutes} min</span></div>
       <div class="md" id="content"><p class="loading">Loading…</p></div>
       ${it.type === "task" || it.type === "challenge" ? `<div class="checker-note">🧪 Run the <b>Check your work</b> script on your practice machine. When every line shows ✅, press <b>Submit</b>.
         No lab yet? <a href="${REPO}/blob/main/setup/README.md" target="_blank" rel="noopener">Set up the machine and AI gateway</a>.</div>` : ""}
       <div class="article-foot"><button id="complete" class="btn"></button>
-        <div class="nav-links">${link(prev, "← Previous")}${link(next, next && next.step.n !== st.n ? `Next: ${pad(next.step.n)} ${esc(next.step.title)} →` : "Next →")}</div></div>
+        <div class="nav-links">${link(prev, "← Previous")}${link(next, next && next.step.n !== st.n ? `Next: ${num(next.step)} ${esc(next.step.title)} →` : "Next →")}</div></div>
     </article></div>`;
     window.scrollTo(0, 0);
     refreshItemChrome();
     document.getElementById("complete").onclick = () => {
       const v = !done[it.path];
       setDone(it.path, v); refreshItemChrome();
-      if (v) toast(isStepDone(st) ? `🎉 ${pad(st.n)} ${st.title} complete!` : `✓ "${it.title}" complete`);
+      if (v) toast(isStepDone(st) ? `🎉 ${num(st)} ${st.title} complete!` : `✓ "${it.title}" complete`);
     };
     const content = document.getElementById("content");
     try {
@@ -345,9 +346,9 @@
     const q = input.value.trim().toLowerCase();
     if (!q || !data) { results.hidden = true; return; }
     const stepHits = data.skills.flatMap((sk) => sk.steps.filter((s) => (s.title + " " + s.summary).toLowerCase().includes(q))
-      .map((s) => `<a href="#/${sk.id}/${s.n}">🗺️ ${pad(s.n)} · ${esc(s.title)}<small>${esc(sk.name)}</small></a>`));
+      .map((s) => `<a href="#/${sk.id}/${s.n}">🗺️ ${num(s)} · ${esc(s.title)}<small>${esc(sk.name)}</small></a>`));
     const itemHits = allItems().filter((i) => i.title.toLowerCase().includes(q)).slice(0, 25)
-      .map((i) => `<a href="#/${i.skill.id}/${i.step.n}/${i.idx}">${TYPE[i.type].icon} ${esc(i.title)}<small>${esc(i.skill.name)} ${pad(i.step.n)}</small></a>`);
+      .map((i) => `<a href="#/${i.skill.id}/${i.step.n}/${i.idx}">${TYPE[i.type].icon} ${esc(i.title)}<small>${esc(i.skill.name)} ${num(i.step)}</small></a>`);
     const all = [...stepHits, ...itemHits];
     results.innerHTML = all.length ? all.join("") : `<div style="padding:10px;color:var(--muted)">No matches</div>`;
     results.hidden = false;

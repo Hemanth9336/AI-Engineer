@@ -57,7 +57,7 @@ def build_skill(skill, errors):
             totals[kind] += 1
             items.append(entry)
         c = Counter(k for k, _ in step["items"])
-        steps.append({"n": step["n"], "dir": f"{skill['id']}/{step_dir(step)}", "phase": step["phase"],
+        steps.append({"n": step["n"], "pad": step.get("pad", 2), "dir": f"{skill['id']}/{step_dir(step)}", "phase": step["phase"],
                       "title": step["title"], "summary": step["summary"], "minutes": step["minutes"],
                       "counts": {"lessons": c["lesson"], "tasks": c["task"], "quizzes": c["quiz"] + c["scenario"],
                                  "challenges": c["challenge"]},
@@ -74,7 +74,7 @@ def build_skill(skill, errors):
 
 def write_step_readme(skill, step):
     phase = next(p for p in skill["phases"] if p["id"] == step["phase"])
-    out = [f"# {step['n']:02d} - {step['title']}", "",
+    out = [f"# {step['n']:0{step['pad']}d} - {step['title']}", "",
            f"> **{skill['icon']} {skill['name']}** · **Phase:** {phase['name']} · **Time:** ~{step['minutes']} min · "
            f"[Open in the interactive site]({SITE}#/{skill['id']}/{step['n']})", "",
            step["summary"], "", "| # | Type | Item | Time |", "|---|---|---|---|"]
@@ -84,10 +84,10 @@ def write_step_readme(skill, step):
     idx = steps.index(step)
     nav = []
     if idx > 0:
-        nav.append(f"⬅️ [{steps[idx-1]['n']:02d} {steps[idx-1]['title']}](../{steps[idx-1]['dir'].split('/')[1]}/)")
+        nav.append(f"⬅️ [{steps[idx-1]['n']:0{step['pad']}d} {steps[idx-1]['title']}](../{steps[idx-1]['dir'].split('/')[1]}/)")
     nav.append(f"[🗺️ {skill['name']} roadmap](../README.md)")
     if idx < len(steps) - 1:
-        nav.append(f"[{steps[idx+1]['n']:02d} {steps[idx+1]['title']}](../{steps[idx+1]['dir'].split('/')[1]}/) ➡️")
+        nav.append(f"[{steps[idx+1]['n']:0{step['pad']}d} {steps[idx+1]['title']}](../{steps[idx+1]['dir'].split('/')[1]}/) ➡️")
     out += ["", " · ".join(nav), ""]
     (ROOT / step["dir"] / "README.md").write_text("\n".join(out))
 
@@ -101,7 +101,7 @@ def skill_table(skill, link_prefix):
             if st["phase"] == p["id"]:
                 c = st["counts"]
                 tasks = f"{c['tasks']}" + (f" + 🏆 {c['challenges']}" if c["challenges"] else "")
-                out.append(f"| {st['n']:02d} | [{st['title']}]({link_prefix}{st['dir'].split('/')[1]}/) | ~{st['minutes']}m | {tasks} | {c['quizzes']} |")
+                out.append(f"| {st['n']:0{st['pad']}d} | [{st['title']}]({link_prefix}{st['dir'].split('/')[1]}/) | ~{st['minutes']}m | {tasks} | {c['quizzes']} |")
         out.append("")
     return out
 
