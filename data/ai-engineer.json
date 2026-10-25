@@ -6170,6 +6170,741 @@
      ]
     }
    ]
+  },
+  {
+   "id": "claude-code",
+   "name": "Claude Code Fundamentals",
+   "icon": "⌨️",
+   "color": "#d97757",
+   "tagline": "Learn to drive Claude Code as a daily tool - the interactive console, permissions, headless scripting, project memory, plan mode, git work, custom commands, subagents, hooks, MCP, and settings - all hands-on, graded when you press Submit.",
+   "stats": {
+    "topics": 20,
+    "tasks": 23,
+    "quizzes": 16,
+    "challenges": 0,
+    "lessons": 20,
+    "questions": 71,
+    "minutes": 535
+   },
+   "phases": [
+    {
+     "id": "start",
+     "name": "Getting Started",
+     "blurb": "Set up, the interactive console, permissions, and headless runs with -p."
+    },
+    {
+     "id": "work",
+     "name": "Working with the Agent",
+     "blurb": "Clear instructions, project memory, context, plan mode, whole-codebase work, debugging, and git."
+    },
+    {
+     "id": "extend",
+     "name": "Extending Claude Code",
+     "blurb": "Custom slash commands, subagents, hooks, MCP servers, and settings."
+    },
+    {
+     "id": "automate",
+     "name": "Automation",
+     "blurb": "Headless Claude Code in scripts and on a schedule."
+    },
+    {
+     "id": "projects",
+     "name": "Claude Code Projects",
+     "blurb": "Three end-to-end jobs: build a CLI, fix a broken repo, configure a project."
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "dir": "claude-code/01-setup-and-prerequisites",
+     "phase": "start",
+     "title": "Claude Code: Setup & Prerequisites",
+     "summary": "What Claude Code is, its two ways of running, and proving a machine is ready for it.",
+     "minutes": 20,
+     "counts": {
+      "lessons": 1,
+      "tasks": 1,
+      "quizzes": 0,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "What is Claude Code?",
+       "minutes": 8,
+       "path": "claude-code/01-setup-and-prerequisites/01-what-is-claude-code.md"
+      },
+      {
+       "type": "task",
+       "title": "Verify the prerequisites",
+       "minutes": 12,
+       "path": "claude-code/01-setup-and-prerequisites/02-verify-the-prerequisites.md"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "dir": "claude-code/02-inside-the-console",
+     "phase": "start",
+     "title": "Claude Code: Inside the Console",
+     "summary": "Launch the interactive console and use its slash commands - /init a project memory file, /model to switch models, and put the agent to work.",
+     "minutes": 30,
+     "counts": {
+      "lessons": 1,
+      "tasks": 2,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Inside the console",
+       "minutes": 6,
+       "path": "claude-code/02-inside-the-console/01-inside-the-console.md"
+      },
+      {
+       "type": "task",
+       "title": "/init a project",
+       "minutes": 10,
+       "path": "claude-code/02-inside-the-console/02-init-a-project.md"
+      },
+      {
+       "type": "task",
+       "title": "/model, then put it to work",
+       "minutes": 10,
+       "path": "claude-code/02-inside-the-console/03-model-then-put-it-to-work.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: the console",
+       "minutes": 4,
+       "path": "claude-code/02-inside-the-console/04-quick-check-the-console.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "dir": "claude-code/03-permissions-and-safety",
+     "phase": "start",
+     "title": "Claude Code: Permissions and Safety",
+     "summary": "Learn how Claude Code asks before it acts, the four permission modes, and how to set an allowlist so an agent stays under your control.",
+     "minutes": 25,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "How permissions work",
+       "minutes": 6,
+       "path": "claude-code/03-permissions-and-safety/01-how-permissions-work.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Permission modes",
+       "minutes": 6,
+       "path": "claude-code/03-permissions-and-safety/02-permission-modes.md"
+      },
+      {
+       "type": "task",
+       "title": "Set an allowlist",
+       "minutes": 9,
+       "path": "claude-code/03-permissions-and-safety/03-set-an-allowlist.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: first run on an unfamiliar repo",
+       "minutes": 4,
+       "path": "claude-code/03-permissions-and-safety/04-scenario-first-run-on-an-unfamiliar-repo.md",
+       "questions": 3
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "dir": "claude-code/04-headless-with-p",
+     "phase": "start",
+     "title": "Claude Code: Headless with -p",
+     "summary": "Run Claude Code as a one-shot Unix tool - capture answers, let it write real files, and compose it with the shell.",
+     "minutes": 25,
+     "counts": {
+      "lessons": 0,
+      "tasks": 3,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "task",
+       "title": "Your first headless prompt",
+       "minutes": 7,
+       "path": "claude-code/04-headless-with-p/01-your-first-headless-prompt.md"
+      },
+      {
+       "type": "task",
+       "title": "Let Claude write a script",
+       "minutes": 7,
+       "path": "claude-code/04-headless-with-p/02-let-claude-write-a-script.md"
+      },
+      {
+       "type": "task",
+       "title": "Output formats and piping",
+       "minutes": 7,
+       "path": "claude-code/04-headless-with-p/03-output-formats-and-piping.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: headless Claude Code",
+       "minutes": 4,
+       "path": "claude-code/04-headless-with-p/04-quick-check-headless-claude-code.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "dir": "claude-code/05-instructing-the-agent",
+     "phase": "work",
+     "title": "Claude Code: Instructing the Agent",
+     "summary": "Learn how to give Claude Code clear instructions, when to break a big task into steps, and how to iterate when the first result is close but not right.",
+     "minutes": 25,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Giving good instructions",
+       "minutes": 6,
+       "path": "claude-code/05-instructing-the-agent/01-giving-good-instructions.md"
+      },
+      {
+       "type": "lesson",
+       "title": "When to break work up",
+       "minutes": 6,
+       "path": "claude-code/05-instructing-the-agent/02-when-to-break-work-up.md"
+      },
+      {
+       "type": "task",
+       "title": "Write a clear brief",
+       "minutes": 9,
+       "path": "claude-code/05-instructing-the-agent/03-write-a-clear-brief.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: the code is almost right",
+       "minutes": 4,
+       "path": "claude-code/05-instructing-the-agent/04-scenario-the-code-is-almost-right.md",
+       "questions": 3
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "dir": "claude-code/06-project-memory",
+     "phase": "work",
+     "title": "Claude Code: Project Memory",
+     "summary": "Teach CLAUDE.md as the project memory Claude reads at the start of every session and what belongs in it.",
+     "minutes": 25,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "What CLAUDE.md is",
+       "minutes": 6,
+       "path": "claude-code/06-project-memory/01-what-claude-md-is.md"
+      },
+      {
+       "type": "lesson",
+       "title": "What to put in CLAUDE.md",
+       "minutes": 6,
+       "path": "claude-code/06-project-memory/02-what-to-put-in-claude-md.md"
+      },
+      {
+       "type": "task",
+       "title": "Write a project memory",
+       "minutes": 9,
+       "path": "claude-code/06-project-memory/03-write-a-project-memory.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: project memory",
+       "minutes": 4,
+       "path": "claude-code/06-project-memory/04-quick-check-project-memory.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 7,
+     "dir": "claude-code/07-managing-context",
+     "phase": "work",
+     "title": "Claude Code: Managing Context",
+     "summary": "Teach what the context window is and how to keep it clean with /clear and /compact.",
+     "minutes": 20,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "The context window",
+       "minutes": 5,
+       "path": "claude-code/07-managing-context/01-the-context-window.md"
+      },
+      {
+       "type": "lesson",
+       "title": "/clear and /compact",
+       "minutes": 5,
+       "path": "claude-code/07-managing-context/02-clear-and-compact.md"
+      },
+      {
+       "type": "task",
+       "title": "Note when to clear and when to compact",
+       "minutes": 7,
+       "path": "claude-code/07-managing-context/03-note-when-to-clear-and-when-to-compact.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: /clear vs /compact",
+       "minutes": 3,
+       "path": "claude-code/07-managing-context/04-quick-check-clear-vs-compact.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 8,
+     "dir": "claude-code/08-plan-mode",
+     "phase": "work",
+     "title": "Claude Code: Plan Mode",
+     "summary": "Teach plan mode, where Claude explores read-only and proposes a plan you review before it changes anything.",
+     "minutes": 20,
+     "counts": {
+      "lessons": 1,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "What plan mode is",
+       "minutes": 6,
+       "path": "claude-code/08-plan-mode/01-what-plan-mode-is.md"
+      },
+      {
+       "type": "task",
+       "title": "Plan before you build",
+       "minutes": 10,
+       "path": "claude-code/08-plan-mode/02-plan-before-you-build.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: refactoring an unfamiliar module",
+       "minutes": 4,
+       "path": "claude-code/08-plan-mode/03-scenario-refactoring-an-unfamiliar-module.md",
+       "questions": 3
+      }
+     ]
+    },
+    {
+     "n": 9,
+     "dir": "claude-code/09-working-across-a-codebase",
+     "phase": "work",
+     "title": "Claude Code: Working Across a Codebase",
+     "summary": "Point Claude at a whole repo and let it search, read, and make coordinated edits across many files.",
+     "minutes": 25,
+     "counts": {
+      "lessons": 1,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Working across files",
+       "minutes": 8,
+       "path": "claude-code/09-working-across-a-codebase/01-working-across-files.md"
+      },
+      {
+       "type": "task",
+       "title": "Explore a small project with Claude",
+       "minutes": 12,
+       "path": "claude-code/09-working-across-a-codebase/02-explore-a-small-project-with-claude.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: working across a codebase",
+       "minutes": 5,
+       "path": "claude-code/09-working-across-a-codebase/03-quick-check-working-across-a-codebase.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 10,
+     "dir": "claude-code/10-debugging",
+     "phase": "work",
+     "title": "Claude Code: Debugging",
+     "summary": "Show Claude an error or a failing test, let it find the cause and propose a fix, then run it again.",
+     "minutes": 25,
+     "counts": {
+      "lessons": 1,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Fixing bugs with Claude",
+       "minutes": 8,
+       "path": "claude-code/10-debugging/01-fixing-bugs-with-claude.md"
+      },
+      {
+       "type": "task",
+       "title": "Fix a broken script with Claude",
+       "minutes": 12,
+       "path": "claude-code/10-debugging/02-fix-a-broken-script-with-claude.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: a fix you do not understand",
+       "minutes": 5,
+       "path": "claude-code/10-debugging/03-scenario-a-fix-you-do-not-understand.md",
+       "questions": 3
+      }
+     ]
+    },
+    {
+     "n": 11,
+     "dir": "claude-code/11-git-work",
+     "phase": "work",
+     "title": "Claude Code: Git Work",
+     "summary": "Let Claude stage changes, write commit messages from the diff, and open PRs while you review before anything lands.",
+     "minutes": 25,
+     "counts": {
+      "lessons": 1,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Git work with Claude",
+       "minutes": 8,
+       "path": "claude-code/11-git-work/01-git-work-with-claude.md"
+      },
+      {
+       "type": "task",
+       "title": "Commit a change with Claude",
+       "minutes": 12,
+       "path": "claude-code/11-git-work/02-commit-a-change-with-claude.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: git work with Claude",
+       "minutes": 5,
+       "path": "claude-code/11-git-work/03-quick-check-git-work-with-claude.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 12,
+     "dir": "claude-code/12-custom-slash-commands",
+     "phase": "extend",
+     "title": "Claude Code: Custom Slash Commands",
+     "summary": "Turn prompts you type often into reusable slash commands stored as markdown files.",
+     "minutes": 20,
+     "counts": {
+      "lessons": 1,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Custom slash commands",
+       "minutes": 6,
+       "path": "claude-code/12-custom-slash-commands/01-custom-slash-commands.md"
+      },
+      {
+       "type": "task",
+       "title": "Write a custom command",
+       "minutes": 10,
+       "path": "claude-code/12-custom-slash-commands/02-write-a-custom-command.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: custom slash commands",
+       "minutes": 4,
+       "path": "claude-code/12-custom-slash-commands/03-quick-check-custom-slash-commands.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 13,
+     "dir": "claude-code/13-subagents",
+     "phase": "extend",
+     "title": "Claude Code: Subagents",
+     "summary": "Let Claude hand a scoped job to a subagent that runs in its own context and reports back.",
+     "minutes": 20,
+     "counts": {
+      "lessons": 1,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "What subagents are",
+       "minutes": 6,
+       "path": "claude-code/13-subagents/01-what-subagents-are.md"
+      },
+      {
+       "type": "task",
+       "title": "Define a subagent",
+       "minutes": 10,
+       "path": "claude-code/13-subagents/02-define-a-subagent.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: subagents",
+       "minutes": 4,
+       "path": "claude-code/13-subagents/03-quick-check-subagents.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 14,
+     "dir": "claude-code/14-hooks",
+     "phase": "extend",
+     "title": "Claude Code: Hooks",
+     "summary": "Run your own shell commands automatically on Claude Code lifecycle events like edits and prompts.",
+     "minutes": 25,
+     "counts": {
+      "lessons": 1,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "What hooks are",
+       "minutes": 8,
+       "path": "claude-code/14-hooks/01-what-hooks-are.md"
+      },
+      {
+       "type": "task",
+       "title": "Add a hook",
+       "minutes": 12,
+       "path": "claude-code/14-hooks/02-add-a-hook.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: hooks",
+       "minutes": 5,
+       "path": "claude-code/14-hooks/03-quick-check-hooks.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 15,
+     "dir": "claude-code/15-mcp-servers",
+     "phase": "extend",
+     "title": "Claude Code: MCP Servers",
+     "summary": "Connect Claude Code to external tools and data through MCP servers you add, list, and remove from the command line.",
+     "minutes": 25,
+     "counts": {
+      "lessons": 1,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "What MCP servers are",
+       "minutes": 8,
+       "path": "claude-code/15-mcp-servers/01-what-mcp-servers-are.md"
+      },
+      {
+       "type": "task",
+       "title": "Add an MCP server",
+       "minutes": 12,
+       "path": "claude-code/15-mcp-servers/02-add-an-mcp-server.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: MCP servers",
+       "minutes": 5,
+       "path": "claude-code/15-mcp-servers/03-quick-check-mcp-servers.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 16,
+     "dir": "claude-code/16-settings",
+     "phase": "extend",
+     "title": "Claude Code: Settings",
+     "summary": "Learn the settings hierarchy Claude Code reads and configure a project with a model and permission rules.",
+     "minutes": 20,
+     "counts": {
+      "lessons": 1,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "The settings hierarchy",
+       "minutes": 6,
+       "path": "claude-code/16-settings/01-the-settings-hierarchy.md"
+      },
+      {
+       "type": "task",
+       "title": "Configure a project",
+       "minutes": 10,
+       "path": "claude-code/16-settings/02-configure-a-project.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: settings files",
+       "minutes": 4,
+       "path": "claude-code/16-settings/03-quick-check-settings-files.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 17,
+     "dir": "claude-code/17-automation",
+     "phase": "automate",
+     "title": "Claude Code: Automation",
+     "summary": "Wrap headless Claude Code in scripts and schedule it so it runs real work without a human waiting on the keyboard.",
+     "minutes": 25,
+     "counts": {
+      "lessons": 1,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Claude in scripts",
+       "minutes": 8,
+       "path": "claude-code/17-automation/01-claude-in-scripts.md"
+      },
+      {
+       "type": "task",
+       "title": "Build an automation",
+       "minutes": 12,
+       "path": "claude-code/17-automation/02-build-an-automation.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: scheduling Claude on a server",
+       "minutes": 5,
+       "path": "claude-code/17-automation/03-scenario-scheduling-claude-on-a-server.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 18,
+     "dir": "claude-code/18-project-build-a-cli-tool",
+     "phase": "projects",
+     "title": "Claude Code Project: Build a CLI Tool",
+     "summary": "Build a small word-count CLI with Claude Code and document it in a CLAUDE.md.",
+     "minutes": 45,
+     "counts": {
+      "lessons": 0,
+      "tasks": 1,
+      "quizzes": 0,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "task",
+       "title": "Build and document a word-count CLI",
+       "minutes": 45,
+       "path": "claude-code/18-project-build-a-cli-tool/01-build-and-document-a-word-count-cli.md"
+      }
+     ]
+    },
+    {
+     "n": 19,
+     "dir": "claude-code/19-project-fix-a-broken-repo",
+     "phase": "projects",
+     "title": "Claude Code Project: Fix a Broken Repo",
+     "summary": "Use Claude Code to find and fix a real bug in a small repo until its test passes.",
+     "minutes": 45,
+     "counts": {
+      "lessons": 0,
+      "tasks": 1,
+      "quizzes": 0,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "task",
+       "title": "Find and fix the bug until the test passes",
+       "minutes": 45,
+       "path": "claude-code/19-project-fix-a-broken-repo/01-find-and-fix-the-bug-until-the-test-passes.md"
+      }
+     ]
+    },
+    {
+     "n": 20,
+     "dir": "claude-code/20-project-configure-a-project",
+     "phase": "projects",
+     "title": "Claude Code Project: Configure a Project",
+     "summary": "Set up a repo for Claude Code end to end with a CLAUDE.md, a custom command, and a permissions allowlist.",
+     "minutes": 45,
+     "counts": {
+      "lessons": 0,
+      "tasks": 1,
+      "quizzes": 0,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "task",
+       "title": "Configure a repo for Claude Code end to end",
+       "minutes": 45,
+       "path": "claude-code/20-project-configure-a-project/01-configure-a-repo-for-claude-code-end-to-end.md"
+      }
+     ]
+    }
+   ]
   }
  ],
  "coming_soon": []

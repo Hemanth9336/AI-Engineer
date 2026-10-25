@@ -2,13 +2,13 @@
 
 # 🤖 AI Engineer
 
-### Work with real LLM APIs from a live machine — raw HTTP, official SDKs, embeddings, RAG pipelines, customer deployments and agent harnesses, graded when you press Submit.
+### Work with real LLM APIs from a live machine — raw HTTP, official SDKs, embeddings, RAG pipelines, customer deployments, agent harnesses and Claude Code, graded when you press Submit.
 
-**4 skills live · 127 topics · 200 hands-on tasks · 155 quizzes · ~83 hours**
+**5 skills live · 147 topics · 223 hands-on tasks · 171 quizzes · ~92 hours**
 
 [![Open the interactive roadmap](https://img.shields.io/badge/Open-Interactive%20Roadmap-7c5cff?style=for-the-badge&logo=openai&logoColor=white)](https://hemanth9336.github.io/AI-Engineer/)
-![Tasks](https://img.shields.io/badge/hands--on%20tasks-200-1f8f4e?style=for-the-badge)
-![Quizzes](https://img.shields.io/badge/quizzes-155-6f42c1?style=for-the-badge)
+![Tasks](https://img.shields.io/badge/hands--on%20tasks-223-1f8f4e?style=for-the-badge)
+![Quizzes](https://img.shields.io/badge/quizzes-171-6f42c1?style=for-the-badge)
 
 </div>
 
@@ -35,6 +35,7 @@
 | 🔎 [RAG](rag/README.md) | 16 | 22 | 14 | ~765 min | ✅ Live |
 | 🚀 [AI Forward Deployed Engineer](fde/README.md) | 44 | 86 | 67 | ~1735 min | ✅ Live |
 | 🛠️ [Harness Engineering](harness/README.md) | 41 | 65 | 49 | ~1505 min | ✅ Live |
+| ⌨️ [Claude Code Fundamentals](claude-code/README.md) | 20 | 23 | 16 | ~535 min | ✅ Live |
 
 ## 🧠 AI Fundamentals
 
@@ -462,6 +463,75 @@ _Three end-to-end builds: a coding agent, a hardened harness, and a production t
 | 39 | [Project: Build a coding agent](harness/39-project-build-a-coding-agent/) | ~75m | 1 | 0 |
 | 40 | [Project: Harden the harness](harness/40-project-harden-the-harness/) | ~75m | 1 | 0 |
 | 41 | [Project: Production harness](harness/41-project-production-harness/) | ~90m | 1 | 0 |
+
+## ⌨️ Claude Code Fundamentals
+
+Learn to drive Claude Code as a daily tool - the interactive console, permissions, headless scripting, project memory, plan mode, git work, custom commands, subagents, hooks, MCP, and settings - all hands-on, graded when you press Submit.
+
+```mermaid
+flowchart LR
+  P0["1. Getting Started<br/>Steps 01-04"]
+  P1["2. Working with the Agent<br/>Steps 05-11"]
+  P2["3. Extending Claude Code<br/>Steps 12-16"]
+  P3["4. Automation<br/>Steps 17-17"]
+  P4["5. Claude Code Projects<br/>Steps 18-20"]
+  P0 --> P1 --> P2 --> P3 --> P4
+```
+
+### Phase 1 · Getting Started
+
+_Set up, the interactive console, permissions, and headless runs with -p._
+
+| Step | Topic | Time | 🛠️ Tasks | ❓ Quizzes |
+|---|---|---|---|---|
+| 01 | [Claude Code: Setup & Prerequisites](claude-code/01-setup-and-prerequisites/) | ~20m | 1 | 0 |
+| 02 | [Claude Code: Inside the Console](claude-code/02-inside-the-console/) | ~30m | 2 | 1 |
+| 03 | [Claude Code: Permissions and Safety](claude-code/03-permissions-and-safety/) | ~25m | 1 | 1 |
+| 04 | [Claude Code: Headless with -p](claude-code/04-headless-with-p/) | ~25m | 3 | 1 |
+
+### Phase 2 · Working with the Agent
+
+_Clear instructions, project memory, context, plan mode, whole-codebase work, debugging, and git._
+
+| Step | Topic | Time | 🛠️ Tasks | ❓ Quizzes |
+|---|---|---|---|---|
+| 05 | [Claude Code: Instructing the Agent](claude-code/05-instructing-the-agent/) | ~25m | 1 | 1 |
+| 06 | [Claude Code: Project Memory](claude-code/06-project-memory/) | ~25m | 1 | 1 |
+| 07 | [Claude Code: Managing Context](claude-code/07-managing-context/) | ~20m | 1 | 1 |
+| 08 | [Claude Code: Plan Mode](claude-code/08-plan-mode/) | ~20m | 1 | 1 |
+| 09 | [Claude Code: Working Across a Codebase](claude-code/09-working-across-a-codebase/) | ~25m | 1 | 1 |
+| 10 | [Claude Code: Debugging](claude-code/10-debugging/) | ~25m | 1 | 1 |
+| 11 | [Claude Code: Git Work](claude-code/11-git-work/) | ~25m | 1 | 1 |
+
+### Phase 3 · Extending Claude Code
+
+_Custom slash commands, subagents, hooks, MCP servers, and settings._
+
+| Step | Topic | Time | 🛠️ Tasks | ❓ Quizzes |
+|---|---|---|---|---|
+| 12 | [Claude Code: Custom Slash Commands](claude-code/12-custom-slash-commands/) | ~20m | 1 | 1 |
+| 13 | [Claude Code: Subagents](claude-code/13-subagents/) | ~20m | 1 | 1 |
+| 14 | [Claude Code: Hooks](claude-code/14-hooks/) | ~25m | 1 | 1 |
+| 15 | [Claude Code: MCP Servers](claude-code/15-mcp-servers/) | ~25m | 1 | 1 |
+| 16 | [Claude Code: Settings](claude-code/16-settings/) | ~20m | 1 | 1 |
+
+### Phase 4 · Automation
+
+_Headless Claude Code in scripts and on a schedule._
+
+| Step | Topic | Time | 🛠️ Tasks | ❓ Quizzes |
+|---|---|---|---|---|
+| 17 | [Claude Code: Automation](claude-code/17-automation/) | ~25m | 1 | 1 |
+
+### Phase 5 · Claude Code Projects
+
+_Three end-to-end jobs: build a CLI, fix a broken repo, configure a project._
+
+| Step | Topic | Time | 🛠️ Tasks | ❓ Quizzes |
+|---|---|---|---|---|
+| 18 | [Claude Code Project: Build a CLI Tool](claude-code/18-project-build-a-cli-tool/) | ~45m | 1 | 0 |
+| 19 | [Claude Code Project: Fix a Broken Repo](claude-code/19-project-fix-a-broken-repo/) | ~45m | 1 | 0 |
+| 20 | [Claude Code Project: Configure a Project](claude-code/20-project-configure-a-project/) | ~45m | 1 | 0 |
 
 ## 📁 Repository layout
 

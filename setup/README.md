@@ -148,6 +148,33 @@ Your harness code always uses `OpenAI()`, so it runs against the real gateway or
 
 Topics 34-37 drive **Claude Code** (`claude -p`) against the gateway. Every scripted run passes `--max-turns`, so a confused run can't loop forever.
 
+## 7. Add the Claude Code tools (Claude Code Fundamentals skill)
+
+The **Claude Code Fundamentals** skill needs only Claude Code and a few command-line tools, so it doesn't depend on steps 2-6. On any Ubuntu 24.04 machine, run:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Hemanth9336/AI-Engineer/main/setup/claude-code/install-tools.sh | bash
+source ~/.bashrc
+claude          # first run only: sign in with your Claude account
+```
+
+| What | Where |
+|---|---|
+| `git`, `jq`, `curl`, `python3` and `python3-venv` - the tools the tasks and checkers call | apt |
+| Node.js 22 - topic 01 records its version (the `claude` CLI is a native binary and doesn't need it) | apt (NodeSource) |
+| Claude Code, from the native installer | `/root/.local/bin/claude` |
+| `mcp` 1.30.0, for the MCP server in topic 15 - this venv is first on `PATH`, so `python3` finds it | `/root/cc-lab/.venv` |
+| Work folder - each topic uses `/root/cc-lab/NN-<short>` | `/root/cc-lab` |
+
+**Signing in.** With a Claude account, `claude` asks you to log in once and remembers you. If you installed the AI Fundamentals lab (step 2), you can skip sign-in: `~/.bashrc` already sets `ANTHROPIC_BASE_URL` and `ANTHROPIC_AUTH_TOKEN`, so Claude Code talks to the lab gateway, and `haiku` maps to `lab-mini` through `ANTHROPIC_DEFAULT_HAIKU_MODEL`.
+
+Two things the tasks rely on:
+
+- **Folder trust.** The first time you run `claude` in a new folder, it asks whether you trust that folder. Until you accept, Claude Code ignores the folder's `allow` rules in `.claude/settings.json`, though `deny` rules always apply. Tasks that need allow rules say when to accept the prompt.
+- **Model precedence.** `/model` beats `--model`, which beats the `ANTHROPIC_MODEL` environment variable, which beats the `model` setting. The gateway lab sets `ANTHROPIC_MODEL`, so topic 16 runs `env -u ANTHROPIC_MODEL claude ...` when it tests the setting.
+
+Checkers read Claude Code's own session files in `~/.claude/projects/` and the `--output-format stream-json` files your runs save. Run each task inside its own folder, as the task says.
+
 ## Everyday commands
 
 | Command | Does |

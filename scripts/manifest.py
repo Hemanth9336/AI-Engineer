@@ -10,10 +10,11 @@ from ai_fundamentals_skill import AI_FUNDAMENTALS
 from rag_skill import RAG
 from fde_skill import FDE
 from harness_skill import HARNESS
+from claude_code_skill import CLAUDE_CODE
 
 L, T, Q, S = "lesson", "task", "quiz", "scenario"
 
-SKILLS = [AI_FUNDAMENTALS, RAG, FDE, HARNESS]
+SKILLS = [AI_FUNDAMENTALS, RAG, FDE, HARNESS, CLAUDE_CODE]
 
 # Shown on the home page as upcoming skills until their content is added to SKILLS.
 COMING_SOON = []

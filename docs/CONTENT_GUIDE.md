@@ -71,6 +71,23 @@ Everything above applies, plus the tools from `setup/harness/install-tools.sh` (
 - **Claude Code topics (34-37)** run `claude -p ... --max-turns N --output-format stream-json --verbose` and grade the event stream (`init`, `tool_use`, `tool_result`, `result` with `permission_denials`). Checkers start `claude` with stdin closed. MCP servers use the project scope (`.mcp.json`) or `--mcp-config --strict-mcp-config`; hooks live in `.claude/settings.json`; skills in `.claude/skills/<name>/SKILL.md`. Template fences inside files written by a solution use `~~~`, never triple backticks.
 - Topics 39-41 are single-task capstones with a Scenario.
 
+## Practice machine conventions (Claude Code Fundamentals skill)
+
+The tools come from `setup/claude-code/install-tools.sh`, and `scripts/claude_code_skill.py` holds the titles and minutes. Topic 01 is the reference example for this skill: the user supplied its lesson and task word for word.
+
+- **Folders**: `/root/cc-lab/NN-<short>`. Set up writes small, self-contained projects with heredocs, such as the tasklog CLI, the billing-svc service, the shop package, shipping rates and notes-api. A folder becomes a git repo with `git init -q && git symbolic-ref HEAD refs/heads/main` when a task needs one. Python projects ship a `.gitignore` with `__pycache__/` so test runs don't dirty the tree.
+- **The learner drives Claude Code, and checkers grade evidence.** That evidence comes in three forms:
+  - Claude Code's session transcripts in `~/.claude/projects/<encoded realpath>/*.jsonl`. Match on `cwd` with `os.path.realpath`, because on macOS `/tmp` is `/private/tmp`.
+  - Saved `claude -p ... --output-format stream-json --verbose` runs, using `init`, `tool_use`, `result` and `permission_denials`.
+  - The files the work produced, run on hidden fixtures.
+
+  Never grade the wording of a model reply.
+- **Commands in transcripts**: a slash command shows up as `<command-name>/name</command-name>` in the user prompt. Use that to prove `/init` or a custom command ran. A subagent hand-off is a `tool_use` named `Agent` with a `subagent_type`.
+- **Trust**: a folder's `allow` rules are ignored until the folder is trusted (`projects[<realpath>].hasTrustDialogAccepted` in `~/.claude.json`), but `deny` rules always apply. Instructions tell the learner to open `claude` once and accept the prompt. Solutions set the flag with `jq`.
+- **Models**: tasks pick `haiku`, or `lab-mini` on the gateway via `ANTHROPIC_DEFAULT_HAIKU_MODEL`. Tasks that test the `model` setting run `env -u ANTHROPIC_MODEL`, because the environment variable outranks settings.
+- **Safety**: fake secrets only (`pk_live_fake_5521`). Deny rules cover `.env` and `curl`. Hooks and automation scripts are unit-tested with stub `claude` scripts, so success, failure and `is_error` paths are all checked without a model.
+- Topics 18-20 are single-task capstones with a Scenario.
+
 ## Lesson (250-600 words)
 
 Open with one or two sentences on why it matters. Then `##` sections, each with a short explanation and an example: a ```bash block for commands, ```json for requests and responses, ```python for SDK code, ```text for prompts and output. Tables for comparisons. Optional mermaid diagram (quote labels containing parentheses or slashes; no semicolons). End with a one-line teaser of what comes next.
