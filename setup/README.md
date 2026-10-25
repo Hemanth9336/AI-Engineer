@@ -175,6 +175,36 @@ Two things the tasks rely on:
 
 Checkers read Claude Code's own session files in `~/.claude/projects/` and the `--output-format stream-json` files your runs save. Run each task inside its own folder, as the task says.
 
+## 8. Add the Claude Code Mastery tools (Claude Code Mastery skill)
+
+The **Claude Code Mastery** skill builds on step 7 and adds the tools its later topics use. It doesn't depend on steps 2-6. On any Ubuntu 24.04 machine, run:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Hemanth9336/AI-Engineer/main/setup/claude-code-mastery/install-tools.sh | bash
+source ~/.bashrc
+claude          # first run only: sign in with your Claude account
+```
+
+| What | Where |
+|---|---|
+| `git`, `jq`, `curl`, `ripgrep`, `python3` and `python3-venv` - the tools the tasks and checkers call | apt |
+| `bubblewrap` and `socat` - Claude Code's Bash sandbox on Linux (topics 006 and 029) | apt |
+| `cron` - scheduled runs (topics 022 and 061) | apt |
+| Node.js 22 and `mcp-server-filesystem` - the filesystem MCP server (topics 031 and 032) | apt (NodeSource), npm |
+| Claude Code, from the native installer | `/root/.local/bin/claude` |
+| `mcp` 1.30.0, `claude-agent-sdk` and `pyyaml` - this venv is first on `PATH`, so `python3` finds them | `/root/mastery/.venv` |
+| Settings for scripts that run outside your shell (cron jobs source this file). An existing file from step 2 is kept | `~/.config/ailab/env` |
+| Work folder - each topic uses `/root/mastery/NNN-<short>`; the capstone (081-088) uses `/root/mastery/NNN-release-manager` | `/root/mastery` |
+| Codex CLI, optional, for topic 037 (`INSTALL_CODEX=1` before the command above). The checker works without it | npm |
+
+**Signing in.** As in step 7: sign in once with a Claude account, or use the AI Fundamentals gateway (step 2), whose settings are already in your environment. Some topics cover features that need a claude.ai plan and can't run on a gateway: Remote Control, cloud sessions, Claude in Chrome, Desktop and artifacts (075-080). Those topics are lessons and scenarios, with no graded tasks.
+
+A few things the tasks rely on:
+
+- **Ports.** Topic 068 runs a small OpenTelemetry collector on `127.0.0.1:14318`, and the capstone's verdict API (087) listens on `127.0.0.1:18787`.
+- **systemd.** Topic 087 uses `systemd-run --user` when your machine has a user systemd. Containers and macOS don't, so the task's script falls back to a background process with a pid file, and the checker accepts either.
+- **Git.** Several topics (the capstone especially) create small git repositories. The script sets a default `user.name` and `user.email` if you don't have them.
+
 ## Everyday commands
 
 | Command | Does |

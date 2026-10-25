@@ -56,6 +56,7 @@
    "steps": [
     {
      "n": 1,
+     "pad": 2,
      "dir": "ai-fundamentals/01-what-is-generative-ai",
      "phase": "foundations",
      "title": "What is Generative AI",
@@ -97,6 +98,7 @@
     },
     {
      "n": 2,
+     "pad": 2,
      "dir": "ai-fundamentals/02-the-ai-tool-landscape",
      "phase": "foundations",
      "title": "The AI tool landscape",
@@ -138,6 +140,7 @@
     },
     {
      "n": 3,
+     "pad": 2,
      "dir": "ai-fundamentals/03-what-you-can-do-with-ai",
      "phase": "foundations",
      "title": "What you can do with AI",
@@ -179,6 +182,7 @@
     },
     {
      "n": 4,
+     "pad": 2,
      "dir": "ai-fundamentals/04-ai-absolute-basics",
      "phase": "foundations",
      "title": "AI absolute basics",
@@ -238,6 +242,7 @@
     },
     {
      "n": 5,
+     "pad": 2,
      "dir": "ai-fundamentals/05-calling-llms-over-an-api",
      "phase": "api",
      "title": "Calling LLMs over an API",
@@ -291,6 +296,7 @@
     },
     {
      "n": 6,
+     "pad": 2,
      "dir": "ai-fundamentals/06-writing-prompts-that-work",
      "phase": "prompting",
      "title": "Writing prompts that work",
@@ -338,6 +344,7 @@
     },
     {
      "n": 7,
+     "pad": 2,
      "dir": "ai-fundamentals/07-prompting-with-examples",
      "phase": "prompting",
      "title": "Prompting with examples",
@@ -379,6 +386,7 @@
     },
     {
      "n": 8,
+     "pad": 2,
      "dir": "ai-fundamentals/08-step-by-step-prompting",
      "phase": "prompting",
      "title": "Step-by-step prompting",
@@ -420,6 +428,7 @@
     },
     {
      "n": 9,
+     "pad": 2,
      "dir": "ai-fundamentals/09-ai-roles-and-personas",
      "phase": "prompting",
      "title": "AI roles and personas",
@@ -461,6 +470,7 @@
     },
     {
      "n": 10,
+     "pad": 2,
      "dir": "ai-fundamentals/10-controlling-the-output",
      "phase": "prompting",
      "title": "Controlling the output",
@@ -502,6 +512,7 @@
     },
     {
      "n": 11,
+     "pad": 2,
      "dir": "ai-fundamentals/11-improving-your-prompts",
      "phase": "prompting",
      "title": "Improving your prompts",
@@ -549,6 +560,7 @@
     },
     {
      "n": 12,
+     "pad": 2,
      "dir": "ai-fundamentals/12-multi-turn-conversations",
      "phase": "working-with-models",
      "title": "Multi-turn conversations",
@@ -596,6 +608,7 @@
     },
     {
      "n": 13,
+     "pad": 2,
      "dir": "ai-fundamentals/13-choosing-a-model",
      "phase": "working-with-models",
      "title": "Choosing a model",
@@ -643,6 +656,7 @@
     },
     {
      "n": 14,
+     "pad": 2,
      "dir": "ai-fundamentals/14-tokens-and-cost",
      "phase": "working-with-models",
      "title": "Tokens and cost",
@@ -690,6 +704,7 @@
     },
     {
      "n": 15,
+     "pad": 2,
      "dir": "ai-fundamentals/15-structured-output-with-json",
      "phase": "working-with-models",
      "title": "Structured output with JSON",
@@ -731,6 +746,7 @@
     },
     {
      "n": 16,
+     "pad": 2,
      "dir": "ai-fundamentals/16-tool-calling",
      "phase": "tools-and-agents",
      "title": "Tool Calling",
@@ -772,6 +788,7 @@
     },
     {
      "n": 17,
+     "pad": 2,
      "dir": "ai-fundamentals/17-ai-coding-assistants",
      "phase": "tools-and-agents",
      "title": "AI Coding Assistants",
@@ -813,6 +830,7 @@
     },
     {
      "n": 18,
+     "pad": 2,
      "dir": "ai-fundamentals/18-model-context-protocol",
      "phase": "tools-and-agents",
      "title": "Model Context Protocol",
@@ -854,6 +872,7 @@
     },
     {
      "n": 19,
+     "pad": 2,
      "dir": "ai-fundamentals/19-using-the-api-in-real-code",
      "phase": "tools-and-agents",
      "title": "Using the API in real code",
@@ -902,6 +921,7 @@
     },
     {
      "n": 20,
+     "pad": 2,
      "dir": "ai-fundamentals/20-langchain-basics",
      "phase": "tools-and-agents",
      "title": "LangChain basics",
@@ -943,6 +963,7 @@
     },
     {
      "n": 21,
+     "pad": 2,
      "dir": "ai-fundamentals/21-building-agents",
      "phase": "tools-and-agents",
      "title": "Building Agents",
@@ -984,6 +1005,7 @@
     },
     {
      "n": 22,
+     "pad": 2,
      "dir": "ai-fundamentals/22-limitations-and-safety",
      "phase": "safety-and-data",
      "title": "Limitations and safety",
@@ -1032,6 +1054,7 @@
     },
     {
      "n": 23,
+     "pad": 2,
      "dir": "ai-fundamentals/23-using-your-own-data",
      "phase": "safety-and-data",
      "title": "Using your own data",
@@ -1073,6 +1096,7 @@
     },
     {
      "n": 24,
+     "pad": 2,
      "dir": "ai-fundamentals/24-project-support-ticket-triage-tool",
      "phase": "projects",
      "title": "Project: support ticket triage tool",
@@ -1095,6 +1119,7 @@
     },
     {
      "n": 25,
+     "pad": 2,
      "dir": "ai-fundamentals/25-project-log-explainer-cli",
      "phase": "projects",
      "title": "Project: log explainer CLI",
@@ -1117,6 +1142,7 @@
     },
     {
      "n": 26,
+     "pad": 2,
      "dir": "ai-fundamentals/26-project-grounded-runbook-assistant",
      "phase": "projects",
      "title": "Project: grounded runbook assistant",
@@ -1189,6 +1215,7 @@
    "steps": [
     {
      "n": 1,
+     "pad": 2,
      "dir": "rag/01-the-problem-rag-solves",
      "phase": "start",
      "title": "The Problem RAG Solves",
@@ -1236,6 +1263,7 @@
     },
     {
      "n": 2,
+     "pad": 2,
      "dir": "rag/02-tools-you-will-use",
      "phase": "start",
      "title": "Tools You Will Use",
@@ -1277,6 +1305,7 @@
     },
     {
      "n": 3,
+     "pad": 2,
      "dir": "rag/03-grounding-a-prompt",
      "phase": "start",
      "title": "Grounding a Prompt",
@@ -1324,6 +1353,7 @@
     },
     {
      "n": 4,
+     "pad": 2,
      "dir": "rag/04-embeddings",
      "phase": "search",
      "title": "Embeddings",
@@ -1365,6 +1395,7 @@
     },
     {
      "n": 5,
+     "pad": 2,
      "dir": "rag/05-measuring-similarity",
      "phase": "search",
      "title": "Measuring Similarity",
@@ -1406,6 +1437,7 @@
     },
     {
      "n": 6,
+     "pad": 2,
      "dir": "rag/06-semantic-search",
      "phase": "search",
      "title": "Semantic Search",
@@ -1447,6 +1479,7 @@
     },
     {
      "n": 7,
+     "pad": 2,
      "dir": "rag/07-chunking",
      "phase": "indexing",
      "title": "Chunking",
@@ -1506,6 +1539,7 @@
     },
     {
      "n": 8,
+     "pad": 2,
      "dir": "rag/08-build-your-own-vector-store",
      "phase": "indexing",
      "title": "Build Your Own Vector Store",
@@ -1559,6 +1593,7 @@
     },
     {
      "n": 9,
+     "pad": 2,
      "dir": "rag/09-chroma-a-real-vector-database",
      "phase": "indexing",
      "title": "Chroma, a Real Vector Database",
@@ -1612,6 +1647,7 @@
     },
     {
      "n": 10,
+     "pad": 2,
      "dir": "rag/10-the-full-rag-pipeline",
      "phase": "pipeline",
      "title": "The Full RAG Pipeline",
@@ -1660,6 +1696,7 @@
     },
     {
      "n": 11,
+     "pad": 2,
      "dir": "rag/11-rag-on-chroma",
      "phase": "pipeline",
      "title": "RAG on Chroma",
@@ -1701,6 +1738,7 @@
     },
     {
      "n": 12,
+     "pad": 2,
      "dir": "rag/12-evaluating-rag",
      "phase": "pipeline",
      "title": "Evaluating RAG",
@@ -1760,6 +1798,7 @@
     },
     {
      "n": 13,
+     "pad": 2,
      "dir": "rag/13-rag-with-langchain",
      "phase": "langchain",
      "title": "RAG with LangChain",
@@ -1825,6 +1864,7 @@
     },
     {
      "n": 14,
+     "pad": 2,
      "dir": "rag/14-project-docs-qa-bot",
      "phase": "projects",
      "title": "Project: Docs Q&A Bot",
@@ -1847,6 +1887,7 @@
     },
     {
      "n": 15,
+     "pad": 2,
      "dir": "rag/15-project-support-knowledge-assistant",
      "phase": "projects",
      "title": "Project: Support Knowledge Assistant",
@@ -1869,6 +1910,7 @@
     },
     {
      "n": 16,
+     "pad": 2,
      "dir": "rag/16-project-runbook-assistant-that-knows-its-limits",
      "phase": "projects",
      "title": "Project: Runbook Assistant That Knows Its Limits",
@@ -1966,6 +2008,7 @@
    "steps": [
     {
      "n": 1,
+     "pad": 2,
      "dir": "fde/01-what-an-fde-does",
      "phase": "role",
      "title": "What an FDE does",
@@ -2021,6 +2064,7 @@
     },
     {
      "n": 2,
+     "pad": 2,
      "dir": "fde/02-the-engagement-lifecycle",
      "phase": "role",
      "title": "The engagement lifecycle",
@@ -2070,6 +2114,7 @@
     },
     {
      "n": 3,
+     "pad": 2,
      "dir": "fde/03-how-llms-work",
      "phase": "llms",
      "title": "How LLMs work",
@@ -2123,6 +2168,7 @@
     },
     {
      "n": 4,
+     "pad": 2,
      "dir": "fde/04-tokens-context-and-cost",
      "phase": "llms",
      "title": "Tokens, context, and cost",
@@ -2182,6 +2228,7 @@
     },
     {
      "n": 5,
+     "pad": 2,
      "dir": "fde/05-just-enough-python",
      "phase": "foundations",
      "title": "Just enough Python",
@@ -2241,6 +2288,7 @@
     },
     {
      "n": 6,
+     "pad": 2,
      "dir": "fde/06-calling-llms-over-an-api",
      "phase": "foundations",
      "title": "Calling LLMs over an API",
@@ -2300,6 +2348,7 @@
     },
     {
      "n": 7,
+     "pad": 2,
      "dir": "fde/07-choosing-a-model",
      "phase": "foundations",
      "title": "Choosing a model",
@@ -2354,6 +2403,7 @@
     },
     {
      "n": 8,
+     "pad": 2,
      "dir": "fde/08-prompt-engineering-basics",
      "phase": "prompting",
      "title": "Prompt engineering basics",
@@ -2413,6 +2463,7 @@
     },
     {
      "n": 9,
+     "pad": 2,
      "dir": "fde/09-prompts-in-production",
      "phase": "prompting",
      "title": "Prompts in production",
@@ -2473,6 +2524,7 @@
     },
     {
      "n": 10,
+     "pad": 2,
      "dir": "fde/10-structured-output",
      "phase": "prompting",
      "title": "Structured output",
@@ -2532,6 +2584,7 @@
     },
     {
      "n": 11,
+     "pad": 2,
      "dir": "fde/11-tool-calling",
      "phase": "tools",
      "title": "Tool calling",
@@ -2591,6 +2644,7 @@
     },
     {
      "n": 12,
+     "pad": 2,
      "dir": "fde/12-conversation-state",
      "phase": "tools",
      "title": "Conversation state",
@@ -2650,6 +2704,7 @@
     },
     {
      "n": 13,
+     "pad": 2,
      "dir": "fde/13-embeddings",
      "phase": "retrieval",
      "title": "Embeddings",
@@ -2697,6 +2752,7 @@
     },
     {
      "n": 14,
+     "pad": 2,
      "dir": "fde/14-vector-search",
      "phase": "retrieval",
      "title": "Vector search",
@@ -2750,6 +2806,7 @@
     },
     {
      "n": 15,
+     "pad": 2,
      "dir": "fde/15-the-rag-pipeline",
      "phase": "retrieval",
      "title": "The RAG pipeline",
@@ -2797,6 +2854,7 @@
     },
     {
      "n": 16,
+     "pad": 2,
      "dir": "fde/16-chunking-enterprise-documents",
      "phase": "retrieval",
      "title": "Chunking enterprise documents",
@@ -2856,6 +2914,7 @@
     },
     {
      "n": 17,
+     "pad": 2,
      "dir": "fde/17-retrieval-quality",
      "phase": "retrieval",
      "title": "Retrieval quality",
@@ -2915,6 +2974,7 @@
     },
     {
      "n": 18,
+     "pad": 2,
      "dir": "fde/18-citations-and-grounding",
      "phase": "retrieval",
      "title": "Citations and grounding",
@@ -2969,6 +3029,7 @@
     },
     {
      "n": 19,
+     "pad": 2,
      "dir": "fde/19-permissions-aware-retrieval",
      "phase": "retrieval",
      "title": "Permissions-aware retrieval",
@@ -3023,6 +3084,7 @@
     },
     {
      "n": 20,
+     "pad": 2,
      "dir": "fde/20-agents",
      "phase": "integrations",
      "title": "Agents",
@@ -3071,6 +3133,7 @@
     },
     {
      "n": 21,
+     "pad": 2,
      "dir": "fde/21-multi-step-agents",
      "phase": "integrations",
      "title": "Multi-step agents",
@@ -3130,6 +3193,7 @@
     },
     {
      "n": 22,
+     "pad": 2,
      "dir": "fde/22-mcp",
      "phase": "integrations",
      "title": "MCP",
@@ -3183,6 +3247,7 @@
     },
     {
      "n": 23,
+     "pad": 2,
      "dir": "fde/23-connecting-to-customer-apis",
      "phase": "integrations",
      "title": "Connecting to customer APIs",
@@ -3237,6 +3302,7 @@
     },
     {
      "n": 24,
+     "pad": 2,
      "dir": "fde/24-getting-data-out-of-customer-systems",
      "phase": "integrations",
      "title": "Getting data out of customer systems",
@@ -3296,6 +3362,7 @@
     },
     {
      "n": 25,
+     "pad": 2,
      "dir": "fde/25-why-evals",
      "phase": "evals",
      "title": "Why evals",
@@ -3345,6 +3412,7 @@
     },
     {
      "n": 26,
+     "pad": 2,
      "dir": "fde/26-golden-datasets",
      "phase": "evals",
      "title": "Golden datasets",
@@ -3404,6 +3472,7 @@
     },
     {
      "n": 27,
+     "pad": 2,
      "dir": "fde/27-llm-as-judge",
      "phase": "evals",
      "title": "LLM as judge",
@@ -3451,6 +3520,7 @@
     },
     {
      "n": 28,
+     "pad": 2,
      "dir": "fde/28-prompt-regression-testing",
      "phase": "evals",
      "title": "Prompt regression testing",
@@ -3498,6 +3568,7 @@
     },
     {
      "n": 29,
+     "pad": 2,
      "dir": "fde/29-measuring-rag-quality",
      "phase": "evals",
      "title": "Measuring RAG quality",
@@ -3558,6 +3629,7 @@
     },
     {
      "n": 30,
+     "pad": 2,
      "dir": "fde/30-the-fine-tuning-decision",
      "phase": "evals",
      "title": "The fine-tuning decision",
@@ -3607,6 +3679,7 @@
     },
     {
      "n": 31,
+     "pad": 2,
      "dir": "fde/31-guardrails",
      "phase": "hardening",
      "title": "Guardrails",
@@ -3666,6 +3739,7 @@
     },
     {
      "n": 32,
+     "pad": 2,
      "dir": "fde/32-reducing-hallucinations",
      "phase": "hardening",
      "title": "Reducing hallucinations",
@@ -3713,6 +3787,7 @@
     },
     {
      "n": 33,
+     "pad": 2,
      "dir": "fde/33-cost-control",
      "phase": "hardening",
      "title": "Cost control",
@@ -3772,6 +3847,7 @@
     },
     {
      "n": 34,
+     "pad": 2,
      "dir": "fde/34-latency-and-streaming",
      "phase": "hardening",
      "title": "Latency and streaming",
@@ -3819,6 +3895,7 @@
     },
     {
      "n": 35,
+     "pad": 2,
      "dir": "fde/35-observability",
      "phase": "hardening",
      "title": "Observability",
@@ -3878,6 +3955,7 @@
     },
     {
      "n": 36,
+     "pad": 2,
      "dir": "fde/36-security-pii-and-deployment",
      "phase": "hardening",
      "title": "Security, PII, and deployment",
@@ -3945,6 +4023,7 @@
     },
     {
      "n": 37,
+     "pad": 2,
      "dir": "fde/37-discovery-and-scoping",
      "phase": "engagement",
      "title": "Discovery and scoping",
@@ -4000,6 +4079,7 @@
     },
     {
      "n": 38,
+     "pad": 2,
      "dir": "fde/38-rapid-prototyping",
      "phase": "engagement",
      "title": "Rapid prototyping",
@@ -4049,6 +4129,7 @@
     },
     {
      "n": 39,
+     "pad": 2,
      "dir": "fde/39-demos-and-expectations",
      "phase": "engagement",
      "title": "Demos and expectations",
@@ -4098,6 +4179,7 @@
     },
     {
      "n": 40,
+     "pad": 2,
      "dir": "fde/40-running-a-pilot",
      "phase": "engagement",
      "title": "Running a pilot",
@@ -4165,6 +4247,7 @@
     },
     {
      "n": 41,
+     "pad": 2,
      "dir": "fde/41-production-rollout-and-handoff",
      "phase": "engagement",
      "title": "Production rollout and handoff",
@@ -4213,6 +4296,7 @@
     },
     {
      "n": 42,
+     "pad": 2,
      "dir": "fde/42-project-internal-docs-qa-bot",
      "phase": "capstones",
      "title": "Project: Internal docs Q&A bot",
@@ -4235,6 +4319,7 @@
     },
     {
      "n": 43,
+     "pad": 2,
      "dir": "fde/43-project-support-assistant-with-evals",
      "phase": "capstones",
      "title": "Project: Support assistant with evals",
@@ -4257,6 +4342,7 @@
     },
     {
      "n": 44,
+     "pad": 2,
      "dir": "fde/44-project-full-engagement-simulation",
      "phase": "capstones",
      "title": "Project: Full engagement simulation",
@@ -4344,6 +4430,7 @@
    "steps": [
     {
      "n": 1,
+     "pad": 2,
      "dir": "harness/01-what-a-harness-is",
      "phase": "foundations",
      "title": "What a harness is",
@@ -4392,6 +4479,7 @@
     },
     {
      "n": 2,
+     "pad": 2,
      "dir": "harness/02-how-llms-work-for-harness-builders",
      "phase": "foundations",
      "title": "How LLMs work for harness builders",
@@ -4439,6 +4527,7 @@
     },
     {
      "n": 3,
+     "pad": 2,
      "dir": "harness/03-just-enough-python",
      "phase": "foundations",
      "title": "Just enough Python",
@@ -4498,6 +4587,7 @@
     },
     {
      "n": 4,
+     "pad": 2,
      "dir": "harness/04-calling-llms-over-an-api",
      "phase": "foundations",
      "title": "Calling LLMs over an API",
@@ -4557,6 +4647,7 @@
     },
     {
      "n": 5,
+     "pad": 2,
      "dir": "harness/05-tokens-context-and-cost",
      "phase": "foundations",
      "title": "Tokens, context, and cost",
@@ -4616,6 +4707,7 @@
     },
     {
      "n": 6,
+     "pad": 2,
      "dir": "harness/06-tool-calling",
      "phase": "foundations",
      "title": "Tool calling",
@@ -4669,6 +4761,7 @@
     },
     {
      "n": 7,
+     "pad": 2,
      "dir": "harness/07-your-first-agent-loop",
      "phase": "loop",
      "title": "Your first agent loop",
@@ -4716,6 +4809,7 @@
     },
     {
      "n": 8,
+     "pad": 2,
      "dir": "harness/08-stop-conditions",
      "phase": "loop",
      "title": "Stop conditions",
@@ -4770,6 +4864,7 @@
     },
     {
      "n": 9,
+     "pad": 2,
      "dir": "harness/09-error-handling-in-the-loop",
      "phase": "loop",
      "title": "Error handling in the loop",
@@ -4817,6 +4912,7 @@
     },
     {
      "n": 10,
+     "pad": 2,
      "dir": "harness/10-loop-state-and-history",
      "phase": "loop",
      "title": "Loop state and history",
@@ -4864,6 +4960,7 @@
     },
     {
      "n": 11,
+     "pad": 2,
      "dir": "harness/11-making-the-agent-ask-for-help",
      "phase": "loop",
      "title": "Making the agent ask for help",
@@ -4906,6 +5003,7 @@
     },
     {
      "n": 12,
+     "pad": 2,
      "dir": "harness/12-tools-are-prompts",
      "phase": "tools",
      "title": "Tools are prompts",
@@ -4953,6 +5051,7 @@
     },
     {
      "n": 13,
+     "pad": 2,
      "dir": "harness/13-designing-tool-results",
      "phase": "tools",
      "title": "Designing tool results",
@@ -5000,6 +5099,7 @@
     },
     {
      "n": 14,
+     "pad": 2,
      "dir": "harness/14-tool-sets-and-selection",
      "phase": "tools",
      "title": "Tool sets and selection",
@@ -5048,6 +5148,7 @@
     },
     {
      "n": 15,
+     "pad": 2,
      "dir": "harness/15-dangerous-tools",
      "phase": "tools",
      "title": "Dangerous tools",
@@ -5096,6 +5197,7 @@
     },
     {
      "n": 16,
+     "pad": 2,
      "dir": "harness/16-the-system-prompt",
      "phase": "context",
      "title": "The system prompt",
@@ -5143,6 +5245,7 @@
     },
     {
      "n": 17,
+     "pad": 2,
      "dir": "harness/17-context-budgeting",
      "phase": "context",
      "title": "Context budgeting",
@@ -5190,6 +5293,7 @@
     },
     {
      "n": 18,
+     "pad": 2,
      "dir": "harness/18-compaction-and-summarization",
      "phase": "context",
      "title": "Compaction and summarization",
@@ -5237,6 +5341,7 @@
     },
     {
      "n": 19,
+     "pad": 2,
      "dir": "harness/19-file-based-memory",
      "phase": "context",
      "title": "File-based memory",
@@ -5284,6 +5389,7 @@
     },
     {
      "n": 20,
+     "pad": 2,
      "dir": "harness/20-retrieval-into-context",
      "phase": "context",
      "title": "Retrieval into context",
@@ -5325,6 +5431,7 @@
     },
     {
      "n": 21,
+     "pad": 2,
      "dir": "harness/21-permission-models",
      "phase": "safety",
      "title": "Permission models",
@@ -5373,6 +5480,7 @@
     },
     {
      "n": 22,
+     "pad": 2,
      "dir": "harness/22-sandboxing",
      "phase": "safety",
      "title": "Sandboxing",
@@ -5414,6 +5522,7 @@
     },
     {
      "n": 23,
+     "pad": 2,
      "dir": "harness/23-prompt-injection-through-tools",
      "phase": "safety",
      "title": "Prompt injection through tools",
@@ -5461,6 +5570,7 @@
     },
     {
      "n": 24,
+     "pad": 2,
      "dir": "harness/24-secrets-hygiene",
      "phase": "safety",
      "title": "Secrets hygiene",
@@ -5509,6 +5619,7 @@
     },
     {
      "n": 25,
+     "pad": 2,
      "dir": "harness/25-subagents",
      "phase": "orchestration",
      "title": "Subagents",
@@ -5550,6 +5661,7 @@
     },
     {
      "n": 26,
+     "pad": 2,
      "dir": "harness/26-parallel-agents",
      "phase": "orchestration",
      "title": "Parallel agents",
@@ -5591,6 +5703,7 @@
     },
     {
      "n": 27,
+     "pad": 2,
      "dir": "harness/27-verification-patterns",
      "phase": "orchestration",
      "title": "Verification patterns",
@@ -5638,6 +5751,7 @@
     },
     {
      "n": 28,
+     "pad": 2,
      "dir": "harness/28-orchestration-failure-modes",
      "phase": "orchestration",
      "title": "Orchestration failure modes",
@@ -5680,6 +5794,7 @@
     },
     {
      "n": 29,
+     "pad": 2,
      "dir": "harness/29-evals-for-agents",
      "phase": "evals",
      "title": "Evals for agents",
@@ -5722,6 +5837,7 @@
     },
     {
      "n": 30,
+     "pad": 2,
      "dir": "harness/30-building-an-agent-eval-suite",
      "phase": "evals",
      "title": "Building an agent eval suite",
@@ -5763,6 +5879,7 @@
     },
     {
      "n": 31,
+     "pad": 2,
      "dir": "harness/31-transcripts-and-replay",
      "phase": "evals",
      "title": "Transcripts and replay",
@@ -5810,6 +5927,7 @@
     },
     {
      "n": 32,
+     "pad": 2,
      "dir": "harness/32-cost-and-latency-of-agents",
      "phase": "evals",
      "title": "Cost and latency of agents",
@@ -5857,6 +5975,7 @@
     },
     {
      "n": 33,
+     "pad": 2,
      "dir": "harness/33-regression-testing-a-harness",
      "phase": "evals",
      "title": "Regression testing a harness",
@@ -5898,6 +6017,7 @@
     },
     {
      "n": 34,
+     "pad": 2,
      "dir": "harness/34-claude-code-as-a-harness",
      "phase": "production",
      "title": "Claude Code as a harness",
@@ -5939,6 +6059,7 @@
     },
     {
      "n": 35,
+     "pad": 2,
      "dir": "harness/35-extending-a-harness-with-mcp",
      "phase": "production",
      "title": "Extending a harness with MCP",
@@ -5980,6 +6101,7 @@
     },
     {
      "n": 36,
+     "pad": 2,
      "dir": "harness/36-hooks-and-instruction-files",
      "phase": "production",
      "title": "Hooks and instruction files",
@@ -6027,6 +6149,7 @@
     },
     {
      "n": 37,
+     "pad": 2,
      "dir": "harness/37-packaging-behavior-as-skills",
      "phase": "production",
      "title": "Packaging behavior as skills",
@@ -6062,6 +6185,7 @@
     },
     {
      "n": 38,
+     "pad": 2,
      "dir": "harness/38-choosing-your-layer",
      "phase": "production",
      "title": "Choosing your layer",
@@ -6105,6 +6229,7 @@
     },
     {
      "n": 39,
+     "pad": 2,
      "dir": "harness/39-project-build-a-coding-agent",
      "phase": "capstones",
      "title": "Project: Build a coding agent",
@@ -6127,6 +6252,7 @@
     },
     {
      "n": 40,
+     "pad": 2,
      "dir": "harness/40-project-harden-the-harness",
      "phase": "capstones",
      "title": "Project: Harden the harness",
@@ -6149,6 +6275,7 @@
     },
     {
      "n": 41,
+     "pad": 2,
      "dir": "harness/41-project-production-harness",
      "phase": "capstones",
      "title": "Project: Production harness",
@@ -6216,6 +6343,7 @@
    "steps": [
     {
      "n": 1,
+     "pad": 2,
      "dir": "claude-code/01-setup-and-prerequisites",
      "phase": "start",
      "title": "Claude Code: Setup & Prerequisites",
@@ -6244,6 +6372,7 @@
     },
     {
      "n": 2,
+     "pad": 2,
      "dir": "claude-code/02-inside-the-console",
      "phase": "start",
      "title": "Claude Code: Inside the Console",
@@ -6285,6 +6414,7 @@
     },
     {
      "n": 3,
+     "pad": 2,
      "dir": "claude-code/03-permissions-and-safety",
      "phase": "start",
      "title": "Claude Code: Permissions and Safety",
@@ -6326,6 +6456,7 @@
     },
     {
      "n": 4,
+     "pad": 2,
      "dir": "claude-code/04-headless-with-p",
      "phase": "start",
      "title": "Claude Code: Headless with -p",
@@ -6367,6 +6498,7 @@
     },
     {
      "n": 5,
+     "pad": 2,
      "dir": "claude-code/05-instructing-the-agent",
      "phase": "work",
      "title": "Claude Code: Instructing the Agent",
@@ -6408,6 +6540,7 @@
     },
     {
      "n": 6,
+     "pad": 2,
      "dir": "claude-code/06-project-memory",
      "phase": "work",
      "title": "Claude Code: Project Memory",
@@ -6449,6 +6582,7 @@
     },
     {
      "n": 7,
+     "pad": 2,
      "dir": "claude-code/07-managing-context",
      "phase": "work",
      "title": "Claude Code: Managing Context",
@@ -6490,6 +6624,7 @@
     },
     {
      "n": 8,
+     "pad": 2,
      "dir": "claude-code/08-plan-mode",
      "phase": "work",
      "title": "Claude Code: Plan Mode",
@@ -6525,6 +6660,7 @@
     },
     {
      "n": 9,
+     "pad": 2,
      "dir": "claude-code/09-working-across-a-codebase",
      "phase": "work",
      "title": "Claude Code: Working Across a Codebase",
@@ -6560,6 +6696,7 @@
     },
     {
      "n": 10,
+     "pad": 2,
      "dir": "claude-code/10-debugging",
      "phase": "work",
      "title": "Claude Code: Debugging",
@@ -6595,6 +6732,7 @@
     },
     {
      "n": 11,
+     "pad": 2,
      "dir": "claude-code/11-git-work",
      "phase": "work",
      "title": "Claude Code: Git Work",
@@ -6630,6 +6768,7 @@
     },
     {
      "n": 12,
+     "pad": 2,
      "dir": "claude-code/12-custom-slash-commands",
      "phase": "extend",
      "title": "Claude Code: Custom Slash Commands",
@@ -6665,6 +6804,7 @@
     },
     {
      "n": 13,
+     "pad": 2,
      "dir": "claude-code/13-subagents",
      "phase": "extend",
      "title": "Claude Code: Subagents",
@@ -6700,6 +6840,7 @@
     },
     {
      "n": 14,
+     "pad": 2,
      "dir": "claude-code/14-hooks",
      "phase": "extend",
      "title": "Claude Code: Hooks",
@@ -6735,6 +6876,7 @@
     },
     {
      "n": 15,
+     "pad": 2,
      "dir": "claude-code/15-mcp-servers",
      "phase": "extend",
      "title": "Claude Code: MCP Servers",
@@ -6770,6 +6912,7 @@
     },
     {
      "n": 16,
+     "pad": 2,
      "dir": "claude-code/16-settings",
      "phase": "extend",
      "title": "Claude Code: Settings",
@@ -6805,6 +6948,7 @@
     },
     {
      "n": 17,
+     "pad": 2,
      "dir": "claude-code/17-automation",
      "phase": "automate",
      "title": "Claude Code: Automation",
@@ -6840,6 +6984,7 @@
     },
     {
      "n": 18,
+     "pad": 2,
      "dir": "claude-code/18-project-build-a-cli-tool",
      "phase": "projects",
      "title": "Claude Code Project: Build a CLI Tool",
@@ -6862,6 +7007,7 @@
     },
     {
      "n": 19,
+     "pad": 2,
      "dir": "claude-code/19-project-fix-a-broken-repo",
      "phase": "projects",
      "title": "Claude Code Project: Fix a Broken Repo",
@@ -6884,6 +7030,7 @@
     },
     {
      "n": 20,
+     "pad": 2,
      "dir": "claude-code/20-project-configure-a-project",
      "phase": "projects",
      "title": "Claude Code Project: Configure a Project",
@@ -6901,6 +7048,3770 @@
        "title": "Configure a repo for Claude Code end to end",
        "minutes": 45,
        "path": "claude-code/20-project-configure-a-project/01-configure-a-repo-for-claude-code-end-to-end.md"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "claude-code-mastery",
+   "name": "Claude Code Mastery",
+   "icon": "🧠",
+   "color": "#c2410c",
+   "tagline": "Claude Code from first contact to mastery - permissions, skills, subagents, hooks, MCP, real-world builds, advanced operations, and a multi-agent capstone. Every lab graded in a real VM.",
+   "stats": {
+    "topics": 88,
+    "tasks": 75,
+    "quizzes": 101,
+    "challenges": 3,
+    "lessons": 168,
+    "questions": 425,
+    "minutes": 5270
+   },
+   "phases": [
+    {
+     "id": "foundations",
+     "name": "Foundations",
+     "blurb": "The agent loop, tools, permissions, models, context, CLAUDE.md, memory, skills, commands, plugins, plan mode, checkpoints, and git."
+    },
+    {
+     "id": "parallel",
+     "name": "Power Workflows",
+     "blurb": "Terminal quality of life, recurring runs, subagents, specialist agents, background sessions, and worktree fleets."
+    },
+    {
+     "id": "guardrails",
+     "name": "Hooks, Settings, and MCP",
+     "blurb": "Hooks that log and block, settings.json in depth, and MCP servers over every transport."
+    },
+    {
+     "id": "headless",
+     "name": "Headless Automation",
+     "blurb": "JSON envelopes, streaming events, schemas, and pipelines that fail closed."
+    },
+    {
+     "id": "compare",
+     "name": "Comparing Tools and Costs",
+     "blurb": "Claude Code next to Codex, and a measured rubric for choosing a model tier."
+    },
+    {
+     "id": "builds",
+     "name": "Real-World Builds",
+     "blurb": "Onboarding, tests, bug fixes, migrations, commit bots, docs, PR descriptions, flaky tests, logs, and data."
+    },
+    {
+     "id": "extend",
+     "name": "Extending Claude Code",
+     "blurb": "Skills engineering, plugins and marketplaces, your own MCP server, CI pipelines, and the Agent SDK."
+    },
+    {
+     "id": "multiagent",
+     "name": "Multi-Agent Builds",
+     "blurb": "Multi-file features, parallel audits, coordinators and workers, and a security review pass."
+    },
+    {
+     "id": "sdk",
+     "name": "The Claude Agent SDK",
+     "blurb": "Drive the agent loop from Python: custom tools, permission callbacks, sessions, and subagents."
+    },
+    {
+     "id": "operations",
+     "name": "Operating Agents",
+     "blurb": "Automations, cost, usage limits, reliability, observability, and OpenTelemetry."
+    },
+    {
+     "id": "enterprise",
+     "name": "Teams and Enterprise",
+     "blurb": "Team repos, managed policy, cloud providers, gateways, runners, and spend governance."
+    },
+    {
+     "id": "surfaces",
+     "name": "Beyond the Terminal",
+     "blurb": "Cross-session teams, code review, Remote Control, cloud sessions, IDEs, Chrome, Desktop, and artifacts."
+    },
+    {
+     "id": "capstone",
+     "name": "Capstone: Agentic Release Manager",
+     "blurb": "Spec, design, build, guard, serve, and review a multi-agent release manager."
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "pad": 3,
+     "dir": "claude-code-mastery/001-claude-code-first-contact",
+     "phase": "foundations",
+     "title": "Claude Code: first contact",
+     "summary": "Meet the agent loop, open the console, run a headless prompt, and leave your first three artifacts.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Claude Code and the agent loop",
+       "minutes": 14,
+       "path": "claude-code-mastery/001-claude-code-first-contact/01-claude-code-and-the-agent-loop.md"
+      },
+      {
+       "type": "lesson",
+       "title": "The console: sessions, slash commands, and headless mode",
+       "minutes": 14,
+       "path": "claude-code-mastery/001-claude-code-first-contact/02-the-console-sessions-slash-commands-and-headless-mode.md"
+      },
+      {
+       "type": "task",
+       "title": "Run your first agent task",
+       "minutes": 23,
+       "path": "claude-code-mastery/001-claude-code-first-contact/03-run-your-first-agent-task.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: what makes it an agent",
+       "minutes": 9,
+       "path": "claude-code-mastery/001-claude-code-first-contact/04-quick-check-what-makes-it-an-agent.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "pad": 3,
+     "dir": "claude-code-mastery/002-the-agent-loop",
+     "phase": "foundations",
+     "title": "The agent loop",
+     "summary": "See how one request becomes a loop of tool calls and results, then capture a whole run in a JSON envelope.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Turns, tool calls, and results",
+       "minutes": 14,
+       "path": "claude-code-mastery/002-the-agent-loop/01-turns-tool-calls-and-results.md"
+      },
+      {
+       "type": "lesson",
+       "title": "The JSON envelope",
+       "minutes": 14,
+       "path": "claude-code-mastery/002-the-agent-loop/02-the-json-envelope.md"
+      },
+      {
+       "type": "task",
+       "title": "Run a multi-tool task and capture the whole run",
+       "minutes": 23,
+       "path": "claude-code-mastery/002-the-agent-loop/03-run-a-multi-tool-task-and-capture-the-whole-run.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: when the loop stops",
+       "minutes": 9,
+       "path": "claude-code-mastery/002-the-agent-loop/04-quick-check-when-the-loop-stops.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "pad": 3,
+     "dir": "claude-code-mastery/003-read-only-tools",
+     "phase": "foundations",
+     "title": "Read-only tools",
+     "summary": "Use Read, Grep, and Glob to map an unfamiliar repo and pull verifiable facts out of it.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Read, Grep, and Glob",
+       "minutes": 14,
+       "path": "claude-code-mastery/003-read-only-tools/01-read-grep-and-glob.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Exploring an unfamiliar repo",
+       "minutes": 14,
+       "path": "claude-code-mastery/003-read-only-tools/02-exploring-an-unfamiliar-repo.md"
+      },
+      {
+       "type": "task",
+       "title": "Map a seeded repo into a notes file",
+       "minutes": 23,
+       "path": "claude-code-mastery/003-read-only-tools/03-map-a-seeded-repo-into-a-notes-file.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: first move in a 300-file repo",
+       "minutes": 9,
+       "path": "claude-code-mastery/003-read-only-tools/04-scenario-first-move-in-a-300-file-repo.md",
+       "questions": 3
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "pad": 3,
+     "dir": "claude-code-mastery/004-diagnose-your-installation",
+     "phase": "foundations",
+     "title": "Diagnose your installation",
+     "summary": "Read claude doctor output, reconcile it with the version flag, and record a diagnostic baseline you can diff against later.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 2,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "The diagnostic baseline",
+       "minutes": 12,
+       "path": "claude-code-mastery/004-diagnose-your-installation/01-the-diagnostic-baseline.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Reading claude doctor output",
+       "minutes": 12,
+       "path": "claude-code-mastery/004-diagnose-your-installation/02-reading-claude-doctor-output.md"
+      },
+      {
+       "type": "task",
+       "title": "Capture a diagnostic baseline",
+       "minutes": 20,
+       "path": "claude-code-mastery/004-diagnose-your-installation/03-capture-a-diagnostic-baseline.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: a teammate stopped finding files",
+       "minutes": 8,
+       "path": "claude-code-mastery/004-diagnose-your-installation/04-scenario-a-teammate-stopped-finding-files.md",
+       "questions": 3
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: two lines that disagree",
+       "minutes": 8,
+       "path": "claude-code-mastery/004-diagnose-your-installation/05-quick-check-two-lines-that-disagree.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "pad": 3,
+     "dir": "claude-code-mastery/005-editing-tools-and-permissions",
+     "phase": "foundations",
+     "title": "Editing tools and permissions",
+     "summary": "Let the agent change files with Edit, Write, and Bash, and learn the approval prompt that guards every change.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Edit, Write, and Bash",
+       "minutes": 14,
+       "path": "claude-code-mastery/005-editing-tools-and-permissions/01-edit-write-and-bash.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Approvals in headless runs",
+       "minutes": 14,
+       "path": "claude-code-mastery/005-editing-tools-and-permissions/02-approvals-in-headless-runs.md"
+      },
+      {
+       "type": "task",
+       "title": "Fix a broken file with the agent",
+       "minutes": 23,
+       "path": "claude-code-mastery/005-editing-tools-and-permissions/03-fix-a-broken-file-with-the-agent.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: what acceptEdits covers",
+       "minutes": 9,
+       "path": "claude-code-mastery/005-editing-tools-and-permissions/04-quick-check-what-acceptedits-covers.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "pad": 3,
+     "dir": "claude-code-mastery/006-permission-modes-and-guardrails",
+     "phase": "foundations",
+     "title": "Permission modes and guardrails",
+     "summary": "Pick the right permission mode from the six that exist, write allow and deny rules, and contain what runs with the built-in Linux sandbox.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 3,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "The six permission modes",
+       "minutes": 12,
+       "path": "claude-code-mastery/006-permission-modes-and-guardrails/01-the-six-permission-modes.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Allow, ask, and deny rules in settings.json",
+       "minutes": 12,
+       "path": "claude-code-mastery/006-permission-modes-and-guardrails/02-allow-ask-and-deny-rules-in-settings-json.md"
+      },
+      {
+       "type": "lesson",
+       "title": "The built-in Linux sandbox",
+       "minutes": 12,
+       "path": "claude-code-mastery/006-permission-modes-and-guardrails/03-the-built-in-linux-sandbox.md"
+      },
+      {
+       "type": "task",
+       "title": "Write project permission rules and a sandbox policy",
+       "minutes": 17,
+       "path": "claude-code-mastery/006-permission-modes-and-guardrails/04-write-project-permission-rules-and-a-sandbox-policy.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: approval prompts are slowing a demo",
+       "minutes": 7,
+       "path": "claude-code-mastery/006-permission-modes-and-guardrails/05-scenario-approval-prompts-are-slowing-a-demo.md",
+       "questions": 3
+      }
+     ]
+    },
+    {
+     "n": 7,
+     "pad": 3,
+     "dir": "claude-code-mastery/007-work-across-multiple-roots",
+     "phase": "foundations",
+     "title": "Work across multiple roots",
+     "summary": "Grant a session a second directory with --add-dir, prove the boundary before and after the grant, and choose between an added root and a worktree.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 2,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "The working root and additional roots",
+       "minutes": 12,
+       "path": "claude-code-mastery/007-work-across-multiple-roots/01-the-working-root-and-additional-roots.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Adding a root is a permission decision",
+       "minutes": 12,
+       "path": "claude-code-mastery/007-work-across-multiple-roots/02-adding-a-root-is-a-permission-decision.md"
+      },
+      {
+       "type": "task",
+       "title": "Prove a cross-root read",
+       "minutes": 20,
+       "path": "claude-code-mastery/007-work-across-multiple-roots/03-prove-a-cross-root-read.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: one bug, two trees, two approaches",
+       "minutes": 8,
+       "path": "claude-code-mastery/007-work-across-multiple-roots/04-scenario-one-bug-two-trees-two-approaches.md",
+       "questions": 3
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: what an added root carries",
+       "minutes": 8,
+       "path": "claude-code-mastery/007-work-across-multiple-roots/05-quick-check-what-an-added-root-carries.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 8,
+     "pad": 3,
+     "dir": "claude-code-mastery/008-models-and-effort",
+     "phase": "foundations",
+     "title": "Models and effort",
+     "summary": "Match the model to the job, then compare haiku and sonnet on the same task using real speed and cost numbers.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "The model lineup",
+       "minutes": 14,
+       "path": "claude-code-mastery/008-models-and-effort/01-the-model-lineup.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Reading speed and cost from the envelope",
+       "minutes": 14,
+       "path": "claude-code-mastery/008-models-and-effort/02-reading-speed-and-cost-from-the-envelope.md"
+      },
+      {
+       "type": "task",
+       "title": "Run one task on two models",
+       "minutes": 23,
+       "path": "claude-code-mastery/008-models-and-effort/03-run-one-task-on-two-models.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: matching models to jobs",
+       "minutes": 9,
+       "path": "claude-code-mastery/008-models-and-effort/04-quick-check-matching-models-to-jobs.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 9,
+     "pad": 3,
+     "dir": "claude-code-mastery/009-context-and-compaction",
+     "phase": "foundations",
+     "title": "Context and compaction",
+     "summary": "How the context window fills up, what /compact and auto-compaction do, and how to hand work off to a fresh session.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "The context window",
+       "minutes": 14,
+       "path": "claude-code-mastery/009-context-and-compaction/01-the-context-window.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Compaction and session handoffs",
+       "minutes": 14,
+       "path": "claude-code-mastery/009-context-and-compaction/02-compaction-and-session-handoffs.md"
+      },
+      {
+       "type": "task",
+       "title": "Write a session handoff file",
+       "minutes": 23,
+       "path": "claude-code-mastery/009-context-and-compaction/03-write-a-session-handoff-file.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: what compaction keeps",
+       "minutes": 9,
+       "path": "claude-code-mastery/009-context-and-compaction/04-quick-check-what-compaction-keeps.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 10,
+     "pad": 3,
+     "dir": "claude-code-mastery/010-claude-md-basics",
+     "phase": "foundations",
+     "title": "CLAUDE.md basics",
+     "summary": "Give a project standing instructions with CLAUDE.md and /init, then prove the agent actually follows them.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "CLAUDE.md and /init",
+       "minutes": 14,
+       "path": "claude-code-mastery/010-claude-md-basics/01-claude-md-and-init.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Writing rules the agent can follow",
+       "minutes": 14,
+       "path": "claude-code-mastery/010-claude-md-basics/02-writing-rules-the-agent-can-follow.md"
+      },
+      {
+       "type": "task",
+       "title": "Create CLAUDE.md and prove it loads",
+       "minutes": 23,
+       "path": "claude-code-mastery/010-claude-md-basics/03-create-claude-md-and-prove-it-loads.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: where standing instructions live",
+       "minutes": 9,
+       "path": "claude-code-mastery/010-claude-md-basics/04-quick-check-where-standing-instructions-live.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 11,
+     "pad": 3,
+     "dir": "claude-code-mastery/011-claude-md-precedence-and-imports",
+     "phase": "foundations",
+     "title": "CLAUDE.md precedence and imports",
+     "summary": "How user, project, and managed instruction files combine, which one wins a conflict, and how imports split rules across files.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "The three instruction levels",
+       "minutes": 14,
+       "path": "claude-code-mastery/011-claude-md-precedence-and-imports/01-the-three-instruction-levels.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Imports in CLAUDE.md",
+       "minutes": 14,
+       "path": "claude-code-mastery/011-claude-md-precedence-and-imports/02-imports-in-claude-md.md"
+      },
+      {
+       "type": "task",
+       "title": "Project rules vs user rules",
+       "minutes": 23,
+       "path": "claude-code-mastery/011-claude-md-precedence-and-imports/03-project-rules-vs-user-rules.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: where does the rule belong",
+       "minutes": 9,
+       "path": "claude-code-mastery/011-claude-md-precedence-and-imports/04-scenario-where-does-the-rule-belong.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 12,
+     "pad": 3,
+     "dir": "claude-code-mastery/012-memory-across-sessions",
+     "phase": "foundations",
+     "title": "Memory across sessions",
+     "summary": "Make facts survive the end of a conversation: memory files, the # shortcut, /memory, and proving recall in a fresh session.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "What persists between sessions",
+       "minutes": 14,
+       "path": "claude-code-mastery/012-memory-across-sessions/01-what-persists-between-sessions.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Adding memories: the # shortcut and /memory",
+       "minutes": 14,
+       "path": "claude-code-mastery/012-memory-across-sessions/02-adding-memories-the-shortcut-and-memory.md"
+      },
+      {
+       "type": "task",
+       "title": "Store a project fact and recall it",
+       "minutes": 23,
+       "path": "claude-code-mastery/012-memory-across-sessions/03-store-a-project-fact-and-recall-it.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: why the fact vanished",
+       "minutes": 9,
+       "path": "claude-code-mastery/012-memory-across-sessions/04-quick-check-why-the-fact-vanished.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 13,
+     "pad": 3,
+     "dir": "claude-code-mastery/013-using-skills-and-reusable-prompts",
+     "phase": "foundations",
+     "title": "Using skills and reusable prompts",
+     "summary": "What skills are, which ones a build may bundle, and how a saved prompt file makes any repeated agent task consistent.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "What skills are",
+       "minutes": 14,
+       "path": "claude-code-mastery/013-using-skills-and-reusable-prompts/01-what-skills-are.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Reusable prompt files",
+       "minutes": 14,
+       "path": "claude-code-mastery/013-using-skills-and-reusable-prompts/02-reusable-prompt-files.md"
+      },
+      {
+       "type": "task",
+       "title": "Build and run a reusable review prompt",
+       "minutes": 23,
+       "path": "claude-code-mastery/013-using-skills-and-reusable-prompts/03-build-and-run-a-reusable-review-prompt.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: the retyped checklist",
+       "minutes": 9,
+       "path": "claude-code-mastery/013-using-skills-and-reusable-prompts/04-scenario-the-retyped-checklist.md",
+       "questions": 3
+      }
+     ]
+    },
+    {
+     "n": 14,
+     "pad": 3,
+     "dir": "claude-code-mastery/014-build-a-custom-skill",
+     "phase": "foundations",
+     "title": "Build a custom skill",
+     "summary": "Write a SKILL.md from scratch and use it to generate a standup report from real git history.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "SKILL.md anatomy",
+       "minutes": 14,
+       "path": "claude-code-mastery/014-build-a-custom-skill/01-skill-md-anatomy.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Designing and testing a skill",
+       "minutes": 14,
+       "path": "claude-code-mastery/014-build-a-custom-skill/02-designing-and-testing-a-skill.md"
+      },
+      {
+       "type": "task",
+       "title": "Build a standup skill",
+       "minutes": 23,
+       "path": "claude-code-mastery/014-build-a-custom-skill/03-build-a-standup-skill.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: why the skill never triggers",
+       "minutes": 9,
+       "path": "claude-code-mastery/014-build-a-custom-skill/04-quick-check-why-the-skill-never-triggers.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 15,
+     "pad": 3,
+     "dir": "claude-code-mastery/015-custom-slash-commands",
+     "phase": "foundations",
+     "title": "Custom slash commands",
+     "summary": "Package a task you repeat into a project slash command, then run it headlessly like any other CLI tool.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Command files and where they live",
+       "minutes": 14,
+       "path": "claude-code-mastery/015-custom-slash-commands/01-command-files-and-where-they-live.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Arguments, frontmatter, and commands versus skills",
+       "minutes": 14,
+       "path": "claude-code-mastery/015-custom-slash-commands/02-arguments-frontmatter-and-commands-versus-skills.md"
+      },
+      {
+       "type": "task",
+       "title": "Turn a repeated task into a command",
+       "minutes": 23,
+       "path": "claude-code-mastery/015-custom-slash-commands/03-turn-a-repeated-task-into-a-command.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: command scope",
+       "minutes": 9,
+       "path": "claude-code-mastery/015-custom-slash-commands/04-quick-check-command-scope.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 16,
+     "pad": 3,
+     "dir": "claude-code-mastery/016-plugins",
+     "phase": "foundations",
+     "title": "Plugins",
+     "summary": "Learn how commands, skills, agents, and hooks bundle into an installable plugin, and build a valid plugin layout by hand.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Plugin anatomy",
+       "minutes": 14,
+       "path": "claude-code-mastery/016-plugins/01-plugin-anatomy.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Marketplaces and local plugins",
+       "minutes": 14,
+       "path": "claude-code-mastery/016-plugins/02-marketplaces-and-local-plugins.md"
+      },
+      {
+       "type": "task",
+       "title": "Build a plugin layout",
+       "minutes": 23,
+       "path": "claude-code-mastery/016-plugins/03-build-a-plugin-layout.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: a plugin from an unknown marketplace",
+       "minutes": 9,
+       "path": "claude-code-mastery/016-plugins/04-scenario-a-plugin-from-an-unknown-marketplace.md",
+       "questions": 3
+      }
+     ]
+    },
+    {
+     "n": 17,
+     "pad": 3,
+     "dir": "claude-code-mastery/017-plan-mode",
+     "phase": "foundations",
+     "title": "Plan mode",
+     "summary": "Make the agent propose before it edits, review the plan as an artifact, then execute the approved change.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Plan mode",
+       "minutes": 14,
+       "path": "claude-code-mastery/017-plan-mode/01-plan-mode.md"
+      },
+      {
+       "type": "lesson",
+       "title": "From plan to execution",
+       "minutes": 14,
+       "path": "claude-code-mastery/017-plan-mode/02-from-plan-to-execution.md"
+      },
+      {
+       "type": "task",
+       "title": "Plan a change, then execute it",
+       "minutes": 23,
+       "path": "claude-code-mastery/017-plan-mode/03-plan-a-change-then-execute-it.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: what a plan run produces",
+       "minutes": 9,
+       "path": "claude-code-mastery/017-plan-mode/04-quick-check-what-a-plan-run-produces.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 18,
+     "pad": 3,
+     "dir": "claude-code-mastery/018-rewind-and-checkpoints",
+     "phase": "foundations",
+     "title": "Rewind and checkpoints",
+     "summary": "Understand what /rewind can and cannot restore, then practice the durable version of the same idea: tagged git checkpoints and the restores that undo a bad agent run.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 2,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Checkpoints and /rewind",
+       "minutes": 12,
+       "path": "claude-code-mastery/018-rewind-and-checkpoints/01-checkpoints-and-rewind.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Git as the durable checkpoint",
+       "minutes": 12,
+       "path": "claude-code-mastery/018-rewind-and-checkpoints/02-git-as-the-durable-checkpoint.md"
+      },
+      {
+       "type": "task",
+       "title": "Run a checkpoint workflow with git",
+       "minutes": 20,
+       "path": "claude-code-mastery/018-rewind-and-checkpoints/03-run-a-checkpoint-workflow-with-git.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: rewind boundaries",
+       "minutes": 8,
+       "path": "claude-code-mastery/018-rewind-and-checkpoints/04-quick-check-rewind-boundaries.md",
+       "questions": 4
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: the deletion rewind cannot reach",
+       "minutes": 8,
+       "path": "claude-code-mastery/018-rewind-and-checkpoints/05-scenario-the-deletion-rewind-cannot-reach.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 19,
+     "pad": 3,
+     "dir": "claude-code-mastery/019-git-workflow-with-claude-code",
+     "phase": "foundations",
+     "title": "Git workflow with Claude Code",
+     "summary": "Let the agent read the diff and write the commit message, then land a clean conventional commit in a local repo.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Agent-driven git",
+       "minutes": 14,
+       "path": "claude-code-mastery/019-git-workflow-with-claude-code/01-agent-driven-git.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Conventional commit messages",
+       "minutes": 14,
+       "path": "claude-code-mastery/019-git-workflow-with-claude-code/02-conventional-commit-messages.md"
+      },
+      {
+       "type": "task",
+       "title": "Commit a change with an agent-written message",
+       "minutes": 23,
+       "path": "claude-code-mastery/019-git-workflow-with-claude-code/03-commit-a-change-with-an-agent-written-message.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: committing an agent's mixed changes",
+       "minutes": 9,
+       "path": "claude-code-mastery/019-git-workflow-with-claude-code/04-scenario-committing-an-agents-mixed-changes.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 20,
+     "pad": 3,
+     "dir": "claude-code-mastery/020-foundations-review",
+     "phase": "foundations",
+     "title": "Foundations review",
+     "summary": "Recap the Claude Code foundations, then prove them cold in a hint-free end-to-end challenge and a judgment scenario.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 1,
+      "tasks": 0,
+      "quizzes": 1,
+      "challenges": 1
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Foundations recap",
+       "minutes": 15,
+       "path": "claude-code-mastery/020-foundations-review/01-foundations-recap.md"
+      },
+      {
+       "type": "challenge",
+       "title": "Foundations challenge: stand up a project end to end",
+       "minutes": 36,
+       "path": "claude-code-mastery/020-foundations-review/02-foundations-challenge-stand-up-a-project-end-to-end.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: starting agent work on an existing repo",
+       "minutes": 9,
+       "path": "claude-code-mastery/020-foundations-review/03-scenario-starting-agent-work-on-an-existing-repo.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 21,
+     "pad": 3,
+     "dir": "claude-code-mastery/021-terminal-quality-of-life",
+     "phase": "parallel",
+     "title": "Terminal quality of life",
+     "summary": "Session commands, keybindings and vim mode at the prompt, and a custom status line, all wired through settings.json.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 4,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Session commands and keybindings",
+       "minutes": 10,
+       "path": "claude-code-mastery/021-terminal-quality-of-life/01-session-commands-and-keybindings.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Vim mode and prompt editing",
+       "minutes": 10,
+       "path": "claude-code-mastery/021-terminal-quality-of-life/02-vim-mode-and-prompt-editing.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Custom keybindings in keybindings.json",
+       "minutes": 10,
+       "path": "claude-code-mastery/021-terminal-quality-of-life/03-custom-keybindings-in-keybindings-json.md"
+      },
+      {
+       "type": "lesson",
+       "title": "The status line",
+       "minutes": 10,
+       "path": "claude-code-mastery/021-terminal-quality-of-life/04-the-status-line.md"
+      },
+      {
+       "type": "task",
+       "title": "Configure the status line, vim mode, and a keybinding",
+       "minutes": 14,
+       "path": "claude-code-mastery/021-terminal-quality-of-life/05-configure-the-status-line-vim-mode-and-a-keybinding.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: where the status line text comes from",
+       "minutes": 6,
+       "path": "claude-code-mastery/021-terminal-quality-of-life/06-quick-check-where-the-status-line-text-comes-from.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 22,
+     "pad": 3,
+     "dir": "claude-code-mastery/022-recurring-runs-with-loops-and-cron",
+     "phase": "parallel",
+     "title": "Recurring runs with loops and cron",
+     "summary": "Repeat agent work on a cycle - shell loops, cron schedules that survive the environment trap, and the built-in loop command.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 4,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Recurring agent runs",
+       "minutes": 10,
+       "path": "claude-code-mastery/022-recurring-runs-with-loops-and-cron/01-recurring-agent-runs.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Shell loops for repetition",
+       "minutes": 10,
+       "path": "claude-code-mastery/022-recurring-runs-with-loops-and-cron/02-shell-loops-for-repetition.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Cron schedules and the environment trap",
+       "minutes": 10,
+       "path": "claude-code-mastery/022-recurring-runs-with-loops-and-cron/03-cron-schedules-and-the-environment-trap.md"
+      },
+      {
+       "type": "lesson",
+       "title": "The loop command and account-backed routines",
+       "minutes": 10,
+       "path": "claude-code-mastery/022-recurring-runs-with-loops-and-cron/04-the-loop-command-and-account-backed-routines.md"
+      },
+      {
+       "type": "task",
+       "title": "Schedule a nightly hygiene run",
+       "minutes": 14,
+       "path": "claude-code-mastery/022-recurring-runs-with-loops-and-cron/05-schedule-a-nightly-hygiene-run.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: the job works by hand but not on schedule",
+       "minutes": 6,
+       "path": "claude-code-mastery/022-recurring-runs-with-loops-and-cron/06-scenario-the-job-works-by-hand-but-not-on-schedule.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 23,
+     "pad": 3,
+     "dir": "claude-code-mastery/023-subagents",
+     "phase": "parallel",
+     "title": "Subagents",
+     "summary": "Fan work out to parallel helpers with their own context windows, and define agents inline for headless runs.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Subagents and context isolation",
+       "minutes": 14,
+       "path": "claude-code-mastery/023-subagents/01-subagents-and-context-isolation.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Defining agents inline for headless runs",
+       "minutes": 14,
+       "path": "claude-code-mastery/023-subagents/02-defining-agents-inline-for-headless-runs.md"
+      },
+      {
+       "type": "task",
+       "title": "Fan out an exploration",
+       "minutes": 23,
+       "path": "claude-code-mastery/023-subagents/03-fan-out-an-exploration.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: what a subagent buys you",
+       "minutes": 9,
+       "path": "claude-code-mastery/023-subagents/04-quick-check-what-a-subagent-buys-you.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 24,
+     "pad": 3,
+     "dir": "claude-code-mastery/024-defining-specialist-agents",
+     "phase": "parallel",
+     "title": "Defining specialist agents",
+     "summary": "Write reusable agent definitions under .claude/agents: frontmatter, tool restrictions, and getting them invoked.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Agent definition files",
+       "minutes": 14,
+       "path": "claude-code-mastery/024-defining-specialist-agents/01-agent-definition-files.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Getting specialists invoked",
+       "minutes": 14,
+       "path": "claude-code-mastery/024-defining-specialist-agents/02-getting-specialists-invoked.md"
+      },
+      {
+       "type": "task",
+       "title": "Create a read-only reviewer agent",
+       "minutes": 23,
+       "path": "claude-code-mastery/024-defining-specialist-agents/03-create-a-read-only-reviewer-agent.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: the specialist never gets picked",
+       "minutes": 9,
+       "path": "claude-code-mastery/024-defining-specialist-agents/04-scenario-the-specialist-never-gets-picked.md",
+       "questions": 3
+      }
+     ]
+    },
+    {
+     "n": 25,
+     "pad": 3,
+     "dir": "claude-code-mastery/025-background-agent-operations",
+     "phase": "parallel",
+     "title": "Background agent operations",
+     "summary": "Dispatch agent work as background sessions, watch and steer them through the agent view, and collect results from artifact files.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 3,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Dispatching a background agent",
+       "minutes": 12,
+       "path": "claude-code-mastery/025-background-agent-operations/01-dispatching-a-background-agent.md"
+      },
+      {
+       "type": "lesson",
+       "title": "The agent view and session lifecycle",
+       "minutes": 12,
+       "path": "claude-code-mastery/025-background-agent-operations/02-the-agent-view-and-session-lifecycle.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Artifact discipline for long runs",
+       "minutes": 12,
+       "path": "claude-code-mastery/025-background-agent-operations/03-artifact-discipline-for-long-runs.md"
+      },
+      {
+       "type": "task",
+       "title": "Run a task in the background and collect its artifacts",
+       "minutes": 17,
+       "path": "claude-code-mastery/025-background-agent-operations/04-run-a-task-in-the-background-and-collect-its-artifacts.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: what a detached run must not do",
+       "minutes": 7,
+       "path": "claude-code-mastery/025-background-agent-operations/05-quick-check-what-a-detached-run-must-not-do.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 26,
+     "pad": 3,
+     "dir": "claude-code-mastery/026-worktrees-and-worktree-fleets",
+     "phase": "parallel",
+     "title": "Worktrees and worktree fleets",
+     "summary": "Give each agent task its own working directory with git worktrees and the -w flag, then run a parallel fleet and collect the results as reviewable branches.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 4,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Git worktrees",
+       "minutes": 10,
+       "path": "claude-code-mastery/026-worktrees-and-worktree-fleets/01-git-worktrees.md"
+      },
+      {
+       "type": "lesson",
+       "title": "An agent per worktree",
+       "minutes": 10,
+       "path": "claude-code-mastery/026-worktrees-and-worktree-fleets/02-an-agent-per-worktree.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Worktree sources and settings",
+       "minutes": 10,
+       "path": "claude-code-mastery/026-worktrees-and-worktree-fleets/03-worktree-sources-and-settings.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Fleets and collecting their results",
+       "minutes": 10,
+       "path": "claude-code-mastery/026-worktrees-and-worktree-fleets/04-fleets-and-collecting-their-results.md"
+      },
+      {
+       "type": "task",
+       "title": "Run a two task fleet",
+       "minutes": 14,
+       "path": "claude-code-mastery/026-worktrees-and-worktree-fleets/05-run-a-two-task-fleet.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: worktree or clone",
+       "minutes": 6,
+       "path": "claude-code-mastery/026-worktrees-and-worktree-fleets/06-quick-check-worktree-or-clone.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 27,
+     "pad": 3,
+     "dir": "claude-code-mastery/027-automating-with-posttooluse-hooks",
+     "phase": "guardrails",
+     "title": "Automating with PostToolUse hooks",
+     "summary": "Configure PostToolUse hooks that run automatically after tool calls and prove one fires during a headless run.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Hooks and hook events",
+       "minutes": 14,
+       "path": "claude-code-mastery/027-automating-with-posttooluse-hooks/01-hooks-and-hook-events.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Hook input: JSON on stdin",
+       "minutes": 14,
+       "path": "claude-code-mastery/027-automating-with-posttooluse-hooks/02-hook-input-json-on-stdin.md"
+      },
+      {
+       "type": "task",
+       "title": "Build a write-audit hook",
+       "minutes": 23,
+       "path": "claude-code-mastery/027-automating-with-posttooluse-hooks/03-build-a-write-audit-hook.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: when a PostToolUse hook runs",
+       "minutes": 9,
+       "path": "claude-code-mastery/027-automating-with-posttooluse-hooks/04-quick-check-when-a-posttooluse-hook-runs.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 28,
+     "pad": 3,
+     "dir": "claude-code-mastery/028-enforcing-rules-with-pretooluse-hooks",
+     "phase": "guardrails",
+     "title": "Enforcing rules with PreToolUse hooks",
+     "summary": "Turn a project rule into an enforced PreToolUse guard that blocks tool calls with exit code 2.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "PreToolUse and exit code 2",
+       "minutes": 14,
+       "path": "claude-code-mastery/028-enforcing-rules-with-pretooluse-hooks/01-pretooluse-and-exit-code-2.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Matchers and inspecting the payload",
+       "minutes": 14,
+       "path": "claude-code-mastery/028-enforcing-rules-with-pretooluse-hooks/02-matchers-and-inspecting-the-payload.md"
+      },
+      {
+       "type": "task",
+       "title": "Block writes to a protected file",
+       "minutes": 23,
+       "path": "claude-code-mastery/028-enforcing-rules-with-pretooluse-hooks/03-block-writes-to-a-protected-file.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: stopping destructive git commands",
+       "minutes": 9,
+       "path": "claude-code-mastery/028-enforcing-rules-with-pretooluse-hooks/04-scenario-stopping-destructive-git-commands.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 29,
+     "pad": 3,
+     "dir": "claude-code-mastery/029-hooks-as-guardrails",
+     "phase": "guardrails",
+     "title": "Hooks as guardrails",
+     "summary": "Build a PreToolUse hook that blocks secret-exfiltrating commands and prove the block path fires.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 1,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "PreToolUse as a guardrail",
+       "minutes": 19,
+       "path": "claude-code-mastery/029-hooks-as-guardrails/01-pretooluse-as-a-guardrail.md"
+      },
+      {
+       "type": "task",
+       "title": "Block secret exfiltration",
+       "minutes": 30,
+       "path": "claude-code-mastery/029-hooks-as-guardrails/02-block-secret-exfiltration.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: the agent proposes an upload",
+       "minutes": 11,
+       "path": "claude-code-mastery/029-hooks-as-guardrails/03-scenario-the-agent-proposes-an-upload.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 30,
+     "pad": 3,
+     "dir": "claude-code-mastery/030-settings-json-in-depth",
+     "phase": "guardrails",
+     "title": "settings.json in depth",
+     "summary": "Learn the settings file layers and write a full project configuration with permissions, env, and a status line.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Settings files and their layers",
+       "minutes": 14,
+       "path": "claude-code-mastery/030-settings-json-in-depth/01-settings-files-and-their-layers.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Permission rules, env, and statusLine",
+       "minutes": 14,
+       "path": "claude-code-mastery/030-settings-json-in-depth/02-permission-rules-env-and-statusline.md"
+      },
+      {
+       "type": "task",
+       "title": "Write a project settings file",
+       "minutes": 23,
+       "path": "claude-code-mastery/030-settings-json-in-depth/03-write-a-project-settings-file.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: allow versus deny",
+       "minutes": 9,
+       "path": "claude-code-mastery/030-settings-json-in-depth/04-quick-check-allow-versus-deny.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 31,
+     "pad": 3,
+     "dir": "claude-code-mastery/031-mcp-basics",
+     "phase": "guardrails",
+     "title": "MCP basics",
+     "summary": "Learn what MCP is and register a filesystem server the agent can call through namespaced tools.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "What MCP is",
+       "minutes": 14,
+       "path": "claude-code-mastery/031-mcp-basics/01-what-mcp-is.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Registering servers with claude mcp",
+       "minutes": 14,
+       "path": "claude-code-mastery/031-mcp-basics/02-registering-servers-with-claude-mcp.md"
+      },
+      {
+       "type": "task",
+       "title": "Register a filesystem MCP server",
+       "minutes": 23,
+       "path": "claude-code-mastery/031-mcp-basics/03-register-a-filesystem-mcp-server.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: MCP tool names",
+       "minutes": 9,
+       "path": "claude-code-mastery/031-mcp-basics/04-quick-check-mcp-tool-names.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 32,
+     "pad": 3,
+     "dir": "claude-code-mastery/032-a-real-mcp-workflow",
+     "phase": "guardrails",
+     "title": "A real MCP workflow",
+     "summary": "Scope a filesystem MCP server to a records directory and drive a reporting task through it.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Scoping an MCP server to the job",
+       "minutes": 14,
+       "path": "claude-code-mastery/032-a-real-mcp-workflow/01-scoping-an-mcp-server-to-the-job.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Auditing and narrowing MCP access",
+       "minutes": 14,
+       "path": "claude-code-mastery/032-a-real-mcp-workflow/02-auditing-and-narrowing-mcp-access.md"
+      },
+      {
+       "type": "task",
+       "title": "Report on seeded records through MCP",
+       "minutes": 23,
+       "path": "claude-code-mastery/032-a-real-mcp-workflow/03-report-on-seeded-records-through-mcp.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: wiring an agent to production data",
+       "minutes": 9,
+       "path": "claude-code-mastery/032-a-real-mcp-workflow/04-scenario-wiring-an-agent-to-production-data.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 33,
+     "pad": 3,
+     "dir": "claude-code-mastery/033-mcp-beyond-stdio",
+     "phase": "guardrails",
+     "title": "MCP beyond stdio",
+     "summary": "Configure HTTP, SSE, and WebSocket MCP servers, resolve scope precedence between local, project, and user config, and use resources, prompts, and tool search.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 2,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "MCP transports beyond stdio",
+       "minutes": 12,
+       "path": "claude-code-mastery/033-mcp-beyond-stdio/01-mcp-transports-beyond-stdio.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Scope precedence, resources, prompts, and output limits",
+       "minutes": 12,
+       "path": "claude-code-mastery/033-mcp-beyond-stdio/02-scope-precedence-resources-prompts-and-output-limits.md"
+      },
+      {
+       "type": "task",
+       "title": "Register scoped servers and prove precedence",
+       "minutes": 20,
+       "path": "claude-code-mastery/033-mcp-beyond-stdio/03-register-scoped-servers-and-prove-precedence.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: rolling out a remote server to the team",
+       "minutes": 8,
+       "path": "claude-code-mastery/033-mcp-beyond-stdio/04-scenario-rolling-out-a-remote-server-to-the-team.md",
+       "questions": 4
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: a tool reply that arrives truncated",
+       "minutes": 8,
+       "path": "claude-code-mastery/033-mcp-beyond-stdio/05-quick-check-a-tool-reply-that-arrives-truncated.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 34,
+     "pad": 3,
+     "dir": "claude-code-mastery/034-headless-mode-and-json-output",
+     "phase": "headless",
+     "title": "Headless mode and JSON output",
+     "summary": "Script Claude Code with headless runs, JSON output, jq extraction, and exit-code gating.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Structured output from headless runs",
+       "minutes": 14,
+       "path": "claude-code-mastery/034-headless-mode-and-json-output/01-structured-output-from-headless-runs.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Exit codes and scripting",
+       "minutes": 14,
+       "path": "claude-code-mastery/034-headless-mode-and-json-output/02-exit-codes-and-scripting.md"
+      },
+      {
+       "type": "task",
+       "title": "Script a headless run",
+       "minutes": 23,
+       "path": "claude-code-mastery/034-headless-mode-and-json-output/03-script-a-headless-run.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: reading the run object",
+       "minutes": 9,
+       "path": "claude-code-mastery/034-headless-mode-and-json-output/04-quick-check-reading-the-run-object.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 35,
+     "pad": 3,
+     "dir": "claude-code-mastery/035-headless-streaming-and-structured-output",
+     "phase": "headless",
+     "title": "Headless streaming and structured output",
+     "summary": "Stream a headless run as JSON events, constrain the final answer with a JSON Schema, and build a gate that fails closed when the output is wrong.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 2,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Streaming a run as JSON events",
+       "minutes": 12,
+       "path": "claude-code-mastery/035-headless-streaming-and-structured-output/01-streaming-a-run-as-json-events.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Constrained output, bounded runs, and failing closed",
+       "minutes": 12,
+       "path": "claude-code-mastery/035-headless-streaming-and-structured-output/02-constrained-output-bounded-runs-and-failing-closed.md"
+      },
+      {
+       "type": "task",
+       "title": "Build a streaming gate that fails closed",
+       "minutes": 20,
+       "path": "claude-code-mastery/035-headless-streaming-and-structured-output/03-build-a-streaming-gate-that-fails-closed.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: the nightly job shipped a truncated answer",
+       "minutes": 8,
+       "path": "claude-code-mastery/035-headless-streaming-and-structured-output/04-scenario-the-nightly-job-shipped-a-truncated-answer.md",
+       "questions": 4
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: the streaming run that refuses to start",
+       "minutes": 8,
+       "path": "claude-code-mastery/035-headless-streaming-and-structured-output/05-quick-check-the-streaming-run-that-refuses-to-start.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 36,
+     "pad": 3,
+     "dir": "claude-code-mastery/036-automation-review",
+     "phase": "headless",
+     "title": "Automation review",
+     "summary": "Recap the automation topics, then prove them with a graded pipeline challenge and a judgment scenario.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 1,
+      "tasks": 0,
+      "quizzes": 1,
+      "challenges": 1
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Automation recap",
+       "minutes": 15,
+       "path": "claude-code-mastery/036-automation-review/01-automation-recap.md"
+      },
+      {
+       "type": "challenge",
+       "title": "Build an audited headless pipeline",
+       "minutes": 36,
+       "path": "claude-code-mastery/036-automation-review/02-build-an-audited-headless-pipeline.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: a nightly changelog job",
+       "minutes": 9,
+       "path": "claude-code-mastery/036-automation-review/03-scenario-a-nightly-changelog-job.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 37,
+     "pad": 3,
+     "dir": "claude-code-mastery/037-equivalent-workflows-in-claude-code-and-codex",
+     "phase": "compare",
+     "title": "Equivalent workflows in Claude Code and Codex",
+     "summary": "Run one refactor with Claude Code, keep the project instructions portable across both tools, and map every extension seam to its counterpart.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 3,
+      "tasks": 1,
+      "quizzes": 2,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Comparing agents on equal terms",
+       "minutes": 10,
+       "path": "claude-code-mastery/037-equivalent-workflows-in-claude-code-and-codex/01-comparing-agents-on-equal-terms.md"
+      },
+      {
+       "type": "lesson",
+       "title": "CLAUDE.md and AGENTS.md side by side",
+       "minutes": 10,
+       "path": "claude-code-mastery/037-equivalent-workflows-in-claude-code-and-codex/02-claude-md-and-agents-md-side-by-side.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Extension seams compared",
+       "minutes": 10,
+       "path": "claude-code-mastery/037-equivalent-workflows-in-claude-code-and-codex/03-extension-seams-compared.md"
+      },
+      {
+       "type": "task",
+       "title": "Refactor with Claude Code and keep the instructions portable",
+       "minutes": 17,
+       "path": "claude-code-mastery/037-equivalent-workflows-in-claude-code-and-codex/04-refactor-with-claude-code-and-keep-the-instructions-portable.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: where a shared rule lives",
+       "minutes": 6,
+       "path": "claude-code-mastery/037-equivalent-workflows-in-claude-code-and-codex/05-quick-check-where-a-shared-rule-lives.md",
+       "questions": 4
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: guardrails that must hold",
+       "minutes": 7,
+       "path": "claude-code-mastery/037-equivalent-workflows-in-claude-code-and-codex/06-scenario-guardrails-that-must-hold.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 38,
+     "pad": 3,
+     "dir": "claude-code-mastery/038-cost-speed-and-choosing-a-tool",
+     "phase": "compare",
+     "title": "Cost, speed, and choosing a tool",
+     "summary": "Measure one real task across two model tiers, then turn the measurements and the comparison into a one-page decision rubric a team could follow.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 3,
+      "tasks": 0,
+      "quizzes": 2,
+      "challenges": 1
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "What an agent task costs",
+       "minutes": 9,
+       "path": "claude-code-mastery/038-cost-speed-and-choosing-a-tool/01-what-an-agent-task-costs.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Measuring runs with time and JSON usage fields",
+       "minutes": 9,
+       "path": "claude-code-mastery/038-cost-speed-and-choosing-a-tool/02-measuring-runs-with-time-and-json-usage-fields.md"
+      },
+      {
+       "type": "lesson",
+       "title": "From numbers to a decision rubric",
+       "minutes": 9,
+       "path": "claude-code-mastery/038-cost-speed-and-choosing-a-tool/03-from-numbers-to-a-decision-rubric.md"
+      },
+      {
+       "type": "challenge",
+       "title": "Challenge: measure two models and write the rubric",
+       "minutes": 22,
+       "path": "claude-code-mastery/038-cost-speed-and-choosing-a-tool/04-challenge-measure-two-models-and-write-the-rubric.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: picking a tier from the numbers",
+       "minutes": 5,
+       "path": "claude-code-mastery/038-cost-speed-and-choosing-a-tool/05-quick-check-picking-a-tier-from-the-numbers.md",
+       "questions": 4
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: the rubric meets a real request",
+       "minutes": 6,
+       "path": "claude-code-mastery/038-cost-speed-and-choosing-a-tool/06-scenario-the-rubric-meets-a-real-request.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 39,
+     "pad": 3,
+     "dir": "claude-code-mastery/039-repo-onboarding-with-an-agent",
+     "phase": "builds",
+     "title": "Repo onboarding with an agent",
+     "summary": "Point Claude Code at an unfamiliar codebase and produce an onboarding document whose facts the checks verify against the source.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 1,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "The repo onboarding workflow",
+       "minutes": 19,
+       "path": "claude-code-mastery/039-repo-onboarding-with-an-agent/01-the-repo-onboarding-workflow.md"
+      },
+      {
+       "type": "task",
+       "title": "Produce an onboarding document for a seeded repo",
+       "minutes": 30,
+       "path": "claude-code-mastery/039-repo-onboarding-with-an-agent/02-produce-an-onboarding-document-for-a-seeded-repo.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: verifiable agent output",
+       "minutes": 11,
+       "path": "claude-code-mastery/039-repo-onboarding-with-an-agent/03-quick-check-verifiable-agent-output.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 40,
+     "pad": 3,
+     "dir": "claude-code-mastery/040-test-generation",
+     "phase": "builds",
+     "title": "Test generation",
+     "summary": "Drive Claude Code to write a unittest suite for an untested module, then prove the suite can actually fail.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 1,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Generating tests that can fail",
+       "minutes": 19,
+       "path": "claude-code-mastery/040-test-generation/01-generating-tests-that-can-fail.md"
+      },
+      {
+       "type": "task",
+       "title": "Write tests for an untested module",
+       "minutes": 30,
+       "path": "claude-code-mastery/040-test-generation/02-write-tests-for-an-untested-module.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: the generated suite passes on the first run",
+       "minutes": 11,
+       "path": "claude-code-mastery/040-test-generation/03-scenario-the-generated-suite-passes-on-the-first-run.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 41,
+     "pad": 3,
+     "dir": "claude-code-mastery/041-bug-hunt-and-fix",
+     "phase": "builds",
+     "title": "Bug hunt and fix",
+     "summary": "Reproduce a miscounting bug in a seeded CLI script, drive the agent to locate and fix it behind a safety net, and lock the fix in with a regression test.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Reproduce, locate, fix, verify",
+       "minutes": 14,
+       "path": "claude-code-mastery/041-bug-hunt-and-fix/01-reproduce-locate-fix-verify.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Changing code safely with the agent",
+       "minutes": 14,
+       "path": "claude-code-mastery/041-bug-hunt-and-fix/02-changing-code-safely-with-the-agent.md"
+      },
+      {
+       "type": "task",
+       "title": "Find and fix the log counter bug",
+       "minutes": 23,
+       "path": "claude-code-mastery/041-bug-hunt-and-fix/03-find-and-fix-the-log-counter-bug.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: what a fix must come with",
+       "minutes": 9,
+       "path": "claude-code-mastery/041-bug-hunt-and-fix/04-quick-check-what-a-fix-must-come-with.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 42,
+     "pad": 3,
+     "dir": "claude-code-mastery/042-dependency-migration",
+     "phase": "builds",
+     "title": "Dependency migration",
+     "summary": "Migrate an app from a vendored library's 1.x API to 2.x using the release notes, with tests proving behavior held.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 1,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Migrating a pinned dependency",
+       "minutes": 19,
+       "path": "claude-code-mastery/042-dependency-migration/01-migrating-a-pinned-dependency.md"
+      },
+      {
+       "type": "task",
+       "title": "Migrate markdownlite from v1 to v2",
+       "minutes": 30,
+       "path": "claude-code-mastery/042-dependency-migration/02-migrate-markdownlite-from-v1-to-v2.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: migration order",
+       "minutes": 11,
+       "path": "claude-code-mastery/042-dependency-migration/03-quick-check-migration-order.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 43,
+     "pad": 3,
+     "dir": "claude-code-mastery/043-commit-and-changelog-bot",
+     "phase": "builds",
+     "title": "Commit and changelog bot",
+     "summary": "Build a headless script that turns an uncommitted diff into a conventional commit message and a changelog entry, then commits it.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 1,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Commit messages and changelogs from diffs",
+       "minutes": 19,
+       "path": "claude-code-mastery/043-commit-and-changelog-bot/01-commit-messages-and-changelogs-from-diffs.md"
+      },
+      {
+       "type": "task",
+       "title": "Build the commit and changelog bot",
+       "minutes": 30,
+       "path": "claude-code-mastery/043-commit-and-changelog-bot/02-build-the-commit-and-changelog-bot.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: the empty diff",
+       "minutes": 11,
+       "path": "claude-code-mastery/043-commit-and-changelog-bot/03-quick-check-the-empty-diff.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 44,
+     "pad": 3,
+     "dir": "claude-code-mastery/044-docs-from-code",
+     "phase": "builds",
+     "title": "Docs from code",
+     "summary": "Generate a README for an undocumented module and verify every claim in it against the source.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 1,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Documentation generated from source",
+       "minutes": 19,
+       "path": "claude-code-mastery/044-docs-from-code/01-documentation-generated-from-source.md"
+      },
+      {
+       "type": "task",
+       "title": "Generate a verified README",
+       "minutes": 30,
+       "path": "claude-code-mastery/044-docs-from-code/02-generate-a-verified-readme.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: the README documents a function that does not exist",
+       "minutes": 11,
+       "path": "claude-code-mastery/044-docs-from-code/03-scenario-the-readme-documents-a-function-that-does-not-exist.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 45,
+     "pad": 3,
+     "dir": "claude-code-mastery/045-pr-description-generator",
+     "phase": "builds",
+     "title": "PR description generator",
+     "summary": "Script a headless generator that turns a feature branch's commits and diff into a structured, labeled PR description.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 1,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Describing a branch as a pull request",
+       "minutes": 19,
+       "path": "claude-code-mastery/045-pr-description-generator/01-describing-a-branch-as-a-pull-request.md"
+      },
+      {
+       "type": "task",
+       "title": "Build the PR description generator",
+       "minutes": 30,
+       "path": "claude-code-mastery/045-pr-description-generator/02-build-the-pr-description-generator.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: the three-dot diff",
+       "minutes": 11,
+       "path": "claude-code-mastery/045-pr-description-generator/03-quick-check-the-three-dot-diff.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 46,
+     "pad": 3,
+     "dir": "claude-code-mastery/046-flaky-test-detection",
+     "phase": "builds",
+     "title": "Flaky test detection",
+     "summary": "Detect a nondeterministic test in a seeded suite, document the root cause, and make the suite pass reliably.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 1,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Causes of flaky tests",
+       "minutes": 19,
+       "path": "claude-code-mastery/046-flaky-test-detection/01-causes-of-flaky-tests.md"
+      },
+      {
+       "type": "task",
+       "title": "Find and fix a flaky test",
+       "minutes": 30,
+       "path": "claude-code-mastery/046-flaky-test-detection/02-find-and-fix-a-flaky-test.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: spotting nondeterminism",
+       "minutes": 11,
+       "path": "claude-code-mastery/046-flaky-test-detection/03-quick-check-spotting-nondeterminism.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 47,
+     "pad": 3,
+     "dir": "claude-code-mastery/047-log-triage",
+     "phase": "builds",
+     "title": "Log triage",
+     "summary": "Work a realistic multi-service log from error marker to traceback to a written root-cause and fix plan.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 1,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Reading production logs",
+       "minutes": 19,
+       "path": "claude-code-mastery/047-log-triage/01-reading-production-logs.md"
+      },
+      {
+       "type": "task",
+       "title": "Triage a traceback",
+       "minutes": 30,
+       "path": "claude-code-mastery/047-log-triage/02-triage-a-traceback.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: a noisy log during an incident",
+       "minutes": 11,
+       "path": "claude-code-mastery/047-log-triage/03-scenario-a-noisy-log-during-an-incident.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 48,
+     "pad": 3,
+     "dir": "claude-code-mastery/048-data-analysis",
+     "phase": "builds",
+     "title": "Data analysis",
+     "summary": "Answer exact questions about a sales CSV by having the agent compute with code instead of guessing from text.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 1,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Agents and data analysis",
+       "minutes": 19,
+       "path": "claude-code-mastery/048-data-analysis/01-agents-and-data-analysis.md"
+      },
+      {
+       "type": "task",
+       "title": "Analyze a sales CSV",
+       "minutes": 30,
+       "path": "claude-code-mastery/048-data-analysis/02-analyze-a-sales-csv.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: exact answers from data",
+       "minutes": 11,
+       "path": "claude-code-mastery/048-data-analysis/03-quick-check-exact-answers-from-data.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 49,
+     "pad": 3,
+     "dir": "claude-code-mastery/049-skills-engineering",
+     "phase": "extend",
+     "title": "Skills engineering",
+     "summary": "Write skill descriptions that trigger reliably, structure skills for progressive disclosure, prove selection with a headless run, then package, validate, and evaluate the result.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 3,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Descriptions that trigger",
+       "minutes": 12,
+       "path": "claude-code-mastery/049-skills-engineering/01-descriptions-that-trigger.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Progressive disclosure and testing",
+       "minutes": 12,
+       "path": "claude-code-mastery/049-skills-engineering/02-progressive-disclosure-and-testing.md"
+      },
+      {
+       "type": "task",
+       "title": "Prove skill selection",
+       "minutes": 17,
+       "path": "claude-code-mastery/049-skills-engineering/03-prove-skill-selection.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Packaging, validating, and evaluating a skill",
+       "minutes": 12,
+       "path": "claude-code-mastery/049-skills-engineering/04-packaging-validating-and-evaluating-a-skill.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: the skill that never fires",
+       "minutes": 7,
+       "path": "claude-code-mastery/049-skills-engineering/05-scenario-the-skill-that-never-fires.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 50,
+     "pad": 3,
+     "dir": "claude-code-mastery/050-build-and-operate-a-plugin",
+     "phase": "extend",
+     "title": "Build and operate a plugin",
+     "summary": "Assemble a plugin directory with a manifest and user config, then work the lifecycle around it - validate, install, update, remove, and evaluate.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 3,
+      "tasks": 1,
+      "quizzes": 2,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Local plugin layout",
+       "minutes": 10,
+       "path": "claude-code-mastery/050-build-and-operate-a-plugin/01-local-plugin-layout.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Manifest fields, user config, LSP, and monitors",
+       "minutes": 10,
+       "path": "claude-code-mastery/050-build-and-operate-a-plugin/02-manifest-fields-user-config-lsp-and-monitors.md"
+      },
+      {
+       "type": "lesson",
+       "title": "The plugin lifecycle on the command line",
+       "minutes": 10,
+       "path": "claude-code-mastery/050-build-and-operate-a-plugin/03-the-plugin-lifecycle-on-the-command-line.md"
+      },
+      {
+       "type": "task",
+       "title": "Assemble a local plugin",
+       "minutes": 17,
+       "path": "claude-code-mastery/050-build-and-operate-a-plugin/04-assemble-a-local-plugin.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: catching a broken plugin before anyone installs it",
+       "minutes": 6,
+       "path": "claude-code-mastery/050-build-and-operate-a-plugin/05-quick-check-catching-a-broken-plugin-before-anyone-installs.md",
+       "questions": 5
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: sharing your setup with a team",
+       "minutes": 7,
+       "path": "claude-code-mastery/050-build-and-operate-a-plugin/06-scenario-sharing-your-setup-with-a-team.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 51,
+     "pad": 3,
+     "dir": "claude-code-mastery/051-plugin-marketplaces",
+     "phase": "extend",
+     "title": "Plugin marketplaces",
+     "summary": "Read and write marketplace.json catalogs: plugin sources, sha256 pinning, and a local marketplace of one built by hand.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "marketplace.json anatomy",
+       "minutes": 14,
+       "path": "claude-code-mastery/051-plugin-marketplaces/01-marketplace-json-anatomy.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Sources and pinning",
+       "minutes": 14,
+       "path": "claude-code-mastery/051-plugin-marketplaces/02-sources-and-pinning.md"
+      },
+      {
+       "type": "task",
+       "title": "Build a marketplace of one",
+       "minutes": 23,
+       "path": "claude-code-mastery/051-plugin-marketplaces/03-build-a-marketplace-of-one.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: what the digest guarantees",
+       "minutes": 9,
+       "path": "claude-code-mastery/051-plugin-marketplaces/04-quick-check-what-the-digest-guarantees.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 52,
+     "pad": 3,
+     "dir": "claude-code-mastery/052-build-an-mcp-server",
+     "phase": "extend",
+     "title": "Build an MCP server",
+     "summary": "Write a minimal stdio JSON-RPC MCP server in Python, test it with pipes, and register it with Claude Code.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 1,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "MCP server anatomy",
+       "minutes": 19,
+       "path": "claude-code-mastery/052-build-an-mcp-server/01-mcp-server-anatomy.md"
+      },
+      {
+       "type": "task",
+       "title": "Write and register a word-count server",
+       "minutes": 30,
+       "path": "claude-code-mastery/052-build-an-mcp-server/02-write-and-register-a-word-count-server.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: the registered tool's name",
+       "minutes": 11,
+       "path": "claude-code-mastery/052-build-an-mcp-server/03-quick-check-the-registered-tools-name.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 53,
+     "pad": 3,
+     "dir": "claude-code-mastery/053-ci-with-claude-code",
+     "phase": "extend",
+     "title": "CI with Claude Code",
+     "summary": "Write a CI-style pipeline script that gates on the exit codes of a headless Claude Code step and a test run.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 1,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Headless Claude Code in a pipeline",
+       "minutes": 19,
+       "path": "claude-code-mastery/053-ci-with-claude-code/01-headless-claude-code-in-a-pipeline.md"
+      },
+      {
+       "type": "task",
+       "title": "Build a CI gate script",
+       "minutes": 30,
+       "path": "claude-code-mastery/053-ci-with-claude-code/02-build-a-ci-gate-script.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: what CI actually reads",
+       "minutes": 11,
+       "path": "claude-code-mastery/053-ci-with-claude-code/03-quick-check-what-ci-actually-reads.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 54,
+     "pad": 3,
+     "dir": "claude-code-mastery/054-github-actions-and-gitlab-ci-cd",
+     "phase": "extend",
+     "title": "GitHub Actions and GitLab CI/CD",
+     "summary": "The official claude-code-action and GitLab pipeline job: triggers, tokens, permissions, untrusted input, and timeouts, audited against a seeded insecure workflow.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 2,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "The official GitHub Action",
+       "minutes": 12,
+       "path": "claude-code-mastery/054-github-actions-and-gitlab-ci-cd/01-the-official-github-action.md"
+      },
+      {
+       "type": "lesson",
+       "title": "GitLab CI/CD jobs",
+       "minutes": 12,
+       "path": "claude-code-mastery/054-github-actions-and-gitlab-ci-cd/02-gitlab-ci-cd-jobs.md"
+      },
+      {
+       "type": "task",
+       "title": "Audit and author two pipelines",
+       "minutes": 20,
+       "path": "claude-code-mastery/054-github-actions-and-gitlab-ci-cd/03-audit-and-author-two-pipelines.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: the workflow that reviews fork pull requests",
+       "minutes": 8,
+       "path": "claude-code-mastery/054-github-actions-and-gitlab-ci-cd/04-scenario-the-workflow-that-reviews-fork-pull-requests.md",
+       "questions": 5
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: which credential does what",
+       "minutes": 8,
+       "path": "claude-code-mastery/054-github-actions-and-gitlab-ci-cd/05-quick-check-which-credential-does-what.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 55,
+     "pad": 3,
+     "dir": "claude-code-mastery/055-ship-a-multi-file-feature",
+     "phase": "multiagent",
+     "title": "Ship a multi-file feature",
+     "summary": "Drive the agent through plan, execution, and test verification for a feature that spans several files.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 1,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Plan, execute, verify",
+       "minutes": 19,
+       "path": "claude-code-mastery/055-ship-a-multi-file-feature/01-plan-execute-verify.md"
+      },
+      {
+       "type": "task",
+       "title": "Add a done flag across the task app",
+       "minutes": 30,
+       "path": "claude-code-mastery/055-ship-a-multi-file-feature/02-add-a-done-flag-across-the-task-app.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: the agent says done, the test disagrees",
+       "minutes": 11,
+       "path": "claude-code-mastery/055-ship-a-multi-file-feature/03-scenario-the-agent-says-done-the-test-disagrees.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 56,
+     "pad": 3,
+     "dir": "claude-code-mastery/056-parallel-audit-with-subagents",
+     "phase": "multiagent",
+     "title": "Parallel audit with subagents",
+     "summary": "Define two read-only specialist agents, fan an audit out to them, and merge their reports.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 1,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Fanning an audit out to subagents",
+       "minutes": 19,
+       "path": "claude-code-mastery/056-parallel-audit-with-subagents/01-fanning-an-audit-out-to-subagents.md"
+      },
+      {
+       "type": "task",
+       "title": "Audit a repo with two specialists",
+       "minutes": 30,
+       "path": "claude-code-mastery/056-parallel-audit-with-subagents/02-audit-a-repo-with-two-specialists.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: where the file contents go",
+       "minutes": 11,
+       "path": "claude-code-mastery/056-parallel-audit-with-subagents/03-quick-check-where-the-file-contents-go.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 57,
+     "pad": 3,
+     "dir": "claude-code-mastery/057-coordinator-and-workers",
+     "phase": "multiagent",
+     "title": "Coordinator and workers",
+     "summary": "Define workers inline with the agents flag and have a coordinator run merge their output into one deliverable.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 1,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "The coordinator pattern",
+       "minutes": 19,
+       "path": "claude-code-mastery/057-coordinator-and-workers/01-the-coordinator-pattern.md"
+      },
+      {
+       "type": "task",
+       "title": "Build a release notes pipeline",
+       "minutes": 30,
+       "path": "claude-code-mastery/057-coordinator-and-workers/02-build-a-release-notes-pipeline.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: workers flood the coordinator",
+       "minutes": 11,
+       "path": "claude-code-mastery/057-coordinator-and-workers/03-scenario-workers-flood-the-coordinator.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 58,
+     "pad": 3,
+     "dir": "claude-code-mastery/058-security-review-pass",
+     "phase": "multiagent",
+     "title": "Security review pass",
+     "summary": "Run a defensive agent review over a seeded app, record findings in a checkable format, and fix all three issues.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 1,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Agent-driven defensive review",
+       "minutes": 19,
+       "path": "claude-code-mastery/058-security-review-pass/01-agent-driven-defensive-review.md"
+      },
+      {
+       "type": "task",
+       "title": "Review and harden the shop API",
+       "minutes": 30,
+       "path": "claude-code-mastery/058-security-review-pass/02-review-and-harden-the-shop-api.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: the review finds a real password",
+       "minutes": 11,
+       "path": "claude-code-mastery/058-security-review-pass/03-scenario-the-review-finds-a-real-password.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 59,
+     "pad": 3,
+     "dir": "claude-code-mastery/059-build-with-the-claude-agent-sdk",
+     "phase": "sdk",
+     "title": "Build with the Claude Agent SDK",
+     "summary": "Install the Claude Agent SDK in a virtual environment and drive the agent loop from Python, capturing the result message.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "What the Agent SDK is and how to install it",
+       "minutes": 14,
+       "path": "claude-code-mastery/059-build-with-the-claude-agent-sdk/01-what-the-agent-sdk-is-and-how-to-install-it.md"
+      },
+      {
+       "type": "lesson",
+       "title": "query, ClaudeAgentOptions, and the message stream",
+       "minutes": 14,
+       "path": "claude-code-mastery/059-build-with-the-claude-agent-sdk/02-query-claudeagentoptions-and-the-message-stream.md"
+      },
+      {
+       "type": "task",
+       "title": "Capture an SDK run and its result metadata",
+       "minutes": 23,
+       "path": "claude-code-mastery/059-build-with-the-claude-agent-sdk/03-capture-an-sdk-run-and-its-result-metadata.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: where a run's cost lives",
+       "minutes": 9,
+       "path": "claude-code-mastery/059-build-with-the-claude-agent-sdk/04-quick-check-where-a-runs-cost-lives.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 60,
+     "pad": 3,
+     "dir": "claude-code-mastery/060-sdk-tools-permissions-and-sessions",
+     "phase": "sdk",
+     "title": "SDK tools, permissions, and sessions",
+     "summary": "Give an SDK agent your own tools, gate every risky call in code, and control the sessions and subagents it runs.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 3,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Custom tools with the tool decorator",
+       "minutes": 12,
+       "path": "claude-code-mastery/060-sdk-tools-permissions-and-sessions/01-custom-tools-with-the-tool-decorator.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Permission callbacks and SDK hooks",
+       "minutes": 12,
+       "path": "claude-code-mastery/060-sdk-tools-permissions-and-sessions/02-permission-callbacks-and-sdk-hooks.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Session control and SDK subagents",
+       "minutes": 12,
+       "path": "claude-code-mastery/060-sdk-tools-permissions-and-sessions/03-session-control-and-sdk-subagents.md"
+      },
+      {
+       "type": "task",
+       "title": "Add a custom tool and a permission gate",
+       "minutes": 17,
+       "path": "claude-code-mastery/060-sdk-tools-permissions-and-sessions/04-add-a-custom-tool-and-a-permission-gate.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: confining an agent that runs customer jobs",
+       "minutes": 7,
+       "path": "claude-code-mastery/060-sdk-tools-permissions-and-sessions/05-scenario-confining-an-agent-that-runs-customer-jobs.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 61,
+     "pad": 3,
+     "dir": "claude-code-mastery/061-automate-a-workflow",
+     "phase": "operations",
+     "title": "Automate a workflow",
+     "summary": "Turn a chore you actually repeat into a one-command script with a headless agent in the middle and verifiable output around it.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 1,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "One command automations",
+       "minutes": 19,
+       "path": "claude-code-mastery/061-automate-a-workflow/01-one-command-automations.md"
+      },
+      {
+       "type": "task",
+       "title": "Build your flow script",
+       "minutes": 30,
+       "path": "claude-code-mastery/061-automate-a-workflow/02-build-your-flow-script.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: the automation produced garbage",
+       "minutes": 11,
+       "path": "claude-code-mastery/061-automate-a-workflow/03-scenario-the-automation-produced-garbage.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 62,
+     "pad": 3,
+     "dir": "claude-code-mastery/062-automate-a-second-workflow",
+     "phase": "operations",
+     "title": "Automate a second workflow",
+     "summary": "Build a parameterized automation that takes an input file and uses the JSON output envelope for clean result extraction.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 1,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Automations that take input",
+       "minutes": 19,
+       "path": "claude-code-mastery/062-automate-a-second-workflow/01-automations-that-take-input.md"
+      },
+      {
+       "type": "task",
+       "title": "Build the parameterized flow",
+       "minutes": 30,
+       "path": "claude-code-mastery/062-automate-a-second-workflow/02-build-the-parameterized-flow.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: why the envelope",
+       "minutes": 11,
+       "path": "claude-code-mastery/062-automate-a-second-workflow/03-quick-check-why-the-envelope.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 63,
+     "pad": 3,
+     "dir": "claude-code-mastery/063-cost-optimization",
+     "phase": "operations",
+     "title": "Cost optimization",
+     "summary": "Run the same task on two models, read the usage fields from the JSON envelope, and decide with numbers instead of guesses.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 1,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Measuring cost per task",
+       "minutes": 19,
+       "path": "claude-code-mastery/063-cost-optimization/01-measuring-cost-per-task.md"
+      },
+      {
+       "type": "task",
+       "title": "Measure two models on one task",
+       "minutes": 30,
+       "path": "claude-code-mastery/063-cost-optimization/02-measure-two-models-on-one-task.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: the nightly bill doubled",
+       "minutes": 11,
+       "path": "claude-code-mastery/063-cost-optimization/03-scenario-the-nightly-bill-doubled.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 64,
+     "pad": 3,
+     "dir": "claude-code-mastery/064-usage-credits-and-fast-mode",
+     "phase": "operations",
+     "title": "Usage, credits, and fast mode",
+     "summary": "Tell subscription usage windows, usage credits, API budget caps, and fast mode apart, and know which one a cost or latency problem actually needs.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 2,
+      "tasks": 0,
+      "quizzes": 2,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Usage windows, credits, and the API bill",
+       "minutes": 19,
+       "path": "claude-code-mastery/064-usage-credits-and-fast-mode/01-usage-windows-credits-and-the-api-bill.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Fast mode and background tokens",
+       "minutes": 19,
+       "path": "claude-code-mastery/064-usage-credits-and-fast-mode/02-fast-mode-and-background-tokens.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: the incident and the empty window",
+       "minutes": 11,
+       "path": "claude-code-mastery/064-usage-credits-and-fast-mode/03-scenario-the-incident-and-the-empty-window.md",
+       "questions": 4
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: what --max-budget-usd bounds",
+       "minutes": 11,
+       "path": "claude-code-mastery/064-usage-credits-and-fast-mode/04-quick-check-what-max-budget-usd-bounds.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 65,
+     "pad": 3,
+     "dir": "claude-code-mastery/065-reliability",
+     "phase": "operations",
+     "title": "Reliability",
+     "summary": "Wrap agent tasks in a retry and self-verification loop so a flaky run gets caught and repeated instead of trusted.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 1,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Retries and self verification",
+       "minutes": 19,
+       "path": "claude-code-mastery/065-reliability/01-retries-and-self-verification.md"
+      },
+      {
+       "type": "task",
+       "title": "Build the retry wrapper",
+       "minutes": 30,
+       "path": "claude-code-mastery/065-reliability/02-build-the-retry-wrapper.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: the wrapper that lied",
+       "minutes": 11,
+       "path": "claude-code-mastery/065-reliability/03-quick-check-the-wrapper-that-lied.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 66,
+     "pad": 3,
+     "dir": "claude-code-mastery/066-observability",
+     "phase": "operations",
+     "title": "Observability",
+     "summary": "Capture cost, duration, and token usage from every agent run into files you can read, grep, and aggregate.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 1,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Observability from files",
+       "minutes": 19,
+       "path": "claude-code-mastery/066-observability/01-observability-from-files.md"
+      },
+      {
+       "type": "task",
+       "title": "Capture run metrics",
+       "minutes": 30,
+       "path": "claude-code-mastery/066-observability/02-capture-run-metrics.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: which flow burns the money",
+       "minutes": 11,
+       "path": "claude-code-mastery/066-observability/03-scenario-which-flow-burns-the-money.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 67,
+     "pad": 3,
+     "dir": "claude-code-mastery/067-observability-deep-dive",
+     "phase": "operations",
+     "title": "Observability deep dive",
+     "summary": "Structure run logs for aggregation: envelope files per task, jq across many runs, and a cost per task ledger built from three real runs.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Structured run logs",
+       "minutes": 14,
+       "path": "claude-code-mastery/067-observability-deep-dive/01-structured-run-logs.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Aggregating with jq",
+       "minutes": 14,
+       "path": "claude-code-mastery/067-observability-deep-dive/02-aggregating-with-jq.md"
+      },
+      {
+       "type": "task",
+       "title": "Build a metrics ledger",
+       "minutes": 23,
+       "path": "claude-code-mastery/067-observability-deep-dive/03-build-a-metrics-ledger.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: what slurp changes",
+       "minutes": 9,
+       "path": "claude-code-mastery/067-observability-deep-dive/04-quick-check-what-slurp-changes.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 68,
+     "pad": 3,
+     "dir": "claude-code-mastery/068-opentelemetry-for-claude-code",
+     "phase": "operations",
+     "title": "OpenTelemetry for Claude Code",
+     "summary": "Export real OTLP metrics and events from a run into a local collector you control, then read the signal names back out without leaking prompt content.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 2,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "OTLP export configuration",
+       "minutes": 12,
+       "path": "claude-code-mastery/068-opentelemetry-for-claude-code/01-otlp-export-configuration.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Signals and privacy controls",
+       "minutes": 12,
+       "path": "claude-code-mastery/068-opentelemetry-for-claude-code/02-signals-and-privacy-controls.md"
+      },
+      {
+       "type": "task",
+       "title": "Capture OTLP locally",
+       "minutes": 20,
+       "path": "claude-code-mastery/068-opentelemetry-for-claude-code/03-capture-otlp-locally.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: the request to log prompts",
+       "minutes": 8,
+       "path": "claude-code-mastery/068-opentelemetry-for-claude-code/04-scenario-the-request-to-log-prompts.md",
+       "questions": 4
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: the span that explains slow sessions",
+       "minutes": 8,
+       "path": "claude-code-mastery/068-opentelemetry-for-claude-code/05-quick-check-the-span-that-explains-slow-sessions.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 69,
+     "pad": 3,
+     "dir": "claude-code-mastery/069-team-setup",
+     "phase": "enterprise",
+     "title": "Team setup",
+     "summary": "Configure a repo so any teammate who clones it gets the same agent instructions, permissions, commands, and subagents.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 1,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "A repo teammates can clone",
+       "minutes": 19,
+       "path": "claude-code-mastery/069-team-setup/01-a-repo-teammates-can-clone.md"
+      },
+      {
+       "type": "task",
+       "title": "Configure the team repo",
+       "minutes": 30,
+       "path": "claude-code-mastery/069-team-setup/02-configure-the-team-repo.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: personal overrides",
+       "minutes": 11,
+       "path": "claude-code-mastery/069-team-setup/03-quick-check-personal-overrides.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 70,
+     "pad": 3,
+     "dir": "claude-code-mastery/070-enterprise-controls",
+     "phase": "enterprise",
+     "title": "Enterprise controls",
+     "summary": "How organizations govern agent fleets with managed policies, model allowlists, and cloud provider backends.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 3,
+      "tasks": 0,
+      "quizzes": 2,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Managed policies",
+       "minutes": 14,
+       "path": "claude-code-mastery/070-enterprise-controls/01-managed-policies.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Model allowlists and gateways",
+       "minutes": 14,
+       "path": "claude-code-mastery/070-enterprise-controls/02-model-allowlists-and-gateways.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Bedrock and Vertex backends",
+       "minutes": 14,
+       "path": "claude-code-mastery/070-enterprise-controls/03-bedrock-and-vertex-backends.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: rolling out agents to 200 developers",
+       "minutes": 9,
+       "path": "claude-code-mastery/070-enterprise-controls/04-scenario-rolling-out-agents-to-200-developers.md",
+       "questions": 5
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: who wins the conflict",
+       "minutes": 9,
+       "path": "claude-code-mastery/070-enterprise-controls/05-quick-check-who-wins-the-conflict.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 71,
+     "pad": 3,
+     "dir": "claude-code-mastery/071-bedrock-and-vertex-in-production",
+     "phase": "enterprise",
+     "title": "Bedrock and Vertex in production",
+     "summary": "Route Claude Code through a cloud provider: the transport switches, regions and projects, identity chains, model pins, and the failure signatures each one produces.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 3,
+      "tasks": 0,
+      "quizzes": 2,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Choosing the provider transport",
+       "minutes": 14,
+       "path": "claude-code-mastery/071-bedrock-and-vertex-in-production/01-choosing-the-provider-transport.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Regions, projects, and identity chains",
+       "minutes": 14,
+       "path": "claude-code-mastery/071-bedrock-and-vertex-in-production/02-regions-projects-and-identity-chains.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Startup checks and failure signatures",
+       "minutes": 14,
+       "path": "claude-code-mastery/071-bedrock-and-vertex-in-production/03-startup-checks-and-failure-signatures.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: the Frankfurt office cannot start a session",
+       "minutes": 9,
+       "path": "claude-code-mastery/071-bedrock-and-vertex-in-production/04-scenario-the-frankfurt-office-cannot-start-a-session.md",
+       "questions": 4
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: authenticating an Agent Platform deployment",
+       "minutes": 9,
+       "path": "claude-code-mastery/071-bedrock-and-vertex-in-production/05-quick-check-authenticating-an-agent-platform-deployment.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 72,
+     "pad": 3,
+     "dir": "claude-code-mastery/072-self-hosted-and-enterprise-ops",
+     "phase": "enterprise",
+     "title": "Self hosted and enterprise ops",
+     "summary": "Operate agent tooling at organization scale: runner capacity and drain, gateway identity and upstreams, managed settings rollouts, retention, and spend governance.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 4,
+      "tasks": 0,
+      "quizzes": 3,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Self hosted runners",
+       "minutes": 10,
+       "path": "claude-code-mastery/072-self-hosted-and-enterprise-ops/01-self-hosted-runners.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Gateway identity, upstreams, and retention",
+       "minutes": 10,
+       "path": "claude-code-mastery/072-self-hosted-and-enterprise-ops/02-gateway-identity-upstreams-and-retention.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: reviewing a gateway and runner rollout",
+       "minutes": 6,
+       "path": "claude-code-mastery/072-self-hosted-and-enterprise-ops/03-scenario-reviewing-a-gateway-and-runner-rollout.md",
+       "questions": 4
+      },
+      {
+       "type": "lesson",
+       "title": "Operating managed settings",
+       "minutes": 10,
+       "path": "claude-code-mastery/072-self-hosted-and-enterprise-ops/04-operating-managed-settings.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Spend limits and budgets",
+       "minutes": 10,
+       "path": "claude-code-mastery/072-self-hosted-and-enterprise-ops/05-spend-limits-and-budgets.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: spend tripled by mid month",
+       "minutes": 6,
+       "path": "claude-code-mastery/072-self-hosted-and-enterprise-ops/06-scenario-spend-tripled-by-mid-month.md",
+       "questions": 4
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: where a cap becomes a control",
+       "minutes": 8,
+       "path": "claude-code-mastery/072-self-hosted-and-enterprise-ops/07-quick-check-where-a-cap-becomes-a-control.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 73,
+     "pad": 3,
+     "dir": "claude-code-mastery/073-cross-session-teams",
+     "phase": "surfaces",
+     "title": "Cross session teams",
+     "summary": "Coordinate several Claude Code sessions on one machine, interactively with mentions and unattended with background helpers and artifacts.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Sessions that message each other",
+       "minutes": 14,
+       "path": "claude-code-mastery/073-cross-session-teams/01-sessions-that-message-each-other.md"
+      },
+      {
+       "type": "lesson",
+       "title": "A background team with artifacts",
+       "minutes": 14,
+       "path": "claude-code-mastery/073-cross-session-teams/02-a-background-team-with-artifacts.md"
+      },
+      {
+       "type": "task",
+       "title": "Run a two helper team",
+       "minutes": 23,
+       "path": "claude-code-mastery/073-cross-session-teams/03-run-a-two-helper-team.md"
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: the channel that reaches every run",
+       "minutes": 9,
+       "path": "claude-code-mastery/073-cross-session-teams/04-quick-check-the-channel-that-reaches-every-run.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 74,
+     "pad": 3,
+     "dir": "claude-code-mastery/074-code-review-workflows",
+     "phase": "surfaces",
+     "title": "Code review workflows",
+     "summary": "Use agent code review as a disciplined first pass: effort levels, a checklist skill, and a graded review of a seeded diff.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 2,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Agent code review",
+       "minutes": 14,
+       "path": "claude-code-mastery/074-code-review-workflows/01-agent-code-review.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Checklists and verdicts",
+       "minutes": 14,
+       "path": "claude-code-mastery/074-code-review-workflows/02-checklists-and-verdicts.md"
+      },
+      {
+       "type": "task",
+       "title": "Review a seeded diff",
+       "minutes": 23,
+       "path": "claude-code-mastery/074-code-review-workflows/03-review-a-seeded-diff.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: the self-approving pipeline",
+       "minutes": 9,
+       "path": "claude-code-mastery/074-code-review-workflows/04-scenario-the-self-approving-pipeline.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 75,
+     "pad": 3,
+     "dir": "claude-code-mastery/075-remote-control",
+     "phase": "surfaces",
+     "title": "Remote Control",
+     "summary": "Publish a live local session to claude.ai and mobile, understand what crosses the network and what never leaves your machine, and decide who is allowed to drive.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 3,
+      "tasks": 0,
+      "quizzes": 2,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Remote Control requirements and start controls",
+       "minutes": 14,
+       "path": "claude-code-mastery/075-remote-control/01-remote-control-requirements-and-start-controls.md"
+      },
+      {
+       "type": "lesson",
+       "title": "The transport and the trust boundary",
+       "minutes": 14,
+       "path": "claude-code-mastery/075-remote-control/02-the-transport-and-the-trust-boundary.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Session names, push notifications, and when to reach for it",
+       "minutes": 14,
+       "path": "claude-code-mastery/075-remote-control/03-session-names-push-notifications-and-when-to-reach-for-it.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: the phone that drove your workstation",
+       "minutes": 9,
+       "path": "claude-code-mastery/075-remote-control/04-scenario-the-phone-that-drove-your-workstation.md",
+       "questions": 4
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: publishing a fleet of workstations",
+       "minutes": 9,
+       "path": "claude-code-mastery/075-remote-control/05-quick-check-publishing-a-fleet-of-workstations.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 76,
+     "pad": 3,
+     "dir": "claude-code-mastery/076-cloud-sessions-and-teleport",
+     "phase": "surfaces",
+     "title": "Cloud sessions and teleport",
+     "summary": "Hand a task to a hosted Claude Code session with --cloud, configure the environment it runs in, and pull the branch and conversation back to your terminal with teleport.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 3,
+      "tasks": 0,
+      "quizzes": 2,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Sending work to the cloud with --cloud",
+       "minutes": 14,
+       "path": "claude-code-mastery/076-cloud-sessions-and-teleport/01-sending-work-to-the-cloud-with-cloud.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Cloud environments and auto-fix pull requests",
+       "minutes": 14,
+       "path": "claude-code-mastery/076-cloud-sessions-and-teleport/02-cloud-environments-and-auto-fix-pull-requests.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Teleporting a cloud session back to your terminal",
+       "minutes": 14,
+       "path": "claude-code-mastery/076-cloud-sessions-and-teleport/03-teleporting-a-cloud-session-back-to-your-terminal.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: forty minutes of tests and a meeting in fifteen",
+       "minutes": 9,
+       "path": "claude-code-mastery/076-cloud-sessions-and-teleport/04-scenario-forty-minutes-of-tests-and-a-meeting-in-fifteen.md",
+       "questions": 4
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: what teleport brings home",
+       "minutes": 9,
+       "path": "claude-code-mastery/076-cloud-sessions-and-teleport/05-quick-check-what-teleport-brings-home.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 77,
+     "pad": 3,
+     "dir": "claude-code-mastery/077-ide-workflows",
+     "phase": "surfaces",
+     "title": "IDE workflows",
+     "summary": "What the VS Code and JetBrains integrations add over the terminal, how the IDE MCP server exposes diagnostics, and a framework for choosing which surface to work in.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 3,
+      "tasks": 0,
+      "quizzes": 2,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "What the VS Code extension adds over the terminal",
+       "minutes": 14,
+       "path": "claude-code-mastery/077-ide-workflows/01-what-the-vs-code-extension-adds-over-the-terminal.md"
+      },
+      {
+       "type": "lesson",
+       "title": "The extension settings and the built-in IDE MCP server",
+       "minutes": 14,
+       "path": "claude-code-mastery/077-ide-workflows/02-the-extension-settings-and-the-built-in-ide-mcp-server.md"
+      },
+      {
+       "type": "lesson",
+       "title": "JetBrains, and choosing between the terminal and an IDE",
+       "minutes": 14,
+       "path": "claude-code-mastery/077-ide-workflows/03-jetbrains-and-choosing-between-the-terminal-and-an-ide.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: the edits that keep vanishing",
+       "minutes": 9,
+       "path": "claude-code-mastery/077-ide-workflows/04-scenario-the-edits-that-keep-vanishing.md",
+       "questions": 4
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: connecting a running session to IntelliJ",
+       "minutes": 9,
+       "path": "claude-code-mastery/077-ide-workflows/05-quick-check-connecting-a-running-session-to-intellij.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 78,
+     "pad": 3,
+     "dir": "claude-code-mastery/078-claude-in-chrome",
+     "phase": "surfaces",
+     "title": "Claude in Chrome",
+     "summary": "The browser tool surface, how site permissions and organization policy gate it, what plan mode still allows, and the debugging workflows that justify handing an agent your logged-in browser.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 3,
+      "tasks": 0,
+      "quizzes": 2,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "The browser tool surface and turning it on",
+       "minutes": 14,
+       "path": "claude-code-mastery/078-claude-in-chrome/01-the-browser-tool-surface-and-turning-it-on.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Site permissions, organization policy, and plan mode",
+       "minutes": 14,
+       "path": "claude-code-mastery/078-claude-in-chrome/02-site-permissions-organization-policy-and-plan-mode.md"
+      },
+      {
+       "type": "lesson",
+       "title": "QA and debugging workflows worth the browser",
+       "minutes": 14,
+       "path": "claude-code-mastery/078-claude-in-chrome/03-qa-and-debugging-workflows-worth-the-browser.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: the profile that is signed in to everything",
+       "minutes": 9,
+       "path": "claude-code-mastery/078-claude-in-chrome/04-scenario-the-profile-that-is-signed-in-to-everything.md",
+       "questions": 4
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: browser tools while planning",
+       "minutes": 9,
+       "path": "claude-code-mastery/078-claude-in-chrome/05-quick-check-browser-tools-while-planning.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 79,
+     "pad": 3,
+     "dir": "claude-code-mastery/079-desktop-cowork-and-dispatch",
+     "phase": "surfaces",
+     "title": "Desktop, Cowork, and Dispatch",
+     "summary": "The Desktop app's session types and workspace, how parallel sessions get automatic worktrees, and where the boundary sits between Cowork, Dispatch, and account-synced configuration.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 3,
+      "tasks": 0,
+      "quizzes": 2,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Desktop session types and the permission selector",
+       "minutes": 14,
+       "path": "claude-code-mastery/079-desktop-cowork-and-dispatch/01-desktop-session-types-and-the-permission-selector.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Panes, visual review, and parallel sessions with automatic worktrees",
+       "minutes": 14,
+       "path": "claude-code-mastery/079-desktop-cowork-and-dispatch/02-panes-visual-review-and-parallel-sessions-with-automatic-wor.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Cowork, Dispatch, and the two places configuration lives",
+       "minutes": 14,
+       "path": "claude-code-mastery/079-desktop-cowork-and-dispatch/03-cowork-dispatch-and-the-two-places-configuration-lives.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: comparison first, implementation second",
+       "minutes": 9,
+       "path": "claude-code-mastery/079-desktop-cowork-and-dispatch/04-scenario-comparison-first-implementation-second.md",
+       "questions": 4
+      },
+      {
+       "type": "quiz",
+       "title": "Quick check: a second session on the same repository",
+       "minutes": 9,
+       "path": "claude-code-mastery/079-desktop-cowork-and-dispatch/05-quick-check-a-second-session-on-the-same-repository.md",
+       "questions": 5
+      }
+     ]
+    },
+    {
+     "n": 80,
+     "pad": 3,
+     "dir": "claude-code-mastery/080-artifacts-and-claude-design",
+     "phase": "surfaces",
+     "title": "Artifacts and Claude Design",
+     "summary": "Publish live web pages straight from a session, iterate on them by URL, give them runtime capabilities, and sketch UI visually with the /design canvas.",
+     "minutes": 50,
+     "counts": {
+      "lessons": 4,
+      "tasks": 0,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "What artifacts are",
+       "minutes": 10,
+       "path": "claude-code-mastery/080-artifacts-and-claude-design/01-what-artifacts-are.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Iterating on a live page",
+       "minutes": 11,
+       "path": "claude-code-mastery/080-artifacts-and-claude-design/02-iterating-on-a-live-page.md"
+      },
+      {
+       "type": "lesson",
+       "title": "Capabilities and live data",
+       "minutes": 11,
+       "path": "claude-code-mastery/080-artifacts-and-claude-design/03-capabilities-and-live-data.md"
+      },
+      {
+       "type": "lesson",
+       "title": "The /design canvas",
+       "minutes": 11,
+       "path": "claude-code-mastery/080-artifacts-and-claude-design/04-the-design-canvas.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: shipping the incident report",
+       "minutes": 7,
+       "path": "claude-code-mastery/080-artifacts-and-claude-design/05-scenario-shipping-the-incident-report.md",
+       "questions": 4
+      }
+     ]
+    },
+    {
+     "n": 81,
+     "pad": 3,
+     "dir": "claude-code-mastery/081-capstone-scope-the-release-manager",
+     "phase": "capstone",
+     "title": "Capstone: scope the release manager",
+     "summary": "Meet the capstone project, an agentic release manager, and pin down what done means in a one-page spec.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 1,
+      "tasks": 1,
+      "quizzes": 0,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "The capstone: an agentic release manager",
+       "minutes": 23,
+       "path": "claude-code-mastery/081-capstone-scope-the-release-manager/01-the-capstone-an-agentic-release-manager.md"
+      },
+      {
+       "type": "task",
+       "title": "Write the release manager spec",
+       "minutes": 37,
+       "path": "claude-code-mastery/081-capstone-scope-the-release-manager/02-write-the-release-manager-spec.md"
+      }
+     ]
+    },
+    {
+     "n": 82,
+     "pad": 3,
+     "dir": "claude-code-mastery/082-capstone-design-and-tool-choices",
+     "phase": "capstone",
+     "title": "Capstone: design and tool choices",
+     "summary": "Split the release manager into components, decide which parts get a script and which get an agent, and write the design doc.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 1,
+      "tasks": 1,
+      "quizzes": 0,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Components and tool choices",
+       "minutes": 23,
+       "path": "claude-code-mastery/082-capstone-design-and-tool-choices/01-components-and-tool-choices.md"
+      },
+      {
+       "type": "task",
+       "title": "Write the design doc",
+       "minutes": 37,
+       "path": "claude-code-mastery/082-capstone-design-and-tool-choices/02-write-the-design-doc.md"
+      }
+     ]
+    },
+    {
+     "n": 83,
+     "pad": 3,
+     "dir": "claude-code-mastery/083-capstone-the-core-release-check",
+     "phase": "capstone",
+     "title": "Capstone: the core release check",
+     "summary": "Build the deterministic heart of the release manager, a runner that executes the test suite and writes the release verdict.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 1,
+      "tasks": 1,
+      "quizzes": 0,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Verdict files and exit codes",
+       "minutes": 23,
+       "path": "claude-code-mastery/083-capstone-the-core-release-check/01-verdict-files-and-exit-codes.md"
+      },
+      {
+       "type": "task",
+       "title": "Build the release check runner",
+       "minutes": 37,
+       "path": "claude-code-mastery/083-capstone-the-core-release-check/02-build-the-release-check-runner.md"
+      }
+     ]
+    },
+    {
+     "n": 84,
+     "pad": 3,
+     "dir": "claude-code-mastery/084-capstone-hooks-and-the-changelog-generator",
+     "phase": "capstone",
+     "title": "Capstone: hooks and the changelog generator",
+     "summary": "Give the release manager observability with a PostToolUse activity log and add the changelog generator that reads git history.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 1,
+      "tasks": 1,
+      "quizzes": 0,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Activity hooks and changelogs from git",
+       "minutes": 23,
+       "path": "claude-code-mastery/084-capstone-hooks-and-the-changelog-generator/01-activity-hooks-and-changelogs-from-git.md"
+      },
+      {
+       "type": "task",
+       "title": "Wire the activity hook and changelog generator",
+       "minutes": 37,
+       "path": "claude-code-mastery/084-capstone-hooks-and-the-changelog-generator/02-wire-the-activity-hook-and-changelog-generator.md"
+      }
+     ]
+    },
+    {
+     "n": 85,
+     "pad": 3,
+     "dir": "claude-code-mastery/085-capstone-orchestrate-the-workers",
+     "phase": "capstone",
+     "title": "Capstone: orchestrate the workers",
+     "summary": "Define the triage and notes subagents, then build the coordinator that merges worker outputs into one release notes artifact.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 1,
+      "tasks": 1,
+      "quizzes": 0,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "The coordinator and its workers",
+       "minutes": 23,
+       "path": "claude-code-mastery/085-capstone-orchestrate-the-workers/01-the-coordinator-and-its-workers.md"
+      },
+      {
+       "type": "task",
+       "title": "Build the coordinator and worker agents",
+       "minutes": 37,
+       "path": "claude-code-mastery/085-capstone-orchestrate-the-workers/02-build-the-coordinator-and-worker-agents.md"
+      }
+     ]
+    },
+    {
+     "n": 86,
+     "pad": 3,
+     "dir": "claude-code-mastery/086-capstone-guardrails-and-a-green-suite",
+     "phase": "capstone",
+     "title": "Capstone: guardrails and a green suite",
+     "summary": "Add a deny-pattern PreToolUse guard to the release manager, then use it to triage and fix a seeded regression until the suite is green.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 1,
+      "tasks": 1,
+      "quizzes": 0,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Deny-pattern guardrails with PreToolUse",
+       "minutes": 23,
+       "path": "claude-code-mastery/086-capstone-guardrails-and-a-green-suite/01-deny-pattern-guardrails-with-pretooluse.md"
+      },
+      {
+       "type": "task",
+       "title": "Add the guard and fix the regression",
+       "minutes": 37,
+       "path": "claude-code-mastery/086-capstone-guardrails-and-a-green-suite/02-add-the-guard-and-fix-the-regression.md"
+      }
+     ]
+    },
+    {
+     "n": 87,
+     "pad": 3,
+     "dir": "claude-code-mastery/087-capstone-serve-the-verdict-over-http",
+     "phase": "capstone",
+     "title": "Capstone: serve the verdict over HTTP",
+     "summary": "Put the release manager behind a local HTTP endpoint that answers with the current release verdict, running as a transient systemd unit.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 1,
+      "tasks": 1,
+      "quizzes": 0,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "A local release API with systemd-run",
+       "minutes": 23,
+       "path": "claude-code-mastery/087-capstone-serve-the-verdict-over-http/01-a-local-release-api-with-systemd-run.md"
+      },
+      {
+       "type": "task",
+       "title": "Ship the verdict endpoint",
+       "minutes": 37,
+       "path": "claude-code-mastery/087-capstone-serve-the-verdict-over-http/02-ship-the-verdict-endpoint.md"
+      }
+     ]
+    },
+    {
+     "n": 88,
+     "pad": 3,
+     "dir": "claude-code-mastery/088-capstone-write-up-and-retro",
+     "phase": "capstone",
+     "title": "Capstone: write-up and retro",
+     "summary": "Document the finished release manager in a README, write an honest retro, and close the course with a judgment call on the next iteration.",
+     "minutes": 60,
+     "counts": {
+      "lessons": 1,
+      "tasks": 1,
+      "quizzes": 1,
+      "challenges": 0
+     },
+     "items": [
+      {
+       "type": "lesson",
+       "title": "Documenting and reviewing the build",
+       "minutes": 19,
+       "path": "claude-code-mastery/088-capstone-write-up-and-retro/01-documenting-and-reviewing-the-build.md"
+      },
+      {
+       "type": "task",
+       "title": "Write the README and retro",
+       "minutes": 30,
+       "path": "claude-code-mastery/088-capstone-write-up-and-retro/02-write-the-readme-and-retro.md"
+      },
+      {
+       "type": "scenario",
+       "title": "Scenario: planning the next iteration",
+       "minutes": 11,
+       "path": "claude-code-mastery/088-capstone-write-up-and-retro/03-scenario-planning-the-next-iteration.md",
+       "questions": 5
       }
      ]
     }

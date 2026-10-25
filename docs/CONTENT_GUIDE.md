@@ -88,6 +88,18 @@ The tools come from `setup/claude-code/install-tools.sh`, and `scripts/claude_co
 - **Safety**: fake secrets only (`pk_live_fake_5521`). Deny rules cover `.env` and `curl`. Hooks and automation scripts are unit-tested with stub `claude` scripts, so success, failure and `is_error` paths are all checked without a model.
 - Topics 18-20 are single-task capstones with a Scenario.
 
+## Practice machine conventions (Claude Code Mastery skill)
+
+The tools come from `setup/claude-code-mastery/install-tools.sh`, and `scripts/claude_code_mastery_skill.py` holds the titles and minutes for all 88 topics. Topic 001 is the reference example for this skill: the user supplied its lesson and task word for word. Everything in the Claude Code Fundamentals section above also applies here.
+
+- **Folders**: `/root/mastery/NNN-<short>`, with three-digit topic numbers. The capstone steps (081-088) each get their own `/root/mastery/NNN-release-manager`. Set up rebuilds the pricing app with its git history, plus the reference solution of every earlier capstone step, so one mistake never blocks the rest.
+- **Headless evidence**: `--output-format json` envelopes (`subtype`, `is_error`, `num_turns`, `total_cost_usd`, `session_id`, `structured_output`) and `stream-json` events. An expanded skill or slash command is recorded as a user row with `isMeta: true` ("Base directory for this skill: ..."), so search those rows rather than `prompts()`.
+- **Stub `claude`**: scripts that wrap `claude -p` (retries, fan-out, coordinators, release checks) are tested by putting a fake `claude` first on `PATH` that prints a chosen envelope or exits non-zero. Every wrapper must be shown failing as well as passing.
+- **Agents as workers**: `claude -p ... --agent <name>` runs a session as a project agent. Its body is the system prompt and its `tools:` list is enforced. Parallel workers are started with `&` and checked by exit code, envelope and artifact.
+- **Hooks**: hook scripts are unit-tested by piping event JSON into them (`tool_name`, `tool_input`, `session_id`). Guards must deny the dangerous variants and allow the innocent look-alikes, and observability hooks must exit 0 on bad input.
+- **Surfaces that need a claude.ai plan** (Remote Control, cloud sessions, Chrome, Desktop, artifacts, `/design`) are taught with lessons, scenarios and quizzes only, written strictly from the official documentation. Never invent flags. Verify them against `claude --help` or the docs first.
+- **Ports**: 14318 (the OpenTelemetry collector, topic 068) and 18787 (the verdict API, topic 087). Servers started by a checker are always stopped in a `finally` block.
+
 ## Lesson (250-600 words)
 
 Open with one or two sentences on why it matters. Then `##` sections, each with a short explanation and an example: a ```bash block for commands, ```json for requests and responses, ```python for SDK code, ```text for prompts and output. Tables for comparisons. Optional mermaid diagram (quote labels containing parentheses or slashes; no semicolons). End with a one-line teaser of what comes next.

@@ -4,11 +4,11 @@
 
 ### Work with real LLM APIs from a live machine — raw HTTP, official SDKs, embeddings, RAG pipelines, customer deployments, agent harnesses and Claude Code, graded when you press Submit.
 
-**5 skills live · 147 topics · 223 hands-on tasks · 171 quizzes · ~92 hours**
+**6 skills live · 235 topics · 298 hands-on tasks · 272 quizzes · ~179 hours**
 
 [![Open the interactive roadmap](https://img.shields.io/badge/Open-Interactive%20Roadmap-7c5cff?style=for-the-badge&logo=openai&logoColor=white)](https://hemanth9336.github.io/AI-Engineer/)
-![Tasks](https://img.shields.io/badge/hands--on%20tasks-223-1f8f4e?style=for-the-badge)
-![Quizzes](https://img.shields.io/badge/quizzes-171-6f42c1?style=for-the-badge)
+![Tasks](https://img.shields.io/badge/hands--on%20tasks-298-1f8f4e?style=for-the-badge)
+![Quizzes](https://img.shields.io/badge/quizzes-272-6f42c1?style=for-the-badge)
 
 </div>
 
@@ -36,6 +36,7 @@
 | 🚀 [AI Forward Deployed Engineer](fde/README.md) | 44 | 86 | 67 | ~1735 min | ✅ Live |
 | 🛠️ [Harness Engineering](harness/README.md) | 41 | 65 | 49 | ~1505 min | ✅ Live |
 | ⌨️ [Claude Code Fundamentals](claude-code/README.md) | 20 | 23 | 16 | ~535 min | ✅ Live |
+| 🧠 [Claude Code Mastery](claude-code-mastery/README.md) | 88 | 75 | 101 | ~5270 min | ✅ Live |
 
 ## 🧠 AI Fundamentals
 
@@ -532,6 +533,207 @@ _Three end-to-end jobs: build a CLI, fix a broken repo, configure a project._
 | 18 | [Claude Code Project: Build a CLI Tool](claude-code/18-project-build-a-cli-tool/) | ~45m | 1 | 0 |
 | 19 | [Claude Code Project: Fix a Broken Repo](claude-code/19-project-fix-a-broken-repo/) | ~45m | 1 | 0 |
 | 20 | [Claude Code Project: Configure a Project](claude-code/20-project-configure-a-project/) | ~45m | 1 | 0 |
+
+## 🧠 Claude Code Mastery
+
+Claude Code from first contact to mastery - permissions, skills, subagents, hooks, MCP, real-world builds, advanced operations, and a multi-agent capstone. Every lab graded in a real VM.
+
+```mermaid
+flowchart LR
+  P0["1. Foundations<br/>Steps 01-20"]
+  P1["2. Power Workflows<br/>Steps 21-26"]
+  P2["3. Hooks, Settings, and MCP<br/>Steps 27-33"]
+  P3["4. Headless Automation<br/>Steps 34-36"]
+  P4["5. Comparing Tools and Costs<br/>Steps 37-38"]
+  P5["6. Real-World Builds<br/>Steps 39-48"]
+  P6["7. Extending Claude Code<br/>Steps 49-54"]
+  P7["8. Multi-Agent Builds<br/>Steps 55-58"]
+  P8["9. The Claude Agent SDK<br/>Steps 59-60"]
+  P9["10. Operating Agents<br/>Steps 61-68"]
+  P10["11. Teams and Enterprise<br/>Steps 69-72"]
+  P11["12. Beyond the Terminal<br/>Steps 73-80"]
+  P12["13. Capstone: Agentic Release Manager<br/>Steps 81-88"]
+  P0 --> P1 --> P2 --> P3 --> P4 --> P5 --> P6 --> P7 --> P8 --> P9 --> P10 --> P11 --> P12
+```
+
+### Phase 1 · Foundations
+
+_The agent loop, tools, permissions, models, context, CLAUDE.md, memory, skills, commands, plugins, plan mode, checkpoints, and git._
+
+| Step | Topic | Time | 🛠️ Tasks | ❓ Quizzes |
+|---|---|---|---|---|
+| 001 | [Claude Code: first contact](claude-code-mastery/001-claude-code-first-contact/) | ~60m | 1 | 1 |
+| 002 | [The agent loop](claude-code-mastery/002-the-agent-loop/) | ~60m | 1 | 1 |
+| 003 | [Read-only tools](claude-code-mastery/003-read-only-tools/) | ~60m | 1 | 1 |
+| 004 | [Diagnose your installation](claude-code-mastery/004-diagnose-your-installation/) | ~60m | 1 | 2 |
+| 005 | [Editing tools and permissions](claude-code-mastery/005-editing-tools-and-permissions/) | ~60m | 1 | 1 |
+| 006 | [Permission modes and guardrails](claude-code-mastery/006-permission-modes-and-guardrails/) | ~60m | 1 | 1 |
+| 007 | [Work across multiple roots](claude-code-mastery/007-work-across-multiple-roots/) | ~60m | 1 | 2 |
+| 008 | [Models and effort](claude-code-mastery/008-models-and-effort/) | ~60m | 1 | 1 |
+| 009 | [Context and compaction](claude-code-mastery/009-context-and-compaction/) | ~60m | 1 | 1 |
+| 010 | [CLAUDE.md basics](claude-code-mastery/010-claude-md-basics/) | ~60m | 1 | 1 |
+| 011 | [CLAUDE.md precedence and imports](claude-code-mastery/011-claude-md-precedence-and-imports/) | ~60m | 1 | 1 |
+| 012 | [Memory across sessions](claude-code-mastery/012-memory-across-sessions/) | ~60m | 1 | 1 |
+| 013 | [Using skills and reusable prompts](claude-code-mastery/013-using-skills-and-reusable-prompts/) | ~60m | 1 | 1 |
+| 014 | [Build a custom skill](claude-code-mastery/014-build-a-custom-skill/) | ~60m | 1 | 1 |
+| 015 | [Custom slash commands](claude-code-mastery/015-custom-slash-commands/) | ~60m | 1 | 1 |
+| 016 | [Plugins](claude-code-mastery/016-plugins/) | ~60m | 1 | 1 |
+| 017 | [Plan mode](claude-code-mastery/017-plan-mode/) | ~60m | 1 | 1 |
+| 018 | [Rewind and checkpoints](claude-code-mastery/018-rewind-and-checkpoints/) | ~60m | 1 | 2 |
+| 019 | [Git workflow with Claude Code](claude-code-mastery/019-git-workflow-with-claude-code/) | ~60m | 1 | 1 |
+| 020 | [Foundations review](claude-code-mastery/020-foundations-review/) | ~60m | 0 + 🏆 1 | 1 |
+
+### Phase 2 · Power Workflows
+
+_Terminal quality of life, recurring runs, subagents, specialist agents, background sessions, and worktree fleets._
+
+| Step | Topic | Time | 🛠️ Tasks | ❓ Quizzes |
+|---|---|---|---|---|
+| 021 | [Terminal quality of life](claude-code-mastery/021-terminal-quality-of-life/) | ~60m | 1 | 1 |
+| 022 | [Recurring runs with loops and cron](claude-code-mastery/022-recurring-runs-with-loops-and-cron/) | ~60m | 1 | 1 |
+| 023 | [Subagents](claude-code-mastery/023-subagents/) | ~60m | 1 | 1 |
+| 024 | [Defining specialist agents](claude-code-mastery/024-defining-specialist-agents/) | ~60m | 1 | 1 |
+| 025 | [Background agent operations](claude-code-mastery/025-background-agent-operations/) | ~60m | 1 | 1 |
+| 026 | [Worktrees and worktree fleets](claude-code-mastery/026-worktrees-and-worktree-fleets/) | ~60m | 1 | 1 |
+
+### Phase 3 · Hooks, Settings, and MCP
+
+_Hooks that log and block, settings.json in depth, and MCP servers over every transport._
+
+| Step | Topic | Time | 🛠️ Tasks | ❓ Quizzes |
+|---|---|---|---|---|
+| 027 | [Automating with PostToolUse hooks](claude-code-mastery/027-automating-with-posttooluse-hooks/) | ~60m | 1 | 1 |
+| 028 | [Enforcing rules with PreToolUse hooks](claude-code-mastery/028-enforcing-rules-with-pretooluse-hooks/) | ~60m | 1 | 1 |
+| 029 | [Hooks as guardrails](claude-code-mastery/029-hooks-as-guardrails/) | ~60m | 1 | 1 |
+| 030 | [settings.json in depth](claude-code-mastery/030-settings-json-in-depth/) | ~60m | 1 | 1 |
+| 031 | [MCP basics](claude-code-mastery/031-mcp-basics/) | ~60m | 1 | 1 |
+| 032 | [A real MCP workflow](claude-code-mastery/032-a-real-mcp-workflow/) | ~60m | 1 | 1 |
+| 033 | [MCP beyond stdio](claude-code-mastery/033-mcp-beyond-stdio/) | ~60m | 1 | 2 |
+
+### Phase 4 · Headless Automation
+
+_JSON envelopes, streaming events, schemas, and pipelines that fail closed._
+
+| Step | Topic | Time | 🛠️ Tasks | ❓ Quizzes |
+|---|---|---|---|---|
+| 034 | [Headless mode and JSON output](claude-code-mastery/034-headless-mode-and-json-output/) | ~60m | 1 | 1 |
+| 035 | [Headless streaming and structured output](claude-code-mastery/035-headless-streaming-and-structured-output/) | ~60m | 1 | 2 |
+| 036 | [Automation review](claude-code-mastery/036-automation-review/) | ~60m | 0 + 🏆 1 | 1 |
+
+### Phase 5 · Comparing Tools and Costs
+
+_Claude Code next to Codex, and a measured rubric for choosing a model tier._
+
+| Step | Topic | Time | 🛠️ Tasks | ❓ Quizzes |
+|---|---|---|---|---|
+| 037 | [Equivalent workflows in Claude Code and Codex](claude-code-mastery/037-equivalent-workflows-in-claude-code-and-codex/) | ~60m | 1 | 2 |
+| 038 | [Cost, speed, and choosing a tool](claude-code-mastery/038-cost-speed-and-choosing-a-tool/) | ~60m | 0 + 🏆 1 | 2 |
+
+### Phase 6 · Real-World Builds
+
+_Onboarding, tests, bug fixes, migrations, commit bots, docs, PR descriptions, flaky tests, logs, and data._
+
+| Step | Topic | Time | 🛠️ Tasks | ❓ Quizzes |
+|---|---|---|---|---|
+| 039 | [Repo onboarding with an agent](claude-code-mastery/039-repo-onboarding-with-an-agent/) | ~60m | 1 | 1 |
+| 040 | [Test generation](claude-code-mastery/040-test-generation/) | ~60m | 1 | 1 |
+| 041 | [Bug hunt and fix](claude-code-mastery/041-bug-hunt-and-fix/) | ~60m | 1 | 1 |
+| 042 | [Dependency migration](claude-code-mastery/042-dependency-migration/) | ~60m | 1 | 1 |
+| 043 | [Commit and changelog bot](claude-code-mastery/043-commit-and-changelog-bot/) | ~60m | 1 | 1 |
+| 044 | [Docs from code](claude-code-mastery/044-docs-from-code/) | ~60m | 1 | 1 |
+| 045 | [PR description generator](claude-code-mastery/045-pr-description-generator/) | ~60m | 1 | 1 |
+| 046 | [Flaky test detection](claude-code-mastery/046-flaky-test-detection/) | ~60m | 1 | 1 |
+| 047 | [Log triage](claude-code-mastery/047-log-triage/) | ~60m | 1 | 1 |
+| 048 | [Data analysis](claude-code-mastery/048-data-analysis/) | ~60m | 1 | 1 |
+
+### Phase 7 · Extending Claude Code
+
+_Skills engineering, plugins and marketplaces, your own MCP server, CI pipelines, and the Agent SDK._
+
+| Step | Topic | Time | 🛠️ Tasks | ❓ Quizzes |
+|---|---|---|---|---|
+| 049 | [Skills engineering](claude-code-mastery/049-skills-engineering/) | ~60m | 1 | 1 |
+| 050 | [Build and operate a plugin](claude-code-mastery/050-build-and-operate-a-plugin/) | ~60m | 1 | 2 |
+| 051 | [Plugin marketplaces](claude-code-mastery/051-plugin-marketplaces/) | ~60m | 1 | 1 |
+| 052 | [Build an MCP server](claude-code-mastery/052-build-an-mcp-server/) | ~60m | 1 | 1 |
+| 053 | [CI with Claude Code](claude-code-mastery/053-ci-with-claude-code/) | ~60m | 1 | 1 |
+| 054 | [GitHub Actions and GitLab CI/CD](claude-code-mastery/054-github-actions-and-gitlab-ci-cd/) | ~60m | 1 | 2 |
+
+### Phase 8 · Multi-Agent Builds
+
+_Multi-file features, parallel audits, coordinators and workers, and a security review pass._
+
+| Step | Topic | Time | 🛠️ Tasks | ❓ Quizzes |
+|---|---|---|---|---|
+| 055 | [Ship a multi-file feature](claude-code-mastery/055-ship-a-multi-file-feature/) | ~60m | 1 | 1 |
+| 056 | [Parallel audit with subagents](claude-code-mastery/056-parallel-audit-with-subagents/) | ~60m | 1 | 1 |
+| 057 | [Coordinator and workers](claude-code-mastery/057-coordinator-and-workers/) | ~60m | 1 | 1 |
+| 058 | [Security review pass](claude-code-mastery/058-security-review-pass/) | ~60m | 1 | 1 |
+
+### Phase 9 · The Claude Agent SDK
+
+_Drive the agent loop from Python: custom tools, permission callbacks, sessions, and subagents._
+
+| Step | Topic | Time | 🛠️ Tasks | ❓ Quizzes |
+|---|---|---|---|---|
+| 059 | [Build with the Claude Agent SDK](claude-code-mastery/059-build-with-the-claude-agent-sdk/) | ~60m | 1 | 1 |
+| 060 | [SDK tools, permissions, and sessions](claude-code-mastery/060-sdk-tools-permissions-and-sessions/) | ~60m | 1 | 1 |
+
+### Phase 10 · Operating Agents
+
+_Automations, cost, usage limits, reliability, observability, and OpenTelemetry._
+
+| Step | Topic | Time | 🛠️ Tasks | ❓ Quizzes |
+|---|---|---|---|---|
+| 061 | [Automate a workflow](claude-code-mastery/061-automate-a-workflow/) | ~60m | 1 | 1 |
+| 062 | [Automate a second workflow](claude-code-mastery/062-automate-a-second-workflow/) | ~60m | 1 | 1 |
+| 063 | [Cost optimization](claude-code-mastery/063-cost-optimization/) | ~60m | 1 | 1 |
+| 064 | [Usage, credits, and fast mode](claude-code-mastery/064-usage-credits-and-fast-mode/) | ~60m | 0 | 2 |
+| 065 | [Reliability](claude-code-mastery/065-reliability/) | ~60m | 1 | 1 |
+| 066 | [Observability](claude-code-mastery/066-observability/) | ~60m | 1 | 1 |
+| 067 | [Observability deep dive](claude-code-mastery/067-observability-deep-dive/) | ~60m | 1 | 1 |
+| 068 | [OpenTelemetry for Claude Code](claude-code-mastery/068-opentelemetry-for-claude-code/) | ~60m | 1 | 2 |
+
+### Phase 11 · Teams and Enterprise
+
+_Team repos, managed policy, cloud providers, gateways, runners, and spend governance._
+
+| Step | Topic | Time | 🛠️ Tasks | ❓ Quizzes |
+|---|---|---|---|---|
+| 069 | [Team setup](claude-code-mastery/069-team-setup/) | ~60m | 1 | 1 |
+| 070 | [Enterprise controls](claude-code-mastery/070-enterprise-controls/) | ~60m | 0 | 2 |
+| 071 | [Bedrock and Vertex in production](claude-code-mastery/071-bedrock-and-vertex-in-production/) | ~60m | 0 | 2 |
+| 072 | [Self hosted and enterprise ops](claude-code-mastery/072-self-hosted-and-enterprise-ops/) | ~60m | 0 | 3 |
+
+### Phase 12 · Beyond the Terminal
+
+_Cross-session teams, code review, Remote Control, cloud sessions, IDEs, Chrome, Desktop, and artifacts._
+
+| Step | Topic | Time | 🛠️ Tasks | ❓ Quizzes |
+|---|---|---|---|---|
+| 073 | [Cross session teams](claude-code-mastery/073-cross-session-teams/) | ~60m | 1 | 1 |
+| 074 | [Code review workflows](claude-code-mastery/074-code-review-workflows/) | ~60m | 1 | 1 |
+| 075 | [Remote Control](claude-code-mastery/075-remote-control/) | ~60m | 0 | 2 |
+| 076 | [Cloud sessions and teleport](claude-code-mastery/076-cloud-sessions-and-teleport/) | ~60m | 0 | 2 |
+| 077 | [IDE workflows](claude-code-mastery/077-ide-workflows/) | ~60m | 0 | 2 |
+| 078 | [Claude in Chrome](claude-code-mastery/078-claude-in-chrome/) | ~60m | 0 | 2 |
+| 079 | [Desktop, Cowork, and Dispatch](claude-code-mastery/079-desktop-cowork-and-dispatch/) | ~60m | 0 | 2 |
+| 080 | [Artifacts and Claude Design](claude-code-mastery/080-artifacts-and-claude-design/) | ~50m | 0 | 1 |
+
+### Phase 13 · Capstone: Agentic Release Manager
+
+_Spec, design, build, guard, serve, and review a multi-agent release manager._
+
+| Step | Topic | Time | 🛠️ Tasks | ❓ Quizzes |
+|---|---|---|---|---|
+| 081 | [Capstone: scope the release manager](claude-code-mastery/081-capstone-scope-the-release-manager/) | ~60m | 1 | 0 |
+| 082 | [Capstone: design and tool choices](claude-code-mastery/082-capstone-design-and-tool-choices/) | ~60m | 1 | 0 |
+| 083 | [Capstone: the core release check](claude-code-mastery/083-capstone-the-core-release-check/) | ~60m | 1 | 0 |
+| 084 | [Capstone: hooks and the changelog generator](claude-code-mastery/084-capstone-hooks-and-the-changelog-generator/) | ~60m | 1 | 0 |
+| 085 | [Capstone: orchestrate the workers](claude-code-mastery/085-capstone-orchestrate-the-workers/) | ~60m | 1 | 0 |
+| 086 | [Capstone: guardrails and a green suite](claude-code-mastery/086-capstone-guardrails-and-a-green-suite/) | ~60m | 1 | 0 |
+| 087 | [Capstone: serve the verdict over HTTP](claude-code-mastery/087-capstone-serve-the-verdict-over-http/) | ~60m | 1 | 0 |
+| 088 | [Capstone: write-up and retro](claude-code-mastery/088-capstone-write-up-and-retro/) | ~60m | 1 | 1 |
 
 ## 📁 Repository layout
 
